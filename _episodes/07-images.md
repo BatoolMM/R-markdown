@@ -1,11 +1,12 @@
 ---
-title: "Introduction"
+title: "Images"
 teaching: 0
 exercises: 0
 questions:
-- "Why Markdown?"
+- "How do I include Images?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Inline images"
+- ""
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
