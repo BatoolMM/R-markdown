@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Authoring scientific publications with R Markdown"
 teaching: 0
 exercises: 0
 questions:
