@@ -1,3 +1,14 @@
+---
+title: "Untitled"
+author: "Torin White"
+date: "November 4, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 Survey on Scientific Shared Resource Rigor and Reproducibility
 
 INTRODUCTION
