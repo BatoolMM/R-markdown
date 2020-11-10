@@ -9,12 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Survey on Scientific Shared Resource Rigor and Reproducibility
+## **Survey on Scientific Shared Resource Rigor and Reproducibility**
 
-INTRODUCTION
 
-Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results (Freedman, Venugopalan & Wisman, 2017; Begley, 2015).
-A recent survey conducted by Nature (2016) reported that 90% of participants identified “more robust experimental design” as one of several key improvements needed for the conduct of better science, in addition to “better statistics” and “better mentorship.” More recently, Nature (2018) published the survey data [include narrative describing plot results]
+**1. INTRODUCTION**
+
+Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@Freedman, Venugopalan, Wisman_2017; @Begley_2015].
+
+A recent survey conducted by _Nature_ [-@Nature_2016] reported that 90% of participants identified &quot;more robust experimental design&quot; as one of several key improvements needed for the conduct of better science, in addition to &quot;better statistics&quot; and &quot;better mentorship.&quot; More recently, _Nature_ [-@Nature_2018] published the survey data [include narrative describing plot results]
 
 [FIXME Insert Plots and narratives here]
 
