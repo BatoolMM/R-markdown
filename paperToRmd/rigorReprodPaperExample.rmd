@@ -81,30 +81,21 @@ Time pressures associated with publishing and grant preparation were frequently 
 
 Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
 
-[FIXME insert table 1 (see google doc)]
-TABLE 1 - Major challenges to rigor observed in shared resources
+```{css, echo=FALSE}
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
+```
 
-Category
-N
-Poor sample quality from users/sample variability/limited biological material
-51
-Lack of well-trained principle investigators and lab members/Poor oversight
-45
-Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls
-43
-Inadequate standardization of protocols or guidelines, and data analysis
-43
-Cost and time
-39
-Failure to leverage the core's expertise/following the core's advice/no consulting beforehand
-23
-Inadequate documentation of experiments/data management
-19
-Instruments: maintenance, upgrades, changes
-15
-Responses that could not be assigned to a category
-11
-
+```{r, message=FALSE, echo=FALSE}
+table1 <- read_csv("data/table.csv")
+knitr::kable(table1, caption="Table 1. Major challenges to rigor observed in shared resources")
+```
 
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
 
