@@ -9,10 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Survey on Scientific Shared Resource Rigor and Reproducibility**
+# ***Survey on Scientific Shared Resource Rigor and Reproducibility***
 
 
-# **1. INTRODUCTION**
+## **1. INTRODUCTION**
 
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@Freedman, Venugopalan, Wisman_2017; @Begley_2015].
 
@@ -33,23 +33,23 @@ A manifesto for reproducible science made several recommendations and called att
 
 The Association of Biomolecular Resource Facilities (ABRF) Committee on Core Rigor and Reproducibility (CCoRRe) recently conducted a survey to assess how shared resource facilities are currently assisting investigators with their need to demonstrate transparency and rigor in their research. In addition, the survey captured information from the shared resource personnel related to the challenges they face and the resources they need to support scientific transparency, rigor, and reproducibility.
 
-# **2. MATERIALS AND METHODS**
+## **2. MATERIALS AND METHODS**
 
-## **2.1 Survey Overview**
+### **2.1 Survey Overview**
 
 The CCoRRe committee developed an 18-question online survey and shared it using [SurveyMonkey](https://surveymonkey.com/r/CCoRRe_2017). The survey was announced on the ABRF listservs and blogs and was open from February to April 2017. All survey participants remained anonymous.
 
-## **2.2 Data Analysis**
+### **2.2 Data Analysis**
 
 The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders.
 
-# **3 RESULTS AND DISCUSSION**
+## **3 RESULTS AND DISCUSSION**
 
-## **3.1 Survey Demographics**
+### **3.1 Survey Demographics**
 
 A total of 243 individuals from 21 countries completed this section. The majority of the survey participants are core facility directors or managers (69%) and work in an academic setting (72%) in the United States (79%).
 
-## **3.2 Current Landscape for Rigor and Transparency in Represented Shared Resources**
+### **3.2 Current Landscape for Rigor and Transparency in Represented Shared Resources**
 
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
@@ -145,11 +145,11 @@ A second set of multiple-choice questions asked participants to select the new t
 
 FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.
 
-## **3.3 Core Implementation of Research Best Practices**
+### **3.3 Core Implementation of Research Best Practices**
 
 Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&amp;R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control.
 
-## **3.4 Strategies for Improving R&amp;R in Core Operation**
+### **3.4 Strategies for Improving R&amp;R in Core Operation**
 
 Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&amp;R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&amp;R guidelines.
 
@@ -157,9 +157,9 @@ About 40% proposed that funding mechanisms should be available to cores from eit
 
 About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@Freedman, Venugopalan & Wisman_2017;@Begley_2015, @Baker_2016].
 
-# **4. CONCLUSIONS**
+## **4. CONCLUSIONS**
 
 Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
 
-# **REFERENCES**
+## **REFERENCES**
 
