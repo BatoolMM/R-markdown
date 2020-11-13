@@ -1,6 +1,6 @@
 ---
 title: "Introduction to FIXME"
-teaching: FIXMEE
+teaching: FIXME
 exercises: FIXME
 questions:
 - "How to FIXME?"
@@ -10,6 +10,7 @@ objectives:
 - "Locate FIXME"
 keypoints:
 - "Use Markdown to FIXME"
+- "What are the key takeaways from this episode?" 
 source: Rmd
 ---
 
