@@ -1,6 +1,6 @@
 ---
-title: "Untitled"
-author: "Torin White"
+title: "Survey on Scientific Shared Resource Rigor and Reproducibility"
+Citation: "Knudtson, K. L., Carnahan, R. H., Hegstad-Davies, R. L., Fisher, N. C., Hicks, B., Lopez, P. A., Meyn, S. M., Mische, S. M., Weis-Garcia, F., White, L. D., & Sol-Church, K. (2019). Survey on Scientific Shared Resource Rigor and Reproducibility. Journal of biomolecular techniques : JBT, 30(3), 36–44. doi: 10.7171/jbt.19-3003-001"
 date: "November 4, 2020"
 output: html_document
 ---
@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # ***Survey on Scientific Shared Resource Rigor and Reproducibility***
 
 
-## **1. INTRODUCTION**
+## **1.INTRODUCTION**
 
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@Freedman, Venugopalan, Wisman_2017; @Begley_2015].
 
@@ -33,7 +33,7 @@ A manifesto for reproducible science made several recommendations and called att
 
 The Association of Biomolecular Resource Facilities (ABRF) Committee on Core Rigor and Reproducibility (CCoRRe) recently conducted a survey to assess how shared resource facilities are currently assisting investigators with their need to demonstrate transparency and rigor in their research. In addition, the survey captured information from the shared resource personnel related to the challenges they face and the resources they need to support scientific transparency, rigor, and reproducibility.
 
-## **2. MATERIALS AND METHODS**
+## **2.MATERIALS AND METHODS**
 
 ### **2.1 Survey Overview**
 
@@ -43,7 +43,7 @@ The CCoRRe committee developed an 18-question online survey and shared it using 
 
 The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders.
 
-## **3. RESULTS AND DISCUSSION**
+## **3.RESULTS AND DISCUSSION**
 
 ### **3.1 Survey Demographics**
 
@@ -157,9 +157,12 @@ About 40% proposed that funding mechanisms should be available to cores from eit
 
 About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@Freedman, Venugopalan & Wisman_2017;@Begley_2015, @Baker_2016].
 
-## **4. CONCLUSIONS**
+## **4.CONCLUSIONS**
 
 Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
 
 # **REFERENCES**
 
+Add references here
+
+[^1]: Through these four elements, the NIH intends to &quot;enhance the reproducibility of research findings through increased scientific rigor and transparency.&quot; ([_https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
