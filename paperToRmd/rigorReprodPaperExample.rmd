@@ -1,9 +1,10 @@
 ---
-title: "Survey on Scientific Shared Resource Rigor and Reproducibility"
-Authors: UCSB Carpentry
-date: "November 4, 2020"
-output: html_document
-number_sections: true
+title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
+author: Your Name Here
+date: "December, 14 2019"
+output:
+  html_document:
+    number_sections: true
 ---
 
 ```{r setup, include=FALSE}
