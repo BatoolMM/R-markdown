@@ -1,7 +1,7 @@
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
-author: Your Name Here
-date: "December, 14 2019"
+author: Add Your Name Here
+date: "December, 14 2020"
 output:
   html_document:
     number_sections: true
@@ -51,6 +51,63 @@ A total of 243 individuals from 21 countries completed this section. The majorit
 
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
+![FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](desktop/Images_Paper/Fig1.jpg){#id .class width=50% height=50%}
+FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.
+
+Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@Freedman, Venugopalan & Wisman_2017; @Bustin_2014] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
+
+Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
+
+
+TABLE 1 - Major challenges to rigor observed in shared resources
+
+| **Category** | **N** |
+| --- | --- |
+| Poor sample quality from users/sample variability/limited biological material | 51 |
+| Lack of well-trained principle investigators and lab members/Poor oversight | 45 |
+| Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43 |
+| Inadequate standardization of protocols or guidelines, and data analysis | 43 |
+| Cost and time | 39 |
+| Failure to leverage the core&#39;s expertise/following the core&#39;s advice/no consulting beforehand | 23 |
+| Inadequate documentation of experiments/data management | 19 |
+| Instruments: maintenance, upgrades, changes | 15 |
+| Responses that could not be assigned to a category | 11 |
+
+Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
+
+![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources. Response to the following multiple-choice question: Has your core&#39;s rigor and reproducibility practice statement ever been requested?](desktop/Images_Paper/Fig2.jpg){#id .class width=50% height=50%}
+
+The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&amp;R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
+
+* At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support R&amp;R practices.
+* The incorporation of an instrumentation management plan, was not as highly utilized (56%).
+* Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
+
+A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&amp;R best practices within their core operation (Fig. 3).
+
+![FIGURE 3 - FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.](desktop/Images_Paper/Fig3.jpg){#id .class width=60% height=80%}
+
+## Core Implementation of Research Best Practices
+
+Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&amp;R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control.
+
+## Strategies for Improving R&amp;R in Core Operation
+
+Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&amp;R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&amp;R guidelines.
+
+About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&amp;R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality.
+
+About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@Freedman, Venugopalan & Wisman_2017;@Begley_2015, @Baker_2016].
+
+# CONCLUSIONS
+
+Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
+
+# REFERENCES {-}
+
+Add references here
+
+[^1]: Through these four elements, the NIH intends to &quot;enhance the reproducibility of research findings through increased scientific rigor and transparency.&quot; ([_https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
 
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -84,30 +141,6 @@ ggplot(pie_data, aes(x=2, y=proportion, fill=crisis_level)) +
   xlim(0.5, 2.5)
 ```
 
-[FIXME Insert ggplot of Fig 1 (see google doc)]
-
-FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.
-
-Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@Freedman, Venugopalan & Wisman_2017; @Bustin_2014] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
-
-Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core sett
-
-[Insert table]
-
-TABLE 1 - Major challenges to rigor observed in shared resources
-
-| **Category** | **N** |
-| --- | --- |
-| Poor sample quality from users/sample variability/limited biological material | 51 |
-| Lack of well-trained principle investigators and lab members/Poor oversight | 45 |
-| Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43 |
-| Inadequate standardization of protocols or guidelines, and data analysis | 43 |
-| Cost and time | 39 |
-| Failure to leverage the core&#39;s expertise/following the core&#39;s advice/no consulting beforehand | 23 |
-| Inadequate documentation of experiments/data management | 19 |
-| Instruments: maintenance, upgrades, changes | 15 |
-| Responses that could not be assigned to a category | 11 |
-
 
 ```{css, echo=FALSE}
 table {
@@ -124,43 +157,3 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 table1 <- read_csv("data/table.csv")
 knitr::kable(table1, caption="Table 1. Major challenges to rigor observed in shared resources")
 ```
-
-Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
-
-[FIXME Insert ggplot of Fig 2 (see google doc)]
-
-FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources. Response to the following multiple-choice question: Has your core&#39;s rigor and reproducibility practice statement ever been requested?
-
-The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&amp;R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
-
-* At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support R&amp;R practices.
-* The incorporation of an instrumentation management plan, was not as highly utilized (56%).
-* Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
-
-A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&amp;R best practices within their core operation (Fig. 3).
-
-[FIXME Insert ggplot of Fig 3 (see google doc)]
-
-FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.
-
-## Core Implementation of Research Best Practices
-
-Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&amp;R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control.
-
-## Strategies for Improving R&amp;R in Core Operation
-
-Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&amp;R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&amp;R guidelines.
-
-About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&amp;R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality.
-
-About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@Freedman, Venugopalan & Wisman_2017;@Begley_2015, @Baker_2016].
-
-# CONCLUSIONS
-
-Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
-
-# REFERENCES {-}
-
-Add references here
-
-[^1]: Through these four elements, the NIH intends to &quot;enhance the reproducibility of research findings through increased scientific rigor and transparency.&quot; ([_https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
