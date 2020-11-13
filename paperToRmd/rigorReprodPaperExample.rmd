@@ -20,13 +20,13 @@ A recent survey conducted by _Nature_ [-@Nature_2016] reported that 90% of parti
 
 A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the Center for Open Science to improve research planning and reporting [@Munafò_2017], which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
-1. scientific premise forming the basis of the proposed research,
+1. scientific premise forming the basis of the proposed research
 
-2. rigorous experimental design for robust and unbiased results,
+2. rigorous experimental design for robust and unbiased results
 
-3. consideration of sex and other relevant biologic variables, and
+3. consideration of sex and other relevant biologic variables
 
-4. authentication of key biologic and chemical resources.
+4. authentication of key biologic and chemical resources
 
 The Association of Biomolecular Resource Facilities (ABRF) Committee on Core Rigor and Reproducibility (CCoRRe) recently conducted a survey to assess how shared resource facilities are currently assisting investigators with their need to demonstrate transparency and rigor in their research. In addition, the survey captured information from the shared resource personnel related to the challenges they face and the resources they need to support scientific transparency, rigor, and reproducibility.
 
@@ -142,11 +142,11 @@ A second set of multiple-choice questions asked participants to select the new t
 
 FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.
 
-## 3.3 Core Implementation of Research Best Practices
+## Core Implementation of Research Best Practices
 
 Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&amp;R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control.
 
-## 3.4 Strategies for Improving R&amp;R in Core Operation
+## Strategies for Improving R&amp;R in Core Operation
 
 Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&amp;R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&amp;R guidelines.
 
