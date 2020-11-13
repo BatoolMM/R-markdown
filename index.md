@@ -3,7 +3,9 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-How can I create a scientific publication that includes the output of my R lang code processing of data including data visualizations?
+
+The goal of these lessons is to familiarize learners with using Rmarkdown to create scientific publications that including the output of R lang code 
+data processes and data visualizations. 
 
 <!-- this is an html comment -->
 
