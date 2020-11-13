@@ -9,7 +9,8 @@ How can I create a scientific publication that includes the output of my R lang 
 
 {% comment %} This is a comment in Liquid {% endcomment %}
 
-> ### Prerequisites
+> ## Prerequisites
+>
 > R-Studio installed and some experience using R-Studio.
 {: .prereq}
 
