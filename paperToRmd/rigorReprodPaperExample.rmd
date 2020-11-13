@@ -19,7 +19,7 @@ A recent survey conducted by _Nature_ [-@Nature_2016] reported that 90% of parti
 
 [FIXME Insert Plots and narratives here]
 
-A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the Center for Open Science to improve research planning and reporting [@Munafò_2017], which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
+A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the [Center for Open Science](https://www.cos.io/) to improve research planning and reporting [@Munafò_2017], which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
 1. scientific premise forming the basis of the proposed research
 
