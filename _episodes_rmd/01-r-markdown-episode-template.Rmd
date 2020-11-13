@@ -4,7 +4,7 @@ teaching: FIXME
 exercises: FIXME
 questions:
 - "How to FIXME?"
-- "How to FIXME?"
+- "Why should I FIXME?"
 objectives:
 - "Describe the purpose FIXME"
 - "Locate FIXME"
