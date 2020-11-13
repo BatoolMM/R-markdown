@@ -1,0 +1,69 @@
+---
+title: "Introduction to FIXME"
+teaching: FIXMEE
+exercises: FIXME
+questions:
+- "How to FIXME?"
+- "How to FIXME?"
+objectives:
+- "Describe the purpose FIXME"
+- "Locate FIXME"
+keypoints:
+- "Use Markdown to FIXME"
+source: Rmd
+---
+
+```{r, include=FALSE}
+
+```
+
+
+## Motivation
+
+FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME FIXME 
+
+## Before Starting The Workshop
+
+Please ensure you have the latest version of R and RStudio installed on your machine. This is important, as some packages used in the workshop may not install correctly (or at all) if R is not up to date.
+
+[Download and install the latest version of R here](https://www.r-project.org/)
+[Download and install RStudio here](https://www.rstudio.com/)
+
+## Introduction to R-Markdown
+
+Welcome to the FIXME FIXME .
+
+
+
+
+> ## demo of callout
+>
+> this is the callout text 
+> 
+{: .callout}
+
+## Introduction to FIXME FIXME 
+
+
+> ## Challenge 1
+>
+> Which of the following are FIXME FIXME ?
+> ```{r, eval=FALSE}
+> FIXME FIXME 
+> FIXME FIXME 
+> FIXME FIXME 
+> ```
+>
+> > ## Solution to challenge 1
+> >
+> > The following can FIXME FIXME :
+> > ```{r ch1pt1-sol, eval=FALSE}
+> > FIXME FIXME 
+> > FIXME FIXME 
+> > FIXME FIXME 
+> > FIXME FIXME 
+> > ```
+> >
+> {: .solution}
+{: .challenge}
+
