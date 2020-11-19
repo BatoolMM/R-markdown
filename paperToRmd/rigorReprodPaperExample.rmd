@@ -5,7 +5,7 @@ date: "December 15, 2020"
 output:
   html_document:
     number_sections: true
-bibliography: bibliography.bib
+bibliography: bibliography.bibtex
 
 
 ---
