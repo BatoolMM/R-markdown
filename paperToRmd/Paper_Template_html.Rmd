@@ -53,7 +53,7 @@ A total of 243 individuals from 21 countries completed this section. The majorit
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
 ![FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](fig/fig1_paper.jpg){#id .class width=50% height=50%}
-FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.
+
 
 Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@freedman_reproducibility2020_2017; @bustin_reproducibility_2014] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
 
