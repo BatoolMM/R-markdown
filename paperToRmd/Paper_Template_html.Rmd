@@ -55,7 +55,7 @@ When asked how knowledgeable participants were with respect to the NIH research 
 ![FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](fig/fig1_paper.jpg){#id .class width=50% height=50%}
 
 
-Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@freedman_reproducibility2020_2017; @bustin_reproducibility_2014] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
+Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@bustin_reproducibility_2014; @freedman_reproducibility2020_2017] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
 
 Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
 
@@ -99,7 +99,7 @@ Participants were asked to suggest solutions to mitigate or eliminate challenges
 
 About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&amp;R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality.
 
-About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@freedman_reproducibility2020_2017; @baker_1500_2016].
+About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@baker_1500_2016; @freedman_reproducibility2020_2017].
 
 # CONCLUSIONS
 
