@@ -277,13 +277,13 @@ Pay close attention to the first code chunk that isn’t working with either of 
 Here, I’ll demonstrate the difference. 
 First, to view the final document click “knit” the first time you click knit it will ask that you choose a file name. That will be the default file name each time you click knit for this rmarkdown file after this first time. You can also change where it saves.
 
-![.Rmd new file generic template](../fig/02-knit-filename.png)
+![.First knit choose filename](../fig/02-knit-filename.png)
 
 How the document looks when you knit with echo=TRUE:
-![.Rmd new file generic template](../fig/02-knit-echoTRUE.png)
+![.Knit echo=TRUE](../fig/02-knit-echoTRUE.png)
 
 Now, with echo=FALSE. Can you spot the difference?
-![.Rmd new file generic template](../fig/02-knit-echoFALSE.png)
+![.Knit echo=FALSE](../fig/02-knit-echoFALSE.png)
 
 You’ll notice that the gray code chunk that contains summary(cars) displayed the first time when echo = TRUE, but not the second time when echo = FALSE. 
 But why didn’t the code chunk for the plot (...insert code..) not display in the first (echo=TRUE example)? That specific code chunk was set to FALSE which overrides any default setting determined at the beginning of the document. If you don’t understand this now that’s okay. We’ll be going over the code chunks and the settings for the code chunks later. For now, we just want to understand the basics of what knit button does and make sure we have the right defaults to start out.
