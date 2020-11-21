@@ -38,3 +38,13 @@ A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
 To cite this lesson, please consult with [CITATION](CITATION)
 
 [lesson-example]: https://carpentries.github.io/lesson-example
+
+## Generate regular vanilla Markdown from R-markdown for episodes
+
+When creating episodes in the `_episodes_rmd` directory you'll want to process them into rgular markdown so they will be further processed by Github and published when pushed to Github.  If you have the `make` utility, which Mac or Linux has by default you can call `make lesson-m`.   But if you do not have `make` which is the case for most windows users then you can use R and Knitr from the command line.
+
+**example of using knitr from the command line to process an R-markdown file into a regular markdown file:**
+
+```
+Rscript -e 'knitr::knit("./_episodes_rmd/01-r-markdown-episode-template.Rmd", output = "./_episodes/01-r-markdown-episode-template.md")'
+```
