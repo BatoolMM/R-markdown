@@ -1,5 +1,5 @@
 ---
-title: "Introduction to FIXME"
+title: "Introduction to R Markdown"
 teaching: FIXME
 exercises: FIXME
 questions:
@@ -9,7 +9,8 @@ questions:
 
 objectives:
 - Key Functions on Rstudio 
-- Learn how to start an R markdown document & how it’s set up
+- Learn how to start an R markdown document 
+- Understand the anatomy of an R Markdown file
 
 keypoints:
 - FIXME
@@ -28,18 +29,16 @@ Please ensure you have the latest version of R and RStudio installed on your mac
 * [Download and install the latest version of R here](https://www.r-project.org/)
 * [Download and install RStudio here](https://www.rstudio.com/)
 
-## Introduction to RStudio
+## Brief Tour of RStudio
 
-Welcome to the R portion of the Software Carpentry workshop.
-
-Throughout this lesson, we're going to teach you some of the fundamentals of
-the R language as well as some best practices for organizing code for
-scientific projects that will make your life easier.
+Throughout this lesson, we're going to teach you some of the fundamentals of using R Markdown as part of your RStudio workflow.
 
 We'll be using RStudio: a free, open source R Integrated Development
 Environment (IDE). It provides a built in editor, works on all platforms (including
 on servers) and provides many advantages such as integration with version
 control and project management.
+
+This lesson assumes you already have a basic understanding of R and RStudio but we will do a brief tour of the IDE, review R projects and the best practices for organizing your work, and how to install packages you may want to use to work with R Markdown.
 
 
 **Basic layout**
@@ -52,7 +51,7 @@ When you first open RStudio, you will be greeted by three panels:
 
 ![RStudio layout](../fig/02-rstudio.png)
 
-Once you open files, such as R scripts, an editor panel will also open
+Once you open files, such as .Rmd files, an editor panel will also open
 in the top left.
 
 ![RStudio layout with .R file open](../fig/02-rstudio-script.png)
@@ -95,7 +94,7 @@ Fortunately, there are tools and packages which can help you manage your work ef
 
 One of the most powerful and useful aspects of RStudio is its project management
 functionality. We'll be using an R project today to compliment our Rmarkdown document and bundle all the files needed for our paper into a self-contained, reproducible
-project 
+project. After opening the project we'll review good ways to organize your work. 
 
 The simplest way to open an RStudio project once it has been created is to click
 through your file system to get to the directory where it was saved and double
@@ -145,6 +144,10 @@ with different sub-directories for each separate analysis makes it easier later.
 Since many analyses are exploratory and don't end up being used in the final
 project, and some of the analyses get shared between projects.
 
+### Where R Markdown Files come into play
+
+FIXME add this
+
 > ## Tip: Good Enough Practices for Scientific Computing
 >
 > [Good Enough Practices for Scientific Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf) gives the following recommendations for project organization:
@@ -156,6 +159,10 @@ project, and some of the analyses get shared between projects.
 > 5. Name all files to reflect their content or function.
 >
 {: .callout}
+
+We recommend the following setup for folders and files in your project:
+
+FIXME add this
 
 ### Version Control
 
@@ -177,13 +184,13 @@ network). R and RStudio have functionality for managing packages:
 * You can remove a package with `remove.packages("packagename")`
 * You can make a package available for use with `library(packagename)`
 
-Packages can also be viewed, loaded, and detached in the Packages tab of the lower right panel in RStudio. Clicking on this tab will displas all of installed packages with a checkbox next to them. If the box next to a package name is checked, the package is loaded and if it is empty, the package is not loaded. Click an empty box to load that package and click a checked box to detach that package. 
+Packages can also be viewed, loaded, and detached in the Packages tab of the lower right panel in RStudio. Clicking on this tab will display all of installed packages with a checkbox next to them. If the box next to a package name is checked, the package is loaded and if it is empty, the package is not loaded. Click an empty box to load that package and click a checked box to detach that package. 
 
 Packages can be installed and updated from the Package tab with the Install and Update buttons at the top of the tab. 
 
-FIXME: change Challenge 5 packages 
+FIXME: change Challenge  packages 
 
-> ## Challenge 5
+> ## Challenge 1
 >
 > Install the following packages: `ggplot2`, `plyr`, `gapminder`
 >
@@ -206,7 +213,7 @@ FIXME: change Challenge 5 packages
 ##Starting a R Markdown File 
 
 
-Start an R markdown document in RStudio by clicking File > New File > R Markdown…
+Start a new R markdown document in RStudio by clicking File > New File > R Markdown…
 
 ![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.png)
 
