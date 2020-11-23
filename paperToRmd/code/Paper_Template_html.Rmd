@@ -5,7 +5,7 @@ date: "December 15, 2020"
 output:
   html_document:
     number_sections: true
-bibliography: bibliography.bibtex
+bibliography: ../docs/bibliography.bibtex
 ---
 
 ```{r setup, include=FALSE}
@@ -52,7 +52,7 @@ A total of 243 individuals from 21 countries completed this section. The majorit
 
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
-![FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](fig/fig1_paper.jpg){#id .class width=50% height=50%}
+![FIGURE 1 - Survey respondents'#39;' self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../figs/fig1_paper.jpg){#id .class width=50% height=50%}
 
 
 Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@bustin_reproducibility_2014; @freedman_reproducibility2020_2017] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
@@ -69,35 +69,35 @@ TABLE 1 - Major challenges to rigor observed in shared resources
 | Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43 |
 | Inadequate standardization of protocols or guidelines, and data analysis | 43 |
 | Cost and time | 39 |
-| Failure to leverage the core&#39;s expertise/following the core&#39;s advice/no consulting beforehand | 23 |
+| Failure to leverage the core's expertise/following the core's advice/no consulting beforehand | 23 |
 | Inadequate documentation of experiments/data management | 19 |
 | Instruments: maintenance, upgrades, changes | 15 |
 | Responses that could not be assigned to a category | 11 |
 
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
 
-![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources. Response to the following multiple-choice question: Has your core&#39;s rigor and reproducibility practice statement ever been requested?](fig/fig2_paper.jpg){#id .class width=50% height=50%}
+![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources. Response to the following multiple-choice question: Has your core's rigor and reproducibility practice statement ever been requested?](../figs/fig2_paper.jpg){#id .class width=50% height=50%}
 
 
-The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&amp;R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
+The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
 
-* At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support R&amp;R practices.
+* At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support R&R practices.
 * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
 * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
 
-A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&amp;R best practices within their core operation (Fig. 3).
+A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&R best practices within their core operation (Fig. 3).
 
-![FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.](fig/fig3_paper.jpg){#id .class width=60% height=80%}
+![FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.](../figs/fig3_paper.jpg){#id .class width=60% height=80%}
 
 ## Core Implementation of Research Best Practices
 
-Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&amp;R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control.
+Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control.
 
-## Strategies for Improving R&amp;R in Core Operation
+## Strategies for Improving R&R in Core Operation
 
-Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&amp;R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&amp;R guidelines.
+Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&R guidelines.
 
-About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&amp;R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality.
+About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality.
 
 About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@baker_1500_2016; @freedman_reproducibility2020_2017].
 
