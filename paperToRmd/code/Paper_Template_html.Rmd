@@ -6,6 +6,7 @@ output:
   html_document:
     number_sections: true
 bibliography: ../docs/bibliography.bibtex
+csl: apa-5th-edition.csl
 knit: (function(inputFile, encoding) { 
       out_dir <- '../results';
       rmarkdown::render(inputFile,
