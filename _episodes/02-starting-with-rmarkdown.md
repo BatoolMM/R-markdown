@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R Markdown"
-teaching: FIXME
-exercises: FIXME
+teaching: 30 min
+exercises: 10 min
 questions:
 - How to find your way around RStudio?
 - How to start an R Markdown document in Rstudio?
@@ -48,7 +48,7 @@ When you first open RStudio, you will be greeted by three panels:
 
 ![RStudio layout](../fig/02-rstudio.png)
 
-Once you open files, such as .R or .Rmd files, an editor panel will also open
+Once you open files, such as .Rmd files, an editor panel will also open
 in the top left.
 
 ![RStudio layout with .R file open](../fig/02-rstudio-script.png)
@@ -176,8 +176,8 @@ There are no hard and fast rules here, but remember, it is important at least to
 
 It is important to use version control with projects.  Go [here for a good lesson which describes using Git with RStudio](https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/).
 
-
-### R Packages (Optional)
+# Is this section needed or should it be shortened? FIXME
+### R Packages
 
 It is possible to add functions to R by writing a package, or by
 obtaining a package written by someone else. As of this writing, there
@@ -196,11 +196,11 @@ Packages can also be viewed, loaded, and detached in the Packages tab of the low
 
 Packages can be installed and updated from the Package tab with the Install and Update buttons at the top of the tab. 
 
-FIXME: change Challenge  packages to the ones we'll be using in this workshop
+FIXME: change Challenge  packages 
 
 > ## Challenge 1
 >
-> Install the following packages: `bookdown`, `tidyverse`, ``
+> Install the following packages: `bookdown, `tidyverse`, ``
 >
 > > ## Solution to challenge 5
 > >
