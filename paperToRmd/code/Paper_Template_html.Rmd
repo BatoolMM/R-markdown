@@ -58,7 +58,7 @@ A total of 243 individuals from 21 countries completed this section. The majorit
 
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
-![FIGURE 1 - Survey respondents'#39;' self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../figs/fig1_paper.jpg){width=50% height=50%}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../figs/fig1_paper.jpg){width=50% height=50%}
 
 
 Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@bustin_reproducibility_2014; @freedman_reproducibility2020_2017] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
@@ -82,7 +82,7 @@ TABLE 1 - Major challenges to rigor observed in shared resources
 
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
 
-![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources. Response to the following multiple-choice question: Has your core's rigor and reproducibility practice statement ever been requested?](../figs/fig2_paper.jpg){width=50% height=50%}
+![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources.](../figs/fig2_paper.jpg){width=50% height=50%}
 
 
 The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
@@ -93,7 +93,7 @@ The apparent lack of core engagement at the institutional level does not necessa
 
 A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&R best practices within their core operation (Fig. 3).
 
-![FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.](../figs/fig3_paper.jpg){width=60% height=80%}
+![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../figs/fig3_paper.jpg){width=60% height=80%}
 
 ## Core Implementation of Research Best Practices
 
