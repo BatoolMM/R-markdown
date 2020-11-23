@@ -221,29 +221,28 @@ FIXME: change Challenge  packages
 > {: .solution}
 {: .challenge}
 
-##Starting a R Markdown File 
-
+## Starting a R Markdown File 
 
 Start a new R markdown document in RStudio by clicking File > New File > R Markdown…
 
-![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.png)
+![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.PNG)
 
 If this is the first time you have ever opened an R markdown file a dialog box will open up to tell you what packages need to be installed. 
 
-![RStudio layout with .R file open](../fig/02-rmd-installpackages-dialogbox.png)
+![First time R markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.PNG)
 
 Click "Yes". The packages will take a few seconds to install. You should see that this was successful.
 
-![RStudio layout with .R file open](../fig/02-rmd-installpackages.png)
+![Install r markdown packages success](../fig/02-rmd-installpackages.PNG)
 
 Once the package installs have completed, a dialog box will pop up and ask you to name the file and add an author name (may already know what your name is) The default output is HTML and as the wizard indicates, it is the best way to start and in your final version or later versions you have the option of changing to pdf or word document (among many other output formats! We'll see this later). 
 
-![Name new .Rmd file](../fig/02-name-new-rmd-blank.png)
+![Name new .Rmd file](../fig/02-name-new-rmd-blank.PNG)
 
 New R Markdown will always pop up with a generic template…
 
 If you see this template you're good to go.
-![.Rmd new file generic template](../fig/02-rmd-new-template.png)
+![.Rmd new file generic template](../fig/02-rmd-new-template.PNG)
 
 Now we’ll get into how the Rmarkdown file is organized and then on to editing and styling!
 
@@ -287,13 +286,13 @@ Pay close attention to the first code chunk that isn’t working with either of 
 Here, I’ll demonstrate the difference. 
 First, to view the final document click “knit” the first time you click knit it will ask that you choose a file name. That will be the default file name each time you click knit for this rmarkdown file after this first time. You can also change where it saves.
 
-![.First knit choose filename](../fig/02-knit-filename.png)
+![First knit choose filename](../fig/02-knit-filename.PNG)
 
 How the document looks when you knit with echo=TRUE:
-![.Knit echo=TRUE](../fig/02-knit-echoTRUE.png)
+![Knit echo=TRUE](../fig/02-knit-echoTRUE.PNG)
 
 Now, with echo=FALSE. Can you spot the difference?
-![.Knit echo=FALSE](../fig/02-knit-echoFALSE.png)
+![Knit echo=FALSE](../fig/02-knit-echoFALSE.PNG)
 
 You’ll notice that the gray code chunk that contains summary(cars) displayed the first time when echo = TRUE, but not the second time when echo = FALSE. 
 But why didn’t the code chunk for the plot (...insert code..) not display in the first (echo=TRUE example)? That specific code chunk was set to FALSE which overrides any default setting determined at the beginning of the document. If you don’t understand this now that’s okay. We’ll be going over the code chunks and the settings for the code chunks later. For now, we just want to understand the basics of what knit button does and make sure we have the right defaults to start out.
