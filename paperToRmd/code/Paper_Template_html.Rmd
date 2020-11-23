@@ -6,6 +6,11 @@ output:
   html_document:
     number_sections: true
 bibliography: ../docs/bibliography.bibtex
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../results';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
 ---
 
 ```{r setup, include=FALSE}
