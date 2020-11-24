@@ -114,4 +114,4 @@ Scientific shared resources support research laboratories to generate critical d
 # REFERENCES {-}
 
 
-[^1]: Through these four elements, the NIH intends to &quot;enhance the reproducibility of research findings through increased scientific rigor and transparency.&quot; ([_https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
+[^1]: Through these four elements, the NIH intends to &quot;enhance the reproducibility of research findings through increased scientific rigor and transparency.&quot; ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
