@@ -42,7 +42,7 @@ The Association of Biomolecular Resource Facilities (ABRF) Committee on Core Rig
 
 ## Survey Overview
 
-The CCoRRe committee developed an 18-question online survey and shared it using [SurveyMonkey](https://surveymonkey.com/r/CCoRRe_2017). The survey was announced on the ABRF listservs and blogs and was open from February to April 2017. All survey participants remained anonymous.
+The CCoRRe committee developed an 18-question online survey and shared it using [SurveyMonkey](https://surveymonkey.com). The survey was announced on the ABRF listservs and blogs and was open from February to April 2017. All survey participants remained anonymous.
 
 ## Data Analysis
 
