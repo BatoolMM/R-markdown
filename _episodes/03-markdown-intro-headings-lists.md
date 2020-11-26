@@ -119,7 +119,6 @@ Some paragraph text between horizontal lines
 >> ## CONCLUSION
 >> ## REFERENCES
 >> ```
->> Why are we using ##? Because # should only be used once in the paper (for the title) and ## is for the next heading level.
 > {: .solution}
 {: .challenge}
 
@@ -209,7 +208,7 @@ The above will appear as:
 > ## CHALLENGE 3.4
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
-> ## SOLUTION:
+> ## SOLUTION
 >> ```
 >> 1. scientific premise forming the basis of the proposed research 
 >> 2. rigorous experimental design for robust and unbiased results
