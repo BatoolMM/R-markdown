@@ -20,23 +20,21 @@ source: Rmd
 ## Inserting Images
 
 You can add images to an R Markdown report using markdown syntax as follows:
-![Image Name](path-to-image-here)
+```![Image Name](path-to-image-here)```
 
 However, when you knit the report, R will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the figs  folder. In that case, make sure your path starts with figs/ along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
 In our paper template there are three images (two pie charts) and one bar chart we want to include. Those are named fig1_paper.jpg, fig2_paper.jpg and fig3_paper.jpg.
 
-FIXME Add images here.
-
 To start let’s identify where Figure 1 is first mentioned in the paper. We will be adding it with the following name: FIGURE 1 - Survey respondents#39; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility (shared in the chat).
 The markdown should look like:
 
-![FIGURE .1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg)
+![FIGURE .1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg)
 
 Save it and use the knit function to check how the output looks like. 
 Resizing Images 
 The image you just added looks a little too big, right? We can resize it by adjusting the width and height ratio. Let’s say we want this image to be half of the original size. In order to do that, we will have to add to the syntax: 
 
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50%}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){width=50% height=50%}
 
 
 >## Add Figures 2 and 3 to the document
@@ -51,10 +49,10 @@ The image you just added looks a little too big, right? We can resize it by adju
 > >
 > >
 > > ![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared 
-> >resources](figs/fig2_paper.jpg){width=50% height=50%}
+> >resources](../fig/fig2_paper.jpg){width=50% height=50%}
 > >
 > > ![FIGURE 3 - Types of tools that cores would like to implement in their 
-> > operations.](figs/fig3_paper.jpg){width=60% height=80%}
+> > operations.](../fig/fig3_paper.jpg){width=60% height=80%}
 > {: .solution}
 {: .challenge}
 
@@ -63,7 +61,7 @@ The image you just added looks a little too big, right? We can resize it by adju
 Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we use HTML syntax using the ```<center>``` tag.
 
 <center>
-![FIGURE 3 - Types of tools that cores would like to implement in their operations.](figs/fig3_paper.jpg){width=60% height=80%}
+![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../fig/fig3_paper.jpg){width=60% height=80%}
 </center>
 
 
@@ -104,7 +102,8 @@ Cell 3 | Cell 4
 ---               | ---             .
 Cell 1            |  Cell 2         .
 Cell 3            |  Cell 4         .
-<br><br><br><br>
+
+
 Let’s create Table 1 in our paper in section 3.2 Current Landscape for Rigor and Transparency in Represented Shared Resources. 
 
 Start with the column headers “Category” and “N” in bold. Then add the separator between the header and the cells. We’ll also type out the first two rows of the table.
