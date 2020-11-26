@@ -19,6 +19,7 @@ keypoints:
 source: Rmd
 ---
 
+check to see if commit working
 ## Intro to R Markdown Syntax
 
 Before we dive into learning R Markdown Syntax, let's talk a little about the "markdown" part.
@@ -113,11 +114,11 @@ Some paragraph text between horizontal lines
 >
 >  ## SOLUTION
 >> ```
->> ## INTRODUCTION
->> ## MATERIALS AND METHODS
->> ## RESULTS AND DISCUSSION
->> ## CONCLUSION
->> ## REFERENCES
+>> \## INTRODUCTION
+>> \## MATERIALS AND METHODS
+>> \## RESULTS AND DISCUSSION
+>> \## CONCLUSION
+>> \## REFERENCES
 >> ```
 > {: .solution}
 {: .challenge}
@@ -135,11 +136,11 @@ Some paragraph text between horizontal lines
 >
 > ## SOLUTION
 >> ```
->> ## Survey Demographics
->> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
->> ## Core Implementation of Research Best Practices
->> ## Strategies for Improving R&R in Core Operation
->> ## Creating Bulleted and Numbered Lists
+>> \## Survey Demographics
+>> \## Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> \## Core Implementation of Research Best Practices
+>> \## Strategies for Improving R&R in Core Operation
+>> \## Creating Bulleted and Numbered Lists
 >> ```
 > {: .solution}
 {: .challenge}
@@ -210,10 +211,10 @@ The above will appear as:
 >
 > ## SOLUTION
 >> ```
->> 1. scientific premise forming the basis of the proposed research 
->> 2. rigorous experimental design for robust and unbiased results
->> 3. consideration of sex and other relevant biologic variables
->> 4. authentication of key biologic and chemical resources
+>> \1. scientific premise forming the basis of the proposed research 
+>> \2. rigorous experimental design for robust and unbiased results
+>> \3. consideration of sex and other relevant biologic variables
+>> \4. authentication of key biologic and chemical resources
 >> ```
 > {: .solution}
 {: .challenge}
