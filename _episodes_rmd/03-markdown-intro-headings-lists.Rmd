@@ -72,7 +72,7 @@ We want to insert headings and subheadings to divide our paper into more readabl
 ~~~
 # INTRODUCTION
 ~~~
-{: .source}
+{: .language-r}
 
 FIXME screen shot output
 > ## INTRODUCTION
@@ -86,7 +86,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 ### Survey Overview  
 ### Data Analysis  
 ~~~
-{: .source}
+{: .language-r}
 
 FIXME screenshot output
 > ## MATERIALS AND METHODS  <br>  

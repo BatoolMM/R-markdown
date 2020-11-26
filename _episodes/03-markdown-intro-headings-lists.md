@@ -33,7 +33,14 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
-{% raw %} # Heading 1 <br> ## Heading 2 <br> ### Heading 3 <br> #### Heading 4 <br> ##### Heading 5 <br> ###### Heading 6 {% endraw %}
+```
+# Heading 1  
+## Heading 2  
+### Heading 3 
+#### Heading 4  
+##### Heading 5  
+###### Heading 6 
+```
 
 FIXME? Screenshot so it's consistent with Rmd output?
 Displays as: 
@@ -88,10 +95,11 @@ FIXME screenshot output
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
 
-
-\-\-\-  
+```
+---  
 Some paragraph text between horizontal lines  
-\***  
+***  
+```
 
 FIXME screenshot output
 Output:  
@@ -104,12 +112,14 @@ Some paragraph text between horizontal lines
 > Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
 >
 >  ## SOLUTION
->> FIXME Insert solution screenshot here
->> \## INTRODUCTION
->> \## MATERIALS AND METHODS
->> \## RESULTS AND DISCUSSION
->> \## CONCLUSION
->> \## REFERENCES
+>> ```
+>> ## INTRODUCTION
+>> ## MATERIALS AND METHODS
+>> ## RESULTS AND DISCUSSION
+>> ## CONCLUSION
+>> ## REFERENCES
+>> ```
+>> Why are we using ##? Because # should only be used once in the paper (for the title) and ## is for the next heading level.
 > {: .solution}
 {: .challenge}
 
@@ -125,7 +135,6 @@ Some paragraph text between horizontal lines
 > and add the appropriate subheading syntax.
 >
 > ## SOLUTION
->> FIXME insert solution screenshot here
 >> ```
 >> ## Survey Demographics
 >> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
@@ -159,7 +168,7 @@ Outputs as:
 >
 >> ## SOLUTION
 >> ```
->> At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
+>> * At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
 >> * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
 >> * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
 >> ```
@@ -194,18 +203,19 @@ The above will appear as:
 2. Third item in our numbered list  
 
 > ## Tip: No ) for numbered lists
-> **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the 
-output will be the same as above.
+> **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
 {: .callout}
 
 > ## CHALLENGE 3.4
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
 > ## SOLUTION:
+>> ```
 >> 1. scientific premise forming the basis of the proposed research 
 >> 2. rigorous experimental design for robust and unbiased results
 >> 3. consideration of sex and other relevant biologic variables
 >> 4. authentication of key biologic and chemical resources
+>> ```
 > {: .solution}
 {: .challenge}
 
