@@ -35,24 +35,23 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
-~~~
-# Heading 1  
-## Heading 2  
-### Heading 3  
-#### Heading 4  
-##### Heading 5  
-###### Heading 6  
-~~~
-{: .source}
+
+\# Heading 1  
+\## Heading 2  
+\### Heading 3  
+\#### Heading 4  
+\##### Heading 5  
+\###### Heading 6  
+
 
 FIXME
 Output:  
-# Heading 1  
-## Heading 2  
-### Heading 3  
-#### Heading 4  
-##### Heading 5  
-###### Heading 6  
+\# Heading 1  
+\## Heading 2  
+\### Heading 3  
+\#### Heading 4  
+\##### Heading 5  
+\###### Heading 6  
 
 > ## Headings
 > Note: Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. 
@@ -61,7 +60,10 @@ Output:
 
 We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “introduction” into a large heading by adding a “# “ before the line. 
 
+~~~
 # INTRODUCTION
+~~~
+{: .source}
 
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
 
@@ -76,12 +78,11 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
 
-~~~
----
+
+\---
 Some paragraph text between horizontal lines
-***
-~~~
-{: .source}
+\***
+
 
 
 FIXME output
@@ -89,7 +90,7 @@ FIXME output
 > ---  
 > Some paragraph text between horizontal lines  
 > ***  
-{: .language-r}
+{: .language-rmd}
 
 
 
