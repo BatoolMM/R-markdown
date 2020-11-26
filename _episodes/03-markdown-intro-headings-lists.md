@@ -32,13 +32,17 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
-\ # Heading 1  
-\ ## Heading 2  
-\ ### Heading 3  
-\ #### Heading 4  
-\ ##### Heading 5  
-\ ###### Heading 6  
+~~~
+\# Heading 1  
+\## Heading 2  
+\### Heading 3  
+\#### Heading 4  
+\##### Heading 5  
+\###### Heading 6  
+~~~
+{: .source}
 
+FIXME
 Output:  
 # Heading 1  
 ## Heading 2  
@@ -47,7 +51,7 @@ Output:
 ##### Heading 5  
 ###### Heading 6  
 
-> Tip: Headings
+> ## Headings
 > Note: Be sure to put a space between the last # and the start of your heading text so R Markdown > recognizes where your heading text starts. 
 {: .callout}
 
@@ -74,35 +78,39 @@ Some paragraph text between horizontal lines
 {: .source}
 
 
+FIXME output
+> ## output
 > ---  
 > Some paragraph text between horizontal lines  
 > ***  
-{: .output}
+{: .language-r}
 
 
 
-CHALLENGE 3.1
+> ##CHALLENGE 3.1
+> Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials >and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown > to find these lines in the document. 
+>
+> # INTRODUCTION
+>
+> # MATERIALS AND METHODS
+>
+> # RESULTS AND DISCUSSION
+>
+> # CONCLUSION
+<
+> # REFERENCES
+{: .challenge}
 
-Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
+> ## CHALLENGE 3.2
+> Insert subheadings to divide our main sections into subsections. Since we already put the subheadings into the Materials and Methods section, we just need to do the Results and Discussion Section. Find the lines with:
+> 
+> Survey Demographics
+> Current Landscape for Rigor and Transparency in Represented Shared Resources
+> Core Implementation of Research Best Practices
+> Strategies for Improving R&R in Core Operation
+{: .challege}
 
-# INTRODUCTION
-
-# MATERIALS AND METHODS
-
-# RESULTS AND DISCUSSION
-
-# CONCLUSION
-
-# REFERENCES
-
-CHALLENGE 3.2
-
-Insert subheadings to divide our main sections into subsections. Since we already put the subheadings into the Materials and Methods section, we just need to do the Results and Discussion Section. Find the lines with.
-Survey Demographics
-Current Landscape for Rigor and Transparency in Represented Shared Resources
-Core Implementation of Research Best Practices
-Strategies for Improving R&R in Core Operation
-
+FIXME output
 ## Survey Demographics
 
 ## Current Landscape for Rigor and Transparency in Represented Shared Resources
@@ -111,7 +119,7 @@ Strategies for Improving R&R in Core Operation
 
 ## Strategies for Improving R&amp;R in Core Operation
 
-3 pt. 3 Creating Bulleted and Numbered Lists
+## Creating Bulleted and Numbered Lists
 
 Academic articles often include lists to make important findings stand out more or to summarize key points for readers. We will learn how to create both unordered lists with bullet points, and ordered numbered lists. 
 Unordered Bullet Lists
