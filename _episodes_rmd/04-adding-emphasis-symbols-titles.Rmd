@@ -30,8 +30,8 @@ Another way we can customize our R Markdown file output is by emphasizing words 
 
 Put text in italics with single asterisks or single underscores.  
 
-*italics* will give output italics  
-_italics_ will give output italics
+```*italics*``` will give output *italics*  
+```_italics_``` will give output _italics_
 
 Make text bold with double asterisks or double underscores.  
 
@@ -70,8 +70,8 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 > 
 > you can combine emphasis styles by combining the symbols surrounding the word or phrase. 
 > Make text bold and  italicized with triple asterisks or triple underscores.  
-```***super emphasized***``` will give output ***super emphasized*** 
-```___super emphasized___``` will give output ___super emphasized___
+> ```***super emphasized***``` will give output ***super emphasized*** 
+> ```___super emphasized___``` will give output ___super emphasized___
 {: .callout}
 
 
@@ -94,7 +94,7 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 >
 > Using the sampling error formula
 >
-> $$e = { Zp(1-p) \over \sqrt{n} }$$
+> ```$$ e = { Zp(1-p) \over \sqrt{n} } $$```
 > 
 > we compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample 
 > size n=243, the margin of error is +/-3%.
