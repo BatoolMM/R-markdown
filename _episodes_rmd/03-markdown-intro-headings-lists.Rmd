@@ -129,11 +129,13 @@ Some paragraph text between horizontal lines
 >
 > ## SOLUTION
 >> FIXME insert solution screenshot here
->> \## Survey Demographics
->> \## Current Landscape for Rigor and Transparency in Represented Shared Resources
->> \## Core Implementation of Research Best Practices
->> \## Strategies for Improving R&R in Core Operation
->> \## Creating Bulleted and Numbered Lists
+>> ```
+>> ## Survey Demographics
+>> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> ## Core Implementation of Research Best Practices
+>> ## Strategies for Improving R&R in Core Operation
+>> ## Creating Bulleted and Numbered Lists
+>> ```
 > {: .solution}
 {: .challenge}
 
@@ -145,11 +147,12 @@ Academic articles often include lists to make important findings stand out more 
 
 Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  *, - or +:  
 <br>
-\* A bullet point  
-\- Also a bullet point  
-\+ Still a bullet point   
-
-Output:
+```
+* A bullet point  
+- Also a bullet point  
++ Still a bullet point   
+```
+Outputs as:
 * A bullet point
 - Also a bullet point
 + Still a bullet point
@@ -158,20 +161,23 @@ Output:
 >Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
 >
 >> ## SOLUTION
+>> ```
 >> At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
 >> * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
 >> * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
+>> ```
 > {: .solution}
 {: .challenge}
 
 <br>
 
 Remember: You can use + or - too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
-\* A bullet point
-  \* Sub-level one
-    \* Sub-level two 
-
-Output:
+```
+* A bullet point  
+  * Sub-level one  
+    * Sub-level two   
+```
+Outputs to:
 * A bullet-point  
   * Sub-level one  
     * Sub-level two  
@@ -185,7 +191,7 @@ For ordered lists, you use a number with a dot, e.g: 1.  Your numbers do not nee
 7. Second item in our numbered list   
 2. Third item in our numbered list   
 ```
-
+The above will appear as:
 1. First item in our numbered list  
 7. Second item in our numbered list  
 2. Third item in our numbered list  
