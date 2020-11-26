@@ -83,10 +83,11 @@ Cell 3        |  Cell 4     .
 
 
 Start with the column names/headers. Separate columns with the pipe ( | ) symbol. Right below the column headers use at least three dashes to separate the headers from the cells of the table. Then fill in the contents of the table row by row, separating columns using the pipe ( | ) symbol. 
-***
 
-Note: the spacing between cells in each row can help with readability in the rmarkdown file, but is not necessary to get the correct output. As long as the pipe symbol is there, RMarkdown will automatically format the table in your output. The following syntax will print the same table as the spaced out table above.
 
+> ## Note
+>the spacing between cells in each row can help with readability in the rmarkdown file, but is not necessary to get the correct output. As long as the pipe symbol is there, RMarkdown will automatically format the table in your output. The following syntax will print the same table as the spaced out table above.
+{: .callout}
 
 Column Header | Column Header
 ---  | ---
@@ -99,13 +100,11 @@ Cell 3 | Cell 4
 {: .callout}
 
 
-
-
 **Column Header** | **Column Header**
 ---               | ---             .
 Cell 1            |  Cell 2         .
 Cell 3            |  Cell 4         .
-
+<br><br><br><br>
 Let’s create Table 1 in our paper in section 3.2 Current Landscape for Rigor and Transparency in Represented Shared Resources. 
 
 Start with the column headers “Category” and “N” in bold. Then add the separator between the header and the cells. We’ll also type out the first two rows of the table.
@@ -118,8 +117,7 @@ Lack of well-trained principle investigators and lab members/Poor oversight | 45
 
 
 > ## Finish Table 1 by adding the rest of the rows.
->
-> ~~~
+> 
 >**Category** | **N**
 --- | ---
 Poor sample quality from users/sample variability/limited biological material | 51
@@ -131,7 +129,6 @@ Failure to leverage the core’s expertise/following the core’s advice/no cons
 Inadequate documentation of experiments/data management | 19 
 Instruments: maintenance, upgrades, changes | 15 
 Responses that could not be assigned to a category | 11
-> ~~~
 {: .challenge}
 
 
