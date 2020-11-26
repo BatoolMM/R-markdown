@@ -22,7 +22,6 @@ source: Rmd
 source("../bin/chunk-options.R")
 knitr_fig_path("03-")
 ```
-check to see if commit working
 ## Intro to R Markdown Syntax
 
 Before we dive into learning R Markdown Syntax, let's talk a little about the "markdown" part.
@@ -35,7 +34,7 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 ## Creating Headings and Subheadings
 
-Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
+Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign `#`. There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
 ```
 # Heading 1  
@@ -46,7 +45,7 @@ Most papers or articles need headings and subheadings to distinguish different p
 ###### Heading 6 
 ```
 
-FIXME? Screenshot so it's consistent with Rmd output?
+<br>
 Displays as: 
   
 # Heading 1  
@@ -56,28 +55,23 @@ Displays as:
 ##### Heading 5  
 ###### Heading 6
 
-*Note this is carpentries styling for headers, they look different in R Markdown, but relative sizing and hierarcy with 1 being the largest and 6 the smallest remains the same.
-
+***Note** this is carpentries styling for headers, they look different in R Markdown, but relative sizing and hierarcy with 1 being the largest and 6 the smallest remains the same.
 
 > ## Tip: Headings
-> Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts: **\# Title NOT #Title**
+> Be sure to put a space between the last `#` and the start of your heading text so R Markdown recognizes where your heading text starts: `# Title` NOT `#Title`
 {: .callout}
 
 > ## Tip: Heading convention
-> Headers should not be picked based on what styling you want for your paper. There are other ways to style your paper, including pre-created themes and css stylesheets. To conform to best practices, header 1 (#) should only be used for the title. From there, for each section only use one heading level lower, for example the introduction would then be header 2 (##).
+> Headers should not be picked based on what styling you want for your paper. There are other ways to style your paper, including pre-created themes and css stylesheets. To conform to best practices, header 1 `#` should only be used for the title. From there, for each section only use one heading level lower, for example the introduction would then be header 2 `##`.
 {: .callout}
 
 <br>
-We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a large heading by adding a “# “ before the line. 
+We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a heading 1 by adding a `#` before the line. 
 
 ~~~
 # INTRODUCTION
 ~~~
-{: .language-r}
-
-FIXME screen shot output
-> ## INTRODUCTION
-{: .output}
+{: .source}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
@@ -87,13 +81,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 ### Survey Overview  
 ### Data Analysis  
 ~~~
-{: .language-r}
-
-FIXME screenshot output
-> ## MATERIALS AND METHODS  <br>  
-> ### Survey Overview  <br>
-> ### Data Analysis  <br>
-{: .output}
+{: .source}
 
 <br>
 
@@ -105,7 +93,7 @@ Some paragraph text between horizontal lines
 ***  
 ```
 
-FIXME screenshot output
+FIXME screenshot output because it's not working in github markdown
 Output:  
 ----------   
 Some paragraph text between horizontal lines    
@@ -115,7 +103,7 @@ Some paragraph text between horizontal lines
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
 >
->>  ## SOLUTION
+>> ## SOLUTION
 >> ```
 >> ## INTRODUCTION
 >> ## MATERIALS AND METHODS
@@ -123,7 +111,7 @@ Some paragraph text between horizontal lines
 >> ## CONCLUSION
 >> ## REFERENCES
 >> ```
->> Why are we using ##? Because # should only be used once in the paper (for the title) and ## is for the next heading level.
+>> Why are we using `##`? Because `#` should only be used once in the paper (for the title) and `##` is for the next heading level.
 > {: .solution}
 {: .challenge}
 
@@ -156,7 +144,7 @@ Academic articles often include lists to make important findings stand out more 
 
 ### Unordered Bullet Lists
 
-Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  *, - or +:  
+Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  `*`, `-` or `+`:  
 <br>
 ```
 * A bullet point  
@@ -182,7 +170,7 @@ Outputs as:
 
 <br>
 
-Remember: You can use + or - too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
+Remember: You can use `+` or `-` too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
 ```
 * A bullet point  
   * Sub-level one  
@@ -195,7 +183,7 @@ Outputs to:
 
 ### Ordered Numbered Lists
 
-For ordered lists, you use a number with a dot, e.g: 1.  Your numbers do not need to be sequential.  Markdown will number the item in the order in which they appear rather than their numeric order.
+For ordered lists, you use a number with a dot, e.g: `1.`  Your numbers do not need to be sequential.  Markdown will number the item in the order in which they appear rather than their numeric order.
 
 ```
 1. First item in our numbered list   
