@@ -66,9 +66,9 @@ The image you just added looks a little too big, right? We can resize it by adju
 > {: .solution}
 {: .challenge}
 
-### Aligning Images 
+#### Aligning Images 
 
-Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we use HTML syntax using the {.source} <center> tag.
+Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we use HTML syntax using the "<center>" tag.
 
 <center>
 ![FIGURE 3 - Types of tools that cores would like to implement in their operations.](figs/fig3_paper.jpg){width=60% height=80%}
@@ -89,9 +89,12 @@ Column Header | Column Header
 Cell 1        |  Cell 2     .    
 Cell 3        |  Cell 4     .    
 
+
 Start with the column names/headers. Separate columns with the pipe ( | ) symbol. Right below the column headers use at least three dashes to separate the headers from the cells of the table. Then fill in the contents of the table row by row, separating columns using the pipe ( | ) symbol. 
 
+
 Note: the spacing between cells in each row can help with readability in the rmarkdown file, but is not necessary to get the correct output. As long as the pipe symbol is there, RMarkdown will automatically format the table in your output. The following syntax will print the same table as the spaced out table above.
+
 
 Column Header | Column Header
 ---  | ---
@@ -105,6 +108,7 @@ Cell 3 | Cell 4
 
 
 
+
 **Column Header** | **Column Header**
 ---               | ---             .
 Cell 1            |  Cell 2         .
@@ -114,12 +118,14 @@ Let’s create Table 1 in our paper in section 3.2 Current Landscape for Rigor a
 
 Start with the column headers “Category” and “N” in bold. Then add the separator between the header and the cells. We’ll also type out the first two rows of the table.
 
+
 **Category** | **N**
 --- | ---
 Poor sample quality from users/sample variability/limited biological material | 51
 Lack of well-trained principle investigators and lab members/Poor oversight | 45
 
-> ## CHALLENGE 5.2: Finish Table 1 by adding the rest of the rows.
+
+> ## Finish Table 1 by adding the rest of the rows.
 >
 > ~~~
 >**Category** | **N**
@@ -135,6 +141,7 @@ Instruments: maintenance, upgrades, changes | 15
 Responses that could not be assigned to a category | 11
 > ~~~
 {: .challenge}
+
 
 Note: There are some packages that allow you to make more advanced and interactive tables. Here are some references for these packages.
 https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
