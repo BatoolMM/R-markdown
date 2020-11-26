@@ -21,7 +21,7 @@ source: Rmd
 
 
 
-\ ## Adding Emphasis
+## Adding Emphasis
 
 Another way we can customize our R Markdown file output is by emphasizing words or phrases. In our paper, there are several instances of words and phrases that are italicized, bolded, or in “quotation marks”. We use markdown syntax to add these emphasis to words or phrases by surrounding them with matching symbols. Different symbols give different emphases effects. 
 
@@ -44,7 +44,7 @@ In the second paragraph of our paper, we reference a survey conducted by Springe
 In that same paragraph, the phrase “more robust experimental design” is in quotations. Add the quotation marks to that phrase by typing &quot; at the beginning and end of the phrase. 
 &quot;more robust experimental design&quot;
 
->\ ## CHALLENGE 4.1: Add emphasis to other words and phrases. 
+> ## CHALLENGE 4.1: Add emphasis to other words and phrases. 
 >
 > ~~~
 >In the second paragraph
@@ -60,6 +60,7 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 >Put the word “cultural” in quotation marks 
 >
 > ~~~
+> {: .language-r}
 >
 {: .challenge}
 
@@ -74,7 +75,7 @@ ___super emphasized___ will give output super emphasized
 
 
 
-\ ## Adding Symbols and Formulas
+ ## Adding Symbols and Formulas
 
 LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (equations, formulas) is better than anything else out there.
 
@@ -86,7 +87,7 @@ TBD
 
 But, know that it is very intuitive.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like a = b*c, but in LaTeX you would say $ a = bc $.  Spaces generally don’t matter in LaTeX; it “understands” your formula and uses rules to determine how to display things.
 
->\ ## CHALLENGE 4.2 (may change)
+> ## CHALLENGE 4.2 (may change)
 >
 > ~~~
 > Exercise: let’s add the following text and formula to our data analysis section:
