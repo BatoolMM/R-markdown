@@ -73,12 +73,11 @@ Some paragraph text between horizontal lines
 ~~~
 {: .source}
 
->
+
 > ---
 > Some paragraph text between horizontal lines
-> 
 > ***
-> {: .output}
+{: .output}
 
 
 
