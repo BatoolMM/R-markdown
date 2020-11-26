@@ -13,7 +13,7 @@ objectives:
 - Learn how to create bulleted and numbered lists in R markdown
 
 keypoints:
-- \# \## \### for headings
+- Heading syntax (#, ##, ###, etc.)
 - *, +, or - for bulleted lists
 - 1. 2. etc. for numbered lists
 source: Rmd
@@ -82,9 +82,9 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .language-r}
 
 FIXME screenshot output
-> ## MATERIALS AND METHODS  
-> ### Survey Overview  
-> ### Data Analysis  
+> ## MATERIALS AND METHODS  <br>  
+> ### Survey Overview  <br>
+> ### Data Analysis  <br>
 {: .output}
 
 <br>
@@ -106,14 +106,13 @@ Some paragraph text between horizontal lines
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
 >
+>  ## SOLUTION
+>> FIXME Insert solution screenshot here
 >> \## INTRODUCTION
 >> \## MATERIALS AND METHODS
 >> \## RESULTS AND DISCUSSION
 >> \## CONCLUSION
 >> \## REFERENCES
->
-> ## SOLUTION
-> FIXME Insert solution screenshot here
 > {: .solution}
 {: .challenge}
 
@@ -135,7 +134,6 @@ Some paragraph text between horizontal lines
 >> \## Core Implementation of Research Best Practices
 >> \## Strategies for Improving R&R in Core Operation
 >> \## Creating Bulleted and Numbered Lists
->>
 > {: .solution}
 {: .challenge}
 
@@ -146,6 +144,7 @@ Academic articles often include lists to make important findings stand out more 
 ### Unordered Bullet Lists
 
 Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  *, - or +:  
+<br>
 \* A bullet point  
 \- Also a bullet point  
 \+ Still a bullet point   
@@ -168,22 +167,22 @@ Output:
 <br>
 
 Remember: You can use + or - too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
-* A bullet point
-  * Sub-level one
-    * Sub-level two 
+\* A bullet point
+  \* Sub-level one
+    \* Sub-level two 
 
 Output:
 * A bullet-point  
-  *Sub-level one  
-    *Sub-level two  
+  * Sub-level one  
+    * Sub-level two  
 
 ### Ordered Numbered Lists
 
 For ordered lists, you use a number with a dot, e.g: 1.  Your numbers do not need to be sequential.  Markdown will number the item in the order in which they appear rather than their numeric order.
 
-\1. First item in our numbered list   
-\7. Second item in our numbered list   
-\2. Third item in our numbered list   
+{% raw $}1.{% endraw %} First item in our numbered list   
+{% raw $}7.{% endraw %} Second item in our numbered list   
+{% raw $}2.{% endraw %} Third item in our numbered list   
 
 1. First item in our numbered list  
 7. Second item in our numbered list  
@@ -197,7 +196,7 @@ output will be the same as above.
 > ## CHALLENGE 3.4
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
-> SOLUTION:
+> ## SOLUTION:
 >> 1. scientific premise forming the basis of the proposed research 
 >> 2. rigorous experimental design for robust and unbiased results
 >> 3. consideration of sex and other relevant biologic variables
