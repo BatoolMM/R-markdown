@@ -58,10 +58,10 @@ We want to insert headings and subheadings to divide our paper into more readabl
 
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
 
-\ # MATERIALS AND METHODS
-\ ## Survey Overview
+\# MATERIALS AND METHODS
+\## Survey Overview
 
-\ ## Data Analysis
+\## Data Analysis
 
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
