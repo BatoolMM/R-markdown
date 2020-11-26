@@ -43,19 +43,19 @@ In the second paragraph of our paper, we reference a survey conducted by Springe
 
 In that same paragraph, the phrase “more robust experimental design” is in quotations. Add the quotation marks to that phrase by typing &quot; at the beginning and end of the phrase. 
 &quot;more robust experimental design&quot;
-
+<br>
 > ## Add emphasis to other words and phrases. 
 >
 > ~~~
->[1] In the second paragraph
+>1. In the second paragraph
 >Put the phrase “better statistics” in quotation marks
 >Put the phrase “better mentorship” in quotation marks 
 >When we reference the survey being published, italicize the word Nature so we can emphasize the >publisher. 
 >
->[2] In the Survey Overview section
+>2. In the Survey Overview section
 >Put the phrase “enhance the reproducibility of research findings through increased scientific rigor >and transparency.” in quotation marks
 >
->[3] In the Strategies for Improving R&R in Core Operation section
+>3. In the Strategies for Improving R&R in Core Operation section
 >Put the phrase “provide incentives to support and monitor research rigor throughout the research >life cycle” in quotation marks
 >Put the word “cultural” in quotation marks 
 >
