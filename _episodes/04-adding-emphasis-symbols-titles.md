@@ -44,18 +44,18 @@ In the second paragraph of our paper, we reference a survey conducted by Springe
 In that same paragraph, the phrase “more robust experimental design” is in quotations. Add the quotation marks to that phrase by typing &quot; at the beginning and end of the phrase. 
 &quot;more robust experimental design&quot;
 
-> ## CHALLENGE 4.1: Add emphasis to other words and phrases. 
+> ## Add emphasis to other words and phrases. 
 >
 > ~~~
->In the second paragraph
+>[1] In the second paragraph
 >Put the phrase “better statistics” in quotation marks
 >Put the phrase “better mentorship” in quotation marks 
 >When we reference the survey being published, italicize the word Nature so we can emphasize the >publisher. 
 >
->In the Survey Overview section
+>[2] In the Survey Overview section
 >Put the phrase “enhance the reproducibility of research findings through increased scientific rigor >and transparency.” in quotation marks
 >
->In the Strategies for Improving R&R in Core Operation section
+>[3] In the Strategies for Improving R&R in Core Operation section
 >Put the phrase “provide incentives to support and monitor research rigor throughout the research >life cycle” in quotation marks
 >Put the word “cultural” in quotation marks 
 >
@@ -70,6 +70,7 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 > Make text bold and  italicized with triple asterisks or triple underscores.  
 > ~~~
 {: .callout}
+
 
 ***super emphasized*** will give output super emphasized 
 ___super emphasized___ will give output super emphasized
@@ -88,11 +89,11 @@ TBD
 
 But, know that it is very intuitive.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like a = b*c, but in LaTeX you would say $ a = bc $.  Spaces generally don’t matter in LaTeX; it “understands” your formula and uses rules to determine how to display things.
 
-> ## Challenge Exercise: let’s add the following text and formula to our data analysis section: 4.2 
+> ## Add the following text and formula to our data analysis section 
 > (may change)
 >
 > ~~~
-> Exercise: let’s add the following text and formula to our data analysis section:
+> [1] Let’s add the following text and formula to our data analysis section:
 >
 > Using the sampling error formula
 >
