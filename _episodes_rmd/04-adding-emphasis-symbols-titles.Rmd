@@ -49,7 +49,6 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 <br>
 > ## Add emphasis to other words and phrases. 
 >
-> ~~~
 >1. In the second paragraph
 >Put the phrase “better statistics” in quotation marks
 >Put the phrase “better mentorship” in quotation marks 
@@ -61,20 +60,16 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 >3. In the Strategies for Improving R&R in Core Operation section
 >Put the phrase “provide incentives to support and monitor research rigor throughout the research >life cycle” in quotation marks
 >Put the word “cultural” in quotation marks 
->
-> ~~~
->
 {: .challenge}
 
 
 >## Tip: 
-> ~~~
+> 
 > you can combine emphasis styles by combining the symbols surrounding the word or phrase. 
 > Make text bold and  italicized with triple asterisks or triple underscores.  
-> ~~~
 {: .callout}
 
-
+<br><br><br><br>
 ***super emphasized*** will give output super emphasized 
 ___super emphasized___ will give output super emphasized
 
@@ -95,8 +90,7 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 > ## Add the following text and formula to our data analysis section 
 > (may change)
 >
-> ~~~
-> [1] Let’s add the following text and formula to our data analysis section:
+> 1. Let’s add the following text and formula to our data analysis section:
 >
 > Using the sampling error formula
 >
@@ -104,8 +98,6 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 > 
 > we compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample 
 > size n=243, the margin of error is +/-3%.
-> ~~~
->
 {: .challenge}
 
 Notice that RStudio previews the equation for you.  The formula uses curly braces for grouping 
