@@ -112,17 +112,19 @@ Some paragraph text between horizontal lines
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
 >
->  ## SOLUTION
+>>  ## SOLUTION
 >> ```
->> \## INTRODUCTION
->> \## MATERIALS AND METHODS
->> \## RESULTS AND DISCUSSION
->> \## CONCLUSION
->> \## REFERENCES
+>> ## INTRODUCTION
+>> ## MATERIALS AND METHODS
+>> ## RESULTS AND DISCUSSION
+>> ## CONCLUSION
+>> ## REFERENCES
 >> ```
+>> Why are we using ##? Because # should only be used once in the paper (for the title) and ## is for the next heading level.
 > {: .solution}
 {: .challenge}
 
+<br> 
 > ## CHALLENGE 3.2
 > Insert subheadings to divide our main sections into subsections. Since we already put the subheadings into the Materials and Methods section, we just need to do the Results and Discussion Section. 
 > Find the lines with:
@@ -134,13 +136,13 @@ Some paragraph text between horizontal lines
 > 
 > and add the appropriate subheading syntax.
 >
-> ## SOLUTION
+>> ## SOLUTION
 >> ```
->> \## Survey Demographics
->> \## Current Landscape for Rigor and Transparency in Represented Shared Resources
->> \## Core Implementation of Research Best Practices
->> \## Strategies for Improving R&R in Core Operation
->> \## Creating Bulleted and Numbered Lists
+>> ## Survey Demographics
+>> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> ## Core Implementation of Research Best Practices
+>> ## Strategies for Improving R&R in Core Operation
+>> ## Creating Bulleted and Numbered Lists
 >> ```
 > {: .solution}
 {: .challenge}
@@ -209,12 +211,12 @@ The above will appear as:
 > ## CHALLENGE 3.4
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
-> ## SOLUTION
+>> ## SOLUTION
 >> ```
->> \1. scientific premise forming the basis of the proposed research 
->> \2. rigorous experimental design for robust and unbiased results
->> \3. consideration of sex and other relevant biologic variables
->> \4. authentication of key biologic and chemical resources
+>> 1. scientific premise forming the basis of the proposed research 
+>> 2. rigorous experimental design for robust and unbiased results
+>> 3. consideration of sex and other relevant biologic variables
+>> 4. authentication of key biologic and chemical resources
 >> ```
 > {: .solution}
 {: .challenge}
