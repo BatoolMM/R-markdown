@@ -1,7 +1,7 @@
 ---
 title: "Markdown Syntax: Creating Headings & Lists"
-teaching: 30 min
-exercises: 10 min
+teaching: 30
+exercises: 10
 questions:
 - How to find your way around RStudio?
 - How to start an R Markdown document in Rstudio?
@@ -32,14 +32,7 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
-{% raw %}
-# Heading 1  
-## Heading 2  
-### Heading 3  
-#### Heading 4  
-##### Heading 5  
-###### Heading 6 
-{% endraw %}
+{% raw %} # Heading 1  ## Heading 2  ### Heading 3  #### Heading 4  ##### Heading 5  ###### Heading 6 {% endraw %}
 
 
 FIXME output
@@ -50,11 +43,13 @@ FIXME output
 > #### Heading 4  
 > ##### Heading 5  
 > ###### Heading 6
+{: .output}
+
 
 
 > ## Tip: Headings
 > Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. 
-> # Title NOT #Title
+> \# Title NOT #Title
 {: .callout}
 
 
@@ -65,9 +60,8 @@ We want to insert headings and subheadings to divide our paper into more readabl
 ~~~
 {: .language-r}
 
-~~~
+
 # INTRODUCTION
-~~~
 {: .output}
 
 
