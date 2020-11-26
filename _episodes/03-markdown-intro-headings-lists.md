@@ -51,9 +51,10 @@ Displays as:
 #### Heading 4  
 ##### Heading 5  
 ###### Heading 6
+<br>
 
 ***Note** this is carpentries styling for headers, they look different in R Markdown, but relative sizing and hierarcy with 1 being the largest and 6 the smallest remains the same.
-
+<br>
 > ## Tip: Headings
 > Be sure to put a space between the last `#` and the start of your heading text so R Markdown recognizes where your heading text starts: `# Title` NOT `#Title`
 {: .callout}
@@ -126,11 +127,11 @@ Some paragraph text between horizontal lines
 >
 >> ## SOLUTION
 >> ```
->> ## Survey Demographics
->> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
->> ## Core Implementation of Research Best Practices
->> ## Strategies for Improving R&R in Core Operation
->> ## Creating Bulleted and Numbered Lists
+>> ### Survey Demographics
+>> ### Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> ### Core Implementation of Research Best Practices
+>> ### Strategies for Improving R&R in Core Operation
+>> ### Creating Bulleted and Numbered Lists
 >> ```
 > {: .solution}
 {: .challenge}
@@ -142,7 +143,6 @@ Academic articles often include lists to make important findings stand out more 
 ### Unordered Bullet Lists
 
 Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  `*`, `-` or `+`:  
-<br>
 ```
 * A bullet point  
 - Also a bullet point  
