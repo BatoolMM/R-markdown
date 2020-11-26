@@ -35,14 +35,14 @@ _italics_ will give output italics
 
 Make text bold with double asterisks or double underscores.  
 
-**bold** will give output bold  
-__bold__ will give output bold  
+```**bold**``` will give output **bold**  
+```__bold__``` will give output _bold_  
 
 Put text in “quotation marks” using &quot;
 
-&quot;Here is a quote.&quot; will give output “Here is a quote.”
+```&quot;Here is a quote.&quot;``` will give output “Here is a quote.”
 
-In the second paragraph of our paper, we reference a survey conducted by Springer. We want to italicize Springer’s name. Find where we reference the survey and change Springer to Springer by putting either asterisks or underscores around the name (*Springer* or _Springer_). 
+In the second paragraph of our paper, we reference a survey conducted by Springer. We want to italicize Springer’s name. Find where we reference the survey and change Springer to Springer by putting either asterisks or underscores around the name ```(*Springer* or _Springer_)```. 
 
 In that same paragraph, the phrase “more robust experimental design” is in quotations. Add the quotation marks to that phrase by typing &quot; at the beginning and end of the phrase. 
 &quot;more robust experimental design&quot;
@@ -66,14 +66,13 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 {: .challenge}
 
 
->## Tip: 
+>## ***When you realllllly want to emphasize something***
 > 
 > you can combine emphasis styles by combining the symbols surrounding the word or phrase. 
 > Make text bold and  italicized with triple asterisks or triple underscores.  
-{: .callout} 
-
-***super emphasized*** will give output super emphasized 
-___super emphasized___ will give output super emphasized
+```***super emphasized***``` will give output ***super emphasized*** 
+```___super emphasized___``` will give output ___super emphasized___
+{: .callout}
 
 
 ## Adding Symbols and Formulas
@@ -95,7 +94,7 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 >
 > Using the sampling error formula
 >
-> $$ e = { Zp(1-p) \over \sqrt{n} } $$
+> $$e = { Zp(1-p) \over \sqrt{n} }$$
 > 
 > we compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample 
 > size n=243, the margin of error is +/-3%.
