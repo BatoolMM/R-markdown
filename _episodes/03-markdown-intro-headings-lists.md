@@ -13,7 +13,7 @@ objectives:
 - Learn how to create bulleted and numbered lists in R markdown
 
 keypoints:
-- # ## ### for headings
+- \# \## \### for headings
 - *, +, or - for bulleted lists
 - 1. 2. etc. for numbered lists
 source: Rmd
@@ -52,7 +52,11 @@ Displays as:
 > Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts: **\# Title NOT #Title**
 {: .callout}
 
+> ## Tip: Heading convention
+> Headers should not be picked based on what styling you want for your paper. There are other ways to style your paper, including pre-created themes and css stylesheets. To conform to best practices, header 1 (#) should only be used for the title. From there, for each section only use one heading level lower, for example the introduction would then be header 2 (##).
+{: .callout}
 
+<br>
 We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a large heading by adding a “# “ before the line. 
 
 ~~~
@@ -61,23 +65,23 @@ We want to insert headings and subheadings to divide our paper into more readabl
 {: .language-r}
 
 FIXME screen shot output
-> # INTRODUCTION
+> ## INTRODUCTION
 {: .output}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
 
 ~~~
-# MATERIALS AND METHODS  
-## Survey Overview  
-## Data Analysis  
+## MATERIALS AND METHODS  
+### Survey Overview  
+### Data Analysis  
 ~~~
 {: .language-r}
 
 FIXME screenshot output
-> # MATERIALS AND METHODS  
-> ## Survey Overview  
-> ## Data Analysis  
+> ## MATERIALS AND METHODS  
+> ### Survey Overview  
+> ### Data Analysis  
 {: .output}
 
 <br>
@@ -90,27 +94,22 @@ Some paragraph text between horizontal lines
 \***  
 
 FIXME screenshot output
-Output:
----  
-Some paragraph text between horizontal lines  
---- 
-
-
+Output:  
+----------   
+Some paragraph text between horizontal lines    
+----------   
 
 
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
 >
->> \# INTRODUCTION
->>
->> \# MATERIALS AND METHODS
->>
->> \# RESULTS AND DISCUSSION
->>
->> \# CONCLUSION
->>
->> \# REFERENCES
+>> \## INTRODUCTION
+>> \## MATERIALS AND METHODS
+>> \## RESULTS AND DISCUSSION
+>> \## CONCLUSION
+>> \## REFERENCES
 >
+> ## SOLUTION
 > FIXME Insert solution screenshot here
 > {: .solution}
 {: .challenge}
@@ -119,19 +118,20 @@ Some paragraph text between horizontal lines
 > Insert subheadings to divide our main sections into subsections. Since we already put the subheadings into the Materials and Methods section, we just need to do the Results and Discussion Section. 
 > Find the lines with:
 > 
-> Survey Demographics  
-> Current Landscape for Rigor and Transparency in Represented Shared Resources  
-> Core Implementation of Research Best Practices  
-> Strategies for Improving R&R in Core Operation
+> * Survey Demographics  
+> * Current Landscape for Rigor and Transparency in Represented Shared Resources  
+> * Core Implementation of Research Best Practices  
+> * Strategies for Improving R&R in Core Operation
 > 
-> and add the appropriate subheading syntax
+> and add the appropriate subheading syntax.
 >
+> ## SOLUTION
 >> FIXME insert solution screenshot here
->> ## Survey Demographics
->> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
->> ## Core Implementation of Research Best Practices
->> ## Strategies for Improving R&amp;R in Core Operation
->> ## Creating Bulleted and Numbered Lists
+>> \## Survey Demographics
+>> \## Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> \## Core Implementation of Research Best Practices
+>> \## Strategies for Improving R&R in Core Operation
+>> \## Creating Bulleted and Numbered Lists
 >>
 > {: .solution}
 {: .challenge}
@@ -140,12 +140,12 @@ Some paragraph text between horizontal lines
 
 Academic articles often include lists to make important findings stand out more or to summarize key points for readers. We will learn how to create both unordered lists with bullet points, and ordered numbered lists. 
 
-###Unordered Bullet Lists
+### Unordered Bullet Lists
 
 Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  *, - or +:  
-\* A bullet point
-\- Also a bullet point
-\+ Still a bullet point 
+\* A bullet point  
+\- Also a bullet point  
+\+ Still a bullet point   
 
 Output:
 * A bullet point
@@ -162,37 +162,39 @@ Output:
 > {: .solution}
 {: .challenge}
 
+<br>
+
 Remember: You can use + or - too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
 * A bullet point
   * Sub-level one
     * Sub-level two 
 
 Output:
-* A bullet-point
-  *Sub-level one
-    *Sub-level two
+* A bullet-point  
+  *Sub-level one  
+    *Sub-level two  
 
 ### Ordered Numbered Lists
 
 For ordered lists, you use a number with a dot, e.g: 1.  Your numbers do not need to be sequential.  Markdown will number the item in the order in which they appear rather than their numeric order.
 
-{% raw %} 1. First item in our numbered list {% endraw %}
-{% raw %} 7. Second item in our numbered list {% endraw %}
-{% raw %} 2. Third item in our numbered list {% endraw %}
+\1. First item in our numbered list   
+\7. Second item in our numbered list   
+\2. Third item in our numbered list   
 
-1. First item in our numbered list
-7. Second item in our numbered list
-2. Third item in our numbered list
+1. First item in our numbered list  
+7. Second item in our numbered list  
+2. Third item in our numbered list  
 
 > ## Tip: No ) for numbered lists
-> Note: Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the 
+> **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the 
 output will be the same as above.
 {: .callout}
 
-> ##CHALLENGE 3.4
+> ## CHALLENGE 3.4
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
-> Solution:
+> SOLUTION:
 >> 1. scientific premise forming the basis of the proposed research 
 >> 2. rigorous experimental design for robust and unbiased results
 >> 3. consideration of sex and other relevant biologic variables
