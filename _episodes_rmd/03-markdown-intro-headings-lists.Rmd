@@ -35,46 +35,55 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
+{% raw %}
+# Heading 1  
+## Heading 2  
+### Heading 3  
+#### Heading 4  
+##### Heading 5  
+###### Heading 6 
+{% endraw %}
 
-\# Heading 1  
-\## Heading 2  
-\### Heading 3  
-\#### Heading 4  
-\##### Heading 5  
-\###### Heading 6  
+
+FIXME output
+  
+> # Heading 1  
+> ## Heading 2  
+> ### Heading 3  
+> #### Heading 4  
+> ##### Heading 5  
+> ###### Heading 6
 
 
-FIXME
-Output:  
-\# Heading 1  
-\## Heading 2  
-\### Heading 3  
-\#### Heading 4  
-\##### Heading 5  
-\###### Heading 6  
-
-> ## Headings
-> Note: Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. 
+> ## Tip: Headings
+> Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. 
+> # Title NOT #Title
 {: .callout}
 
 
-We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “introduction” into a large heading by adding a “# “ before the line. 
+We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a large heading by adding a “# “ before the line. 
 
 ~~~
 # INTRODUCTION
 ~~~
-{: .source}
+{: .language-r}
+
+~~~
+# INTRODUCTION
+~~~
+{: .output}
+
 
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
 
 ~~~
 # MATERIALS AND METHODS  
 ## Survey Overview  
-
 ## Data Analysis  
 ~~~
 {: .source}
 
+<br>
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
 
@@ -83,14 +92,11 @@ If you wish to create divisions between sections, you can insert a horizontal li
 Some paragraph text between horizontal lines  
 \***  
 
+Output:
+---  
+Some paragraph text between horizontal lines  
+--- 
 
-
-FIXME output
-> ## output
-> ---  
-> Some paragraph text between horizontal lines  
-> ***  
-{: .language-rmd}
 
 
 
