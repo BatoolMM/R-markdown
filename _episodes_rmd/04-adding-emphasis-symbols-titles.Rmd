@@ -46,20 +46,23 @@ In the second paragraph of our paper, we reference a survey conducted by Springe
 
 In that same paragraph, the phrase “more robust experimental design” is in quotations. Add the quotation marks to that phrase by typing &quot; at the beginning and end of the phrase. 
 &quot;more robust experimental design&quot;
-<br>
+
 > ## Add emphasis to other words and phrases. 
 >
 >1. In the second paragraph
 >Put the phrase “better statistics” in quotation marks
 >Put the phrase “better mentorship” in quotation marks 
->When we reference the survey being published, italicize the word Nature so we can emphasize the >publisher. 
+>When we reference the survey being published, italicize the word Nature so we can emphasize the 
+ publisher. 
 >
 >2. In the Survey Overview section
->Put the phrase “enhance the reproducibility of research findings through increased scientific rigor >and transparency.” in quotation marks
+>Put the phrase “enhance the reproducibility of research findings through increased scientific rigor  and transparency.” in quotation marks
 >
 >3. In the Strategies for Improving R&R in Core Operation section
->Put the phrase “provide incentives to support and monitor research rigor throughout the research >life cycle” in quotation marks
->Put the word “cultural” in quotation marks 
+>Put the phrase “provide incentives to support and monitor research rigor throughout the research  
+ life cycle” in quotation marks
+>
+>4. Put the word “cultural” in quotation marks 
 {: .challenge}
 
 
@@ -67,12 +70,10 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 > 
 > you can combine emphasis styles by combining the symbols surrounding the word or phrase. 
 > Make text bold and  italicized with triple asterisks or triple underscores.  
-{: .callout}
+{: .callout} 
 
-<br><br><br><br>
 ***super emphasized*** will give output super emphasized 
 ___super emphasized___ will give output super emphasized
-
 
 
 ## Adding Symbols and Formulas
@@ -90,7 +91,7 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 > ## Add the following text and formula to our data analysis section 
 > (may change)
 >
-> 1. Let’s add the following text and formula to our data analysis section:
+> Let’s add the following text and formula to our data analysis section:
 >
 > Using the sampling error formula
 >
