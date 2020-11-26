@@ -67,13 +67,13 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
 
 ~~~
-\ ---
+---
 Some paragraph text between horizontal lines
-\ ***
+***
 ~~~
 {: .source}
 
-
+>
 > ---
 > Some paragraph text between horizontal lines
 > 
