@@ -3,18 +3,19 @@ title: "Markdown Syntax: Creating Headings & Lists"
 teaching: 30
 exercises: 10
 questions:
-- How to find your way around RStudio?
-- How to start an R Markdown document in Rstudio?
-- How is an R markdown document configured?
+- How does markdown in R compare to markdown in other programs?
+- How to create headings and sub-headings in R markdown?
+- How to create bulleted and numbered lists in R markdown?
 
 objectives:
-- Key Functions on Rstudio 
-- Learn how to start an R markdown document 
-- Understand the anatomy of an R Markdown file
+- Understand how R markdown relates to the markdown universe 
+- Learn how to create headings and sub-headings in R markdown
+- Learn how to create bulleted and numbered lists in R markdown
 
 keypoints:
-- FIXME
-- FIXME
+- # ## ### for headings
+- *, +, or - for bulleted lists
+- 1. 2. etc. for numbered lists
 source: Rmd
 ---
 
@@ -34,22 +35,21 @@ Most papers or articles need headings and subheadings to distinguish different p
 
 {% raw %} # Heading 1 <br> ## Heading 2 <br> ### Heading 3 <br> #### Heading 4 <br> ##### Heading 5 <br> ###### Heading 6 {% endraw %}
 
-
-FIXME output
+FIXME? Screenshot so it's consistent with Rmd output?
+Displays as: 
   
-> # Heading 1  
-> ## Heading 2  
-> ### Heading 3  
-> #### Heading 4  
-> ##### Heading 5  
-> ###### Heading 6
-{: .output}
+# Heading 1  
+## Heading 2  
+### Heading 3  
+#### Heading 4  
+##### Heading 5  
+###### Heading 6
 
+*Note this is carpentries styling for headers, they look different in R Markdown, but relative sizing and hierarcy with 1 being the largest and 6 the smallest remains the same.
 
 
 > ## Tip: Headings
-> Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. <br>  
-> **\# Title NOT #Title**
+> Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts: **\# Title NOT #Title**
 {: .callout}
 
 
@@ -60,7 +60,7 @@ We want to insert headings and subheadings to divide our paper into more readabl
 ~~~
 {: .language-r}
 
-
+FIXME screen shot output
 > # INTRODUCTION
 {: .output}
 
@@ -72,9 +72,9 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 ## Survey Overview  
 ## Data Analysis  
 ~~~
-{: .source}
+{: .language-r}
 
-
+FIXME screenshot output
 > # MATERIALS AND METHODS  
 > ## Survey Overview  
 > ## Data Analysis  
@@ -89,6 +89,7 @@ If you wish to create divisions between sections, you can insert a horizontal li
 Some paragraph text between horizontal lines  
 \***  
 
+FIXME screenshot output
 Output:
 ---  
 Some paragraph text between horizontal lines  
@@ -109,6 +110,8 @@ Some paragraph text between horizontal lines
 >> \# CONCLUSION
 >>
 >> \# REFERENCES
+>
+> FIXME Insert solution screenshot here
 > {: .solution}
 {: .challenge}
 
@@ -119,66 +122,82 @@ Some paragraph text between horizontal lines
 > Survey Demographics  
 > Current Landscape for Rigor and Transparency in Represented Shared Resources  
 > Core Implementation of Research Best Practices  
-> Strategies for Improving R&R in Core Operation  
+> Strategies for Improving R&R in Core Operation
+> 
+> and add the appropriate subheading syntax
+>
+>> FIXME insert solution screenshot here
+>> ## Survey Demographics
+>> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> ## Core Implementation of Research Best Practices
+>> ## Strategies for Improving R&amp;R in Core Operation
+>> ## Creating Bulleted and Numbered Lists
+>>
+> {: .solution}
 {: .challenge}
 
-FIXME output
-## Survey Demographics
-
-## Current Landscape for Rigor and Transparency in Represented Shared Resources
-
-## Core Implementation of Research Best Practices
-
-## Strategies for Improving R&amp;R in Core Operation
-
-## Creating Bulleted and Numbered Lists
+## Bulleted & Numbered Lists
 
 Academic articles often include lists to make important findings stand out more or to summarize key points for readers. We will learn how to create both unordered lists with bullet points, and ordered numbered lists. 
-Unordered Bullet Lists
+
+###Unordered Bullet Lists
 
 Creating unordered lists is relatively simple. For unordered lists, you can use: asterix, dash or plus characters  *, - or +:  
+\* A bullet point
+\- Also a bullet point
+\+ Still a bullet point 
+
+Output:
 * A bullet point
 - Also a bullet point
-+ Still a bullet point  
-Output:
-A bullet point
-Also a bullet point
-Still a bullet point
++ Still a bullet point
 
-CHALLENGE 3.3
-Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
-Answer:
-* At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
-* The incorporation of an instrumentation management plan, was not as highly utilized (56%).
-* Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
-Remember: You can use + or - too.
-You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
+> ## CHALLENGE 3.3
+>Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
+>
+>> ## SOLUTION
+>> At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
+>> * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
+>> * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
+> {: .solution}
+{: .challenge}
+
+Remember: You can use + or - too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
 * A bullet point
   * Sub-level one
     * Sub-level two 
 
-
 Output:
-A bullet-point
-Sub-level one
-Sub-level two
-Ordered Numbered Lists
+* A bullet-point
+  *Sub-level one
+    *Sub-level two
+
+### Ordered Numbered Lists
+
 For ordered lists, you use a number with a dot, e.g: 1.  Your numbers do not need to be sequential.  Markdown will number the item in the order in which they appear rather than their numeric order.
+
+{% raw %} 1. First item in our numbered list {% endraw %}
+{% raw %} 7. Second item in our numbered list {% endraw %}
+{% raw %} 2. Third item in our numbered list {% endraw %}
+
 1. First item in our numbered list
 7. Second item in our numbered list
 2. Third item in our numbered list
 
-First item in our numbered list
-Second item in our numbered list
-Third item in our numbered list
-Note: Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
+> ## Tip: No ) for numbered lists
+> Note: Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the 
+output will be the same as above.
+{: .callout}
 
-CHALLENGE 3.4
-Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
-Answer:
-1. scientific premise forming the basis of the proposed research 
-2. rigorous experimental design for robust and unbiased results
-3. consideration of sex and other relevant biologic variables
-4. authentication of key biologic and chemical resources
+> ##CHALLENGE 3.4
+> Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
+>
+> Solution:
+>> 1. scientific premise forming the basis of the proposed research 
+>> 2. rigorous experimental design for robust and unbiased results
+>> 3. consideration of sex and other relevant biologic variables
+>> 4. authentication of key biologic and chemical resources
+> {: .solution}
+{: .challenge}
 
 If needed, you can also combine sub-levels numbers or even combine bullets and numbered items in the same list, by indenting different levels. 
