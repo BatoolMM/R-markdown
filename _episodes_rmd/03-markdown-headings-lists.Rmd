@@ -70,9 +70,9 @@ Displays as:
 We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a large heading by adding a “# “ before the line. 
 
 ~~~
-`# INTRODUCTION`
+# INTRODUCTION
 ~~~
-{: .language-r}
+{: .source}
 
 FIXME screen shot output
 > ## INTRODUCTION
@@ -82,13 +82,11 @@ FIXME screen shot output
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
 
 ~~~
-```
 ## MATERIALS AND METHODS  
 ### Survey Overview  
 ### Data Analysis  
-```
 ~~~
-{: .language-r}
+{: .source}
 
 FIXME screenshot output
 > ## MATERIALS AND METHODS  <br>  
