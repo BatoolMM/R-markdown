@@ -177,9 +177,9 @@ Output:
 
 For ordered lists, you use a number with a dot, e.g: 1.  Your numbers do not need to be sequential.  Markdown will number the item in the order in which they appear rather than their numeric order.
 
-{% raw $}1.{% endraw %} First item in our numbered list   
-{% raw $}7.{% endraw %} Second item in our numbered list   
-{% raw $}2.{% endraw %} Third item in our numbered list   
+1. First item in our numbered list   
+7. Second item in our numbered list   
+2. Third item in our numbered list   
 
 1. First item in our numbered list  
 7. Second item in our numbered list  
