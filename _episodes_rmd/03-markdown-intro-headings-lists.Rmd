@@ -13,9 +13,9 @@ objectives:
 - Learn how to create bulleted and numbered lists in R markdown
 
 keypoints:
-- Heading syntax (#, ##, ###, etc.)
-- Bulleted lists (*, +, or -)
-- Numbered lists (1. 2. etc.)
+- Heading syntax 
+- Bulleted lists 
+- Numbered lists 
 source: Rmd
 ---
 ```{r, include=FALSE}
