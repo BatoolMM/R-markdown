@@ -14,8 +14,8 @@ objectives:
 
 keypoints:
 - Heading syntax (#, ##, ###, etc.)
-- *, +, or - for bulleted lists
-- 1. 2. etc. for numbered lists
+- Bulleted lists (*, +, or -)
+- Numbered lists (1. 2. etc.)
 source: Rmd
 ---
 
