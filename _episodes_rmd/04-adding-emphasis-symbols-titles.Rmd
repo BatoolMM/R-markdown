@@ -63,13 +63,14 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 >Put the word “cultural” in quotation marks 
 >
 > ~~~
-> {: .language-r}
 >
 {: .challenge}
 
+
 >## Tip: 
 > ~~~
-> you can combine emphasis styles by combining the symbols surrounding the word or phrase. Make text bold and  italicized with triple asterisks or triple underscores.  
+> you can combine emphasis styles by combining the symbols surrounding the word or phrase. 
+> Make text bold and  italicized with triple asterisks or triple underscores.  
 > ~~~
 {: .callout}
 
@@ -78,7 +79,7 @@ ___super emphasized___ will give output super emphasized
 
 
 
- ## Adding Symbols and Formulas
+## Adding Symbols and Formulas
 
 LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (equations, formulas) is better than anything else out there.
 
@@ -90,7 +91,8 @@ TBD
 
 But, know that it is very intuitive.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like a = b*c, but in LaTeX you would say $ a = bc $.  Spaces generally don’t matter in LaTeX; it “understands” your formula and uses rules to determine how to display things.
 
-> ## CHALLENGE 4.2 (may change)
+> ## Challenge Exercise: let’s add the following text and formula to our data analysis section: 4.2 
+> (may change)
 >
 > ~~~
 > Exercise: let’s add the following text and formula to our data analysis section:
@@ -101,7 +103,6 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 > 
 > we compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample 
 > size n=243, the margin of error is +/-3%.
->
 > ~~~
 >
 {: .challenge}
