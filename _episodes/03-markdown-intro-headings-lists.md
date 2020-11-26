@@ -32,7 +32,7 @@ R Markdown syntax is relatively simple and there are a number of tutorials and c
 
 Most papers or articles need headings and subheadings to distinguish different parts of the paper. We can insert headings and subheadings in R Markdown using the pound sign (#). There are six heading/subheading sizes in R Markdown. The number of pound signs before your line of text determines the heading size, 1 being the largest heading and 6 being the smallest. 
 
-{% raw %} # Heading 1  ## Heading 2  ### Heading 3  #### Heading 4  ##### Heading 5  ###### Heading 6 {% endraw %}
+{% raw %} # Heading 1 <br> ## Heading 2 <br> ### Heading 3 <br> #### Heading 4 <br> ##### Heading 5 <br> ###### Heading 6 {% endraw %}
 
 
 FIXME output
@@ -48,8 +48,8 @@ FIXME output
 
 
 > ## Tip: Headings
-> Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. 
-> \# Title NOT #Title
+> Be sure to put a space between the last # and the start of your heading text so R Markdown recognizes where your heading text starts. <br>  
+> **\# Title NOT #Title**
 {: .callout}
 
 
@@ -61,10 +61,10 @@ We want to insert headings and subheadings to divide our paper into more readabl
 {: .language-r}
 
 
-# INTRODUCTION
+> # INTRODUCTION
 {: .output}
 
-
+<br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
 
 ~~~
@@ -74,12 +74,18 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 ~~~
 {: .source}
 
+
+> # MATERIALS AND METHODS  
+> ## Survey Overview  
+> ## Data Analysis  
+{: .output}
+
 <br>
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
 
 
-\---  
+\-\-\-  
 Some paragraph text between horizontal lines  
 \***  
 
