@@ -52,20 +52,17 @@ The image you just added looks a little too big, right? We can resize it by adju
 > > ##Solution:
 > >
 > >
-> > ~~~
 > > ![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared 
 > >resources](figs/fig2_paper.jpg){width=50% height=50%}
 > >
 > > ![FIGURE 3 - Types of tools that cores would like to implement in their 
 > > operations.](figs/fig3_paper.jpg){width=60% height=80%}
-> > ~~~
-> >{: .output}
 > {: .solution}
 {: .challenge}
 
 #### Aligning Images 
 
-Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we use HTML syntax using the "<center>" tag.
+Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we use HTML syntax using the '<center>' tag.
 
 <center>
 ![FIGURE 3 - Types of tools that cores would like to implement in their operations.](figs/fig3_paper.jpg){width=60% height=80%}
