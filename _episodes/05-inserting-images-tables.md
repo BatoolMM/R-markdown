@@ -17,7 +17,7 @@ source: Rmd
 ---
 
 
-##Inserting Images
+## Inserting Images
 
 You can add images to an R Markdown report using markdown syntax as follows:
 ![Image Name](path-to-image-here)
@@ -76,7 +76,8 @@ Similar to text all images are aligned to the left by default in Rmarkdown. If w
   apply a more general code chunk that will be covered later on, in the Knitr syntax.
 {: .callout}
 
-##Inserting Tables
+## Inserting Tables
+
 We can also use markdown syntax to insert a formatted table into our document. The basic syntax to insert a table looks like this.
 
 Column Header | Column Header
