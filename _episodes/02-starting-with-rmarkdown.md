@@ -268,15 +268,15 @@ Formatted text is one of the benefits added above and beyond the capabilities of
 > Can you deduce what each of the three (above) symbols do for formatting?
 >[FIXME insert screenshot of formatted text section]
 >> ## SOLUTION
->> ## is a heading, ** is to bold, and <> is for hyperlinks. 
+>> `##` is a heading, `**` is to bold enclosed text, and `<>` is for hyperlinks. 
 >> Don't worry about this too much right now! This is an example of R markdown syntax for styling, we'll dive into this next.
 >{: .solution}
 {: .challenge}
 
 ### Code Chunks: 
-R code chunks surrounded by ```s
-Highlighted in gray
-This is the R code, if you’ve already written an r script you can copy and paste your code between the ``` ``` to output whichever pieces you want at that particular spot in the document
+- R code chunks surrounded by \```s
+- Highlighted in gray
+This is the section you add R code, if you’ve already written an R script you can copy and paste your code between the \``` \``` lines to output whichever pieces you want at that particular spot in the document
 
 [FIXME insert screenshot of code chunks]
 
