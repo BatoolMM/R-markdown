@@ -81,13 +81,6 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 ~~~
 {: .source}
 
-~~~
-> # MATERIALS AND METHODS
-> ## Survey Overview
-> ## Data Analysis
-~~~
-{: .output}
-
 <br>
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
@@ -106,7 +99,13 @@ Some paragraph text between horizontal lines
 
 
 > ## CHALLENGE 3.1
-> Insert headings throughout the rest of the paper so it is split into 5 sections (Introduction, Materials and Methods, Results and Discussion, Conclusion, and References). Use the search function in R Markdown to find these lines in the document. 
+> Insert headings throughout the rest of the paper so it is split into 5 sections: 
+> * Introduction
+> * Materials and Methods
+> * Results and Discussion
+> * Conclusion
+> * References 
+> Use the search function in R Markdown to find these lines in the document. 
 >
 >> ## SOLUTION
 >> ```
@@ -174,7 +173,7 @@ Outputs as:
 
 <br>
 
-Remember: You can use `+` or `-` too. You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
+You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces (Remember: You can use `+` or `-` too):
 ```
 * A bullet point  
   * Sub-level one  
