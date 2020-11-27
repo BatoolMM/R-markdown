@@ -104,8 +104,9 @@ Some paragraph text between horizontal lines
 > * Materials and Methods
 > * Results and Discussion
 > * Conclusion
-> * References 
-> Use the search function in R Markdown to find these lines in the document. 
+> * References  
+> Think carefully about which heading level you should use.
+> *Use the search function in R Markdown `ctrl-f` or `cmd-f` to find these lines in the document quickly.
 >
 >> ## SOLUTION
 >> ```
@@ -168,12 +169,13 @@ Outputs as:
 >> * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
 >> * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
 >> ```
+>> Remember: You can use `+` or `-` too.
 > {: .solution}
 {: .challenge}
 
 <br>
 
-You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces (Remember: You can use `+` or `-` too):
+You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
 ```
 * A bullet point  
   * Sub-level one  
@@ -200,6 +202,7 @@ The above will appear as:
 
 > ## Tip: No ) for numbered lists
 > **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
+> i.e. `1)` outputs as `1.`.
 {: .callout}
 
 > ## CHALLENGE 3.4

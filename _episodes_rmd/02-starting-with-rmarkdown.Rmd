@@ -98,11 +98,15 @@ allowing you to open multiple projects at the same time each open to its own
 project directory. This allows you to keep multiple projects open without them
 interfering with each other.
 
-> ## Exercise 1: Opening an RStudio project through the file system
+> ## CHALLENGE 2.1: Opening an RStudio project through the file system
 >
 > 1. Exit RStudio.
 > 2. Navigate to the directory where you downloaded & unzipped the zip folder for this workshop
 > 3. Double click on the `.Rproj` file in that directory.
+> 
+>> ## SOLUTION
+>> FIXME add screen shot of proj file with folders in zip
+> {: .solution}
 {: .challenge}
 
 #### Best practices for project organization
@@ -193,11 +197,11 @@ Packages can be installed and updated from the Package tab with the Install and 
 
 FIXME: change Challenge  packages 
 
-> ## Challenge 1
+> ## CHALLENGE 2.2
 >
 > Install the following packages: `bookdown`, `tidyverse`, `kable`
 >
-> > ## Solution to challenge 5
+> > ## SOLUTION
 > >
 > > We can use the `install.packages()` command to install the required packages.
 > > ```{r ch5-sol, eval=FALSE}
@@ -257,15 +261,24 @@ We’ll see other formatting options for YAML later on including how to …
 
 ### Formatted text: 
 - Text mixed with simple text formatting
-Formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Notice you don’t need to encase the text in any symbols as you do code chunks. Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >
+Formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Notice you don’t need to encase the text in any symbols as you do code chunks. Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
 
-CHALLENGE 2.1 : can you deduce what each of the three (above) symbols do for formatting?
-[FIXME insert screenshot of formatted text section]
-Code Chunks: R code chunks surrounded by ```s
+> ## CHALLENGE 2.3
+> Can you deduce what each of the three (above) symbols do for formatting?
+>[FIXME insert screenshot of formatted text section]
+>> ## SOLUTION
+>> ## is a heading, ** is to bold, and <> is for hyperlinks. 
+>> Don't worry about this too much right now! This is an example of R markdown syntax for styling, we'll dive into this next.
+>{: .solution}
+{: .challenge}
+
+### Code Chunks: 
+R code chunks surrounded by ```s
 Highlighted in gray
 This is the R code, if you’ve already written an r script you can copy and paste your code between the ``` ``` to output whichever pieces you want at that particular spot in the document
 
 [FIXME insert screenshot of code chunks]
+
  
 ### Starting our paper
 Ok, now let’s start on our own document…We will start our own document by deleting everything except the yaml header and first code chunk, but FIRST we’re going to pause and see what the Rmarkdown does when it’s rendered into the final html document we indicated the output to be -  this will be a little preview of what’s to come tomorrow (later) in the 4th(?) episode. 
