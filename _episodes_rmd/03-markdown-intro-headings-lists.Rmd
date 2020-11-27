@@ -84,6 +84,13 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 ~~~
 {: .source}
 
+~~~
+> # MATERIALS AND METHODS
+> ## Survey Overview
+> ## Data Analysis
+~~~
+{: .output}
+
 <br>
 
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
