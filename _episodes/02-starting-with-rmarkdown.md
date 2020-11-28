@@ -304,7 +304,9 @@ Do this on your own in your new rmd file:
 
 1) Delete EVERYTHING except the yaml header   
 
-2) Edit the yaml header to add the `title` of the paper we're working on and to add yourself as `author`. This should look like the following:  
+2) Edit the yaml header to add the `title` of the paper we're working on and to add yourself as `author`. 
+
+~~~
 ```
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
@@ -314,11 +316,23 @@ output:
   html_document
 ---
 ```
+~~~
+{: .source}
 
-3) Navigate to the `docs` folder and open `rawtext.txt FIXME`. Copy all the text with either `ctrl-a` or `cmd-a` and paste AFTER the yaml header in our rmd file.  
+3) Navigate to the `docs` folder and open `rawtext.txt FIXME`. Copy all the text with either `ctrl-a` or `cmd-a` and paste AFTER the yaml header in our rmd file.
+~~~
+```
+.....
+output:
+  html_document
+---
+Introduction .....
+```
+~~~
+{: .source}
 
 Your file should now look something like this:   
 FIXME add screenshot  
 
-Now we’ll be set for our next episode which is about adding Markdown syntax to style your text chunks (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
+Now we’ll be set for our next episode which is about adding Markdown syntax to style your text sections (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
 
