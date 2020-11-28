@@ -249,6 +249,8 @@ Notice that the default file contains three types of content:
 - YAML header (optional)
 - Formatted text: 
 - Code Chunks: 
+
+![R Markdown Workflow](../fig/02-rmd-workflow.png)
  
 Let’s dig in to those more:
 
@@ -256,17 +258,47 @@ Let’s dig in to those more:
 - An (optional) YAML header surrounded by ---s
 What is YAML anyway? ** FIXME ** add more explanation
 Title, author, date, output
+
+FIXME add basic yaml screenshot
+
 We’ll see other formatting options for YAML later on including how to …
-[FIXME insert screen shot of YAML header]
+
+```
+---
+title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
+author: UCSB Carpentry
+date: "December 15, 2020"
+output:
+  html_document:
+    number_sections: true
+bibliography: ../docs/bibliography.bibtex
+csl: ../bin/apa-5th-edition.csl
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../results';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
+---
+```
 
 
 ### Formatted text: 
 - Text mixed with simple text formatting
 Formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Notice you don’t need to encase the text in any symbols as you do code chunks. Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
 
+FIXME add screen shot text chunk
+![Rmd text chunk](../fig/02-rmd-new-template.PNG)
+
 > ## CHALLENGE 2.3 (optional)
-> Can you deduce what each of the three (above) symbols do for formatting?
->[FIXME insert screenshot of formatted text section]
+> Can you deduce what each of the three types of symbols (`##`, `**`, `<>`) do for formatting?
+>```
+>## R Markdown
+>
+>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+>
+>When you click the **Knit** button a document will be generated that includes both content as well as the >output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+>```
+>
 >> ## SOLUTION
 >> `##` is a heading, `**` is to bold enclosed text, and `<>` is for hyperlinks. 
 >> Don't worry about this too much right now! This is an example of R markdown syntax for styling, we'll dive into this next.
@@ -306,32 +338,30 @@ Do this on your own in your new rmd file:
 2) Edit the yaml header to add the `title` of the paper we're working on and to add yourself as `author`. 
 
 ~~~
-```
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
 author: [Add Your Name Here]
 date: "December 16, 2020"
-output:
-  html_document
+output: html_document
 ---
-```
 ~~~
 {: .source}
 
 3) Navigate to the `docs` folder and open `rawtext.txt FIXME`. Copy all the text with either `ctrl-a` or `cmd-a` and paste AFTER the yaml header in our rmd file.
 ~~~
-```
-.....
+...
 output:
   html_document
 ---
-Introduction .....
-```
+An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility
+1 INTRODUCTION
+Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges .....
+...
 ~~~
 {: .source}
 
 Your file should now look something like this:   
-FIXME add screenshot  
+![Rmd file with raw text](../fig/02-rmd-rawtxt.PNG) 
 
 Now we’ll be set for our next episode which is about adding Markdown syntax to style your text sections (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
 
