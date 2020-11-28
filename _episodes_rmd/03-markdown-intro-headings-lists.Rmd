@@ -63,7 +63,7 @@ Displays as:
 {: .callout}
 
 > ## Tip: Heading convention
-> Headers should not be picked based on what styling you want for your paper. There are other ways to style your paper, including pre-created themes and css stylesheets. To conform to best practices, header 1 `#` should only be used for the title. From there, for each section only use one heading level lower, for example the introduction would then be header 2 `##`.
+> Normally, to conform to best practices, header 1 `#` should only be used for the title. From there, for each heading level you only use one heading level lower, for example the introduction would then be header 2 `##`. HOWEVER, because an R Markdown document defines the title within the YAML header, you should use header 1 for the next highest header level after the title, (Introduction, Conclusion, etc.). For best practices across the board, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.
 {: .callout}
 
 <br>
@@ -75,12 +75,12 @@ We want to insert headings and subheadings to divide our paper into more readabl
 {: .source}
 
 <br>
-Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into a large heading and the lines that say “Survey Overview” and “Data Analysis” into subheadings. 
+Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into heading 1 and the lines that say “Survey Overview” and “Data Analysis” into heading 2 for subheadings. 
 
 ~~~
-## MATERIALS AND METHODS  
-### Survey Overview  
-### Data Analysis  
+# MATERIALS AND METHODS  
+## Survey Overview  
+## Data Analysis  
 ~~~
 {: .source}
 
@@ -96,10 +96,13 @@ Some paragraph text between horizontal lines
 
 FIXME screenshot output because it's not working in github markdown
 Output:  
-----------   
+<br>
+---  
+<br>
 Some paragraph text between horizontal lines    
-----------   
-
+<br>
+---
+<br>
 
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections: 
@@ -108,18 +111,17 @@ Some paragraph text between horizontal lines
 > * Results and Discussion
 > * Conclusion
 > * References  
-> Think carefully about which heading level you should use.
+> Think carefully about which heading level you should use for consistency throughout your paper.
 > *Use the search function in R Markdown `ctrl-f` or `cmd-f` to find these lines in the document quickly.
 >
 >> ## SOLUTION
 >> ```
->> ## INTRODUCTION
->> ## MATERIALS AND METHODS
->> ## RESULTS AND DISCUSSION
->> ## CONCLUSION
->> ## REFERENCES
+>> # INTRODUCTION
+>> # MATERIALS AND METHODS
+>> # RESULTS AND DISCUSSION
+>> # CONCLUSION
+>> # REFERENCES
 >> ```
->> Why are we using `##`? Because `#` should only be used once in the paper (for the title) and `##` is for the next heading level.
 > {: .solution}
 {: .challenge}
 
@@ -137,11 +139,11 @@ Some paragraph text between horizontal lines
 >
 >> ## SOLUTION
 >> ```
->> ### Survey Demographics
->> ### Current Landscape for Rigor and Transparency in Represented Shared Resources
->> ### Core Implementation of Research Best Practices
->> ### Strategies for Improving R&R in Core Operation
->> ### Creating Bulleted and Numbered Lists
+>> ## Survey Demographics
+>> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
+>> ## Core Implementation of Research Best Practices
+>> ## Strategies for Improving R&R in Core Operation
+>> ## Creating Bulleted and Numbered Lists
 >> ```
 > {: .solution}
 {: .challenge}
