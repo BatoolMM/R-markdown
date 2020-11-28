@@ -91,13 +91,11 @@ Some paragraph text between horizontal lines
 ***  
 ```
 
-FIXME screenshot output because it's not working in github markdown
-Output:  
-<br>
----  
-<br>
-Some paragraph text between horizontal lines    
-<br>
+FIXME screenshot output because it's not working in github markdown\
+Output:    
+
+---
+Some paragraph text between horizontal lines\
 ---
 <br>
 
@@ -107,7 +105,8 @@ Some paragraph text between horizontal lines
 > * Materials and Methods
 > * Results and Discussion
 > * Conclusion
-> * References  
+> * References 
+>
 > Think carefully about which heading level you should use for consistency throughout your paper.
 > *Use the search function in R Markdown `ctrl-f` or `cmd-f` to find these lines in the document quickly.
 >
