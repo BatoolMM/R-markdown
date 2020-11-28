@@ -247,7 +247,7 @@ Now we’ll get into how the Rmarkdown file is organized and then on to editing 
  
 R Markdown has four distinct steps in the workflow:
 1. create a **YAML header** (optional)
-2. write **text** formatted with R Markdown 
+2. write R Markdown-formatted **text** 
 3. add R **code chunks** for embedded analysis
 4. render the document with **Knitr**
 
@@ -257,7 +257,7 @@ Let’s dig in to those more:
 
 ### YAML header: 
 #### What is YAML anyway? 
-YAML, pronounced "Yeah-mul" stands for "YAML Ain't Markup Language". YAML is a human-readable [data-serialization](https://en.wikipedia.org/wiki/Serialization) language>.  YAML has no executable commands though it is compatible with all programming languages or basically any application that deals with storing or transmiting data. YAML itself is made up of bits of many languages including Perl, MIME, C, & HTML. YAML is a superset of JSON. When used as a stand-alone file the file ending is .yml. 
+YAML, pronounced "Yeah-mul" stands for "YAML Ain't Markup Language". YAML is a human-readable [data-serialization](https://en.wikipedia.org/wiki/Serialization) language.  YAML has no executable commands though it is compatible with all programming languages or basically any application that deals with storing or transmiting data. YAML itself is made up of bits of many languages including Perl, MIME, C, & HTML. YAML is a superset of JSON. When used as a stand-alone file the file ending is .yml. 
 <br>
 
 R Markdown's default YAML header includes the following metadata surrounded by ---s:
@@ -322,7 +322,7 @@ This is the section you add R code, if you’ve already written an R script you 
 
 [FIXME insert screenshot of code chunks]
 
-#### Knitting
+### Knitting:
 This is called Knitting and the button looks like a spool of yarn with a knitting needle. Clicking the knit button will output the type of file indicated in your yaml header. In our case it’s html but the other options we saw were word and pdf. One nice thing about the knit button is that it saves the .Rmd document each time you run it.
 [FIXME insert spool icon]
 
