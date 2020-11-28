@@ -297,19 +297,27 @@ How the document looks when you knit with echo=TRUE:
 {: .challenge}
 
 ### Starting our paper
-Ok, now let’s start on our own rmd document… 
+Ok, now let’s start on our own rmd document.   
 
-Do this on your own with your new rmd file:
+Do this on your own in your new rmd file:  
 
-1) Delete everything except the yaml header 
+1) Delete EVERYTHING except the yaml header   
 
-2) Edit the yaml header to add ... FIXME
+2) Edit the yaml header to add the `title` of the paper we're working on and to add yourself as `author`. This should look like the following:  
+```
+---
+title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
+author: [Add Your Name Here]
+date: "December 16, 2020"
+output:
+  html_document
+---
+```
 
-3) Copy all the text from the `rawtext.txt FIXME`found in the `docs` folder (`ctrl-a` or `cmd-a`) and paste after the yaml header in our rmd file.
-*Obviously this isn't the same process as writing a paper, but we're not going to force you to write the narrative in this workshop, we assume you have plenty of writing to do on your own time.
+3) Navigate to the `docs` folder and open `rawtext.txt FIXME`. Copy all the text with either `ctrl-a` or `cmd-a` and paste AFTER the yaml header in our rmd file.  
 
-Your file should now look something like this: 
-FIXME add screenshot
+Your file should now look something like this:   
+FIXME add screenshot  
 
 Now we’ll be set for our next episode which is about adding Markdown syntax to style your text chunks (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
 
