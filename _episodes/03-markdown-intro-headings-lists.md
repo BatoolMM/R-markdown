@@ -83,18 +83,21 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .source}
 
 <br>
-If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
+If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes, asterix, or underlines (`---`, `***`, or `___`):
 
 ```
+
 ---  
-Some paragraph text   
+
+See some paragraph text   
 between horizontal lines---  
-Now you know markdown
-***  
+Now you know markdown  
+
+***    
+
 ```
 
-FIXME screenshot output because it's not working in github markdown\
-Output:    
+The above renders as:    
 
 ---
 
@@ -104,7 +107,11 @@ Now you know markdown
 
 ---  
 
-** Note ** Again, this is the github styling for horizontal lines, they look different rendered in r markdown
+***Note** again that displayed here is the github styling for horizontal lines, they look different rendered in r markdown
+
+> ## Tip: leave blank line before & after horizontal lines
+> Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
+{: .callout}
 
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections: 
