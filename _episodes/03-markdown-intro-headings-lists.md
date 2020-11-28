@@ -87,7 +87,9 @@ If you wish to create divisions between sections, you can insert a horizontal li
 
 ```
 ---  
-Some paragraph text between horizontal lines  
+Some paragraph text   
+between horizontal lines  
+Now you know markdown
 ***  
 ```
 
@@ -95,8 +97,10 @@ FIXME screenshot output because it's not working in github markdown\
 Output:    
 
 ---
-Some paragraph text between horizontal lines\
----
+See some paragraph text  
+between horizontal lines
+Now you know markdown  
+---  
 ** Note ** Again, this is the github styling for horizontal lines, they look different rendered in r markdown
 
 > ## CHALLENGE 3.1
