@@ -54,10 +54,11 @@ Displays as:
 #### Heading 4  
 ##### Heading 5  
 ###### Heading 6
+
+<br>
+***Note** this is github's markdown "flavor" for headers, they look different in R Markdown.However, relative sizing and hierarchy with 1 being the largest and 6 the smallest remains the same.
 <br>
 
-***Note** this is carpentries styling for headers, they look different in R Markdown, but relative sizing and hierarcy with 1 being the largest and 6 the smallest remains the same.
-<br>
 > ## Tip: Headings
 > Be sure to put a space between the last `#` and the start of your heading text so R Markdown recognizes where your heading text starts: `# Title` NOT `#Title`
 {: .callout}
@@ -85,7 +86,6 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .source}
 
 <br>
-
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes or asterix:
 
 ```
@@ -100,7 +100,7 @@ Output:
 ---
 Some paragraph text between horizontal lines\
 ---
-<br>
+** Note ** Again, this is the github styling for horizontal lines, they look different rendered in r markdown
 
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections: 
