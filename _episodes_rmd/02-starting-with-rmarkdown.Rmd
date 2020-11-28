@@ -98,7 +98,8 @@ allowing you to open multiple projects at the same time each open to its own
 project directory. This allows you to keep multiple projects open without them
 interfering with each other.
 
-> ## CHALLENGE 2.1: Opening an RStudio project through the file system
+> ## CHALLENGE 2.1  
+> Open an RStudio project through the file system
 >
 > 1. Exit RStudio.
 > 2. Navigate to the directory where you downloaded & unzipped the zip folder for this workshop
@@ -263,7 +264,7 @@ We’ll see other formatting options for YAML later on including how to …
 - Text mixed with simple text formatting
 Formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Notice you don’t need to encase the text in any symbols as you do code chunks. Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
 
-> ## CHALLENGE 2.3
+> ## CHALLENGE 2.3 (optional)
 > Can you deduce what each of the three (above) symbols do for formatting?
 >[FIXME insert screenshot of formatted text section]
 >> ## SOLUTION
@@ -279,39 +280,36 @@ This is the section you add R code, if you’ve already written an R script you 
 
 [FIXME insert screenshot of code chunks]
 
- 
-### Starting our paper
-Ok, now let’s start on our own document…We will start our own document by deleting everything except the yaml header and first code chunk, but FIRST we’re going to pause and see what the Rmarkdown does when it’s rendered into the final html document we indicated the output to be -  this will be a little preview of what’s to come tomorrow (later) in the 4th(?) episode. 
-
+#### Knitting
 This is called Knitting and the button looks like a spool of yarn with a knitting needle. Clicking the knit button will output the type of file indicated in your yaml header. In our case it’s html but the other options we saw were word and pdf. One nice thing about the knit button is that it saves the .Rmd document each time you run it.
 [FIXME insert spool icon]
 
-Pay close attention to the first code chunk that isn’t working with either of the data sets as the others are. This code chunk isn’t necessary but it defaults all of the code chunks to either display (TRUE) or not display (FALSE) the code in the final document so it can be nice to have as a starting point for your R markdown documents. 
+FIRST we’re going to pause and see what the Rmarkdown does when it’s rendered into the final html document the output is set as in the yaml - knitting periodically while we're working allows us to catch errors early. 
 
-Here, I’ll demonstrate the difference. 
-First, to view the final document click “knit” the first time you click knit it will ask that you choose a file name. That will be the default file name each time you click knit for this rmarkdown file after this first time. You can also change where it saves.
-
+This is a little preview of what's to come in the Knitr syntax episodes later on.
 ![First knit choose filename](../fig/02-knit-filename.PNG)
 
 How the document looks when you knit with echo=TRUE:
 ![Knit echo=TRUE](../fig/02-knit-echoTRUE.PNG)
 
-Now, with echo=FALSE. Can you spot the difference?
-![Knit echo=FALSE](../fig/02-knit-echoFALSE.PNG)
+> ## CHALLENGE 2.4 (optional)
+> Can you deduce what the echo=TRUE option stand for?
+{: .challenge}
 
-You’ll notice that the gray code chunk that contains summary(cars) displayed the first time when echo = TRUE, but not the second time when echo = FALSE. 
-But why didn’t the code chunk for the plot (...insert code..) not display in the first (echo=TRUE example)? That specific code chunk was set to FALSE which overrides any default setting determined at the beginning of the document. If you don’t understand this now that’s okay. We’ll be going over the code chunks and the settings for the code chunks later. For now, we just want to understand the basics of what knit button does and make sure we have the right defaults to start out.
-So for our setup - actually let’s keep/set this to echo=FALSE instead of the default TRUE in the template R Markdown document. 
+### Starting our paper
+Ok, now let’s start on our own rmd document… 
 
-CHALLENGE [FIXME]
-You can now do this on your own if you haven’t already, 1) delete everything except the yaml header and first code chunk. 2) change echo=TRUE to echo=FALSE in your first code chunk.
-Next, we’re going to copy and paste the raw text for our paper into R markdown ** Obviously this isn’t how you’d end up writing your own paper but we aren’t going to make you write a whole paper from scratch in this workshop…
+Do this on your own with your new rmd file:
 
-**(probably won’t work to paste in zoom chat because there’s a cut-off on length. Will have to walk them through opening the file and copying/pasting into rmarkdown).
+1) Delete everything except the yaml header 
 
-We’re also going to edit our yaml header. Next we’ll see how to do the text formatting and after that styling and adding the code chunks. 
+2) Edit the yaml header to add ... FIXME
 
-[FIXME add instructions for yaml header here] *at least initial. I imagine in the bibliography section we will add the .bibtex etc. 
+3) Copy all the text from the `rawtext.txt FIXME`found in the `docs` folder (`ctrl-a` or `cmd-a`) and paste after the yaml header in our rmd file.
+*Obviously this isn't the same process as writing a paper, but we're not going to force you to write the narrative in this workshop, we assume you have plenty of writing to do on your own time.
 
-Now we’ll be set for our next episode which is about adding Markdown syntax to style your text chunks (white sections)- including headers, bold, italics, citations, footnotes, links, bibliography etc. 
+Your file should now look something like this: 
+FIXME add screenshot
+
+Now we’ll be set for our next episode which is about adding Markdown syntax to style your text chunks (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
 
