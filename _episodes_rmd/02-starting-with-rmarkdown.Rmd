@@ -221,24 +221,22 @@ FIXME: change Challenge  packages
 
 Start a new R markdown document in RStudio by clicking File > New File > R Markdown…
 
-![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.PNG)
+![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.png)
 
 If this is the first time you have ever opened an R markdown file a dialog box will open up to tell you what packages need to be installed. 
 
-![First time R markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.PNG)
+![First time R markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.png)
 
-Click "Yes". The packages will take a few seconds to install. You should see that this was successful.
-
-![Install r markdown packages success](../fig/02-rmd-installpackages.PNG)
+Click "Yes". The packages will take a few seconds to install. You should see that each package was installed successfully in the dialog box.
 
 Once the package installs have completed, a dialog box will pop up and ask you to name the file and add an author name (may already know what your name is) The default output is HTML and as the wizard indicates, it is the best way to start and in your final version or later versions you have the option of changing to pdf or word document (among many other output formats! We'll see this later). 
 
-![Name new .Rmd file](../fig/02-name-new-rmd-blank.PNG)
+![Name new .Rmd file](../fig/02-name-new-rmd-blank.png)
 
 New R Markdown will always pop up with a generic template…
 
 If you see this template you're good to go.
-![.Rmd new file generic template](../fig/02-rmd-new-template.PNG)
+![.Rmd new file generic template](../fig/02-rmd-new-template.png)
 
 Now we’ll get into how our Rmarkdown file & workflow is organized and then on to editing and styling!
 
@@ -255,18 +253,18 @@ R Markdown has four distinct steps in the workflow:
  
 Let’s dig in to those more:
 
-### YAML header: 
+### 1. YAML header: 
 #### What is YAML anyway? 
 YAML, pronounced "Yeah-mul" stands for "YAML Ain't Markup Language". YAML is a human-readable [data-serialization](https://en.wikipedia.org/wiki/Serialization) language which, as its name suggests, is not a markup language. YAML has no executable commands though it is compatible with all programming languages and virtually any application that deals with storing or transmiting data. YAML itself is made up of bits of many languages including Perl, MIME, C, & HTML. YAML is also a superset of JSON. When used as a stand-alone file the file ending is .yml or .yaml. 
 <br>
 
-R Markdown's default YAML header includes the following metadata surrounded by ---s:
+R Markdown's default YAML header includes the following metadata surrounded by three dashes `---`:
 * title  
 * author  
 * date  
 * output  
 
-FIXME add basic yaml screenshot  
+![R Markdown template YAML header](../fig/02-rmd-template-yaml.png)
 
 The first three are self-explanatory, but what's the output? We saw this in the wizard for starting a new document, by default you are able to pick from pdf, html, and word document. Basically, this allows you to export your rmd file as a file type of your choice. There are [other options for output](https://bookdown.org/yihui/rmarkdown/output-formats.html) and even more can be added by installing certain packages, but these are the three default options.   
 <br> 
@@ -292,11 +290,10 @@ knit: (function(inputFile, encoding) {
 ```
 
 
-### Formatted text: 
-This one is simple, it's literally just text narrative formatted by using markdown (more on markdown syntax later) Formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Any text section will have the default white background in the rmd document. Notice you don’t need to use `#` to comment out narrative. You also don't need to encase the text in any symbols as you do code chunks.  Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
+### 2. Formatted text: 
+This one is simple, it's literally just text narrative formatted by using markdown (more on markdown syntax later). Markdown-formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Any text section will have the default white background in the rmd document. Notice you don’t need to use `#` to comment out narrative. You also don't need to encase the text in any symbols as you do code chunks.  Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
 
-FIXME add screen shot text chunk
-![Rmd text chunk](../fig/02-rmd-new-template.PNG)
+![Rmd text chunks](../fig/02-rmd-template-text.png)
 
 > ## CHALLENGE 2.3 (optional)
 > Can you deduce what each of the three types of symbols (`##`, `**`, `<>`) do for formatting?
@@ -314,13 +311,14 @@ FIXME add screen shot text chunk
 >{: .solution}
 {: .challenge}
 
-### Code Chunks: 
-R code chunks appear highlighted in gray throughout the rmd document. They are surrounded by three tick marks on either side (``` ```) with the starting three tick marks followed by curly brackets `{}`with some other code inside. The tick marks indicate the start of a code section and the bits found between the curly brackets `{}`indicate how R should read and display the code (more on this in the Knitr syntax episodes). These are the sections you add R code such as summary statistics, analysis, tables and plots. If you’ve already written an R script you can copy and paste your code between the few lines of required formatting to embed & run whichever piece you want at that particular spot in the document.
+### 3. Code Chunks: 
+R code chunks appear highlighted in gray throughout the rmd document. They are surrounded by three tick marks on either side (\``` \```) with the starting three tick marks followed by curly brackets `{}`with some other code inside. The tick marks indicate the start of a code section and the bits found between the curly brackets `{}`indicate how R should read and display the code (more on this in the Knitr syntax episodes). These are the sections you add R code such as summary statistics, analysis, tables and plots. If you’ve already written an R script you can copy and paste your code between the few lines of required formatting to embed & run whichever piece you want at that particular spot in the document.
 
-[FIXME insert screenshot of code chunks]
+![rmd template code chunks](../fig/02-rmd-template-code.png)
 
-### Rendering your Rmd document:
+### 4. Rendering your Rmd document:
 This is called "knitting"" and the button looks like a spool of yarn with a knitting needle. Clicking the knit button will compile the code, check for errors, and finally, output the type of file indicated in your yaml header. One nice thing about the knit button is that it saves the .Rmd document each time you run it. Your rmd document may not run and render as your indicated output if there are any errors in the document so it also functions somewhat as a code checker.
+<br>
 
 #### Try it yourself
 We’re going to pause here and see what the Rmarkdown does when it’s rendered. We'll just use the generic template, but when we're working on our own project, knitting periodically while we're editing allows us to catch errors early. We'll continue rendering our rmd throughout the lesson to see what happens when we add our markdown and knitr syntax and to make sure we aren't making any errors.
@@ -328,19 +326,19 @@ We’re going to pause here and see what the Rmarkdown does when it’s rendered
 This is a little preview of what's to come in the Knitr syntax episodes later on.
 Click the "knit" button
 
-FIXME insert spool icon here
+![Knit button](../fig/02-rmd-knit-button.png)
 
 Before you can render your document, you'll need to give it a file name and choose what folder you want to save it to.
-![First knit choose filename](../fig/02-knit-filename.PNG)
+![First knit choose filename](../fig/02-knit-filename.png)
 
 This is how our hmtl document will render after clicking the knit button and choosing a file name:
 ![Knit html output](../fig/02-knit-echoTRUE.PNG)
 
 > ## CHALLENGE 2.4 (optional)
-> Can you deduce what the echo=TRUE option stand for?
+> Can you deduce what the echo=TRUE option stands for?
 >
 >> ## Solution
->> the echo=TRUE piece is knitr syntax that sets a global default for the whole paper. This piece of code specifically, `echo=TRUE`, tells the rmd document to display the R code that generates the plots & analysis when the rmd document is rendered by hitting the "knit" button. 
+>> The echo=TRUE piece is knitr syntax that sets a global default for the whole paper. This piece of code specifically, `echo=TRUE`, tells the rmd document to display the R code that generates the plots & analysis when the rmd document is rendered by hitting the "knit" button. 
 >> Don't worry too much about this now, we'll learn more about this syntax in the Knitr Syntax episodes.
 > {: .solution}
 {: .challenge}
@@ -370,9 +368,8 @@ output: html_document
 output:
   html_document
 ---
-An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility
-1 INTRODUCTION
-Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges .....
+INTRODUCTION
+Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges 
 ...
 ~~~
 {: .source}
