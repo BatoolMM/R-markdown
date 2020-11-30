@@ -222,22 +222,22 @@ FIXME: change Challenge  packages
 
 Start a new R markdown document in RStudio by clicking File > New File > R Markdown…
 
-![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.png)
+![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.PNG)
 
 If this is the first time you have ever opened an R markdown file a dialog box will open up to tell you what packages need to be installed. 
 
-![First time R markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.png)
+![First time R markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.PNG)
 
 Click "Yes". The packages will take a few seconds to install. You should see that each package was installed successfully in the dialog box.
 
 Once the package installs have completed, a dialog box will pop up and ask you to name the file and add an author name (may already know what your name is) The default output is HTML and as the wizard indicates, it is the best way to start and in your final version or later versions you have the option of changing to pdf or word document (among many other output formats! We'll see this later). 
 
-![Name new .Rmd file](../fig/02-name-new-rmd-blank.png)
+![Name new .Rmd file](../fig/02-name-new-rmd-blank.PNG)
 
 New R Markdown will always pop up with a generic template…
 
 If you see this template you're good to go.
-![.Rmd new file generic template](../fig/02-rmd-new-template.png)
+![.Rmd new file generic template](../fig/02-rmd-new-template.PNG)
 
 Now we’ll get into how our Rmarkdown file & workflow is organized and then on to editing and styling!
 
@@ -330,7 +330,7 @@ Click the "knit" button
 ![Knit button](../fig/02-rmd-knit-button.png)
 
 Before you can render your document, you'll need to give it a file name and choose what folder you want to save it to.
-![First knit choose filename](../fig/02-knit-filename.png)
+![First knit choose filename](../fig/02-knit-filename.PNG)
 
 This is how our hmtl document will render after clicking the knit button and choosing a file name:
 ![Knit html output](../fig/02-knit-echoTRUE.PNG)
@@ -377,6 +377,7 @@ Reproducible research practices include rigorously controlled and documented exp
 
 Your file should now look something like this:   
 ![Rmd file with raw text](../fig/02-rmd-rawtxt.PNG) 
+FIXME fix screenshot when final raw text is determined
 
 Now we’ll be set for our next episode which is about adding Markdown syntax to style your text sections (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
 
