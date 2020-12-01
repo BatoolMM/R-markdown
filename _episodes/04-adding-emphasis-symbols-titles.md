@@ -91,7 +91,7 @@ But, know that it is very intuitive.  Put your math head on, not your programmin
 >
 > Using the sampling error formula
 >
-> ```$$ e = { Zp(1-p) \over \sqrt{n} } $$```
+> ```$$e = { Zp(1-p) \over \sqrt{n} }$$```
 > 
 > we compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample 
 > size n=243, the margin of error is +/-3%.
