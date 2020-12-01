@@ -34,7 +34,7 @@ Save it and use the knit function to check how the output looks like.
 Resizing Images 
 The image you just added looks a little too big, right? We can resize it by adjusting the width and height ratio. Let’s say we want this image to be half of the original size. In order to do that, we will have to add to the syntax: 
 
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){width=50% height=50%}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){ width=50% hieght=50%}
 
 
 >## Add Figures 2 and 3 to the document
