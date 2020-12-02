@@ -1,7 +1,7 @@
 ---
-title: "08-finding-and-applying-existing-templates"
-teaching: 5 min
-exercises: 0 min
+title: "Finding and Applying Existing Journal Templates"
+teaching: 5
+exercises: 0
 questions:
 - What is the advantage of using the rtcile package?
 - How to find existing journal templates?
