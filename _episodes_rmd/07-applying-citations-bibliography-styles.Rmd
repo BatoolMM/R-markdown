@@ -23,7 +23,7 @@ source("../bin/chunk-options.R")
 knitr_fig_path("07-")
 ```
 
-##Getting the Bibliography
+## Getting the Bibliography
 
 Let's now move our attention to include citations and list out the references (bibliography) in our paper example. Before adding citations we need to list out all citable items and set a bibliography. In order to add a bibliography we will need to include a bibliography file in the YAML header. Bibliography formats should be specified in one of the formats supported by Pandoc on RStudio:
 
@@ -178,13 +178,13 @@ bibliography: bibliography.bibtex
 
 The connection between the two files is all set to get us started. For now, we won't need to specify which format we would like to use. By default, Pandoc will use a Chicago author-date format for citations and references and we will stick with that for now, but later we will learn how to change citation styles.
 
-###Adding Citations
+### Adding Citations
 
-Each item in thebibliography.bibtex file starts with a @ entry which specifies the type of document followed by a curly opening bracket which specifies the key that should be included to create in-text citations.
+Each item in the bibliography.bibtex file starts with a @ entry which specifies the type of document followed by a curly opening bracket which specifies the key that should be included to create in-text citations.
 
 It is important to use this exact key to render correct mentions in the text. Let&#39;s see how that should be included in the R Markdown syntax.
 
-####Single citation
+#### Single citation
 
 At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let&#39;s practice adding our first citation. Let&#39;s use the item with the key `freedman\_2020\_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after an &quot;@&quot; in between brackets, as follows:
 
@@ -220,7 +220,7 @@ The output you will get in Chicago style will be:
 {: .challenge}
 
 
-####Multiple Citations
+#### Multiple Citations
 
 If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let&#39;s complement the citation we created earlier in the first paragraph by adding Bustin&#39;s to it:
 
@@ -256,7 +256,7 @@ The output you will get in Chicago style will be:
 {: .challenge}
 
 
-####Keeping Authors in the narrative
+#### Keeping Authors in the narrative
 
 There are cases authors are announced in the text, and therefore their names shouldn&#39;t go between parenthesis. Let&#39;s say you want to add a citation to support the statement about Springer&#39;s survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key, as it follows:
 
@@ -292,11 +292,11 @@ The output you will get will be:
 
 
 
-###Setting the Reference List
+### Setting the Reference List
 
 All cited items will be listed under the section **References** which you created before while practicing headings and subheadings. Items will be placed automatically in alphabetical order.
 
-####Add an item to a bibliography without citing it
+#### Add an item to a bibliography without citing it
 
 By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocitemetadata field and put the citations there.
 
@@ -311,7 +311,7 @@ nocite **:** |
 
 ```
 
-####Add all no-cited items to the bibliography
+#### Add all no-cited items to the bibliography
 
 If we do not wish to explicitly state all of the items within the bibliography but would still like to show them in our references, we can use the following syntax:
 
@@ -325,7 +325,7 @@ nocite **:**&#39;@\*&#39;
 
 This will force all items to be displayed in the bibliography.
 
-###Changing Citation Styles
+### Changing Citation Styles
 
 There are a number of existing [citation styles](https://editor.citationstyles.org/about/) (CSL), but we won&#39;t cover their differences and applications during this workshop. To use another style, we will need to specify a CSL (Citation Style Language) file in the metadata field in the YAML header.
 
