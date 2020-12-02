@@ -1,7 +1,7 @@
 ---
-title: "06-adding-footnotes"
-teaching: 5 min
-exercises: 0 min
+title: "Markdown Syntax: Adding Footnotes & Hyperlinks"
+teaching: 5
+exercises: 0
 questions:
 - How can we add footnotes?
 - How can we add hyperlinks?
@@ -15,7 +15,6 @@ keypoints:
 - FIXME
 source: Rmd
 ---
-
 
 # Markdown Syntax: Adding Footnotes & Hyperlinks
 
