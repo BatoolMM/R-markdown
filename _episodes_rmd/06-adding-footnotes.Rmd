@@ -19,9 +19,9 @@ source: Rmd
 source("../bin/chunk-options.R")
 knitr_fig_path("06-")
 ```
-#Markdown Syntax: Adding Footnotes & Hyperlinks
+# Markdown Syntax: Adding Footnotes & Hyperlinks
 
-##Adding footnotes
+## Adding footnotes
 
 We can add footnotes to our paper using the ^ symbol. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
 
@@ -54,7 +54,7 @@ In our paper, we have a footnote in the introduction when we reference a notice 
 {: .challenge}
 
 
-##Creating Hyperlinks
+## Creating Hyperlinks
 
 Hyperlinks are created using the syntax `[text](link)` with no spaces in between the parentheses and the square brackets.
 
