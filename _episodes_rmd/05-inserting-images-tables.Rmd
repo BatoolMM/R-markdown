@@ -34,7 +34,6 @@ The markdown should look like:
 
 ```
 ![FIGURE .1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg)
-
 ```
 
 This will output as:
@@ -43,6 +42,8 @@ This will output as:
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
 
+<br> 
+
 Save it and use the knit function to check how the output looks like. 
 
 ### Resizing Images 
@@ -50,7 +51,6 @@ The image you just added looks a little too big, right? We can resize it by adju
 
 ```
 ![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){ width=50% hieght=50%}
-
 ```
 This will output as:
 <figure>
@@ -71,11 +71,11 @@ This will output as:
 > >
 > > ```
 > > ![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared 
-> > resources](../fig/fig2_paper.jpg){width=50% height=50%}
+> > resources](figs/fig2_paper.jpg){width=50% height=50%}
 > > ```
 > > ```
 > > ![FIGURE 3 - Types of tools that cores would like to implement in their 
-> >  operations.](../fig/fig3_paper.jpg){width=60% height=80%}
+> >  operations.](figs/fig3_paper.jpg){width=60% height=80%}
 > > ```
 > {: .solution}
 {: .challenge}
@@ -87,6 +87,7 @@ Similar to text all images are aligned to the left by default in Rmarkdown. If w
 ```
 ![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../fig/fig3_paper.jpg){width=60% height=80% fig.align="center"}
 ```
+<br>
 Outputs as:
 <center>
 <figure>
@@ -134,7 +135,9 @@ You can use text emphasis in the table using the same syntax as you use when emp
  Cell 1            |  Cell 2         .
  Cell 3            |  Cell 4         .
  ```
+<br>
 Output:  
+<br>
  **Column Header** | **Column Header**  
  ---               | ---             .  
  Cell 1            |  Cell 2         .  
@@ -150,9 +153,9 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 > ```
 > **Category** | **N**
 > --- | ---
-> ```
 > Poor sample quality from users/sample variability/limited biological material | 51
 > Lack of well-trained principle investigators and lab members/Poor oversight | 45
+> ```
 {: .source}
 
 
@@ -160,7 +163,7 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 > Finish Table 1 by adding the rest of the rows.
 >
 >> ## SOLUTION
->> ```
+>> ```  
 >> **Category** | **N**  
 >> --- | ---  
 >> Poor sample quality from users/sample variability/limited biological material | 51  
@@ -172,6 +175,7 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 >> Inadequate documentation of experiments/data management | 19   
 >> Instruments: maintenance, upgrades, changes | 15   
 >> Responses that could not be assigned to a category | 11  
+>> ```
 > {: .solution}
 {: .challenge}
 
