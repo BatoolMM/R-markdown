@@ -1,7 +1,7 @@
 ---
-title: "07-Markdown-Syntax-Applying-Citation-and-Bibliography-Syntax-and-Styles"
-teaching: 5 min
-exercises: 0 min
+title: "Markdown Syntax: Adding Citations and Bibliography"
+teaching: 5
+exercises: 0
 questions:
 - How to include citations?
 - How to create a list of references? 
