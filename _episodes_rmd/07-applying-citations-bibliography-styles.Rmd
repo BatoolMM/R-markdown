@@ -351,7 +351,6 @@ bibliography: bibliography.bibtex
 csl: apa-5th-edition.csl
 
 ---
-
 ```
 
 >Knit the document and note that citations and references now conform to the APA style.
