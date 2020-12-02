@@ -95,6 +95,7 @@ R Markdown belongs to the field of literate programming which is about weaving t
 The idea of literate programming shines some light on this dark area of science. This is an idea from Donald Knuth where you combine your text with your code output to create a document. This is a blend of your literature (text), and your programming (code), to create something that you can read from top to bottom. Imagine your paper - the introduction, methods, results, discussion, and conclusion, and all the bits of code that make each section. With R Markdown, you can see all the pieces of your data analysis altogether.
 
 You can include both text and code to execute. It is a convenient tool for reproducible and dynamic reports with R! With R Markdown, you are able to:
+
 1. Keep an eye on text (the paper) AND the source code. These computational steps are essential to ensure computational reproducibility.
 2. Conduct the entire analysis pipeline in an R Markdown document: data (pre-)processing, analysis, outputs, visualization.
 3. Apply a formatting syntax that is part of the R ecosystem and supports LaTeX.
