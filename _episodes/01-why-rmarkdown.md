@@ -107,9 +107,4 @@ You can include both text and code to execute. It is a convenient tool for repro
 9. Refer to the corresponding code lines in the methodology section making it unnecessary to use pseudocode, high-level textual descriptions, or just too many words to describe the computational analysis.
 10. Use packages such as rticles to use templates from publishers and create submission-ready documents.
 
-FIXME: Greg’s three motivating examples:
-* Chris Lortie’s COVID page
-* Using RMarkdown for math formatting
-* Reconstructing paper’s plots, difficulty thereof
-
 FIXME: Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this (link to the html version of the paper).
