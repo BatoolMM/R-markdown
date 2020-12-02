@@ -291,23 +291,20 @@ The output you will get will be:
 {: .challenge}
 
 
-
 ### Setting the Reference List
 
 All cited items will be listed under the section **References** which you created before while practicing headings and subheadings. Items will be placed automatically in alphabetical order.
+
 
 #### Add an item to a bibliography without citing it
 
 By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocitemetadata field and put the citations there.
 
 ```
----
 
 nocite **:** |
 
 @item1, @item2
-
----
 
 ```
 
@@ -315,12 +312,10 @@ nocite **:** |
 
 If we do not wish to explicitly state all of the items within the bibliography but would still like to show them in our references, we can use the following syntax:
 
-````
----
+```
+nocite: |
+  @item1, @item2
 
-nocite **:**&#39;@\*&#39;
-
----
 ```
 
 This will force all items to be displayed in the bibliography.
@@ -332,13 +327,11 @@ There are a number of existing [citation styles](https://editor.citationstyles.o
 Let's assume that we want to use the APA 5th edition [apa-5th-edition.csl](https://github.com/citation-style-language/styles/blob/master/apa-5th-edition.csl). In order to do so, you have to make sure the CSL you want to apply is correctly named in the YAML, matching the .csl file saved in the project folder and opened in RStudio. Your YAML should look similar to this:
 
 ```
----
-
-title: &quot;An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility&quot;
+title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
 
 author: Your Name
 
-date: &quot;December 15, 2020&quot;
+date: "December 15, 2020"
 
 output:
 
@@ -350,9 +343,9 @@ bibliography: bibliography.bibtex
 
 csl: apa-5th-edition.csl
 
----
 ```
 
->Knit the document and note that citations and references now conform to the APA style.
 
->**Tip:** You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles).More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
+Knit the document and note that citations and references now conform to the APA style.
+
+**Tip:** You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles).More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
