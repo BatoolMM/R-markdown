@@ -11,8 +11,8 @@ objectives:
 - To add tables into an rmarkdown document
 
 keypoints:
-- FIXME
-- FIXME
+- Inserting Images
+- Inserting basic tables
 source: Rmd
 ---
 
@@ -56,13 +56,14 @@ This will output as:
 </figure>
 
 
->## Add Figures 2 and 3 to the document
+>## CHALLENGE 5.1 
+> Add Figures 2 and 3 to the document:
 >
->FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources
+> FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources
 >
->FIGURE 3 - Types of tools that cores would like to implement in their operations
+> FIGURE 3 - Types of tools that cores would like to implement in their operations
 >
->The bar chart should use a ratio of 60% x 80% in order to improve readability.
+> *The bar chart should use a ratio of 60% x 80% in order to improve readability.
 > >
 > > ## Solution:
 > >
@@ -156,7 +157,7 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 {: .source}
 
 
-> ## CHALLENGE
+> ## CHALLENGE 5.2
 > Finish Table 1 by adding the rest of the rows.
 >
 >> ## SOLUTION
