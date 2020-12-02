@@ -1,6 +1,6 @@
 ---
 title: "Why R Markdown?"
-teaching: ?
+teaching: 0
 exercises: 2
 questions:
 - What is reproducible research?
