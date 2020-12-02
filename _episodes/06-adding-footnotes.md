@@ -16,9 +16,10 @@ keypoints:
 source: Rmd
 ---
 
-#Markdown Syntax: Adding Footnotes & Hyperlinks
 
-##Adding footnotes
+# Markdown Syntax: Adding Footnotes & Hyperlinks
+
+## Adding footnotes
 
 We can add footnotes to our paper using the ^ symbol. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
 
@@ -51,7 +52,7 @@ In our paper, we have a footnote in the introduction when we reference a notice 
 {: .challenge}
 
 
-##Creating Hyperlinks
+## Creating Hyperlinks
 
 Hyperlinks are created using the syntax `[text](link)` with no spaces in between the parentheses and the square brackets.
 
