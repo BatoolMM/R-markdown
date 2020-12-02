@@ -1,7 +1,7 @@
 ---
-title: "01-Why-R-Markdown?"
-teaching: ? min
-exercises: 2 min
+title: "Why R Markdown?"
+teaching: ?
+exercises: 2
 questions:
 - What is reproducible research?
 - How can R Markdown help research to be more reproducible?
@@ -23,11 +23,11 @@ source: Rmd
 
 FIXME: Breakout rooms: What is reproducible research for you? (use mentimeter to collect answers)
 
-## The importance of Reproducibility in Research
+**The importance of Reproducibility in Research**
 
 ![PhD Comics cartoon](../fig/01-fig1.png)
 
-## Discussion: A scary anecdote
+**Discussion: A scary anecdote**
 
 * A group of researchers obtain great results and submit their work to a high-profile journal.
 * Reviewers ask for new figures and additional analysis.
@@ -41,13 +41,13 @@ Science should routinely evaluate the reproducibility of findings that enjoy a p
 
 Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator. That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results. Reproducibility is a minimum necessary condition for a finding to be considered rigorous, believable and informative.
 
-## Why all the talk about reproducible research?
+**Why all the talk about reproducible research?**
 
 A 2016 survey in Nature revealed that irreproducible experiments are a problem across all domains of science:
  
 ![Nature Report - 2016](../fig/01-fig2.png)
  
-## Factors behind irreproducible research
+**Factors behind irreproducible research**
 
 ![Science is not a miracle](../fig/01-fig3.png)
 
@@ -58,7 +58,7 @@ A 2016 survey in Nature revealed that irreproducible experiments are a problem a
 * Difficult to rerun the computational steps
 
 
-## Reproducible, replicable, robust, generalizable
+**Reproducible, replicable, robust, generalizable**
 
 While reproducibility is the minimum requirement and can be solved with “good enough” computational practices, replicability/robustness/generalizability of scientific findings are an even greater concern involving research misconduct, questionable research practices (p-hacking, HARKing, cherry-picking), sloppy methods, and other conscious and unconscious biases.
  
@@ -73,20 +73,20 @@ If contributing to science and other researchers seems not to be compelling enou
 * Enables continuity of your work
 * Helps to build your reputation
 
-## When do you need to worry about reproducibility?
+**When do you need to worry about reproducibility?**
 
 Let’s assume that I have convinced you that reproducibility and transparency are in your own best interest. Then what is the best time to worry about it?
  
 Throughout the whole research life cycle! Before you start the project because you might have to learn tools like R or Git. While you do the analysis because if you wait too long you might lose a lot of time trying to remember what you did two months ago. When you write the paper because you want your numbers, tables, and figures to be up-to-date. When you co-author a paper, because you want to make sure that the analyses presented in a paper with your name on are sound. When you review a paper, because you can’t judge the results if you don’t know how the authors got there.
  
 
-## Levels of Reproducibility
+**Levels of Reproducibility**
  
 ![Levels of Reproducibility](../fig/01-fig5.png)
  
 A published article is like the top of a pyramid, meaning that a reproducible paper/report rests on multiple levels that each contributes to its reproducibility. 
  
-## What is R Markdown and how it connects to reproducible research?
+**What is R Markdown and how it connects to reproducible research?**
 
 RMarkdown is a variant of Markdown, a system for writing simple, readable text that is easily converted to html which allows you to write using an easy-to-read, easy-to-write plain text format. 
 
