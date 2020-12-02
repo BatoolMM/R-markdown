@@ -118,7 +118,7 @@ Scientific shared resources support research laboratories to generate critical d
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 
-data <- read_csv("data/data.csv")
+data <- read_csv("../data/data.csv")
 ```
 
 ```{r}
@@ -160,6 +160,6 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 ```
 
 ```{r, message=FALSE, echo=FALSE}
-table1 <- read_csv("data/table.csv")
+table1 <- read_csv("../data/table.csv")
 knitr::kable(table1, caption="Table 1. Major challenges to rigor observed in shared resources")
 ```

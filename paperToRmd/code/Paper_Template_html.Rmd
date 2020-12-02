@@ -62,8 +62,25 @@ A total of 243 individuals from 21 countries completed this section. The majorit
 
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../figs/fig1_paper.jpg){width=50% height=50%}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+```
 
+```{r echo=FALSE, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}
+data <- read_csv("../data/figure-1-data.csv", col_types="fi")
+
+pie_data <- data %>%
+  mutate(proportion=count/sum(count)) %>%
+  arrange(desc(proportion)) %>%
+  mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
+
+ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
+  geom_bar(stat="identity", color="white") +
+  coord_polar(theta="y", start=0) +
+  geom_text(aes(y=lab.ypos, label=paste(round(proportion*100), "%", sep="")), color="white") +
+  scale_fill_brewer(palette="Set1", name="Familiarity", guide=guide_legend(reverse=TRUE)) +
+  theme_void()
+```
 
 Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [@bustin_reproducibility_2014; @freedman_reproducibility2020_2017] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
 
