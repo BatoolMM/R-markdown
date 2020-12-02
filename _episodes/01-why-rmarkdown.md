@@ -20,7 +20,6 @@ source: Rmd
 ---
 
 
-
 FIXME: Breakout rooms: What is reproducible research for you? (use mentimeter to collect answers)
 
 **The importance of Reproducibility in Research**
@@ -28,13 +27,14 @@ FIXME: Breakout rooms: What is reproducible research for you? (use mentimeter to
 ![PhD Comics cartoon](../fig/01-fig1.png)
 
 **Discussion: A scary anecdote**
+
 * A group of researchers obtain great results and submit their work to a high-profile journal.
 * Reviewers ask for new figures and additional analysis.
 * The researchers start working on revisions and generate modified figures, but find inconsistencies with old figures.
 * The researchers can’t find some of the data they used to generate the original results, and can’t figure out which parameters they used when running their analyses.
 * The manuscript is still languishing in the drawer …
 
-According to the ![U.S. National Science Foundation (NSF) subcommittee on replicability in science (2015)](https://www.nsf.gov/sbe/AC_Materials/SBE_Robust_and_Reliable_Research_Report.pdf): 
+According to the [U.S. National Science Foundation (NSF) subcommittee on replicability in science](https://www.nsf.gov/sbe/AC_Materials/SBE_Robust_and_Reliable_Research_Report.pdf): 
 
 Science should routinely evaluate the reproducibility of findings that enjoy a prominent role in the published literature. To make reproduction possible, efficient, and informative, researchers should sufficiently document the details of the procedures used to collect data, to convert observations into analyzable data, and to analyze data.
 
@@ -89,7 +89,7 @@ A published article is like the top of a pyramid, meaning that a reproducible pa
 
 RMarkdown is a variant of Markdown, a system for writing simple, readable text that is easily converted to html which allows you to write using an easy-to-read, easy-to-write plain text format. 
 
-R Markdown belongs to the field of literate programming which is about weaving text and source code into a single document to make it easy to create reproducible web-based reports. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents and much, much more. R Markdown provides the flexibility of Markdown with the implementation of R input and output. For more details on using R Markdown see ![http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).
+R Markdown belongs to the field of literate programming which is about weaving text and source code into a single document to make it easy to create reproducible web-based reports. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents and much, much more. R Markdown provides the flexibility of Markdown with the implementation of R input and output. For more details on using R Markdown check [http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).
 
 The idea of literate programming shines some light on this dark area of science. This is an idea from Donald Knuth where you combine your text with your code output to create a document. This is a blend of your literature (text), and your programming (code), to create something that you can read from top to bottom. Imagine your paper - the introduction, methods, results, discussion, and conclusion, and all the bits of code that make each section. With R Markdown, you can see all the pieces of your data analysis altogether.
 
