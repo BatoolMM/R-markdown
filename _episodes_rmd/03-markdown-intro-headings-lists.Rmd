@@ -60,20 +60,51 @@ Displays as:
 <br>
 
 > ## Tip: Headings
-> Be sure to put a space between the last `#` and the start of your heading text so R Markdown recognizes where your heading text starts: `# Title` NOT `#Title`
+> It's good practice to put a space between the last `#` and the start of your heading. While R flavored markdown will still render `#Title`, other flavors of markdown (i.e. github) require a space between the `#`s and the heading text: `# Title`.
 {: .callout}
 
-> ## Tip: Heading convention
-> Normally, to conform to best practices, header 1 `#` should only be used for the title. From there, for each heading level you only use one heading level lower, for example the introduction would then be header 2 `##`. HOWEVER, because an R Markdown document defines the title within the YAML header, you should use header 1 for the next highest header level after the title, (Introduction, Conclusion, etc.). For best practices across the board, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.
-{: .callout}
+### Numbered Sections
+We would like to have numbered section headings in our paper. In order to do that we actually add a bit of code to the yaml section at the top. 
+Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter anoter line & indent again and then add `numbered_sections: true`.
+<br>
+It should look like the following:
+```
+---
+title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
+author: Add Your Name Here
+date: "December 15, 2020"
+output:
+  html_document:
+    number_sections: true
+```
 
 <br>
-We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a heading 1 by adding a `#` before the line. 
+We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a heading 2 by adding a `##` before the line.  
+
+~~~
+## INTRODUCTION
+~~~
+{: .source}
+
+Now let's `knit` to see how the heading is formatted.     
+
+Oops! for our Introduction we have `0.1 Introduction`. The numbering isn't right here...   
+
+What's going on?  
+Normally, to conform to best practices, header 1 `#` should only be used for the title. From there, for each heading level you only use one heading level lower, for example the introduction would then be header 2 `##`. HOWEVER, because an R Markdown document defines the title within the YAML header, you should use header 1 for the next highest header level after the title, (Introduction, Conclusion, etc.). Otherwise, if you use numbered sections, the numbering will be off. 
+
+So, let's try this again, this time with heading 1 `#`:  
 
 ~~~
 # INTRODUCTION
 ~~~
 {: .source}
+
+<br>
+
+> ## Tip: More heading convention
+> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
+{:.source}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into heading 1 and the lines that say “Survey Overview” and “Data Analysis” into heading 2 for subheadings. 
@@ -86,35 +117,6 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .source}
 
 <br>
-If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes, asterix, or underlines (`---`, `***`, or `___`):
-
-```
-
----  
-
-See some paragraph text   
-between horizontal lines---  
-Now you know markdown  
-
-***    
-
-```
-
-The above renders as:    
-
----
-
-See some paragraph text  
-between horizontal lines---  
-Now you know markdown  
-
----  
-
-***Note** again that displayed here is the github styling for horizontal lines, they look different rendered in r markdown
-
-> ## Tip: leave blank line before & after horizontal lines
-> Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
-{: .callout}
 
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections: 
@@ -160,6 +162,39 @@ Now you know markdown
 >> ```
 > {: .solution}
 {: .challenge}
+
+<br>
+## Horizontal Lines
+If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes, asterix, or underlines (`---`, `***`, or `___`):
+
+```
+
+---  
+
+See some paragraph text   
+between horizontal lines---  
+Now you know markdown  
+
+***    
+
+```
+
+The above renders as:    
+
+---
+
+See some paragraph text  
+between horizontal lines---  
+Now you know markdown  
+
+---  
+
+***Note** again that displayed here is the github styling for horizontal lines, they look different rendered in r markdown
+<br>
+
+> ## Tip: leave blank line before & after horizontal lines
+> Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
+{: .callout}
 
 ## Bulleted & Numbered Lists
 
