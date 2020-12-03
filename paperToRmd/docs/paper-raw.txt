@@ -1,21 +1,18 @@
-﻿An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility
 INTRODUCTION
-Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results (Freedman, Venugopalan and Wisman, 2017; Bustin, 2014).
-A recent survey conducted by Springer (2016) reported that 90% of participants identified “more robust experimental design” as one of several key improvements needed for the conduct of better science, in addition to “better statistics” and “better mentorship”. More recently, Nature (2018)published a related paper, the survey data for which can be found on Figshare.
-
-A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the Center for Open Science to improve research planning and reporting (Munafò et al., 2017), which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows: 
-1) scientific premise forming the basis of the proposed research, 
-2) rigorous experimental design for robust and unbiased results, 
-3) consideration of sex and other relevant biologic variables, and 
-4) authentication of key biologic and chemical resources.
+Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [citation example 1].
+A recent survey conducted by [citation example 3] reported that 90% of participants identified “more robust experimental design” as one of several key improvements needed for the conduct of better science, in addition to “better statistics” and “better mentorship”. More recently, [citation exercise 3] published a related paper, the survey data for which can be found on Figshare.
+A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the Center for Open Science to improve research planning and reporting [citation exercise 1], which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows: 
+scientific premise forming the basis of the proposed research, 
+rigorous experimental design for robust and unbiased results, 
+consideration of sex and other relevant biologic variables, and 
+authentication of key biologic and chemical resources.
 The Association of Biomolecular Resource Facilities (ABRF) Committee on Core Rigor and Reproducibility (CCoRRe) recently conducted a survey to assess how shared resource facilities are currently assisting investigators with their need to demonstrate transparency and rigor in their research. In addition, the survey captured information from the shared resource personnel related to the challenges they face and the resources they need to support scientific transparency, rigor, and reproducibility.
 MATERIALS AND METHODS
 Survey Overview
-The CCoRRe committee developed an 18-question online survey and shared it using SurveyMonkey. The survey was announced on the ABRF listservs and blogs and was open from February to April 2017. All survey participants remained anonymous.
+The CCoRRe committee developed an 18-question online survey and shared it using Survey Monkey. The survey was announced on the ABRF listservs and blogs and was open from February to April 2017. All survey participants remained anonymous.
 Data Analysis
 The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders. Using the sampling error formula
-$$ e = { Zp(1-p) \over \sqrt{n} } $$
-we compute that at a 95% confidence level (i.e., $Z=1.96$), with base probability $p=1/2$ and sample size $n=243$, the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%.
+[add LaTeX formula here]
 RESULTS AND DISCUSSION
 Survey Demographics
 A total of 243 individuals from 21 countries completed this section. The majority of the survey participants are core facility directors or managers (69%) and work in an academic setting (72%) in the United States (79%). 
@@ -24,7 +21,7 @@ When asked how knowledgeable participants were with respect to the NIH research 
 
 FIGURE 1 - Survey respondents’ self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.
 
-Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, (Freedman, Venugopalan & Wisman, 2017; Bustin, 2014) respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
+Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [citation example 2] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
 
 Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
 
@@ -34,6 +31,7 @@ Category
 N
 Poor sample quality from users/sample variability/limited biological material
 51
+
 Lack of well-trained principle investigators and lab members/Poor oversight
 45
 Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls
@@ -70,21 +68,15 @@ FIGURE 3 - Types of tools that cores would like to implement in their operations
 Core Implementation of Research Best Practices
 
 Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control. 
+
 Strategies for Improving R&R in Core Operation
 Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&R guidelines.
 
 About  40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality. 
 
-About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and “provide incentives to support and monitor research rigor throughout the research life cycle.” These “cultural” observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue (Freedman, Venugopalan & Wisman, 2017; Baker, 2016).
+About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and “provide incentives to support and monitor research rigor throughout the research life cycle.” These “cultural” observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [citation exercise 2].
 
 CONCLUSIONS
 Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
 
 REFERENCES
-Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. Nature, 533(7604). doi: 10.1038/533452a  
-Bustin, S. A. (2014). The reproducibility of biomedical research: sleepers awake!. Biomolecular detection and quantification, 2, 35-42. doi: 10.1016/j.bdq.2015.01.002
-Freedman, L. P., Venugopalan, G., & Wisman, R. (2017). Reproducibility2020: progress and priorities. F1000Research, 6.  doi: 10.12688/f1000research.11334.1
-Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Du Sert, N. P., ... & Ioannidis, J. P. (2017). A manifesto for reproducible science. Nature human behaviour, 1(1), 1-9. doi: 10.1038/s41562-016-0021
-Nature, S. P. R. I. N. G. E. R. (2016). Reality check on reproducibility. Nature, 533(7604), 437. doi:10.1038/533437a
-Nature (2018): Nature Reproducibility survey 2017. figshare. Dataset. doi: 10.6084/m9.figshare.6139937.v4 
-
