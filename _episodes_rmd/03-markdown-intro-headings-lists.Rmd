@@ -1,5 +1,5 @@
 ---
-title: "Markdown Syntax: Headings & Lists"
+title: "R Markdown Syntax: Headings & Lists"
 teaching: 30
 exercises: 10
 questions:
