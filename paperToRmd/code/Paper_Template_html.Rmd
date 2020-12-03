@@ -7,14 +7,15 @@ output:
     number_sections: true
 bibliography: ../docs/bibliography.bibtex
 csl: ../bin/apa-5th-edition.csl
-
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../results';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
 ---
 
 ```{r setup, include=FALSE}
-library(knitr)
-opts_chunk$set(list(echo = FALSE, eval = FALSE))
-knit("Paper_Template_html.Rmd")
-readLines("Paper_Template_html.Rmd")
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # INTRODUCTION
@@ -97,6 +98,8 @@ TABLE 1 - Major challenges to rigor observed in shared resources
 | Inadequate documentation of experiments/data management | 19 |
 | Instruments: maintenance, upgrades, changes | 15 |
 | Responses that could not be assigned to a category | 11 |
+
+
 
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
 
