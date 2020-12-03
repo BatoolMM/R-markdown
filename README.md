@@ -155,7 +155,7 @@ output:
     variant: markdown
     preserve_yaml: true
 knit: (function(inputFile, encoding) { 
-      out_dir <- '../episodes';
+      out_dir <- '../_episodes';
       rmarkdown::render(inputFile,
                         encoding=encoding, 
                         output_file=file.path(dirname(inputFile), out_dir, '[00-FilenameOfEpisode].md')) })
