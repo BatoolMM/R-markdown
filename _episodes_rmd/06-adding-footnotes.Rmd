@@ -34,18 +34,10 @@ In our paper, we have a footnote in the introduction when we reference a notice 
 
 > ## Challenge 6.1: Creating footnote 
 >
->Let's add a footnote to our paper
->
-> ~~~
->
-> In the References section, add a superscript to distinguish the footnote and match it with the inline footnote.  
-> ~~~
->
+>Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote.  
 > ## Solution
-> ~~~
 > `^1^Through these four elements, the NIH intends to`
-> ~~~
-> > {: .output}
+>> {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -70,18 +62,10 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 
 > ## Challenge 6.2: Adding links 
 >
->Let's add links to our paper
->
-> ~~~
->
-> Now it is your turn! We want to create two hyperlinks. One will be to the survey instrument platform Survey Monkey (https://www.surveymonkey.com/). The second will be to link the existing address that we added earlier in the footnote to the online pdf file using the same website. 
-> ~~~
->
+>Let's add links to our paper. Now it is your turn! We want to create two hyperlinks. One will be to the survey instrument platform Survey Monkey (https://www.surveymonkey.com/). The second will be to link the existing address that we added earlier in the footnote to the online pdf file using the same website. 
 > > ## Solution
-> > ~~~
 > `[SurveyMonkey](https://surveymonkey.com)`
 >`([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))`
-> > ~~~
 > > {: .output}
 > {: .solution}
 {: .challenge}
