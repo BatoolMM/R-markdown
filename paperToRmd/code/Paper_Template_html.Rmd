@@ -7,24 +7,21 @@ output:
     number_sections: true
 bibliography: ../docs/bibliography.bibtex
 csl: ../bin/apa-5th-edition.csl
-knit: (function(inputFile, encoding) { 
-      out_dir <- '../results';
-      rmarkdown::render(inputFile,
-                        encoding=encoding, 
-                        output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
+
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+opts_chunk$set(list(echo = FALSE, eval = FALSE))
+knit("Paper_Template_html.Rmd")
+readLines("Paper_Template_html.Rmd")
 ```
 
 # INTRODUCTION
 
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@freedman_reproducibility2020_2017].
 
-A recent survey conducted by _Springer_ [-@springer_reality_2016] reported that 90% of participants identified &quot;more robust experimental design&quot; as one of several key improvements needed for the conduct of better science, in addition to &quot;better statistics&quot; and &quot;better mentorship.&quot; More recently, _Nature_ [-@nature_nature_2018] published the survey data [include narrative describing plot results]
-
-[FIXME Insert Plots and narratives here]
+A recent survey conducted by _Springer_ [-@springer_reality_2016] reported that 90% of participants identified &quot;more robust experimental design&quot; as one of several key improvements needed for the conduct of better science, in addition to &quot;better statistics&quot; and &quot;better mentorship.&quot; More recently, _Nature_ [-@nature_nature_2018] published the survey data which can be found on Figshare.
 
 A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the [Center for Open Science](https://www.cos.io/) to improve research planning and reporting [@munafo_manifesto_2017], which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
