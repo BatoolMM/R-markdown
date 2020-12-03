@@ -24,7 +24,6 @@ output:
 
 FIXME: Breakout rooms: What is reproducible research for you? (use mentimeter to collect answers)
 
-
 ## The importance of Reproducibility in Research
 
 ![PhD Comics cartoon](../fig/01-fig1.png)
