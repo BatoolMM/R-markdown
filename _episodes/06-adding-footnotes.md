@@ -31,9 +31,9 @@ In our paper, we have a footnote in the introduction when we reference a notice 
 
 > ## Challenge 6.1: Creating footnote 
 >
->Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote.  
+> Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote.  
 > ## Solution
-> `^1^Through these four elements, the NIH intends to`
+> ``^1^Through these four elements, the NIH intends to``
 >> {: .output}
 > {: .solution}
 {: .challenge}
