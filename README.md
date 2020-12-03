@@ -135,9 +135,50 @@ outputs as:
 
 When creating episodes in the `_episodes_rmd` directory you'll want to process them into rgular markdown so they will be further processed by Github and published when pushed to Github.  If you have the `make` utility, which Mac or Linux has by default you can call `make lesson-m`.   But if you do not have `make` which is the case for most windows users then you can use R and Knitr from the command line.
 
-**example of using knitr from the command line/ Rstudio terminal to process an R-markdown file into a regular markdown file:**
+#### 4 methods:
+(ordered from most automated to least automated)
+
+**BEST: Add output & knit code to yaml header**
+
+1) add output to yaml header 
+2) add knit code
++ change `[00-FilenameOfEpisode]`
+
+```
+---
+...
+source: Rmd
+output: 
+  md_document
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../episodes';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, '[00-FilenameOfEpisode].md')) })
+---
+```
+
+2) **Add an output `md_document` to the yaml header**
+at the end of your yaml file, after `source` add:
+```
+...
+output: md_document
+---
+```
+\*Make sure to move the `.md` file to the `_episodes/` folder
+
+3) **example of using knitr from the command line/ Rstudio terminal to process an R-markdown file into a regular markdown file:**
 *assumes you are in the root directory
 *change the file name to match the episode you edited
 ```
 Rscript -e 'knitr::knit("./_episodes_rmd/01-r-markdown-episode-template.Rmd", output = "./_episodes/01-r-markdown-episode-template.md")'
 ```
+
+4) **Change your knit button settings**
+Next to the knit button there is a gear for options. Click it and chose `output options` at the very bottom of the list. Choose the `Advanced` tab and check `keep markdown source file`. Make sure to 1) move the `.md` file to the `_episodes/` folder and 2) delete the html file output. 
+
+
+
+
+
+
