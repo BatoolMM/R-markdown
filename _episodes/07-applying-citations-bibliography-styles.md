@@ -136,7 +136,6 @@ publisher={Macmillan}
 >
 > Get all six citable items in the file using Google Scholar
 >
-> ~~~
 > Now, follow the same process with the remaining three references.
 >
 > 1. The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
@@ -144,7 +143,6 @@ publisher={Macmillan}
 > 2. Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
 >
 > 3. A manifesto for reproducible science. By Munafò et al. (2017).
-> ~~~
 > > ## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
 > FIXME: should we add all items here?
@@ -164,9 +162,7 @@ We should now have a complete .bibtex file with all items we need to proceed. Bu
 
 ```
 ---
-
 bibliography: bibliography.bibtex
-
 ---
 
 ```
