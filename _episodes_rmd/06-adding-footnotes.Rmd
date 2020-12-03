@@ -1,5 +1,5 @@
 ---
-title: "R Markdown Syntax: Adding Footnotes & Hyperlinks"
+title: "R Markdown Syntax: Footnotes & Hyperlinks"
 teaching: 5
 exercises: 0
 questions:
