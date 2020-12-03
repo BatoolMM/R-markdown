@@ -25,7 +25,10 @@ source("../bin/chunk-options.R")
 knitr_fig_path("06-")
 ```
 
-FIXME: Breakout rooms: What is reproducible research for you? (use mentimeter to collect answers)
+## Warm-up
+
+What is reproducibility for you?
+
 
 ## The importance of Reproducibility in Research
 
@@ -86,7 +89,7 @@ Throughout the whole research life cycle! Before you start the project because y
 
 ### Levels of Reproducibility
  
-![Levels of Reproducibility](../fig/01-fig5.png)
+![Levels of Reproducibility](../fig/01-fig5.png){{width=50%}
  
 A published article is like the top of a pyramid, meaning that a reproducible paper/report rests on multiple levels that each contributes to its reproducibility. 
  
@@ -115,4 +118,4 @@ FIXME: Greg’s three motivating examples:
 * Using RMarkdown for math formatting
 * Reconstructing paper’s plots, difficulty thereof
 
-FIXME: Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this (link to the html version of the paper).
+Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this FIXME: (add link to the final html version of the paper).
