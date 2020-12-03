@@ -41,8 +41,10 @@ To cite this lesson, please consult with [CITATION](CITATION)
 [lesson-example]: https://carpentries.github.io/lesson-example
 
 ## Lesson Review
-Two sets of reviewers 1) for formatting & grammar 2) for content
-Sign-up to review here: https://docs.google.com/spreadsheets/d/1ukHnhh2-1ZJSZhCyjhRjQt4MrXJHmA6E76_tGrenpWk/edit#gid=1446449919
+Two sets of reviewers:  
+1) for formatting & grammar   
+2) for content  
+Sign-up to review here: https://docs.google.com/spreadsheets/d/1ukHnhh2-1ZJSZhCyjhRjQt4MrXJHmA6E76_tGrenpWk/edit#gid=1446449919  
 
 Each reviwer should look for:
 
@@ -138,7 +140,7 @@ When creating episodes in the `_episodes_rmd` directory you'll want to process t
 #### 4 methods:
 (ordered from most automated to least automated)
 
-**BEST: Add output & knit code to yaml header**
+**1) BEST: Add output & knit code to yaml header**
 
 1) add output to yaml header 
 2) add knit code
@@ -158,7 +160,7 @@ knit: (function(inputFile, encoding) {
 ---
 ```
 
-2) **Add an output `md_document` to the yaml header**
+**2) Add an output `md_document` to the yaml header**
 at the end of your yaml file, after `source` add:
 ```
 ...
@@ -167,14 +169,14 @@ output: md_document
 ```
 \*Make sure to move the `.md` file to the `_episodes/` folder
 
-3) **example of using knitr from the command line/ Rstudio terminal to process an R-markdown file into a regular markdown file:**
+**3) example of using knitr from the command line/ Rstudio terminal to process an R-markdown file into a regular markdown file:**
 *assumes you are in the root directory
 *change the file name to match the episode you edited
 ```
 Rscript -e 'knitr::knit("./_episodes_rmd/01-r-markdown-episode-template.Rmd", output = "./_episodes/01-r-markdown-episode-template.md")'
 ```
 
-4) **Change your knit button settings**
+**4) Change your knit button settings**
 Next to the knit button there is a gear for options. Click it and chose `output options` at the very bottom of the list. Choose the `Advanced` tab and check `keep markdown source file`. Make sure to 1) move the `.md` file to the `_episodes/` folder and 2) delete the html file output. 
 
 
