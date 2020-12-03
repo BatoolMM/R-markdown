@@ -1,0 +1,33 @@
+---
+title: 'Knitr Syntax: Inline Code & Code Chunks'
+teaching: 45
+exercises: 10
+questions:
+- What is "Knitr"?
+- When would I want to add inline code?
+- How to add inline code?
+- When would I want to use code chunks?
+- How do I add code chunks?
+
+objectives:
+- Understand the basic functions of Knitr
+- Learn how to add inline code to your document
+- Learn how to add code chunks to your document
+- Distinguish when inline code vs. code chunks would be appropriate
+- Understand how to change the output characteristics of code chunks
+
+keypoints:
+- What is Knitr?
+- Inline code
+- Code chunks
+- Code chunk options
+- Global code chunk options
+source: Rmd
+---
+
+```{r, include=FALSE}
+source("../bin/chunk-options.R")
+knitr_fig_path("02-")
+```
+
+
