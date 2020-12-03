@@ -1,5 +1,5 @@
 ---
-title: "Adding Emphasis, Symbols, and Titles"
+title: "R Markdown Syntax: Emphasis, Symbols & Titles"
 teaching: 30 min
 exercises: 10 min
 questions:
@@ -74,22 +74,18 @@ In that same paragraph, the phrase “more robust experimental design” is in q
 
 ## Adding Symbols and Formulas
 
-LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (its formatting of equations formulas) is better than anything else out there.
+LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (equations, formulas) is better than anything else out there.
 
 RStudio has a most wonderful feature that allows you to use just the mathematics formatting portion of LaTeX without having to use LaTeX as a whole, without having to have a LaTeX installation on your system, and without having to understand LaTeX generally.
 
-An inline formula is delimited with single dollar signs, as in `$ 2+2 = 4 $`.  A display equation uses double dollar signs.  What goes between the single or double dollar signs is LaTeX math formatting.  This is its own language, and you just have to learn it.  A decent online reference:
+An inline formula is delimited with single dollar signs, as in $ 2+2 = 4 $.  A display equation uses double dollar signs.  What goes between the single or double dollar signs is LaTeX math formatting.  This is its own language, and you just have to learn it.  Some handy references:
 
-- https://www.overleaf.com/learn/latex/Mathematical_expressions
+TBD
 
-The canonical LaTeX reference, written by the author (hardback, but viewable online):
-
-- https://archive.org/details/latex00lesl
-- https://ucsb-primo.hosted.exlibrisgroup.com/permalink/f/1egv95m/01UCSB_ALMA21230090630003776
-
-But, know that the LaTeX math language is very intuitive once you get a feel for its style.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like `a = b*c`, but in LaTeX you would say `$ a = bc $`.  Spaces generally don’t matter in LaTeX; it “understands” your formula and uses rules to determine how to display things.
+But, know that it is very intuitive.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like a = b*c, but in LaTeX you would say $ a = bc $.  Spaces generally don’t matter in LaTeX; it “understands” your formula and uses rules to determine how to display things.
 
 > ## Add the following text and formula to our data analysis section 
+> (may change)
 >
 > Let’s add the following text and formula to our data analysis section:
 >
@@ -101,10 +97,14 @@ But, know that the LaTeX math language is very intuitive once you get a feel for
 > size n=243, the margin of error is +/-3%.
 {: .challenge}
 
-Notice how RStudio gives you a preview of the equation.  Nice!  The formula here uses curly braces for grouping (kind of like invisible parentheses).  `\over` gives a fraction with a big horizontal line.  Try replacing that with just `/` for an alternative rendering.
+Notice that RStudio previews the equation for you.  The formula uses curly braces for grouping 
+(kind of like invisible parentheses).  \over gives a fraction with a big horizontal line.  Try 
+replacing that with just / for an alternative rendering.
 
-For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly.  Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say $ \pm 3 \% $ for the +/-3%.  Later we’ll see how to have R compute this value inline.
+For inline formulas, replace Z=1.96 with $Z=1.96$ and similarly.  Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say $ \pm 3 \% $ for the +/-3%.  Later we’ll see how to have R compute this value inline.
 
-To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems.  Here's an example: https://www.educba.com/confidence-interval-formula/
+[Compare our LaTeX rendered formula, versus crap rendering at https://www.educba.com/confidence-interval-formula/]
 
-RStudio's facility to bring in LaTex for math formatting makes it a wonderful authoring environment for math-rich papers, that are not computational and have nothing to do with R at all.
+[Point out that RStudio makes a wonderful authoring environment for math-rich papers, that have nothing to do with R at all]
+
+ 
