@@ -60,10 +60,10 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 > ## Challenge 6.2: Adding links 
 >
 >Let's add links to our paper. Now it is your turn! We want to create two hyperlinks. One will be to the survey instrument platform Survey Monkey (https://www.surveymonkey.com/). The second will be to link the existing address that we added earlier in the footnote to the online pdf file using the same website. 
-> > ## Solution
-> `[SurveyMonkey](https://surveymonkey.com)`
->`([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))`
-> > {: .output}
+>> ## Solution
+> ``[SurveyMonkey](https://surveymonkey.com)``
+>``([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))``
+>> {: .output}
 > {: .solution}
 {: .challenge}
 
