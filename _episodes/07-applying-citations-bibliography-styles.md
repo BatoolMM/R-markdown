@@ -146,7 +146,6 @@ publisher={Macmillan}
 > > ## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
 > FIXME: should we add all items here?
-> > ~~~
 > > {: .output}
 > {: .solution}
 {: .challenge}
