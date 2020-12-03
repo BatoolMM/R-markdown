@@ -194,23 +194,11 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.2: Adding single citation
 >
->
->
-> ~~~
-> 
->Locate [citation exercise 1] in the document, and replace it by a citation to Mufano's study.
->
-> ~~~
-> > ## Solution
-> 
-> 
-> > ~~~
-> 
+> Locate [citation exercise 1] in the document, and replace it by a citation to Mufano's study.
+>> ## Solution
 > `[@munafo\_manifesto\_2017]` 
 > The output you will get in Chicago style will be: `(Mufano, 2017)`
->
-> > ~~~
-> > {: .output}
+>> {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -230,21 +218,11 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.3: Adding multiple citations
 >
->
-> ~~~
-> 
 > Now it is your turn! Locate in the document the note [citation exercise 2]. Remove it and include a citation to Baker and Freedman, Venugopalan and Wisman&#39;s studies.
->
-> ~~~
-> > ## Solution
-> 
-> > ~~~
-> 
+>> ## Solution
 > `[@baker\_1500\_2016; @freedman\_reproducibility2020\_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
->
-> > ~~~
-> > {: .output}
+>> {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -261,22 +239,13 @@ The output you will get will be:
 
 
 > ## Challenge 7.4: Keep author(s) in the narrative 
->
->
-> ~~~
 > 
 > Let&#39;s practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature&#39;s survey in order to indicate the dataset you are referring to.
->
-> ~~~
 > > ## Solution
-> 
-> > ~~~
 > 
 > `[-@nature\_nature\_2018]`
 > The output you will get will be: `Nature (2018)`
->
-> > ~~~
-> > {: .output}
+>> {: .output}
 > {: .solution}
 {: .challenge}
 
@@ -334,7 +303,6 @@ bibliography: bibliography.bibtex
 csl: apa-5th-edition.csl
 
 ```
-
 
 Knit the document and note that citations and references now conform to the APA style.
 

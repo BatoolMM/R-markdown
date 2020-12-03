@@ -12,7 +12,15 @@ keypoints:
 - R-Studio lets you Knit and Publish to R-pubs
 - Github has Github Pages 
 source: Rmd
-
+output: 
+  md_document:
+    variant: markdown
+    preserve_yaml: true
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../_episodes';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, '11-publishing-a-report.md')) })
 ---
 
 ### 11.1 Rendering R Markdown script 
@@ -29,8 +37,8 @@ Click the publish button
 
 and you'll be presented with the following panels:
 
-![](../fig/r-studio-knit-publish-to-scrnshot.png)
-![](../fig/r-studio-knit-publish-confirm-scrnshot.png)
+![](../fig/11-r-studio-knit-publish-to-scrnshot.png)
+![](../fig/11-r-studio-knit-publish-confirm-scrnshot.png)
 
 At the end of the publish process your paper will be live on the internet 
 with a URL similar to: `https://rpubs.com/yourname/678624`
