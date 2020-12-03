@@ -17,6 +17,15 @@ keypoints:
 - Anatomy of an Rmd File (YAML header, Text, Code chunks)
 - How to knit an Rmd File to html
 source: Rmd
+output: 
+  md_document:
+    variant: markdown
+    preserve_yaml: true
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../_episodes';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, '02-starting-with-rmarkdown.md')) })
 ---
 ```{r, include=FALSE}
 source("../bin/chunk-options.R")
@@ -158,13 +167,14 @@ Rmd combines the power of R code and analysis with narratives describing methods
 
 For this project, we used the following setup for folders and files:  
 FIXME make sure this is accurate after finishing the .proj file  
-**bin:** contains a a .csl file for changing the bibliography to APA format from the default Rstudio Chicago style  
-**code:** a different name for the `src` folder. This will contain our data cleaning scripts, R scripts for plots and Rmarkdown scripts for writing our paper  
-**data:** this folder contains our raw data files. We downloaded both an .xlxs and .txt  
-**docs:** This contains our raw text file for the paper and our .bibtex for bibliography as well as any other notes we may have about the project.   
-**figs:** This is for the .png figures we found and wanted to add into our paper. It can also be used to save .png or .jpeg copies of the figures we output from our code.  
-**results:** This is where the rendered version of our .Rmd (and .R) file will save to.  
-**RMarkdown_Workshop.Rproj** lives in the root directory.    
+**bin:** contains a a .csl file for changing the bibliography to APA format
+**code:** a different name for the `src` folder. This will contain our R scripts for plots and R Markdown scripts for writing our paper.  
+**data:** this folder contains our raw data files. We downloaded both an .xlxs and .txt  FIXME - clean up the data folder
+**docs:** This contains our raw text file `paper_raw.txt` for the paper and our `bibliography.bibtex` for reference. We could add any other notes we may have about the project here too.   
+**figs:** This is for the .png figures we found and want to add into our paper. It can also be used to save .png or .jpeg copies of the figures we output from our code.  
+**results:** This is where the rendered version of our .Rmd file (and .R scripts if we ran them) will save to.  
+**RMarkdown_Workshop.Rproj** lives in the root directory.
+FIXME - need to add the following 3 files (or we could skip these):
 **README.md** A detailed project description with all collaborators listed.   
 **CITATION.txt** Directions to cite the project.  
 **LICENSE.txt** Instructions on how the project or any components can be reused.   
@@ -195,7 +205,6 @@ Packages can also be viewed, loaded, and detached in the Packages tab of the low
 
 Packages can be installed and updated from the Package tab with the Install and Update buttons at the top of the tab. 
 
-FIXME: change Challenge  packages 
 
 > ## CHALLENGE 2.2
 >
@@ -362,7 +371,7 @@ output: html_document
 ~~~
 {: .source}
 
-3) Navigate to the `docs` folder and open `rawtext.txt FIXME`. Copy all the text with either `ctrl-a` or `cmd-a` and paste AFTER the yaml header in our rmd file.
+3) Navigate to the `docs` folder and open `paper_raw.txt FIXME`. Copy all the text with either `ctrl-a` or `cmd-a` and paste AFTER the yaml header in our rmd file.
 ~~~
 ...
 output:
@@ -376,7 +385,7 @@ Reproducible research practices include rigorously controlled and documented exp
 
 Your file should now look something like this:   
 ![Rmd file with raw text](../fig/02-rmd-rawtxt.PNG) 
-FIXME fix screenshot when final raw text is determined
+FIXME fix screenshot when final raw text is determined (just a few sentences will be different)
 
 Now we’ll be set for our next episode which is about adding Markdown syntax to style your text sections (white sections)- including headers, bold, italics, citations, footnotes, links, citations etc. 
 
