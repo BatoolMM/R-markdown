@@ -8,14 +8,14 @@ questions:
 - What are the benefits of using R Markdown?
 
 objectives:
-- Understand what scientific reproducibility entails
+- Understand what scientific reproducibility entails.
 - Identify the benefits of using R Markdown to create research reports.
 - Understand how R Markdown is a useful tool in Open Science approaches.
 - Learn how R Markdown can help one’s research.
 
 keypoints:
-- FIXME
-- FIXME
+- Reproducible research is key for scientific advancement.
+- R Markdown can help you to organize, have better control over and produce reproducible research.
 source: Rmd
 ---
 
@@ -95,7 +95,6 @@ R Markdown belongs to the field of literate programming which is about weaving t
 The idea of literate programming shines some light on this dark area of science. This is an idea from Donald Knuth where you combine your text with your code output to create a document. This is a blend of your literature (text), and your programming (code), to create something that you can read from top to bottom. Imagine your paper - the introduction, methods, results, discussion, and conclusion, and all the bits of code that make each section. With R Markdown, you can see all the pieces of your data analysis altogether.
 
 You can include both text and code to execute. It is a convenient tool for reproducible and dynamic reports with R! With R Markdown, you are able to:
-
 1. Keep an eye on text (the paper) AND the source code. These computational steps are essential to ensure computational reproducibility.
 2. Conduct the entire analysis pipeline in an R Markdown document: data (pre-)processing, analysis, outputs, visualization.
 3. Apply a formatting syntax that is part of the R ecosystem and supports LaTeX.
@@ -106,5 +105,10 @@ You can include both text and code to execute. It is a convenient tool for repro
 8. If you do not make any changes to the document after creating the output document, you can be sure that the paper was executable at least at the time of submission. 
 9. Refer to the corresponding code lines in the methodology section making it unnecessary to use pseudocode, high-level textual descriptions, or just too many words to describe the computational analysis.
 10. Use packages such as rticles to use templates from publishers and create submission-ready documents.
+
+FIXME: Greg’s three motivating examples:
+* Chris Lortie’s COVID page
+* Using RMarkdown for math formatting
+* Reconstructing paper’s plots, difficulty thereof
 
 FIXME: Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this (link to the html version of the paper).
