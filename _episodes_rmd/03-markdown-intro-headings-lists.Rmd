@@ -1,5 +1,5 @@
 ---
-title: "Markdown Syntax: Creating Headings & Lists"
+title: "Markdown Syntax: Headings & Lists"
 teaching: 30
 exercises: 10
 questions:
