@@ -1,5 +1,5 @@
 ---
-title: "Markdown Syntax: Adding Citations and Bibliography"
+title: "R Markdown Syntax: Citations & Bibliography"
 teaching: 5
 exercises: 0
 questions:
