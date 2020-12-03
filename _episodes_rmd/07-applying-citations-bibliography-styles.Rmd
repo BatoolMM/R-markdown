@@ -138,9 +138,9 @@ publisher={Macmillan}
 > ## Challenge 7.1: Complete the .bibtex file 
 >
 > Get all six citable items in the file using Google Scholar. Follow the same process with the remaining three references:
-> - The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
-> - Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
-> - A manifesto for reproducible science. By Munafò et al. (2017).
+> `1. The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
+> 2. Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
+> 3. A manifesto for reproducible science. By Munafò et al. (2017).`
 >> ## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
 > FIXME: should we add all items here?
@@ -187,7 +187,7 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.2: Adding single citation
 >
-> Locate [citation exercise 1] in the document, and replace it by a citation to Mufano's study.
+> Locate `[citation exercise 1]` in the document, and replace it by a citation to Mufano's study.
 >> ## Solution
 > `[@munafo\_manifesto\_2017]` 
 > The output you will get in Chicago style will be: `(Mufano, 2017)`
@@ -211,7 +211,7 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.3: Adding multiple citations
 >
-> Now it is your turn! Locate in the document the note [citation exercise 2]. Remove it and include a citation to Baker and Freedman, Venugopalan and Wisman&#39;s studies.
+> Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker and Freedman, Venugopalan and Wisman&#39;s studies.
 >> ## Solution
 > `[@baker\_1500\_2016; @freedman\_reproducibility2020\_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
