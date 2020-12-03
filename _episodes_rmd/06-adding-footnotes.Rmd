@@ -7,8 +7,8 @@ questions:
 - How can we add hyperlinks?
 
 objectives:
-- Learn how to insert footnotes.
-- Learn how to create hyperlinks.
+- Learn how to insert footnotes
+- Learn how to create hyperlinks
 
 keypoints:
 - R Markdown allows you to create footnotes.
@@ -36,7 +36,7 @@ In our paper, we have a footnote in the introduction when we reference a notice 
 >
 > Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote.
 >
-> ## Solution
+>> ## Solution
 > ``^1^Through these four elements, the NIH intends to``
 >> {: .output}
 > {: .solution}
