@@ -1,5 +1,5 @@
 ---
-title: "Inserting Images and Tables"
+title: "R Markdown Syntax: Images & Tables"
 teaching: 30
 exercises: 10
 questions:
@@ -11,8 +11,8 @@ objectives:
 - To add tables into an rmarkdown document
 
 keypoints:
-- Inserting Images
-- Inserting basic tables
+- You can resize and align images with R Markdown
+- You can easily create basic tables with R Markdown  
 source: Rmd
 ---
 ```{r, include=FALSE}
