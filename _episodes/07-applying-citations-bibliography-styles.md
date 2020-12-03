@@ -308,7 +308,7 @@ nocite: |
 
 ```
 
-This will force all items to be displayed in the bibliography.
+Note that this will force all items to be displayed in the bibliography.
 
 ### Changing Citation Styles
 
