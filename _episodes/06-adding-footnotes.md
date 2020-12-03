@@ -16,7 +16,6 @@ keypoints:
 source: Rmd
 ---
 
-# Markdown Syntax: Adding Footnotes & Hyperlinks
 
 ## Adding footnotes
 
@@ -93,5 +92,6 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 {: .challenge}
 
 
-## Tip: You can use html directly in your .rmd document to add a link that will open in a new tab, such as `<a href="http://www.ucsb.edu/" target="_blank"> UCSB</a>`. This syntax requires pandoc and link_attributes extension, that is by default included in Rmarkdown.
+## Tip: 
+You can use html directly in your .rmd document to add a link that will open in a new tab, such as `<a href="http://www.ucsb.edu/" target="_blank"> UCSB</a>`. This syntax requires pandoc and link_attributes extension, that is by default included in Rmarkdown.
 {: .callout}
