@@ -6,25 +6,24 @@ questions:
 - What is reproducible research?
 - How can R Markdown help research to be more reproducible?
 - What are the benefits of using R Markdown?
-
 objectives:
 - Understand what scientific reproducibility entails.
 - Identify the benefits of using R Markdown to create research reports.
 - Understand how R Markdown is a useful tool in Open Science approaches.
 - Learn how R Markdown can help one’s research.
-
 keypoints:
 - Reproducible research is key for scientific advancement.
 - R Markdown can help you to organize, have better control over and produce reproducible research.
 source: Rmd
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 
 
 FIXME: Breakout rooms: What is reproducible research for you? (use mentimeter to collect answers)
 
-
-# Why R Markdown?
 
 ## The importance of Reproducibility in Research
 
