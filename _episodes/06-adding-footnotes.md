@@ -17,7 +17,7 @@ source: Rmd
 ---
 
 
-## Adding footnotes
+## Adding Footnotes
 
 We can add footnotes to our paper using the ^ symbol. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
 
@@ -41,9 +41,7 @@ In our paper, we have a footnote in the introduction when we reference a notice 
 > > ## Solution
 > 
 > > ~~~
->
 > `^1^Through these four elements, the NIH intends to`
->
 > > ~~~
 > > {: .output}
 > {: .solution}
@@ -78,14 +76,10 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 > ~~~
 >
 > > ## Solution
-> >
-> >
 > > ~~~
-> >
 > `[SurveyMonkey](https://surveymonkey.com)`
 
 >`([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))`
->
 > > ~~~
 > > {: .output}
 > {: .solution}
