@@ -1,9 +1,43 @@
+---
+exercises: 10
+keypoints:
+- 'What is Knitr?'
+- Inline code
+- Code chunks
+- Code chunk options
+- Global code chunk options
+knit: |
+    (function(inputFile, encoding) { out\_dir &lt;- '../\_episodes';
+    rmarkdown::render(inputFile, encoding=encoding,
+    output\_file=file.path(dirname(inputFile), out\_dir,
+    '09-inline-code-chunks.md')) })
+objectives:
+- Understand the basic functions of Knitr
+- Learn how to add inline code to your document
+- Learn how to add code chunks to your document
+- 'Distinguish when inline code vs. code chunks would be appropriate'
+- Understand how to change the output characteristics of code chunks
+output:
+  md_document:
+    preserve_yaml: True
+    variant: markdown
+questions:
+- 'What is "Knitr"?'
+- 'When would I want to add inline code?'
+- 'How to add inline code?'
+- 'When would I want to use code chunks?'
+- 'How do I add code chunks?'
+source: Rmd
+teaching: 45
+title: 'Knitr Syntax: Inline Code & Code Chunks'
+---
+
 What is Knitr?
 --------------
 
 (FIXME) Language for processing code chunks. Two main ways to process
-code in Rmd  
-1. Inline code  
+code in Rmd\
+1. Inline code\
 2. Code Chunks
 
 Adding Inline code
@@ -147,7 +181,7 @@ well as message to TRUE????
 ### Global Code Chunk Options:
 
 To set global options that apply to every chunk in your file, call
-knitr::opts\_chunk*s**e**t**i**n**a**c**o**d**e**c**h**u**n**k*.*K**n**i**t**r**w**i**l**l**t**r**e**a**t**e**a**c**h**o**p**t**i**o**n**t**h**a**t**y**o**u**p**a**s**s**t**o**k**n**i**t**r* : :*o**p**t**s*<sub>*c*</sub>*h**u**n**k*set
+knitr::opts\_chunk$set in a code chunk. Knitr will treat each option that you pass to knitr::opts_chunk$set
 as a global default that can be overwritten in individual chunk headers
 
 See also fig paths best practices
