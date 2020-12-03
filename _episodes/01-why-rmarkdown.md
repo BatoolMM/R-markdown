@@ -50,7 +50,7 @@ A 2016 survey in Nature revealed that irreproducible experiments are a problem a
  
 ![Nature Report - 2016](../fig/01-fig2.png)
  
-##Factors behind irreproducible research
+## Factors behind irreproducible research
 
 ![Science is not a miracle](../fig/01-fig3.png)
 
