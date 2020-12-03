@@ -30,7 +30,7 @@ FIGURE 1 - Survey respondents; self-assessments of their knowledge and awareness
 The markdown should look like:
 
 ```
-![FIGURE .1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg)
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg)
 ```
 
 This will output as:
@@ -47,7 +47,7 @@ Save it and use the knit function to check how the output looks like.
 The image you just added looks a little too big, right? We can resize it by adjusting the width and height ratio. Let’s say we want this image to be half of the original size. In order to do that, we will have to add to the syntax: 
 
 ```
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){ width=50% hieght=50%}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50%}
 ```
 This will output as:
 <figure>
