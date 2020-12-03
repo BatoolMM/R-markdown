@@ -151,7 +151,9 @@ When creating episodes in the `_episodes_rmd` directory you'll want to process t
 ...
 source: Rmd
 output: 
-  md_document
+  md_document:
+    variant: markdown
+    preserve_yaml: true
 knit: (function(inputFile, encoding) { 
       out_dir <- '../episodes';
       rmarkdown::render(inputFile,
