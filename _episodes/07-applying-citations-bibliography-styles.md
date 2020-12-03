@@ -155,7 +155,7 @@ publisher={Macmillan}
 
 
 > ## Tip: 
->
+> 
 >Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as.bibtex files in a bulk.
 >
 {: .callout}
@@ -238,12 +238,10 @@ The output you will get in Chicago style will be:
 > ~~~
 > > ## Solution
 > 
-> 
 > > ~~~
 > 
 > `[@baker\_1500\_2016; @freedman\_reproducibility2020\_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
->
 >
 > > ~~~
 > > {: .output}
@@ -272,13 +270,10 @@ The output you will get will be:
 > ~~~
 > > ## Solution
 > 
-> 
 > > ~~~
-> 
 > 
 > `[-@nature\_nature\_2018]`
 > The output you will get will be: `Nature (2018)`
->
 >
 > > ~~~
 > > {: .output}
