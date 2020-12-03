@@ -41,8 +41,10 @@ To cite this lesson, please consult with [CITATION](CITATION)
 [lesson-example]: https://carpentries.github.io/lesson-example
 
 ## Lesson Review
-Two sets of reviewers 1) for formatting & grammar 2) for content
-Sign-up to review here: https://docs.google.com/spreadsheets/d/1ukHnhh2-1ZJSZhCyjhRjQt4MrXJHmA6E76_tGrenpWk/edit#gid=1446449919
+Two sets of reviewers:  
+1) for formatting & grammar   
+2) for content  
+Sign-up to review here: https://docs.google.com/spreadsheets/d/1ukHnhh2-1ZJSZhCyjhRjQt4MrXJHmA6E76_tGrenpWk/edit#gid=1446449919  
 
 Each reviwer should look for:
 
