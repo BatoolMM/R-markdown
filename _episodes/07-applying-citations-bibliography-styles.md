@@ -217,7 +217,7 @@ The output you will get in Chicago style will be:
 
 #### Multiple Citations
 
-If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let&#39;s complement the citation we created earlier in the first paragraph by adding Bustin&#39;s to it:
+If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let&#39;s complement the citation we created earlier in the first paragraph by adding Bustin&#39;s to it. Let's practice that in the place marked as `[citation example 2]`
 
 `[@bustin\_reproducibility\_2014; @freedman\_reproducibility2020\_2017]`
 
@@ -251,7 +251,7 @@ The output you will get in Chicago style will be:
 
 #### Keeping Authors in the narrative
 
-There are cases authors are announced in the text, and therefore their names shouldn&#39;t go between parenthesis. Let&#39;s say you want to add a citation to support the statement about Springer&#39;s survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key, as it follows:
+There are cases authors are announced in the text, and therefore their names shouldn&#39;t go between parenthesis. Let&#39;s say you want to add a citation to support the statement about Springer&#39;s survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper, as it follows:
 
 &quot;A recent survey conducted by_Springer_ `[-@springer\_reality\_2016]` reported that 90%...&quot;
 
