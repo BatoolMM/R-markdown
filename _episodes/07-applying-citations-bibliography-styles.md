@@ -13,8 +13,7 @@ objectives:
 - Learn how to apply different citation styles 
 
 keypoints:
-- FIXME
-- FIXME
+- R Markdown supports different citation styles
 source: Rmd
 ---
 
@@ -160,7 +159,11 @@ publisher={Macmillan}
 {: .challenge}
 
 
-**Tip:** Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as.bibtex files in a bulk.
+> ##Tip: 
+>
+>Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as.bibtex files in a bulk.
+>
+{: .callout}
 
 We should now have a complete .bibtex file with all items we need to proceed. But how will RStudio be able to link this file with the .rmd file on the other tab? Well, remember we mentioned early on that we should include a bibliography file in the YAML header? In this case we will add to the existing YAML the following information:
 
@@ -345,4 +348,7 @@ csl: apa-5th-edition.csl
 
 Knit the document and note that citations and references now conform to the APA style.
 
-**Tip:** You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles).More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
+> ## Tip: 
+> You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles).More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
+>
+{: .callout}
