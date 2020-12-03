@@ -138,9 +138,11 @@ When creating episodes in the `_episodes_rmd` directory you'll want to process t
 #### 4 methods:
 (ordered from most automated to least automated)
 
-**TROUBLESHOOT: Add output & knit code to yaml header**
+**BEST: Add output & knit code to yaml header**
 
-1) add output to yaml header and 2) add knit code
+1) add output to yaml header 
+2) add knit code
++ change `[00-FilenameOfEpisode]`
 
 ```
 ---
@@ -148,12 +150,11 @@ When creating episodes in the `_episodes_rmd` directory you'll want to process t
 source: Rmd
 output: 
   md_document
----
 knit: (function(inputFile, encoding) { 
-      out_dir <- '../results';
+      out_dir <- '../episodes';
       rmarkdown::render(inputFile,
                         encoding=encoding, 
-                        output_file=file.path(dirname(inputFile), out_dir, 'filename.md')) })
+                        output_file=file.path(dirname(inputFile), out_dir, '[00-FilenameOfEpisode].md')) })
 ---
 ```
 
