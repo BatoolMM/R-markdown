@@ -244,7 +244,7 @@ The output you will get will be:
 > ## Challenge 7.4: Keep author(s) in the narrative 
 > 
 > Let&#39;s practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature&#39;s survey in order to indicate the dataset you are referring to.
-> > ## Solution
+>> ## Solution
 > 
 > `[-@nature\_nature\_2018]`
 > The output you will get will be: `Nature (2018)`
