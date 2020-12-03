@@ -260,11 +260,9 @@ All cited items will be listed under the section **References** which you create
 By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocitemetadata field and put the citations there.
 
 ```
-
 nocite **:** |
 
 @item1, @item2
-
 ```
 
 #### Add all no-cited items to the bibliography
@@ -274,7 +272,6 @@ If we do not wish to explicitly state all of the items within the bibliography b
 ```
 nocite: |
   @item1, @item2
-
 ```
 
 Note that this will force all items to be displayed in the bibliography.
