@@ -19,7 +19,6 @@ keypoints:
 source: Rmd
 output: 
   md_document:
-    variant: markdown_github
     preserve_yaml: true
 knit: (function(inputFile, encoding) { 
       out_dir <- '../_episodes';
@@ -116,8 +115,9 @@ interfering with each other.
 > 3. Double click on the `.Rproj` file in that directory.  
 > 
 >> ## SOLUTION  
->> FIXME add screen shot of proj file with folders in zip  
-> {: .solution} 
+>> FIXME add screen shot of proj file with folders in zip 
+>>  
+> {: .solution}  
 {: .challenge}  
 
 ### Best practices for project organization
