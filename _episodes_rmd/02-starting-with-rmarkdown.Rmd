@@ -24,8 +24,8 @@ output:
 knit: (function(inputFile, encoding) { 
       out_dir <- '../_episodes';
       rmarkdown::render(inputFile,
-                        encoding="UTF-8", 
-                        output_file=file.path(dirname(inputFile), out_dir, '02-starting-with-rmarkdown.md')) })
+                        encoding=encoding, 
+                        output_file='02-starting-with-rmarkdown.md', output_dir=out_dir )})
 ---
 ```{r, include=FALSE}
 source("../bin/chunk-options.R")
