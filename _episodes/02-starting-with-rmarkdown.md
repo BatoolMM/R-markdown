@@ -17,14 +17,7 @@ keypoints:
 - Anatomy of an Rmd File (YAML header, Text, Code chunks)
 - How to knit an Rmd File to html
 source: Rmd
-output: 
-  md_document:
-    preserve_yaml: true
-knit: (function(inputFile, encoding) { 
-      out_dir <- '../_episodes';
-      rmarkdown::render(inputFile,
-                        encoding="UTF-8", 
-                        output_file='02-starting-with-rmarkdown.md', output_dir=out_dir )})
+
 ---
 
 Getting Around RStudio

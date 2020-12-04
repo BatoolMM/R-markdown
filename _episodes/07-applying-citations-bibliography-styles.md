@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Syntax: Citations & Bibliography"
-teaching: 5
-exercises: 0
+teaching: 30
+exercises: 15
 questions:
 - How to include citations?
 - How to create a list of references? 
@@ -34,12 +34,14 @@ Let's now move our attention to include citations and list out the references (b
 * Copac: _.copac_
 * JSON citeproc: _.json_
 
-Please note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format which is supported by Google Scholar, which we will use to retrieve example references. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
+Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references for our practice paper. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
+
+
+A `\*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `paperToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
 
 ```
-\*.bibtex` file consists of bibliography in plain-text format. Here is an example with two entries:
 
-``@misc{nature\_nature\_2018,
+@misc{nature\_nature\_2018,
 
 type = {Repository},
 
@@ -80,33 +82,26 @@ pages = {437},
 
 Note that the first line specifies the type of citation, MISC for _miscellaneous_, and Article for _papers_, along with the main entry which will be used to link in-text citations further in the episode. The other lines include the metadata that describes different parts of the bibliography, such as the date, the author, etc.
 
-These two references are included in the `bibliography.bibtex` file supplied to you and saved on your Desktop as recommended and that you should now open in RStudio. Now let&#39;s collect the other citations we will need to include in our paper.
+Now let&#39;s collect the other citations we will need to include in our paper:
 
-We want to add other four items to our bibliography list to be then cited in the paper.
+We want to add other more items to our bibliography list to be then cited in the paper. Let's add the paper: `1,500 scientists lift the lid on reproducibility` authored by Baker (2016).
 
-1. 1,500 scientists lift the lid on reproducibility by Baker (2016).
+To do so, follow the steps below:
 
-2. The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
-
-3. Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
-
-4. A manifesto for reproducible science. By Munafò et al. (2017).
-
-To do so, you should follow four main steps:
-
-1. Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper.A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link &quot;All 6 versions&quot;, listing out different repositories and websites the paper must be living in.
+* 1 Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper.A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link &quot;All 6 versions&quot;, listing out different repositories and websites the paper must be living in.
 
 ![Fig. 7.1 - Bibtext from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
-Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
+* 2 Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
 
 ![Fig. 7.2 - Bibtext from Google Scholar (2)](../fig/07-gs-bibtex2.png)
 
-2. When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
+* 3 When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
 
 ![Fig. 7.3 - Bibtext from Google Scholar (3)](../fig/07-gs-bibtex3.png)
 
-3. Clicking on the BibTeX option will open the file in your browser, like this:
+
+* 4 Choose the BibTeX option. It will prompt a file in your browser, like this:
 
 ```
 @article{baker20161,
@@ -130,17 +125,65 @@ publisher={Macmillan}
 }
 ```
 
-4. Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
+* 5 Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
 
 > ## Challenge 7.1: Complete the .bibtex file 
 >
-> Get all six citable items in the file using Google Scholar. Follow the same process with the remaining three references:
-> The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
-> Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
-> A manifesto for reproducible science. By Munafò et al. (2017).``
+> Follow the same process to add three references to the bibtex file:
+> `The reproducibility of biomedical research: sleepers awake!` By Bustin (2014).
+> `Reproducibility2020: progress and priorities` By Freedman, Venugopalan, &amp; Wisman (2017).
+> `A manifesto for reproducible science` By Munafò et al. (2017).
 >>## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
-> FIXME: should we add all items here?
+```
+> @article{bustin_reproducibility_2014,
+>	title = {The reproducibility of biomedical research: {Sleepers} awake!},
+>	volume = {2},
+>	issn = {2214-7535},
+>	shorttitle = {The reproducibility of biomedical research},
+>	url = {http://www.sciencedirect.com/science/article/pii/S2214753515000030},
+>	doi = {10.1016/j.bdq.2015.01.002},
+>	abstract = {There is increasing concern about the reliability of biomedical research, with recent articles suggesting that up to 85\% of research funding is wasted. This article argues that an important reason for this is the inappropriate use of molecular techniques, particularly in the field of RNA biomarkers, coupled with a tendency to exaggerate the importance of research findings.},
+>	language = {en},
+>	urldate = {2020-11-13},
+>	journal = {Biomolecular Detection and Quantification},
+>	author = {Bustin, S. A.},
+>	month = dec,
+>	year = {2014},
+>	keywords = {Biomedicine, Cancer, Microarrays, Next generation sequencing, Reproducibility, qPCR},
+>	pages = {35--42},
+}
+> @article{freedman_reproducibility2020_2017,
+>	title = {Reproducibility2020: {Progress} and priorities},
+>	volume = {6},
+>	issn = {2046-1402},
+>	shorttitle = {Reproducibility2020},
+>	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461896/},
+>	doi = {10.12688/f1000research.11334.1},
+>	urldate = {2020-11-13},
+>	journal = {F1000Research},
+>	author = {Freedman, P. and Venugopalan, G. and Wisman, R.},
+>	month = may,
+>	year = {2017},
+>	pmid = {28620458},
+>	pmcid = {PMC5461896},
+}
+> @article{freedman_reproducibility2020_2017,
+>	title = {Reproducibility2020: {Progress} and priorities},
+>	volume = {6},
+>	issn = {2046-1402},
+>	shorttitle = {Reproducibility2020},
+>	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461896/},
+>	doi = {10.12688/f1000research.11334.1},
+>	urldate = {2020-11-13},
+>	journal = {F1000Research},
+>	author = {Freedman, P. and Venugopalan, G. and Wisman, R.},
+>	month = may,
+>	year = {2017},
+>	pmid = {28620458},
+>	pmcid = {PMC5461896},
+}
+```
 >>{: .output}
 >{: .solution}
 {: .challenge}
@@ -184,7 +227,7 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.2: Adding single citation
 >
-> Locate `[citation exercise 1]` in the document, and replace it by a citation to Mufano's study.
+> Locate `[citation exercise 1]` in the document, and replace it by a citation to Mufano's (2017) study.
 >> ## Solution
 > `[@munafo\_manifesto\_2017]` 
 > The output you will get in Chicago style will be: `(Mufano, 2017)`
@@ -208,7 +251,7 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.3: Adding multiple citations
 >
-> Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker and Freedman, Venugopalan and Wisman&#39;s studies.
+> Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker (2016) and Freedman, Venugopalan and Wisman&#39;s (2017) studies.
 >> ## Solution
 > `[@baker\_1500\_2016; @freedman\_reproducibility2020\_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
