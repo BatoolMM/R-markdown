@@ -17,11 +17,13 @@ keypoints:
 - Anatomy of an Rmd File (YAML header, Text, Code chunks)
 - How to knit an Rmd File to html
 source: Rmd
-
+output:
+  md_document: 
+    variant: commonmark
+    preserve_yaml: true
 ---
 
-Getting Around RStudio
-----------------------
+## Getting Around RStudio
 
 Throughout this lesson, we're going to teach you some of the
 fundamentals of using R Markdown as part of your RStudio workflow.
@@ -40,16 +42,16 @@ you may want to use to work with R Markdown.
 
 When you first open RStudio, you will be greeted by three panels:
 
--   The interactive R console/Terminal (entire left)
--   Environment/History/Connections (tabbed in upper right)
--   Files/Plots/Packages/Help/Viewer (tabbed in lower right)
+  - The interactive R console/Terminal (entire left)
+  - Environment/History/Connections (tabbed in upper right)
+  - Files/Plots/Packages/Help/Viewer (tabbed in lower right)
 
-![RStudio layout](../fig/02-rstudio.png)
+![RStudio layout](../fig/02-rstudio.png "fig:")
 
 Once you open files, such as .Rmd files or .R files, an editor panel
 will also open in the top left.
 
-![RStudio layout with .R file open](../fig/02-rstudio-script.png)
+![RStudio layout with .R file open](../fig/02-rstudio-script.png "fig:")
 
 ### Working in an R Project
 
@@ -58,19 +60,27 @@ life as random notes, some code, then a manuscript, and eventually
 everything is a bit mixed together.
 
 <blockquote class="twitter-tweet">
+
 <p>
+
 Managing your projects in a reproducible fashion doesn't just make your
 science reproducible, it makes your life easier.
+
 </p>
+
 — Vince Buffalo (@vsbuffalo)
 <a href="https://twitter.com/vsbuffalo/status/323638476153167872">April
-15, 2013</a>
+15,
+2013</a>
+
 </blockquote>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Most people tend not to think about how to organize their files which
 may result in something like this:
 
-![](../fig/02-bad-layout.png)
+![](../fig/02-bad-layout.png "fig:")
 
 There are many reasons why we should *ALWAYS* avoid this:
 
@@ -84,12 +94,12 @@ There are many reasons why we should *ALWAYS* avoid this:
 
 A good project layout will ultimately make your life easier:
 
--   It will help ensure the integrity of your data;
--   It makes it simpler to share your code with someone else (a
+  - It will help ensure the integrity of your data;
+  - It makes it simpler to share your code with someone else (a
     lab-mate, collaborator, or supervisor);
--   It allows you to easily upload your code with your manuscript
+  - It allows you to easily upload your code with your manuscript
     submission;
--   It makes it easier to pick the project back up after a break.
+  - It makes it easier to pick the project back up after a break.
 
 #### A possible solution
 
@@ -112,21 +122,19 @@ open multiple projects at the same time each open to its own project
 directory. This allows you to keep multiple projects open without them
 interfering with each other. <br>
 
-> CHALLENGE 2.1
-> -------------
->
+> ## CHALLENGE 2.1
+> 
 > Open an RStudio project through the file system
->
+> 
 > 1.  Exit RStudio.
 > 2.  Navigate to the directory where you downloaded & unzipped the zip
 >     folder for this workshop
 > 3.  Double click on the `.Rproj` file in that directory.
->
-> > SOLUTION
-> > --------
-> >
+> 
+> > ## SOLUTION
+> > 
 > > FIXME add screen shot of proj file with folders in zip
-> >
+> > 
 > > {: .solution}  
 > > {: .challenge}
 
@@ -174,22 +182,21 @@ together; decreasing the amount of work you, your collaborators, and
 your audience has to do to search for different components of your
 project: raw data, analysis and plots, narrative, and citations. <br>
 
-> Tip: Good Enough Practices for Scientific Computing
-> ---------------------------------------------------
->
+> ## Tip: Good Enough Practices for Scientific Computing
+> 
 > [Good Enough Practices for Scientific
 > Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf)
 > gives the following recommendations for project organization:  
-> 1. Put each project in its own directory, which is named after the
+> 1\. Put each project in its own directory, which is named after the
 > project.  
-> 2. Put text documents associated with the project in the `doc`
+> 2\. Put text documents associated with the project in the `doc`
 > directory.  
-> 3. Put raw data and metadata in the `data` directory, and files
+> 3\. Put raw data and metadata in the `data` directory, and files
 > generated during cleanup and analysis in a `results` directory.  
-> 4. Put source for the project's scripts and programs in the `src`
+> 4\. Put source for the project's scripts and programs in the `src`
 > directory, and programs brought in from elsewhere or compiled locally
 > in the `bin` directory.  
-> 5. Name all files to reflect their content or function.  
+> 5\. Name all files to reflect their content or function.  
 > {: .callout}
 
 For this project, we used the following setup for folders and files:  
@@ -234,14 +241,14 @@ obtaining a package written by someone else. As of this writing, there
 are over 10,000 packages available on CRAN (the comprehensive R archive
 network). R and RStudio have functionality for managing packages:
 
--   You can see what packages are installed by typing
+  - You can see what packages are installed by typing
     `installed.packages()`
--   You can install packages by typing
+  - You can install packages by typing
     `install.packages("packagename")`, where `packagename` is the
     package name, in quotes.
--   You can update installed packages by typing `update.packages()`
--   You can remove a package with `remove.packages("packagename")`
--   You can make a package available for use with `library(packagename)`
+  - You can update installed packages by typing `update.packages()`
+  - You can remove a package with `remove.packages("packagename")`
+  - You can make a package available for use with `library(packagename)`
 
 Packages can also be viewed, loaded, and detached in the Packages tab of
 the lower right panel in RStudio. Clicking on this tab will display all
@@ -253,34 +260,33 @@ a checked box to detach that package.
 Packages can be installed and updated from the Package tab with the
 Install and Update buttons at the top of the tab. <br>
 
-> CHALLENGE 2.2
-> -------------
->
+> ## CHALLENGE 2.2
+> 
 > Install the following packages: `bookdown`, `tidyverse`, `kable`  
-> &gt; \#\# SOLUTION  
-> &gt;  
-> &gt; We can use the `install.packages()` command to install the
-> required packages.  
-> &gt;
-> `> install.packages("bookdown")    > install.packages("tidyverse")    > install.packages("kable")    >`  
-> &gt; &gt; An alternate solution, to install multiple packages with a
+> \> \#\# SOLUTION  
+> \>  
+> \> We can use the `install.packages()` command to install the required
+> packages.  
+> \> `> install.packages("bookdown") > install.packages("tidyverse") >
+> install.packages("kable") >`  
+> \> \> An alternate solution, to install multiple packages with a
 > single `install.packages()` command is:  
-> &gt; `> install.packages(c("bookdown", "tidyverse", "kable"))   >`  
+> \> `> install.packages(c("bookdown", "tidyverse", "kable")) >`  
 > {: .solution} {: .challenge}
 
-Starting a R Markdown File
---------------------------
+## Starting a R Markdown File
 
-Start a new R markdown document in RStudio by clicking File &gt; New
-File &gt; R Markdown…
+Start a new R markdown document in RStudio by clicking File \> New File
+\> R Markdown…
 
-![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.PNG)
+![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.PNG
+"fig:")
 
 If this is the first time you have ever opened an R markdown file a
 dialog box will open up to tell you what packages need to be installed.
 
 ![First time R markdown install packages dialog
-box](../fig/02-rmd-installpackages-dialogbox.PNG)
+box](../fig/02-rmd-installpackages-dialogbox.PNG "fig:")
 
 Click "Yes". The packages will take a few seconds to install. You should
 see that each package was installed successfully in the dialog box.
@@ -290,9 +296,9 @@ ask you to name the file and add an author name (may already know what
 your name is) The default output is HTML and as the wizard indicates, it
 is the best way to start and in your final version or later versions you
 have the option of changing to pdf or word document (among many other
-output formats! We'll see this later).
+output formats\! We'll see this later).
 
-![Name new .Rmd file](../fig/02-name-new-rmd-blank.PNG)
+![Name new .Rmd file](../fig/02-name-new-rmd-blank.PNG "fig:")
 
 New R Markdown will always pop up with a generic template…
 
@@ -300,23 +306,22 @@ If you see this template you're good to go. ![.Rmd new file generic
 template](../fig/02-rmd-new-template.PNG)
 
 Now we’ll get into how our Rmarkdown file & workflow is organized and
-then on to editing and styling!
+then on to editing and styling\!
 
-R Markdown Workflow
--------------------
+## R Markdown Workflow
 
 R Markdown has four distinct steps in the workflow:  
-1. create a **YAML header** (optional)  
-2. write R Markdown-formatted **text**  
-3. add R **code chunks** for embedded analysis  
-4. render the document with **Knitr**  
+1\. create a **YAML header** (optional)  
+2\. write R Markdown-formatted **text**  
+3\. add R **code chunks** for embedded analysis  
+4\. render the document with **Knitr**  
 <br>
 
-![R Markdown Workflow](../fig/02-rmd-workflow.png)
+![R Markdown Workflow](../fig/02-rmd-workflow.png "fig:")
 
 Let’s dig in to those more:
 
-### 1. YAML header:
+### 1\. YAML header:
 
 #### What is YAML anyway?
 
@@ -336,7 +341,8 @@ surrounded by three dashes `---`: \* title
 \* date  
 \* output
 
-![R Markdown template YAML header](../fig/02-rmd-template-yaml.png)
+![R Markdown template YAML header](../fig/02-rmd-template-yaml.png
+"fig:")
 
 The first three are self-explanatory, but what's the output? We saw this
 in the wizard for starting a new document, by default you are able to
@@ -369,7 +375,7 @@ YAML file will look at the end of this workshop.
                             output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
     ---
 
-### 2. Formatted text:
+### 2\. Formatted text:
 
 This one is simple, it's literally just text narrative formatted by
 using markdown (more on markdown syntax later). Markdown-formatted text
@@ -379,45 +385,45 @@ background in the rmd document. Notice you don’t need to use `#` to
 comment out narrative. You also don't need to encase the text in any
 symbols as you do code chunks. Any symbols you do see that aren’t
 regular grammar components are for formatting, such as \#\#, \*\* \*\*,
-and &lt; &gt;.
+and \< \>.
 
-![Rmd text chunks](../fig/02-rmd-template-text.png)
+![Rmd text chunks](../fig/02-rmd-template-text.png "fig:")
 
-> CHALLENGE 2.3 (optional)
-> ------------------------
->
+> ## CHALLENGE 2.3 (optional)
+> 
 > Can you deduce what each of the three types of symbols (`##`, `**`,
 > `<>`) do for formatting?
->
+> 
 >     ## R Markdown
->
+>     
 >     This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
->
+>     
 >     When you click the **Knit** button a document will be generated that includes both content as well as the >output of any embedded R code chunks within the document. You can embed an R code chunk like this:
->
-> > SOLUTION
-> > --------
-> >
+> 
+> > ## SOLUTION
+> > 
 > > `##` is a heading, `**` is to bold enclosed text, and `<>` is for
-> > hyperlinks. Don't worry about this too much right now! This is an
+> > hyperlinks. Don't worry about this too much right now\! This is an
 > > example of R markdown syntax for styling, we'll dive into this next.
 > > {: .solution} {: .challenge}
 
-### 3. Code Chunks:
+### 3\. Code Chunks:
 
 R code chunks appear highlighted in gray throughout the rmd document.
-They are surrounded by three tick marks on either side
-(\`\````` \```) with the starting three tick marks followed by curly brackets `````with some other code inside. The tick marks indicate the start of a code section and the bits found between the curly brackets`\`indicate
-how R should read and display the code (more on this in the Knitr syntax
-episodes). These are the sections you add R code such as summary
-statistics, analysis, tables and plots. If you’ve already written an R
-script you can copy and paste your code between the few lines of
-required formatting to embed & run whichever piece you want at that
-particular spot in the document.
+They are surrounded by three tick marks on either side (\`\``\```) with
+the starting three tick marks followed by curly brackets``with some
+other code inside. The tick marks indicate the start of a code section
+and the bits found between the curly brackets`\`indicate how R should
+read and display the code (more on this in the Knitr syntax episodes).
+These are the sections you add R code such as summary statistics,
+analysis, tables and plots. If you’ve already written an R script you
+can copy and paste your code between the few lines of required
+formatting to embed & run whichever piece you want at that particular
+spot in the document.
 
-![rmd template code chunks](../fig/02-rmd-template-code.png)
+![rmd template code chunks](../fig/02-rmd-template-code.png "fig:")
 
-### 4. Rendering your Rmd document:
+### 4\. Rendering your Rmd document:
 
 This is called "knitting"" and the button looks like a spool of yarn
 with a knitting needle. Clicking the knit button will compile the code,
@@ -439,7 +445,7 @@ to make sure we aren't making any errors.
 This is a little preview of what's to come in the Knitr syntax episodes
 later on. Click the "knit" button
 
-![Knit button](../fig/02-rmd-knit-button.png)
+![Knit button](../fig/02-rmd-knit-button.png "fig:")
 
 Before you can render your document, you'll need to give it a file name
 and choose what folder you want to save it to. ![First knit choose
@@ -449,15 +455,14 @@ This is how our hmtl document will render after clicking the knit button
 and choosing a file name: ![Knit html
 output](../fig/02-knit-echoTRUE.PNG)
 
-> CHALLENGE 2.4 (optional)
-> ------------------------
->
+> ## CHALLENGE 2.4 (optional)
+> 
 > Can you deduce what the echo=TRUE option stands for?  
-> &gt; \#\# Solution &gt; The echo=TRUE piece is knitr syntax that sets
-> a global default for the whole paper. This piece of code specifically,
+> \> \#\# Solution \> The echo=TRUE piece is knitr syntax that sets a
+> global default for the whole paper. This piece of code specifically,
 > `echo=TRUE`, tells the rmd document to display the R code that
 > generates the plots & analysis when the rmd document is rendered by
-> hitting the "knit" button. &gt; Don't worry too much about this now,
+> hitting the "knit" button. \> Don't worry too much about this now,
 > we'll learn more about this syntax in the Knitr Syntax episodes. {:
 > .solution} {: .challenge}
 
@@ -467,12 +472,12 @@ Ok, now let’s start on our own rmd document.
 
 Do this on your own in your new rmd file:
 
-1.  Delete EVERYTHING except the yaml header
+1)  Delete EVERYTHING except the yaml header
 
-2.  Edit the yaml header to add the `title` of the paper we're working
+2)  Edit the yaml header to add the `title` of the paper we're working
     on and to add yourself as `author`.
 
-<!-- -->
+<!-- end list -->
 
     ---
     title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
@@ -483,7 +488,7 @@ Do this on your own in your new rmd file:
 
 {: .source}
 
-1.  Navigate to the `docs` folder and open `paper_raw.txt FIXME`. Copy
+3)  Navigate to the `docs` folder and open `paper_raw.txt FIXME`. Copy
     all the text with either `ctrl-a` or `cmd-a` and paste AFTER the
     yaml header in our rmd file. <sub>~</sub> ... output: html\_document
     --- INTRODUCTION Reproducible research practices include rigorously

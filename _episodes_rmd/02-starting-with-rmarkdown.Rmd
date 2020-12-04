@@ -17,6 +17,10 @@ keypoints:
 - Anatomy of an Rmd File (YAML header, Text, Code chunks)
 - How to knit an Rmd File to html
 source: Rmd
+output:
+  md_document: 
+    variant: commonmark
+    preserve_yaml: true
 ---
 ```{r, include=FALSE}
 source("../bin/chunk-options.R")
