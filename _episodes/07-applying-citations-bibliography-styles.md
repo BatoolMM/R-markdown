@@ -37,11 +37,11 @@ Let's now move our attention to include citations and list out the references (b
 Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references for our practice paper. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
 
 
-A `\*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `papaerToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
+A `\*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `paperToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
 
 ```
 
-``@misc{nature\_nature\_2018,
+@misc{nature\_nature\_2018,
 
 type = {Repository},
 
@@ -134,7 +134,9 @@ publisher={Macmillan}
 > `A manifesto for reproducible science` By Munafò et al. (2017).``
 >>## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
-> ```@article{bustin_reproducibility_2014,
+
+```
+@article{bustin_reproducibility_2014,
 	title = {The reproducibility of biomedical research: {Sleepers} awake!},
 	volume = {2},
 	issn = {2214-7535},
@@ -180,7 +182,8 @@ publisher={Macmillan}
 	year = {2017},
 	pmid = {28620458},
 	pmcid = {PMC5461896},
-}```
+}
+```
 >>{: .output}
 >{: .solution}
 {: .challenge}
