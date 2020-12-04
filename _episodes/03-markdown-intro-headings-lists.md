@@ -101,7 +101,7 @@ So, let's try this again, this time with heading 1 `#`:
 
 > ## Tip: More heading convention
 > For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
-{:.source}
+{: .callout}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into heading 1 and the lines that say “Survey Overview” and “Data Analysis” into heading 2 for subheadings. 
