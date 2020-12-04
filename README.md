@@ -140,9 +140,19 @@ When creating episodes in the `_episodes_rmd` directory you'll want to process t
 #### 4 methods:
 (ordered from most automated to least automated)
 
-**1) BEST: Add output & knit code to yaml header**
-THIS IS NOT WORKING: DO NOT USE FOR TIME BEING
+**3) example of using knitr from the command line/ Rstudio terminal to process an R-markdown file into a regular markdown file:**
+*assumes you are in the root directory
+*change the file name to match the episode you edited
+```
+Rscript -e 'knitr::knit("./_episodes_rmd/01-r-markdown-episode-template.Rmd", output = "./_episodes/01-r-markdown-episode-template.md")'
+```
 
+**4) Change your knit button settings**
+Next to the knit button there is a gear for options. Click it and chose `output options` at the very bottom of the list. Choose the `Advanced` tab and check `keep markdown source file`. Make sure to 1) move the `.md` file to the `_episodes/` folder and 2) delete the html file output. 
+
+
+THESE ARE NOT WORKING: DO NOT USE UNTIL FURTHER NOTICE
+**1) BEST: Add output & knit code to yaml header**
 1) add output to yaml header 
 2) add knit code
 + change `[00-FilenameOfEpisode]`
@@ -170,19 +180,6 @@ output: md_document
 ---
 ```
 \*Make sure to move the `.md` file to the `_episodes/` folder
-
-**3) example of using knitr from the command line/ Rstudio terminal to process an R-markdown file into a regular markdown file:**
-*assumes you are in the root directory
-*change the file name to match the episode you edited
-```
-Rscript -e 'knitr::knit("./_episodes_rmd/01-r-markdown-episode-template.Rmd", output = "./_episodes/01-r-markdown-episode-template.md")'
-```
-
-**4) Change your knit button settings**
-Next to the knit button there is a gear for options. Click it and chose `output options` at the very bottom of the list. Choose the `Advanced` tab and check `keep markdown source file`. Make sure to 1) move the `.md` file to the `_episodes/` folder and 2) delete the html file output. 
-
-
-
 
 
 
