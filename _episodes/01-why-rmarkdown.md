@@ -87,7 +87,7 @@ Throughout the whole research life cycle! Before you start the project because y
 ### Levels of Reproducibility
 
 <figure>
-<img src="../fig/01-fig5.png" width = "397" height = "277">
+<img src="../fig/01-fig5.png" width = "400" height = "300">
 </figure> 
 
 <!--![Levels of Reproducibility](../fig/01-fig5.png){width=50%}-->
