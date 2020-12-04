@@ -95,16 +95,16 @@ To do so, follow the steps below:
 
 ![Fig. 7.1 - Bibtext from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
-Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
+2. Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
 
 ![Fig. 7.2 - Bibtext from Google Scholar (2)](../fig/07-gs-bibtex2.png)
 
-2. When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
+3. When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
 
 ![Fig. 7.3 - Bibtext from Google Scholar (3)](../fig/07-gs-bibtex3.png)
 
 
-3. Clicking on the BibTeX option will open the file in your browser, like this:
+4. Choose the BibTeX option. It will prompt a file in your browser, like this:
 
 ```
 @article{baker20161,
@@ -127,7 +127,7 @@ publisher={Macmillan}
 
 }
 ```
-
+~~~
 
 4. Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
 
@@ -173,19 +173,19 @@ publisher={Macmillan}
 >	pmcid = {PMC5461896},
 }
 > @article{freedman_reproducibility2020_2017,
-	title = {Reproducibility2020: {Progress} and priorities},
-	volume = {6},
-	issn = {2046-1402},
-	shorttitle = {Reproducibility2020},
-	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461896/},
-	doi = {10.12688/f1000research.11334.1},
-	urldate = {2020-11-13},
-	journal = {F1000Research},
-	author = {Freedman, P. and Venugopalan, G. and Wisman, R.},
-	month = may,
-	year = {2017},
-	pmid = {28620458},
-	pmcid = {PMC5461896},
+>	title = {Reproducibility2020: {Progress} and priorities},
+>	volume = {6},
+>	issn = {2046-1402},
+>	shorttitle = {Reproducibility2020},
+>	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461896/},
+>	doi = {10.12688/f1000research.11334.1},
+>	urldate = {2020-11-13},
+>	journal = {F1000Research},
+>	author = {Freedman, P. and Venugopalan, G. and Wisman, R.},
+>	month = may,
+>	year = {2017},
+>	pmid = {28620458},
+>	pmcid = {PMC5461896},
 }
 ```
 >>{: .output}
