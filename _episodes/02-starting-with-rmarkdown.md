@@ -123,13 +123,13 @@ interfering with each other.
 >
 > Open an RStudio project through the file system
 >
-> 1.  Exit RStudio.\
+> 1.  Exit RStudio.
 > 2.  Navigate to the directory where you downloaded & unzipped the zip
->     folder for this workshop\
+>     folder for this workshop
 > 3.  Double click on the `.Rproj` file in that directory.\
->     &gt; \#\# SOLUTION &gt; FIXME add screen shot of proj file with
->     folders in zip\
->     {: .solution} {: .challenge}
+>     &gt; \#\# SOLUTION <br> &gt; FIXME add screen shot of proj file
+>     with folders in zip <br>\
+>     {: .solution} <br> {: .challenge}
 
 ### Best practices for project organization
 
