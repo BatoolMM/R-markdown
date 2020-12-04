@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Syntax: Citations & Bibliography"
-teaching: 5
-exercises: 0
+teaching: 30
+exercises: 15
 questions:
 - How to include citations?
 - How to create a list of references? 
@@ -37,7 +37,7 @@ Let's now move our attention to include citations and list out the references (b
 * Copac: _.copac_
 * JSON citeproc: _.json_
 
-Please note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format which is supported by Google Scholar, which we will use to retrieve example references. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
+Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
 
 ```
 \*.bibtex` file consists of bibliography in plain-text format. Here is an example with two entries:
