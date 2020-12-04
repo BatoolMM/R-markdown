@@ -34,10 +34,12 @@ Let's now move our attention to include citations and list out the references (b
 * Copac: _.copac_
 * JSON citeproc: _.json_
 
-Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
+Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references for our practice paper. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
+
+
+A `\*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `papaerToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
 
 ```
-\*.bibtex` file consists of bibliography in plain-text format. Here is an example with two entries:
 
 ``@misc{nature\_nature\_2018,
 
@@ -80,7 +82,7 @@ pages = {437},
 
 Note that the first line specifies the type of citation, MISC for _miscellaneous_, and Article for _papers_, along with the main entry which will be used to link in-text citations further in the episode. The other lines include the metadata that describes different parts of the bibliography, such as the date, the author, etc.
 
-These two references are included in the `bibliography.bibtex` file supplied to you and saved on your Desktop as recommended and that you should now open in RStudio. Now let&#39;s collect the other citations we will need to include in our paper:
+Now let&#39;s collect the other citations we will need to include in our paper:
 
 We want to add other more items to our bibliography list to be then cited in the paper. Let's add the paper: `1,500 scientists lift the lid on reproducibility` authored by Baker (2016).
 
@@ -132,7 +134,53 @@ publisher={Macmillan}
 > `A manifesto for reproducible science` By Munafò et al. (2017).``
 >>## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
-> FIXME: should we add all items here?
+> ```@article{bustin_reproducibility_2014,
+	title = {The reproducibility of biomedical research: {Sleepers} awake!},
+	volume = {2},
+	issn = {2214-7535},
+	shorttitle = {The reproducibility of biomedical research},
+	url = {http://www.sciencedirect.com/science/article/pii/S2214753515000030},
+	doi = {10.1016/j.bdq.2015.01.002},
+	abstract = {There is increasing concern about the reliability of biomedical research, with recent articles suggesting that up to 85\% of research funding is wasted. This article argues that an important reason for this is the inappropriate use of molecular techniques, particularly in the field of RNA biomarkers, coupled with a tendency to exaggerate the importance of research findings.},
+	language = {en},
+	urldate = {2020-11-13},
+	journal = {Biomolecular Detection and Quantification},
+	author = {Bustin, S. A.},
+	month = dec,
+	year = {2014},
+	keywords = {Biomedicine, Cancer, Microarrays, Next generation sequencing, Reproducibility, qPCR},
+	pages = {35--42},
+}
+@article{freedman_reproducibility2020_2017,
+	title = {Reproducibility2020: {Progress} and priorities},
+	volume = {6},
+	issn = {2046-1402},
+	shorttitle = {Reproducibility2020},
+	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461896/},
+	doi = {10.12688/f1000research.11334.1},
+	urldate = {2020-11-13},
+	journal = {F1000Research},
+	author = {Freedman, P. and Venugopalan, G. and Wisman, R.},
+	month = may,
+	year = {2017},
+	pmid = {28620458},
+	pmcid = {PMC5461896},
+}
+@article{freedman_reproducibility2020_2017,
+	title = {Reproducibility2020: {Progress} and priorities},
+	volume = {6},
+	issn = {2046-1402},
+	shorttitle = {Reproducibility2020},
+	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5461896/},
+	doi = {10.12688/f1000research.11334.1},
+	urldate = {2020-11-13},
+	journal = {F1000Research},
+	author = {Freedman, P. and Venugopalan, G. and Wisman, R.},
+	month = may,
+	year = {2017},
+	pmid = {28620458},
+	pmcid = {PMC5461896},
+}```
 >>{: .output}
 >{: .solution}
 {: .challenge}
