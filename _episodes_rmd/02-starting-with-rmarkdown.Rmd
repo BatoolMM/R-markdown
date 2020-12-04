@@ -19,6 +19,7 @@ keypoints:
 source: Rmd
 output: 
   md_document:
+    variant: markdown_github
     preserve_yaml: true
 knit: (function(inputFile, encoding) { 
       out_dir <- '../_episodes';
