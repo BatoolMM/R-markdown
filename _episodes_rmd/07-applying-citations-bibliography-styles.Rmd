@@ -134,10 +134,9 @@ publisher={Macmillan}
 > Follow the same process to add three references to the bibtex file:
 > `The reproducibility of biomedical research: sleepers awake!` By Bustin (2014).
 > `Reproducibility2020: progress and priorities` By Freedman, Venugopalan, &amp; Wisman (2017).
-> `A manifesto for reproducible science` By Munafò et al. (2017).``
+> `A manifesto for reproducible science` By Munafò et al. (2017).
 >>## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
-
 ```
 @article{bustin_reproducibility_2014,
 	title = {The reproducibility of biomedical research: {Sleepers} awake!},
