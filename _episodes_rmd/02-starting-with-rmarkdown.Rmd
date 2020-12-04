@@ -108,14 +108,13 @@ project directory. This allows you to keep multiple projects open without them
 interfering with each other.
 
 > ## CHALLENGE 2.1  
-> Open an RStudio project through the file system
+> Open an RStudio project through the file system  
 >
-> 1. Exit RStudio.
-> 2. Navigate to the directory where you downloaded & unzipped the zip folder for this workshop
-> 3. Double click on the `.Rproj` file in that directory.
-> 
+> 1. Exit RStudio.  
+> 2. Navigate to the directory where you downloaded & unzipped the zip folder for this workshop  
+> 3. Double click on the `.Rproj` file in that directory.  
 >> ## SOLUTION
->> FIXME add screen shot of proj file with folders in zip
+>> FIXME add screen shot of proj file with folders in zip  
 > {: .solution}
 {: .challenge}
 
@@ -154,15 +153,12 @@ project, and some of the analyses get shared between projects.
 Rmd combines the power of R code and analysis with narratives describing methods and results. Keeping your code and narrative in the same document increases reproducibility by bundling paper components together - decreasing the amount of work you, your collaborators, and your audience has to do to search for different components of your project - raw data, analysis and plots, narrative, and citations. 
 
 > ## Tip: Good Enough Practices for Scientific Computing
->
-> [Good Enough Practices for Scientific Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf) gives the following recommendations for project organization:
->
-> 1. Put each project in its own directory, which is named after the project.
-> 2. Put text documents associated with the project in the `doc` directory.
-> 3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in a `results` directory.
-> 4. Put source for the project's scripts and programs in the `src` directory, and programs brought in from elsewhere or compiled locally in the `bin` directory.
-> 5. Name all files to reflect their content or function.
->
+> [Good Enough Practices for Scientific Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf) gives the following recommendations for project organization:  
+> 1. Put each project in its own directory, which is named after the project.  
+> 2. Put text documents associated with the project in the `doc` directory.  
+> 3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in a `results` directory.  
+> 4. Put source for the project's scripts and programs in the `src` directory, and programs brought in from elsewhere or compiled locally in the `bin` directory.  
+> 5. Name all files to reflect their content or function.  
 {: .callout}
 
 For this project, we used the following setup for folders and files:  
@@ -207,22 +203,20 @@ Packages can be installed and updated from the Package tab with the Install and 
 
 
 > ## CHALLENGE 2.2
->
 > Install the following packages: `bookdown`, `tidyverse`, `kable`
->
-> > ## SOLUTION
-> >
-> > We can use the `install.packages()` command to install the required packages.
-> > ```{r ch5-sol, eval=FALSE}
-> > install.packages("bookdown")
-> > install.packages("tidyverse")
-> > install.packages("kable")
-> >```
-> >
-> > An alternate solution, to install multiple packages with a single `install.packages()` command is:
-> > ```{r ch5-sol2, eval=FALSE}
-> > install.packages(c("bookdown", "tidyverse", "kable"))
-> >```
+>> ## SOLUTION
+>>
+>> We can use the `install.packages()` command to install the required packages.
+>> ```
+>> install.packages("bookdown")
+>> install.packages("tidyverse")
+>> install.packages("kable")
+>>```
+>>
+>> An alternate solution, to install multiple packages with a single `install.packages()` command is:  
+>> ```
+>> install.packages(c("bookdown", "tidyverse", "kable"))
+>> ```  
 > {: .solution}
 {: .challenge}
 
@@ -305,19 +299,18 @@ This one is simple, it's literally just text narrative formatted by using markdo
 ![Rmd text chunks](../fig/02-rmd-template-text.png)
 
 > ## CHALLENGE 2.3 (optional)
-> Can you deduce what each of the three types of symbols (`##`, `**`, `<>`) do for formatting?
->```
->## R Markdown
+> Can you deduce what each of the three types of symbols (`##`, `**`, `<>`) do for formatting?  
+> ```
+> ## R Markdown
 >
->This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+> This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 >
->When you click the **Knit** button a document will be generated that includes both content as well as the >output of any embedded R code chunks within the document. You can embed an R code chunk like this:
->```
->
+> When you click the **Knit** button a document will be generated that includes both content as well as the >output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+> ```
 >> ## SOLUTION
 >> `##` is a heading, `**` is to bold enclosed text, and `<>` is for hyperlinks. 
 >> Don't worry about this too much right now! This is an example of R markdown syntax for styling, we'll dive into this next.
->{: .solution}
+> {: .solution}
 {: .challenge}
 
 ### 3. Code Chunks: 
@@ -344,8 +337,7 @@ This is how our hmtl document will render after clicking the knit button and cho
 ![Knit html output](../fig/02-knit-echoTRUE.PNG)
 
 > ## CHALLENGE 2.4 (optional)
-> Can you deduce what the echo=TRUE option stands for?
->
+> Can you deduce what the echo=TRUE option stands for?  
 >> ## Solution
 >> The echo=TRUE piece is knitr syntax that sets a global default for the whole paper. This piece of code specifically, `echo=TRUE`, tells the rmd document to display the R code that generates the plots & analysis when the rmd document is rendered by hitting the "knit" button. 
 >> Don't worry too much about this now, we'll learn more about this syntax in the Knitr Syntax episodes.

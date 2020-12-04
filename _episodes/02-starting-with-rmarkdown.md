@@ -123,16 +123,13 @@ interfering with each other.
 >
 > Open an RStudio project through the file system
 >
-> 1.  Exit RStudio.
+> 1.  Exit RStudio.\
 > 2.  Navigate to the directory where you downloaded & unzipped the zip
->     folder for this workshop
-> 3.  Double click on the `.Rproj` file in that directory.
->
-> > SOLUTION
-> > --------
-> >
-> > FIXME add screen shot of proj file with folders in zip {: .solution}
-> > {: .challenge}
+>     folder for this workshop\
+> 3.  Double click on the `.Rproj` file in that directory.\
+>     &gt; \#\# SOLUTION &gt; FIXME add screen shot of proj file with
+>     folders in zip\
+>     {: .solution} {: .challenge}
 
 ### Best practices for project organization
 
@@ -183,19 +180,17 @@ raw data, analysis and plots, narrative, and citations.
 >
 > [Good Enough Practices for Scientific
 > Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf)
-> gives the following recommendations for project organization:
->
-> 1.  Put each project in its own directory, which is named after the
->     project.
-> 2.  Put text documents associated with the project in the `doc`
->     directory.
-> 3.  Put raw data and metadata in the `data` directory, and files
->     generated during cleanup and analysis in a `results` directory.
-> 4.  Put source for the project's scripts and programs in the `src`
->     directory, and programs brought in from elsewhere or compiled
->     locally in the `bin` directory.
-> 5.  Name all files to reflect their content or function.
->
+> gives the following recommendations for project organization:\
+> 1. Put each project in its own directory, which is named after the
+> project.\
+> 2. Put text documents associated with the project in the `doc`
+> directory.\
+> 3. Put raw data and metadata in the `data` directory, and files
+> generated during cleanup and analysis in a `results` directory.\
+> 4. Put source for the project's scripts and programs in the `src`
+> directory, and programs brought in from elsewhere or compiled locally
+> in the `bin` directory.\
+> 5. Name all files to reflect their content or function.\
 > {: .callout}
 
 For this project, we used the following setup for folders and files:\
@@ -262,26 +257,14 @@ Install and Update buttons at the top of the tab.
 > CHALLENGE 2.2
 > -------------
 >
-> Install the following packages: `bookdown`, `tidyverse`, `kable`
->
-> > SOLUTION
-> > --------
-> >
-> > We can use the `install.packages()` command to install the required
-> > packages.
-> >
-> >     install.packages("bookdown")
-> >     install.packages("tidyverse")
-> >     install.packages("kable")
-> >
-> > {: .language-r}
-> >
-> > An alternate solution, to install multiple packages with a single
-> > `install.packages()` command is:
-> >
-> >     install.packages(c("bookdown", "tidyverse", "kable"))
-> >
-> > {: .language-r} {: .solution} {: .challenge}
+> Install the following packages: `bookdown`, `tidyverse`, `kable` &gt;
+> \#\# SOLUTION &gt; &gt; We can use the `install.packages()` command to
+> install the required packages. &gt;
+> `> install.packages("bookdown") > install.packages("tidyverse") > install.packages("kable") >`
+> &gt; &gt; An alternate solution, to install multiple packages with a
+> single `install.packages()` command is:\
+> &gt; `> install.packages(c("bookdown", "tidyverse", "kable")) >`\
+> {: .solution} {: .challenge}
 
 Starting a R Markdown File
 --------------------------
@@ -467,18 +450,14 @@ output](../fig/02-knit-echoTRUE.PNG)
 > CHALLENGE 2.4 (optional)
 > ------------------------
 >
-> Can you deduce what the echo=TRUE option stands for?
->
-> > Solution
-> > --------
-> >
-> > The echo=TRUE piece is knitr syntax that sets a global default for
-> > the whole paper. This piece of code specifically, `echo=TRUE`, tells
-> > the rmd document to display the R code that generates the plots &
-> > analysis when the rmd document is rendered by hitting the "knit"
-> > button. Don't worry too much about this now, we'll learn more about
-> > this syntax in the Knitr Syntax episodes. {: .solution} {:
-> > .challenge}
+> Can you deduce what the echo=TRUE option stands for?\
+> &gt; \#\# Solution &gt; The echo=TRUE piece is knitr syntax that sets
+> a global default for the whole paper. This piece of code specifically,
+> `echo=TRUE`, tells the rmd document to display the R code that
+> generates the plots & analysis when the rmd document is rendered by
+> hitting the "knit" button. &gt; Don't worry too much about this now,
+> we'll learn more about this syntax in the Knitr Syntax episodes. {:
+> .solution} {: .challenge}
 
 ### Starting our paper
 
