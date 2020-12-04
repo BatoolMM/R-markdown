@@ -85,9 +85,14 @@ Throughout the whole research life cycle! Before you start the project because y
  
 
 ### Levels of Reproducibility
- 
-![Levels of Reproducibility](../fig/01-fig5.png)
- 
+<<<<<<< HEAD
+
+<figure>
+<img src="../fig/01-fig5.png" width = "397" height = "277">
+</figure> 
+
+<!--![Levels of Reproducibility](../fig/01-fig5.png){width=50%}-->
+
 A published article is like the top of a pyramid, meaning that a reproducible paper/report rests on multiple levels that each contributes to its reproducibility. 
  
 ## What is R Markdown and how it connects to reproducible research?
