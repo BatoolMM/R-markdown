@@ -1,0 +1,75 @@
+---
+title: "538 Riddler: Can You Feed The Hot Hand?"
+output: html_document
+---
+
+## Riddler Express
+
+This season, on the way to winning her fourth WNBA championship in her 17-year career, Sue Bird made approximately 50 percent of her field goal attempts.  Suppose she and Seattle Storm teammate Breanna Stewart are interested in testing whether Bird has a "hot hand" - that is, if her chances of making a basket depend on whether or not her previous shot went in.  Bird happens to know that her chance of making any given shot is always 50 percent, independent of her shooting history, but she agrees to perform an experiment.
+
+In each trial of the experiment, Bird will take three shots, while Stewart will record which shots Bird made or missed.  Stewart will then look at all the trials that had at least one shot that was immediately preceded by a made shot.  She will randomly pick one of these trials and then randomly pick a shot that was preceded by a made shot.  (If there was only one such shot to pick from, she will choose that shot.)
+
+What is the probability that Bird made the shot that Stewart picked?
+
+---
+
+<style type="text/css">
+.table { width: 20% }
+</style>
+
+There are 8 equally probable trial results; those in which the first or second shot is a made shot are in bold.  The conditional probability of the shot following a made shot also being a made shot is shown adjacent.
+
+| results   | probability |
+|:---------:|:-----------:|
+| NNN       |             |
+| NNY       |             |
+| **NYN**   |           0 |
+| **NYY**   |           1 |
+| **YNN**   |           0 |
+| **YNY**   |           0 |
+| **YYN**   |   $1\over2$ |
+| **YYY**   |           1 |
+
+The overall probability is ${1\over6} + {1\over12} + {1\over6} = {5\over12}$.
+
+## Riddler Classic
+
+Now that LeBron James and Anthony Davis have restored the Los Angeles Lakers to glory with their recent victory in the NBA Finals, suppose they decide to play a game of sudden-death, one-on-one basketball.  They'll flip a coin to see which of them has first possession, and whoever makes the first basket wins the game.
+
+Both players have a 50 percent chance of making any shot they take.  However, Davis is the superior rebounder and will always rebound any shot that either of them misses.  Every time Davis rebounds the ball, he dribbles back to the three-point line before attempting another shot.
+
+Before each of Davis's shot attempts, James has a probability $p$ of stealing the ball and regaining possession before Davis can get the shot off.  What value of $p$ makes this an evenly matched game of one-on-one, so that both players have an equal chance of winning *before* the coin is flipped?
+
+---
+
+We can model this game as an absorbing Markov chain with transient states $S$ (nobody has ball), $J$ (James has ball), and $D$ (Davis has ball), and absorbing states $JW$ (James wins) and $DW$ (Davis wins).  The Markov transition matrix $P = (a_{ij})$ in which $a_{ij}$ is the probability of moving from state $i$ to state $j$ is:
+
+$$
+P =
+\left(\begin{array}{c|c}
+Q & R \\
+\hline
+0 & I
+\end{array}\right) =
+\left(\begin{array}{ccc|cc}
+0 & 1/2 &     1/2 &   0 &       0 \\
+0 &   0 &     1/2 & 1/2 &       0 \\
+0 &   p & (1-p)/2 &   0 & (1-p)/2 \\
+\hline
+0 &   0 &       0 &   1 &       0 \\
+0 &   0 &       0 &   0 &       1
+\end{array}\right)
+$$
+
+The fundamental matrix is (calculation courtesy of Wolfram Alpha):
+
+$$
+N = (I-Q)^{-1} =
+\begin{pmatrix}
+1 & (3p+1)/2 & 3/2 \\
+0 &      p+1 &  -1 \\
+0 &       2p &   2
+\end{pmatrix}
+$$
+
+The probability of reaching absorbing state $j$ from starting state $i$ is given by $NR = (a_{ij})$.  We're only interested in starting from state $S$, i.e., the first row of $NR$, which has entries $(3p+1)/4$ (corresponding to James winning) and $3(1-p)/4$ (corresponding to Davis winning).  Setting these equal and solving for $p$ yields $p = 1/3$.
