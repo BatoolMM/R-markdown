@@ -8,7 +8,7 @@ questions:
 
 objectives:
 - Learn about the rticles package and its functions
-- Finding existing templates for creating Rmarkdown papers and reports
+- Locate existing templates for creating Rmarkdown papers and reports
 
 keypoints:
 - The rticles pachage provides some journal templates
