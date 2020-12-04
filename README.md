@@ -141,6 +141,7 @@ When creating episodes in the `_episodes_rmd` directory you'll want to process t
 (ordered from most automated to least automated)
 
 **1) BEST: Add output & knit code to yaml header**
+THIS IS NOT WORKING: DO NOT USE FOR TIME BEING
 
 1) add output to yaml header 
 2) add knit code

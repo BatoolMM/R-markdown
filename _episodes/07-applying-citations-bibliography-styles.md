@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Syntax: Citations & Bibliography"
-teaching: 5
-exercises: 0
+teaching: 30
+exercises: 15
 questions:
 - How to include citations?
 - How to create a list of references? 
@@ -34,7 +34,7 @@ Let's now move our attention to include citations and list out the references (b
 * Copac: _.copac_
 * JSON citeproc: _.json_
 
-Please note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format which is supported by Google Scholar, which we will use to retrieve example references. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
+Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
 
 ```
 \*.bibtex` file consists of bibliography in plain-text format. Here is an example with two entries:
@@ -80,19 +80,11 @@ pages = {437},
 
 Note that the first line specifies the type of citation, MISC for _miscellaneous_, and Article for _papers_, along with the main entry which will be used to link in-text citations further in the episode. The other lines include the metadata that describes different parts of the bibliography, such as the date, the author, etc.
 
-These two references are included in the `bibliography.bibtex` file supplied to you and saved on your Desktop as recommended and that you should now open in RStudio. Now let&#39;s collect the other citations we will need to include in our paper.
+These two references are included in the `bibliography.bibtex` file supplied to you and saved on your Desktop as recommended and that you should now open in RStudio. Now let&#39;s collect the other citations we will need to include in our paper:
 
-We want to add other four items to our bibliography list to be then cited in the paper.
+We want to add other more items to our bibliography list to be then cited in the paper. Let's add the paper: `1,500 scientists lift the lid on reproducibility` authored by Baker (2016).
 
-1. 1,500 scientists lift the lid on reproducibility by Baker (2016).
-
-2. The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
-
-3. Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
-
-4. A manifesto for reproducible science. By Munafò et al. (2017).
-
-To do so, you should follow four main steps:
+To do so, follow the steps below:
 
 1. Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper.A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link &quot;All 6 versions&quot;, listing out different repositories and websites the paper must be living in.
 
@@ -134,10 +126,10 @@ publisher={Macmillan}
 
 > ## Challenge 7.1: Complete the .bibtex file 
 >
-> Get all six citable items in the file using Google Scholar. Follow the same process with the remaining three references:
-> The reproducibility of biomedical research: sleepers awake! By Bustin (2014).
-> Reproducibility2020: progress and priorities. By Freedman, Venugopalan, &amp; Wisman (2017).
-> A manifesto for reproducible science. By Munafò et al. (2017).``
+> Follow the same process to add three references to the bibtex file:
+> `The reproducibility of biomedical research: sleepers awake!` By Bustin (2014).
+> `Reproducibility2020: progress and priorities` By Freedman, Venugopalan, &amp; Wisman (2017).
+> `A manifesto for reproducible science` By Munafò et al. (2017).``
 >>## Solution
 > Your bibliography.bibtex file tab should have a total of six items once you complete this task. 
 > FIXME: should we add all items here?
