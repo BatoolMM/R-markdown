@@ -3,7 +3,7 @@ title: "R Markdown Syntax: Emphasis, Symbols & Titles"
 teaching: 30 min
 exercises: 10 min
 questions:
-- How to find your way around RStudio?
+- How do I emphasize text in an Rmarkdown document?
 - How to start an R Markdown document in Rstudio?
 - How is an R markdown document configured?
 
