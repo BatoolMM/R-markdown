@@ -21,15 +21,6 @@ keypoints:
 - Code chunk options
 - Global code chunk options
 source: Rmd
-output: 
-  md_document:
-    variant: markdown
-    preserve_yaml: true
-knit: (function(inputFile, encoding) { 
-      out_dir <- '../_episodes';
-      rmarkdown::render(inputFile,
-                        encoding=encoding, 
-                        output_file=file.path(dirname(inputFile), out_dir, '09-inline-code-chunks.md')) })
 ---
 
 ```{r, include=FALSE}
