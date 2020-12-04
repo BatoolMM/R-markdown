@@ -91,20 +91,20 @@ We want to add other more items to our bibliography list to be then cited in the
 
 To do so, follow the steps below:
 
-a) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper.A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link &quot;All 6 versions&quot;, listing out different repositories and websites the paper must be living in.
+* 1 Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper.A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link &quot;All 6 versions&quot;, listing out different repositories and websites the paper must be living in.
 
 ![Fig. 7.1 - Bibtext from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
-b) Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
+* 2 Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
 
 ![Fig. 7.2 - Bibtext from Google Scholar (2)](../fig/07-gs-bibtex2.png)
 
-c) When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
+* 3 When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
 
 ![Fig. 7.3 - Bibtext from Google Scholar (3)](../fig/07-gs-bibtex3.png)
 
 
-d) Choose the BibTeX option. It will prompt a file in your browser, like this:
+* 4 Choose the BibTeX option. It will prompt a file in your browser, like this:
 
 ```
 @article{baker20161,
@@ -128,7 +128,7 @@ publisher={Macmillan}
 }
 ```
 
-e) Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
+* 5 Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
 
 > ## Challenge 7.1: Complete the .bibtex file 
 >
