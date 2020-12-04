@@ -1,5 +1,5 @@
 ---
-title: "R Markdown Syntax: Images & Tables"
+title: "R Markdown Syntax"
 teaching: 30
 exercises: 10
 questions:
