@@ -1,29 +1,30 @@
 ---
+title: "Getting Started with R Markdown"
+teaching: 30
 exercises: 10
+questions:
+- How to find your way around RStudio?
+- How to start an R Markdown document in Rstudio?
+- How is an R Markdown document configured & what is our workflow?
+
+objectives:
+- Key Functions on Rstudio 
+- Learn how to start an R markdown document 
+- Understand the workflow of an Rmarkdown file
+
 keypoints:
 - Starting a new Rmd File
-- 'Anatomy of an Rmd File (YAML header, Text, Code chunks)'
+- Anatomy of an Rmd File (YAML header, Text, Code chunks)
 - How to knit an Rmd File to html
-knit: |
-    (function(inputFile, encoding) { out\_dir &lt;- '../\_episodes';
-    rmarkdown::render(inputFile, encoding=encoding,
-    output\_file=file.path(dirname(inputFile), out\_dir,
-    '02-starting-with-rmarkdown.md')) })
-objectives:
-- Key Functions on Rstudio
-- Learn how to start an R markdown document
-- Understand the workflow of an Rmarkdown file
-output:
-  md_document:
-    preserve_yaml: True
-    variant: markdown
-questions:
-- 'How to find your way around RStudio?'
-- 'How to start an R Markdown document in Rstudio?'
-- 'How is an R Markdown document configured & what is our workflow?'
 source: Rmd
-teaching: 30
-title: Getting Started with R Markdown
+output: 
+  md_document:
+    preserve_yaml: true
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../_episodes';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, '02-starting-with-rmarkdown.md')) })
 ---
 
 Getting Around RStudio
@@ -126,10 +127,13 @@ interfering with each other. <br>
 > 1.  Exit RStudio.
 > 2.  Navigate to the directory where you downloaded & unzipped the zip
 >     folder for this workshop
-> 3.  Double click on the `.Rproj` file in that directory.\
->     &gt; \#\# SOLUTION <br> &gt; FIXME add screen shot of proj file
->     with folders in zip <br>\
->     {: .solution} <br> {: .challenge}
+> 3.  Double click on the `.Rproj` file in that directory.
+>
+> > SOLUTION
+> > --------
+> >
+> > FIXME add screen shot of proj file with folders in zip  
+> > {: .solution} {: .challenge}
 
 ### Best practices for project organization
 
@@ -170,49 +174,49 @@ between projects.
 
 Rmd combines the power of R code and analysis with narratives describing
 methods and results. Keeping your code and narrative in the same
-document increases reproducibility by bundling paper components together
-- decreasing the amount of work you, your collaborators, and your
-audience has to do to search for different components of your project -
-raw data, analysis and plots, narrative, and citations. <br>
+document increases reproducibility by bundling paper components
+together; decreasing the amount of work you, your collaborators, and
+your audience has to do to search for different components of your
+project: raw data, analysis and plots, narrative, and citations. <br>
 
 > Tip: Good Enough Practices for Scientific Computing
 > ---------------------------------------------------
 >
 > [Good Enough Practices for Scientific
 > Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf)
-> gives the following recommendations for project organization:\
+> gives the following recommendations for project organization:  
 > 1. Put each project in its own directory, which is named after the
-> project.\
+> project.  
 > 2. Put text documents associated with the project in the `doc`
-> directory.\
+> directory.  
 > 3. Put raw data and metadata in the `data` directory, and files
-> generated during cleanup and analysis in a `results` directory.\
+> generated during cleanup and analysis in a `results` directory.  
 > 4. Put source for the project's scripts and programs in the `src`
 > directory, and programs brought in from elsewhere or compiled locally
-> in the `bin` directory.\
-> 5. Name all files to reflect their content or function.\
+> in the `bin` directory.  
+> 5. Name all files to reflect their content or function.  
 > {: .callout}
 
-For this project, we used the following setup for folders and files:\
-FIXME make sure this is accurate after finishing the .proj file\
+For this project, we used the following setup for folders and files:  
+FIXME make sure this is accurate after finishing the .proj file  
 **bin:** contains a a .csl file for changing the bibliography to APA
 format **code:** a different name for the `src` folder. This will
 contain our R scripts for plots and R Markdown scripts for writing our
-paper.\
+paper.  
 **<data:**> this folder contains our raw data files. We downloaded both
 an .xlxs and .txt FIXME - clean up the data folder **docs:\*\* This
 contains our raw text file `paper_raw.txt` for the paper and our
 `bibliography.bibtex` for reference. We could add any other notes we may
-have about the project here too.\
+have about the project here too.  
 **figs:** This is for the .png figures we found and want to add into our
 paper. It can also be used to save .png or .jpeg copies of the figures
-we output from our code.\
+we output from our code.  
 **results:** This is where the rendered version of our .Rmd file (and .R
-scripts if we ran them) will save to.\
+scripts if we ran them) will save to.  
 **RMarkdown\_Workshop.Rproj** lives in the root directory. FIXME - need
 to add the following 3 files (or we could skip these): **README.md** A
-detailed project description with all collaborators listed.\
-**CITATION.txt** Directions to cite the project.\
+detailed project description with all collaborators listed.  
+**CITATION.txt** Directions to cite the project.  
 **LICENSE.txt** Instructions on how the project or any components can be
 reused.
 
@@ -257,13 +261,16 @@ Install and Update buttons at the top of the tab. <br>
 > CHALLENGE 2.2
 > -------------
 >
-> Install the following packages: `bookdown`, `tidyverse`, `kable` &gt;
-> \#\# SOLUTION &gt; &gt; We can use the `install.packages()` command to
-> install the required packages. &gt;
-> `> install.packages("bookdown") > install.packages("tidyverse") > install.packages("kable") >`
+> Install the following packages: `bookdown`, `tidyverse`, `kable`  
+> &gt; \#\# SOLUTION  
+> &gt;  
+> &gt; We can use the `install.packages()` command to install the
+> required packages.  
+> &gt;
+> `> install.packages("bookdown")    > install.packages("tidyverse")    > install.packages("kable")    >`  
 > &gt; &gt; An alternate solution, to install multiple packages with a
-> single `install.packages()` command is:\
-> &gt; `> install.packages(c("bookdown", "tidyverse", "kable")) >`\
+> single `install.packages()` command is:  
+> &gt; `> install.packages(c("bookdown", "tidyverse", "kable"))   >`  
 > {: .solution} {: .challenge}
 
 Starting a R Markdown File
@@ -303,11 +310,11 @@ then on to editing and styling!
 R Markdown Workflow
 -------------------
 
-R Markdown has four distinct steps in the workflow:\
-1. create a **YAML header** (optional)\
-2. write R Markdown-formatted **text**\
-3. add R **code chunks** for embedded analysis\
-4. render the document with **Knitr**\
+R Markdown has four distinct steps in the workflow:  
+1. create a **YAML header** (optional)  
+2. write R Markdown-formatted **text**  
+3. add R **code chunks** for embedded analysis  
+4. render the document with **Knitr**  
 <br>
 
 ![R Markdown Workflow](../fig/02-rmd-workflow.png)
@@ -329,9 +336,9 @@ including Perl, MIME, C, & HTML. YAML is also a superset of JSON. When
 used as a stand-alone file the file ending is .yml or .yaml. <br>
 
 R Markdown's default YAML header includes the following metadata
-surrounded by three dashes `---`: \* title\
-\* author\
-\* date\
+surrounded by three dashes `---`: \* title  
+\* author  
+\* date  
 \* output
 
 ![R Markdown template YAML header](../fig/02-rmd-template-yaml.png)
@@ -343,7 +350,7 @@ export your rmd file as a file type of your choice. There are [other
 options for
 output](https://bookdown.org/yihui/rmarkdown/output-formats.html) and
 even more can be added by installing certain packages, but these are the
-three default options.\
+three default options.  
 <br>
 
 We’ll see other formatting options for YAML later on including how to
@@ -450,7 +457,7 @@ output](../fig/02-knit-echoTRUE.PNG)
 > CHALLENGE 2.4 (optional)
 > ------------------------
 >
-> Can you deduce what the echo=TRUE option stands for?\
+> Can you deduce what the echo=TRUE option stands for?  
 > &gt; \#\# Solution &gt; The echo=TRUE piece is knitr syntax that sets
 > a global default for the whole paper. This piece of code specifically,
 > `echo=TRUE`, tells the rmd document to display the R code that
@@ -465,9 +472,9 @@ Ok, now let’s start on our own rmd document.
 
 Do this on your own in your new rmd file:
 
-1)  Delete EVERYTHING except the yaml header
+1.  Delete EVERYTHING except the yaml header
 
-2)  Edit the yaml header to add the `title` of the paper we're working
+2.  Edit the yaml header to add the `title` of the paper we're working
     on and to add yourself as `author`.
 
 <!-- -->
@@ -481,17 +488,17 @@ Do this on your own in your new rmd file:
 
 {: .source}
 
-3)  Navigate to the `docs` folder and open `paper_raw.txt FIXME`. Copy
+1.  Navigate to the `docs` folder and open `paper_raw.txt FIXME`. Copy
     all the text with either `ctrl-a` or `cmd-a` and paste AFTER the
-    yaml header in our rmd file. ~\~~ ... output: html\_document ---
-    INTRODUCTION Reproducible research practices include rigorously
+    yaml header in our rmd file. <sub>~</sub> ... output: html\_document
+    --- INTRODUCTION Reproducible research practices include rigorously
     controlled and documented experiments using validated reagents.
     These practices are integral to the scientific method, and they
     enable acquisition of reliable and actionable research results.
     However, the art and practice of science is affected by challenges
-    ... ~\~~ {: .source}
+    ... <sub>~</sub> {: .source}
 
-Your file should now look something like this:\
+Your file should now look something like this:  
 ![Rmd file with raw text](../fig/02-rmd-rawtxt.PNG) FIXME fix screenshot
 when final raw text is determined (just a few sentences will be
 different)

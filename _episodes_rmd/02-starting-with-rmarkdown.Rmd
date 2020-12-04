@@ -19,7 +19,6 @@ keypoints:
 source: Rmd
 output: 
   md_document:
-    variant: markdown
     preserve_yaml: true
 knit: (function(inputFile, encoding) { 
       out_dir <- '../_episodes';
@@ -114,9 +113,10 @@ interfering with each other.
 > 1. Exit RStudio.
 > 2. Navigate to the directory where you downloaded & unzipped the zip folder for this workshop 
 > 3. Double click on the `.Rproj` file in that directory.  
->> ## SOLUTION <br>
->> FIXME add screen shot of proj file with folders in zip <br>  
-> {: .solution} <br>
+> 
+>> ## SOLUTION  
+>> FIXME add screen shot of proj file with folders in zip  
+> {: .solution} 
 {: .challenge}  
 
 ### Best practices for project organization
@@ -151,16 +151,16 @@ Since many analyses are exploratory and don't end up being used in the final
 project, and some of the analyses get shared between projects.
 
 #### Use Rmd files to combine code/analysis and narrative 
-Rmd combines the power of R code and analysis with narratives describing methods and results. Keeping your code and narrative in the same document increases reproducibility by bundling paper components together - decreasing the amount of work you, your collaborators, and your audience has to do to search for different components of your project - raw data, analysis and plots, narrative, and citations. 
+Rmd combines the power of R code and analysis with narratives describing methods and results. Keeping your code and narrative in the same document increases reproducibility by bundling paper components together; decreasing the amount of work you, your collaborators, and your audience has to do to search for different components of your project: raw data, analysis and plots, narrative, and citations. 
 <br>
 
-> ## Tip: Good Enough Practices for Scientific Computing
+> ## Tip: Good Enough Practices for Scientific Computing  
 > [Good Enough Practices for Scientific Computing](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf) gives the following recommendations for project organization:  
 > 1. Put each project in its own directory, which is named after the project.  
 > 2. Put text documents associated with the project in the `doc` directory.  
-> 3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in a `results` directory.  
-> 4. Put source for the project's scripts and programs in the `src` directory, and programs brought in from elsewhere or compiled locally in the `bin` directory.  
-> 5. Name all files to reflect their content or function.  
+> 3. Put raw data and metadata in the `data` directory, and files generated during cleanup and analysis in a `results` directory.    
+> 4. Put source for the project's scripts and programs in the `src` directory, and programs brought in from elsewhere or compiled locally in the `bin` directory.   
+> 5. Name all files to reflect their content or function.   
 {: .callout}
 
 For this project, we used the following setup for folders and files:  
@@ -204,21 +204,21 @@ Packages can also be viewed, loaded, and detached in the Packages tab of the low
 Packages can be installed and updated from the Package tab with the Install and Update buttons at the top of the tab. 
 <br>
 
-> ## CHALLENGE 2.2
-> Install the following packages: `bookdown`, `tidyverse`, `kable`
->> ## SOLUTION
->>
->> We can use the `install.packages()` command to install the required packages.
->> ```
->> install.packages("bookdown")
->> install.packages("tidyverse")
->> install.packages("kable")
->>```
->>
->> An alternate solution, to install multiple packages with a single `install.packages()` command is:  
->> ```
->> install.packages(c("bookdown", "tidyverse", "kable"))
+> ## CHALLENGE 2.2  
+> Install the following packages: `bookdown`, `tidyverse`, `kable`    
+>> ## SOLUTION    
+>>  
+>> We can use the `install.packages()` command to install the required packages.   
 >> ```  
+>> install.packages("bookdown")   
+>> install.packages("tidyverse")   
+>> install.packages("kable")   
+>>```  
+>>
+>> An alternate solution, to install multiple packages with a single `install.packages()` command is:    
+>> ```  
+>> install.packages(c("bookdown", "tidyverse", "kable"))  
+>> ```    
 > {: .solution}
 {: .challenge}
 
