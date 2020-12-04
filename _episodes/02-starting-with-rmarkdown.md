@@ -116,7 +116,7 @@ your data, plots and scripts will now be relative to the project
 directory. RStudio projects have the added benefit of allowing you to
 open multiple projects at the same time each open to its own project
 directory. This allows you to keep multiple projects open without them
-interfering with each other.
+interfering with each other. <br>
 
 > CHALLENGE 2.1
 > -------------
@@ -173,7 +173,7 @@ methods and results. Keeping your code and narrative in the same
 document increases reproducibility by bundling paper components together
 - decreasing the amount of work you, your collaborators, and your
 audience has to do to search for different components of your project -
-raw data, analysis and plots, narrative, and citations.
+raw data, analysis and plots, narrative, and citations. <br>
 
 > Tip: Good Enough Practices for Scientific Computing
 > ---------------------------------------------------
@@ -252,7 +252,7 @@ package is not loaded. Click an empty box to load that package and click
 a checked box to detach that package.
 
 Packages can be installed and updated from the Package tab with the
-Install and Update buttons at the top of the tab.
+Install and Update buttons at the top of the tab. <br>
 
 > CHALLENGE 2.2
 > -------------
