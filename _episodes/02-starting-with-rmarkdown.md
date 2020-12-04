@@ -24,7 +24,7 @@ output:
 knit: (function(inputFile, encoding) { 
       out_dir <- '../_episodes';
       rmarkdown::render(inputFile,
-                        encoding=encoding, 
+                        encoding="UTF-8", 
                         output_file=file.path(dirname(inputFile), out_dir, '02-starting-with-rmarkdown.md')) })
 ---
 
