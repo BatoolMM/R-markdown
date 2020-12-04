@@ -86,7 +86,7 @@ Throughout the whole research life cycle! Before you start the project because y
 
 ### Levels of Reproducibility
  
-![Levels of Reproducibility](../fig/01-fig5.png){{width=50%}
+![Levels of Reproducibility](../fig/01-fig5.png){width=50%}
  
 A published article is like the top of a pyramid, meaning that a reproducible paper/report rests on multiple levels that each contributes to its reproducibility. 
  
