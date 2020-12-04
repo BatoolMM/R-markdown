@@ -24,7 +24,7 @@ output:
 
 ## Warm-up
 
-What is reproducibility for you?
+Let's get into breakout rooms. What is reproducibility for you? Have you ever experienced issues to reproduce someone else's study or even your own research? 
 
 
 ## The importance of Reproducibility in Research
@@ -86,7 +86,7 @@ Throughout the whole research life cycle! Before you start the project because y
 
 ### Levels of Reproducibility
  
-![Levels of Reproducibility](../fig/01-fig5.png){width=50%}
+![Levels of Reproducibility](../fig/01-fig5.png)
  
 A published article is like the top of a pyramid, meaning that a reproducible paper/report rests on multiple levels that each contributes to its reproducibility. 
  
