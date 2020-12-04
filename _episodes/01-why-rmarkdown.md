@@ -31,6 +31,7 @@ Let's get into breakout rooms. What is reproducibility for you? Have you ever ex
 
 ![PhD Comics cartoon](../fig/01-fig1.png)
 
+
 ### Discussion: A scary anecdote
 
 * A group of researchers obtain great results and submit their work to a high-profile journal.
@@ -45,12 +46,14 @@ Science should routinely evaluate the reproducibility of findings that enjoy a p
 
 Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator. That is, a second researcher might use the same raw data to build the same analysis files and implement the same statistical analysis in an attempt to yield the same results. Reproducibility is a minimum necessary condition for a finding to be considered rigorous, believable and informative.
 
+
 ### Why all the talk about reproducible research?
 
 A 2016 survey in Nature revealed that irreproducible experiments are a problem across all domains of science:
  
 ![Nature Report - 2016](../fig/01-fig2.png)
  
+
 ## Factors behind irreproducible research
 
 ![Science is not a miracle](../fig/01-fig3.png)
@@ -77,6 +80,7 @@ If contributing to science and other researchers seems not to be compelling enou
 * Enables continuity of your work
 * Helps to build your reputation
 
+
 ### When do you need to worry about reproducibility?
 
 Let’s assume that I have convinced you that reproducibility and transparency are in your own best interest. Then what is the best time to worry about it?
@@ -94,6 +98,7 @@ Throughout the whole research life cycle! Before you start the project because y
 
 A published article is like the top of a pyramid, meaning that a reproducible paper/report rests on multiple levels that each contributes to its reproducibility. 
  
+
 ## What is R Markdown and how it connects to reproducible research?
 
 RMarkdown is a variant of Markdown, a system for writing simple, readable text that is easily converted to html which allows you to write using an easy-to-read, easy-to-write plain text format. 
@@ -103,6 +108,7 @@ R Markdown belongs to the field of literate programming which is about weaving t
 The idea of literate programming shines some light on this dark area of science. This is an idea from Donald Knuth where you combine your text with your code output to create a document. This is a blend of your literature (text), and your programming (code), to create something that you can read from top to bottom. Imagine your paper - the introduction, methods, results, discussion, and conclusion, and all the bits of code that make each section. With R Markdown, you can see all the pieces of your data analysis altogether.
 
 You can include both text and code to execute. It is a convenient tool for reproducible and dynamic reports with R! With R Markdown, you are able to:
+
 1. Keep an eye on text (the paper) AND the source code. These computational steps are essential to ensure computational reproducibility.
 2. Conduct the entire analysis pipeline in an R Markdown document: data (pre-)processing, analysis, outputs, visualization.
 3. Apply a formatting syntax that is part of the R ecosystem and supports LaTeX.
@@ -115,6 +121,7 @@ You can include both text and code to execute. It is a convenient tool for repro
 10. Use packages such as rticles to use templates from publishers and create submission-ready documents.
 
 FIXME: Greg’s will add the link a nd a short description for three motivating examples:
+
 * Chris Lortie’s COVID page
 * Using RMarkdown for math formatting
 * Reconstructing paper’s plots, difficulty thereof
