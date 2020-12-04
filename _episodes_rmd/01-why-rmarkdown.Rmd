@@ -88,7 +88,6 @@ Throughout the whole research life cycle! Before you start the project because y
  
 
 ### Levels of Reproducibility
-<<<<<<< HEAD
 
 <figure>
 <img src="../fig/01-fig5.png" width = "397" height = "277">
