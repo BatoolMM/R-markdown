@@ -26,14 +26,14 @@ source: Rmd
 
 
 ## What is Knitr?
-(FIXME) Language for processing code chunks. Two main ways to process code in Rmd   
+(FIXME) Syntax for processing code chunks. Two main ways to process code in Rmd:  
 1. Inline code  
 2. Code Chunks  
 
 ## Adding Inline code
 
 Inline code is best for calculating simple expressions integrated into your narrative.
-For example, use inline code to calculate a summary statistic (like # of observations) of your dataframe in your results section. One of the benefits of using this method is if something about your data set changes (like leaving out NAs or null values) the code will automatically update the calcuation specified.
+For example, use inline code to calculate a summary statistic, such as # of observations, of your dataframe in your results section. One of the benefits of using this method is if something about your data set changes (like leaving out NAs or null values) the code will automatically update the calcuation specified.
 
 i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
 
@@ -70,12 +70,68 @@ The most basic code chunk looks like so:
 ~~~
 {: .language-r}
 
-Other than our `````'s for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets which indicates the language to read the code is R. 
+Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
-**Fun fact:** Although likely our most used language will be R, this means it’s possible to use other languages. We have seen that we can use Latex code for equations for example. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) require that you install and load an additional package. 
+**Fun fact:** Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
 
-(FIXME) Adding the code
-Plot1 demo
+Ok, let's add some code!
+We'll start by typing our our starting hashes & r between curly brackets. (in your own workflow you may want to add the ending three hashes as well so you don't forget after adding your code):
+
+```
+
+```
+Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste in between your hashes.
+
+```
+
+~~~
+data <- read_csv("../data/figure-1-data.csv", col_types="fi")
+~~~
+{: .language-r}
+
+
+
+~~~
+Error in read_csv("../data/figure-1-data.csv", col_types = "fi"): could not find function "read_csv"
+~~~
+{: .error}
+
+
+
+~~~
+pie_data <- data %>%
+  mutate(proportion=count/sum(count)) %>%
+  arrange(desc(proportion)) %>%
+  mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
+~~~
+{: .language-r}
+
+
+
+~~~
+Error in data %>% mutate(proportion = count/sum(count)) %>% arrange(desc(proportion)) %>% : could not find function "%>%"
+~~~
+{: .error}
+
+
+
+~~~
+ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
+  geom_bar(stat="identity", color="white") +
+  coord_polar(theta="y", start=0) +
+  geom_text(aes(y=lab.ypos, label=paste(round(proportion*100), "%", sep="")), color="white") +
+  scale_fill_brewer(palette="Set1", name="Familiarity", guide=guide_legend(reverse=TRUE)) +
+  theme_void()
+~~~
+{: .language-r}
+
+
+
+~~~
+Error in ggplot(pie_data, aes(x = 2, y = proportion, fill = familiarity)): could not find function "ggplot"
+~~~
+{: .error}
+```
 
 * FIXME Demonstrate Running the code individually in each chunk vs. Knitting
 
