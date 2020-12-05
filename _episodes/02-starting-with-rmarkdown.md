@@ -195,19 +195,20 @@ Packages can be installed and updated from the Package tab with the Install and 
 <br>
 
 > ## CHALLENGE 2.2  
-> Install the following packages: `bookdown`, `tidyverse`, `kable`    
+> Install the following packages: `bookdown`, `tidyverse`, `knitr`, `kableExtra`    
 >> ## SOLUTION    
 >>  
 >> We can use the `install.packages()` command to install the required packages.   
 >> ```  
 >> install.packages("bookdown")   
 >> install.packages("tidyverse")   
->> install.packages("kable")   
+>> install.packages("knitr")  
+>> install.packages("kableExtra")
 >>```  
 >>
 >> An alternate solution, to install multiple packages with a single `install.packages()` command is:    
 >> ```  
->> install.packages(c("bookdown", "tidyverse", "kable"))  
+>> install.packages(c("bookdown", "tidyverse", "knitr", "kableExtra"))  
 >> ```    
 > {: .solution}
 {: .challenge}
