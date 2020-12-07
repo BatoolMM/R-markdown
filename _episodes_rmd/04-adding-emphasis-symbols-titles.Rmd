@@ -110,6 +110,4 @@ For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly.  Notice the
 
 To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems.  Here's an example: https://www.educba.com/confidence-interval-formula/
 
-RStudio's facility to bring in LaTeX for math formatting makes it a wonderful authoring environment for math-rich papers that are not computational and have nothing to do with R at all.  (See 2020-10-23-riddler.Rmd in the code directory for an example.)
-
- 
+RStudio's facility to bring in LaTeX for math formatting makes it a wonderful authoring environment for math-rich papers that are not computational and have nothing to do with R at all.
