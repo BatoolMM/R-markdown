@@ -82,7 +82,7 @@ pages = {437},
 
 Note that the first line specifies the type of citation, MISC for _miscellaneous_, and Article for _papers_, along with the main entry which will be used to link in-text citations further in the episode. The other lines include the metadata that describes different parts of the bibliography, such as the date, the author, etc.
 
-Now let&#39;s collect the other citations we will need to include in our paper:
+Now let's collect the other citations we will need to include in our paper:
 
 We want to add other more items to our bibliography list to be then cited in the paper. Let's add the paper: `1,500 scientists lift the lid on reproducibility` authored by Baker (2016).
 
@@ -199,7 +199,7 @@ We should now have a complete .bibtex file with all items we need to proceed. Bu
 
 ```
 ---
-bibliography: bibliography.bibtex
+bibliography: "../docs/bibliography.bibtex"
 ---
 
 ```
