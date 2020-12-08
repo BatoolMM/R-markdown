@@ -182,5 +182,5 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 
 
 > ## Note: Advanced & Interactive Tables
-> There are some packages that allow you to make more advanced and interactive tables. Here are some references for these packages: [https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.htm](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.htm) and [https://www.htmlwidgets.org/showcase_datatables.html](https://www.htmlwidgets.org/showcase_datatables.html)
+> There are some packages that allow you to make more advanced and interactive tables. Here are some references for these packages: [https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) and [https://www.htmlwidgets.org/showcase_datatables.html](https://www.htmlwidgets.org/showcase_datatables.html)
 {: .callout}
