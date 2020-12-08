@@ -37,7 +37,7 @@ Let's now move our attention to include citations and list out the references (b
 Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references for our practice paper. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
 
 
-A `\*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `paperToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
+A `*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `paperToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
 
 ```
 
@@ -88,7 +88,7 @@ We want to add other more items to our bibliography list to be then cited in the
 
 To do so, follow the steps below:
 
-* 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link &quot;All 6 versions&quot;, listing out different repositories and websites the paper can be found.
+* 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link "All 6 versions", listing out different repositories and websites the paper can be found.
 
 ![Fig. 7.1 - Bibtext from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
@@ -143,7 +143,7 @@ publisher={Macmillan}
 >	shorttitle = {The reproducibility of biomedical research},
 >	url = {http://www.sciencedirect.com/science/article/pii/S2214753515000030},
 >	doi = {10.1016/j.bdq.2015.01.002},
->	abstract = {There is increasing concern about the reliability of biomedical research, with recent articles suggesting that up to 85\% of research funding is wasted. This article argues that an important reason for this is the inappropriate use of molecular techniques, particularly in the field of RNA biomarkers, coupled with a tendency to exaggerate the importance of research findings.},
+>	abstract = {There is increasing concern about the reliability of biomedical research, with recent articles suggesting that up to 85% of research funding is wasted. This article argues that an important reason for this is the inappropriate use of molecular techniques, particularly in the field of RNA biomarkers, coupled with a tendency to exaggerate the importance of research findings.},
 >	language = {en},
 >	urldate = {2020-11-13},
 >	journal = {Biomolecular Detection and Quantification},
@@ -210,11 +210,11 @@ The connection between the two files is all set to get us started. For now, we w
 
 Each item in the bibliography.bibtex file starts with a @ entry which specifies the type of document followed by a curly opening bracket which specifies the key that should be included to create in-text citations.
 
-It is important to use this exact key to render correct mentions in the text. Let&#39;s see how that should be included in the R Markdown syntax.
+It is important to use this exact key to render correct mentions in the text. Let's see how that should be included in the R Markdown syntax.
 
 #### Single citation
 
-At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let&#39;s practice adding our first citation. Let&#39;s use the item with the key `freedman\_2020\_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after an &quot;@&quot; in between brackets, as follows:
+At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let's practice adding our first citation. Let's use the item with the key `freedman\_2020\_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after an ";"; in between brackets, as follows:
 
 ```
 [@freedman\_2020\_2017]
@@ -238,7 +238,7 @@ The output you will get in Chicago style will be:
 
 #### Multiple Citations
 
-If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let&#39;s complement the citation we created earlier in the first paragraph by adding Bustin&#39;s to it. Let's practice that in the place marked as `[citation example 2]`
+If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let's complement the citation we created earlier in the first paragraph by adding Bustin's to it. Let's practice that in the place marked as `[citation example 2]`
 
 `[@bustin\_reproducibility\_2014; @freedman\_reproducibility2020\_2017]`
 
@@ -251,7 +251,7 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.3: Adding multiple citations
 >
-> Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker (2016) and Freedman, Venugopalan and Wisman&#39;s (2017) studies.
+> Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker (2016) and Freedman, Venugopalan and Wisman's (2017) studies.
 >> ## Solution
 > `[@baker\_1500\_2016; @freedman\_reproducibility2020\_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
@@ -262,18 +262,18 @@ The output you will get in Chicago style will be:
 
 #### Keeping Authors in the narrative
 
-There are cases authors are announced in the text, and therefore their names shouldn&#39;t go between parenthesis. Let&#39;s say you want to add a citation to support the statement about Springer&#39;s survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper, as it follows:
+There are cases authors are announced in the text, and therefore their names shouldn't go between parenthesis. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper, as it follows:
 
-&quot;A recent survey conducted by_Springer_ `[-@springer\_reality\_2016]` reported that 90%...&quot;
+"A recent survey conducted by_Springer_ `[-@springer\_reality\_2016]` reported that 90%..."
 
 The output you will get will be:
 
-&quot;A recent survey conducted by Springer (2016) reported that 90%...&quot;
+"A recent survey conducted by Springer (2016) reported that 90%..."
 
 
 > ## Challenge 7.4: Keep author(s) in the narrative 
 > 
-> Let&#39;s practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature&#39;s survey in order to indicate the dataset you are referring to.
+> Let's practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature's survey in order to indicate the dataset you are referring to.
 >> ## Solution
 > `[-@nature\_nature\_2018]`
 > The output you will get will be: `Nature (2018)`
@@ -314,7 +314,7 @@ Note that this will force all items to be displayed in the bibliography.
 
 ### Changing Citation Styles
 
-There are a number of existing [citation styles](https://editor.citationstyles.org/about/) (CSL), but we won&#39;t cover their differences and applications during this workshop. To use another style, we will need to specify a CSL (Citation Style Language) file in the metadata field in the YAML header.
+There are a number of existing [citation styles](https://editor.citationstyles.org/about/) (CSL), but we won't cover their differences and applications during this workshop. To use another style, we will need to specify a CSL (Citation Style Language) file in the metadata field in the YAML header.
 
 Let's assume that we want to use the APA 5th edition [apa-5th-edition.csl](https://github.com/citation-style-language/styles/blob/master/apa-5th-edition.csl). In order to do so, you have to make sure the CSL you want to apply is correctly named in the YAML, matching the .csl file saved in the project folder and opened in RStudio. Your YAML should look similar to this:
 
@@ -331,7 +331,7 @@ html\_document:
 
 number\_sections: true
 
-bibliography: bibliography.bibtex
+bibliography: ../docs/bibliography.bibtex
 
 csl: apa-5th-edition.csl
 
