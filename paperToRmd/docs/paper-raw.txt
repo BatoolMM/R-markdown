@@ -21,8 +21,6 @@ A total of 243 individuals from 21 countries completed this section. The majorit
 Current Landscape for Rigor and Transparency in Represented Shared Resources
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
-FIGURE 1 - Survey respondents’ self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.
-
 Time pressures associated with publishing and grant preparation were frequently identified as risks to research rigor. Many respondents noted that inadequate standardization of protocols and procedures across the research life cycle, from study planning through data analysis and reporting, contributes to variable research quality. As previously reported, [citation example 2] respondents indicated that experimental design deficiencies (involving sample size, quality control, and replication) and cost considerations could generate risks to research rigor and transparency.
 
 Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
@@ -55,8 +53,6 @@ Responses that could not be assigned to a category
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
  
 
-FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources. Response to the following multiple-choice question: Has your core’s rigor and reproducibility practice statement ever been requested?
-
 The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
 
 At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support R&R practices.
@@ -65,10 +61,6 @@ Oversight of data analyses and double-checking results were some of the least wi
 
 A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&R best practices within their core operation (Fig. 3).
  
-
-FIGURE 3 - Types of tools that cores would like to implement in their operations. Respondents were able to select more than 1 tool.
-Core Implementation of Research Best Practices
-
 Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control. 
 
 Strategies for Improving R&R in Core Operation
