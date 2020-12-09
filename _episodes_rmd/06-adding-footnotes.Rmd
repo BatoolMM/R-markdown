@@ -22,11 +22,11 @@ knitr_fig_path("06-")
 
 ## Adding Footnotes
 
-We can add footnotes to our paper using the `^` symbol between brackets `[]` such as `[^]`. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
+We can add footnotes to our paper using the `^`. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
 
-`superscript^1` will give output: superscript ^1
+`^superscript^1` will give output: superscript ^1
 
-`^1footnote` will give output: ^1footnote
+`^1^footnote` will give output: ^1footnote
 
 In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `^1` right after the word. 
 
@@ -38,7 +38,7 @@ In our paper, we will create a footnote in the introduction when we reference a 
 >Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf`
 >
 >> ## Solution
-> ``^1Through these four elements, the NIH intends to...``
+> ``^1^Through these four elements, the NIH intends to...``
 >> {: .output}
 > {: .solution}
 {: .challenge}
