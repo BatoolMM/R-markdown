@@ -42,7 +42,7 @@ In our paper, we will create a footnote in the introduction when we reference a 
 
 
 > ## Time to Knit!
-> To see the footnote you just created.
+> Take a look at the footnote you have just created.
 {: .checklist}
 
 ## Creating Hyperlinks
