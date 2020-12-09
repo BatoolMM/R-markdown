@@ -25,11 +25,11 @@ knitr_fig_path("05-inserting-images-tables")
 You can add images to an R Markdown report using markdown syntax as follows:
 ```![Image Name](path-to-image-here)```
 
-However, when you knit the report, R will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the figs  folder. In that case, make sure your path starts with figs/ along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
+However, when you knit the report, R will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the figs folder. In that case, make sure your path starts with figs/ along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
+
 In our paper template there are three images (two pie charts) and one bar chart we want to include. Those are named fig1_paper.jpg, fig2_paper.jpg and fig3_paper.jpg.
 
-To start let’s identify where Figure 1 is first mentioned in the paper. There's a caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." We need to add the figure code in right above this.
-
+To start let’s identify where (Figure 1) is mentioned in the paper. We will insert the image right after that. This image will have the caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." (that we will be pasting in the chat). We need to use the caption to render the image. 
   
 The markdown should look like:
 
@@ -62,7 +62,7 @@ This will output as:
 
 
 >## CHALLENGE 5.1 
-> Add Figures 2 and 3 to the document:
+> Locate the places for Figures 2 and 3 and add them to the document using the captions below:
 >
 > FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources
 >
