@@ -38,7 +38,7 @@ Let's get into breakout rooms. What is reproducibility for you? Have you ever ex
 * Reviewers ask for new figures and additional analysis.
 * The researchers start working on revisions and generate modified figures, but find inconsistencies with old figures.
 * The researchers can’t find some of the data they used to generate the original results, and can’t figure out which parameters they used when running their analyses.
-* The manuscript is still languishing in the drawer …
+* The manuscript is still languishing in the drawer…
 
 According to the [U.S. National Science Foundation (NSF) subcommittee on replicability in science](https://www.nsf.gov/sbe/AC_Materials/SBE_Robust_and_Reliable_Research_Report.pdf): 
 
@@ -128,4 +128,4 @@ Finally, three real-world examples that motivated the authors of this lesson to 
 
 3. In this lesson we will be constructing a scientific paper that is based on an actual *Nature* publication and attendant survey and data.  In trying to recreate the plots the original authors created, we found it difficult and time-consuming to figure out exactly how the authors created their plots.  Out of the many columns in their data, many with similar-sounding names, which did they use?  How did they handle missing data?  Exactly what operations did they perform to compute aggregate values?  How much easier it would have been if they had published the code they used along with their paper.  RMarkdown allows you to do this.
 
-FIXME: Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this (link to the html version of the paper in R Pubs).
+**FIXME: Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this (link to the html version of the paper in R Pubs).**

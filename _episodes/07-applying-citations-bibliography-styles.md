@@ -169,13 +169,13 @@ To do so, follow the steps below:
 {: .challenge}
 
 
-> ## Tip: 
+> ## Tip: How can you get many bibtext at once?
 > 
 >Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as.bibtex files in a bulk.
 >
 {: .callout}
 
-We should now have a complete .bibtex file with all items we need to proceed. But how will RStudio be able to link this file with the .rmd file on the other tab? Well, remember we mentioned early on that we should include a bibliography file in the YAML header? In this case we will add to the existing YAML the following information:
+We should now have a complete .bibtex file with all items we need to proceed. But how will RStudio be able to link this file with the .rmd file on the other tab? Well, remember we mentioned before that we should include a bibliography file in the YAML header? In this case we will add to the existing YAML the following information:
 
 ```
 ---
@@ -261,6 +261,11 @@ The output you will get will be:
 > {: .solution}
 {: .challenge}
 
+> ## Time to Knit!
+> Check how the citations you have just created renders in your paper. 
+{: .checklist}
+
+
 
 #### Adding Long Citations Using Block Quotes
 
@@ -272,12 +277,18 @@ The output you will get will be:
 
 > Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.
 
+
+> ## Time to Knit!
+> Check how the block quote you have just created looks like in your paper. 
+{: .checklist}
+
+
 ### Setting the Reference List
 
 All cited items will be listed under the section **References** which you created before while practicing headings and subheadings. Items will be placed automatically in alphabetical order.
 
 
-#### Add an item to a bibliography without citing it
+#### Adding an item to a bibliography without citing it
 
 By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocitemetadata field and put the citations there.
 
@@ -289,7 +300,7 @@ nocite **:** |
 
 ```
 
-#### Add all no-cited items to the bibliography
+#### Adding all no-cited items to the bibliography
 
 If we do not wish to explicitly state all of the items within the bibliography but would still like to show them in our references, we can use the following syntax:
 
@@ -302,11 +313,12 @@ nocite: |
 
 Note that this will force all items to be displayed in the bibliography.
 
+
 ### Changing Citation Styles
 
 There are a number of existing [citation styles](https://editor.citationstyles.org/about/) (CSL), but we won't cover their differences and applications during this workshop. To use another style, we will need to specify a CSL (Citation Style Language) file in the metadata field in the YAML header.
 
-Let's assume that we want to use the APA 5th edition [apa-5th-edition.csl](https://github.com/citation-style-language/styles/blob/master/apa-5th-edition.csl). In order to do so, you have to make sure the CSL you want to apply is correctly named in the YAML, matching the .csl file saved in the project folder and opened in RStudio. Your YAML should look similar to this:
+Let's assume that we want to use the APA 5th edition [apa-5th-edition.csl](https://github.com/citation-style-language/styles/blob/master/apa-5th-edition.csl) instead. In order to do so, you have to make sure the CSL you want to apply is correctly named in the YAML, matching the .csl file saved in the project folder and opened in RStudio. Your YAML should look similar to this:
 
 ```
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
@@ -327,9 +339,12 @@ csl: apa-5th-edition.csl
 
 ```
 
-Knit the document and note that citations and references now conform to the APA style.
+> ## Time to Knit!
+> Knit the document and note that citations and references now conform to the APA style.
+{: .checklist}
 
-> ## Tip: 
+
+> ## Tip: Change the CSL default
 > You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles). More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
 >
 {: .callout}

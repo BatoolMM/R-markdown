@@ -28,8 +28,9 @@ You can add images to an R Markdown report using markdown syntax as follows:
 However, when you knit the report, R will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the figs  folder. In that case, make sure your path starts with figs/ along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
 In our paper template there are three images (two pie charts) and one bar chart we want to include. Those are named fig1_paper.jpg, fig2_paper.jpg and fig3_paper.jpg.
 
-To start let’s identify where Figure 1 is first mentioned in the paper. We will be adding it with the following name:   
-FIGURE 1 - Survey respondents; self-assessments of their knowledge and awareness of the current NIH guidelines on rigor and reproducibility.  
+To start let’s identify where Figure 1 is first mentioned in the paper. There's a caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." We need to add the figure code in right above this.
+
+  
 The markdown should look like:
 
 ```
@@ -44,9 +45,12 @@ This will output as:
 
 <br> 
 
-Save it and use the knit function to check how the output looks like. 
+> ## Time to Knit!
+> Check how the figure you have just inserted looks like. 
+{: .checklist}
 
 ### Resizing Images 
+
 The image you just added looks a little too big, right? We can resize it by adjusting the width and height ratio. Let’s say we want this image to be half of the original size. In order to do that, we will have to add to the syntax: 
 
 ```
@@ -81,6 +85,10 @@ This will output as:
 > {: .solution}
 {: .challenge}
 
+> ## Time to Knit!
+> Check how your images look now. 
+{: .checklist}
+
 ### Aligning Images 
 
 Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we can add to the syntax `fig.align="center"`.
@@ -97,10 +105,17 @@ Outputs as:
 </figure>
 </center>
 
+
+> ## Time to Knit!
+> Check how the images are aligned now. 
+{: .checklist}
+
+
 >## Tip
 > But if we want to be more effective and get all images aligned in a certain way, it is best to 
   apply a more general code chunk that will be covered later on, in the Knitr syntax.
 {: .callout}
+
 
 ## Inserting Tables
 
