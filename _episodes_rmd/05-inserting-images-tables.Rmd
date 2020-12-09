@@ -45,9 +45,7 @@ This will output as:
 
 <br> 
 
-> ## Time to Knit!
-> Check how the figure you have just inserted looks like. 
-{: .checklist}
+
 
 ### Resizing Images 
 
@@ -195,6 +193,10 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 > {: .solution}
 {: .challenge}
 
+
+> ## Time to Knit!
+> Check how the table you have just created looks like. 
+{: .checklist}
 
 > ## Note: Advanced & Interactive Tables
 > There are some packages that allow you to make more advanced and interactive tables. Here are some references for these packages: [https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) and [https://www.htmlwidgets.org/showcase_datatables.html](https://www.htmlwidgets.org/showcase_datatables.html)
