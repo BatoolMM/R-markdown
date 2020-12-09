@@ -63,22 +63,28 @@ Output: "a total of 242 individuals from 21 countries completed this section."
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
 > ## Tip: Inline code cannot span lines
-> You need to be sure that these in-line bits of code aren’t split across lines in your document. Otherwise you’ll just see the raw code and not the result that you want.
+> You need to be sure that these in-line bits of code aren’t split across lines in your document. Otherwise you’ll just see the raw code and not the result that you want.  
 {: .callout}
 
 
 > ## CHALLENGE 9.1
-> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited) Find both and replace with code. What part of the paper is that? *hint: one of the counts is in the inline code we just added. (so you can just add sum(data$count)). double hint: you can add inline code within LaTex formatting!
+> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited) Find both and replace with code. What part of the paper is that? 
 >
 >> ## SOLUTION
->> ```
->> 1. the margin of error is ±3%
->> ```
->> ```
->> 2. sample size $n=242$
->> ```
+>> 
+>> ~~~
+>> 1. the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data$count))*100)`%
+>> ~~~
+>> {: .language-r}
+>> Note: since this count was in the inline code we just added you only need to substitute `sum(data$count)` for 243.
+>> 
+>> ~~~
+>> 2. sample size $n=`r sum(data$count)`$
+>> ~~~
+>> {: .language-r}
+>> Note: Look at that! you can add r inline code in LaTex formatting, it evaluates the r code and then displays in LaTex format!
 >>
-> {: .solution}
+> {: .solution}  
 {: .challenge}
 
 ## Inserting Code Chunks
@@ -92,23 +98,27 @@ You can quickly insert chunks like these into your file with:
 * or by typing the chunk delimiters ```{r} and ```.
 
 The most basic code chunk looks like so:
+```
 
 ~~~
 #Some code here
 ~~~
 {: .language-r}
+```
 
 Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
-**Fun fact:** Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
+> ##Fun fact: Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
+{: .callout}
 
-Ok, let's add some code!
+Ok, let's add some code! Earlier, we added three images to our document. Now, images of our plots are great and all, but since R Markdown allows us to evaluate live code it would be more reproducible to use code chunks to display those plots. Like with our inline code, this assures that if there are any changes to the data, the plots update automatically. This also makes our life easier because when there's a change we don't have to re-generate plots, save them as images and then add them back in to our paper. This will potentially help prevent version errors as well!  So we're actually going to go ahead and convert a few of our plots to code chunks.
+
 We'll start by typing our our starting hashes & r between curly brackets. (in your own workflow you may want to add the ending three hashes as well so you don't forget after adding your code):
 
 ```
 
 ```
-Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste in between your hashes.
+Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste it in between the two lines with hashes.
 
 *There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
 FIXME add screenshot
