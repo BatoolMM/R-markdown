@@ -28,13 +28,13 @@ We can add footnotes to our paper using the `^`. Similar to adding emphasis, put
 
 `^1^footnote` will give output: ^1footnote
 
-In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `^1` right after the word. 
+In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `^1^` right after the word. 
 
-`notice^1`
+`notice^1^`
 
 > ## Challenge 6.1: Creating footnote 
 >
-> Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote. The text to the footnote will be:
+> Let's add a footnote to our paper. Right before the References section, add a superscript to distinguish the footnote and match it with the inline footnote. The text to the footnote will be:
 >Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf`
 >
 >> ## Solution
