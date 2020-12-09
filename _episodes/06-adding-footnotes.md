@@ -41,6 +41,10 @@ In our paper, we will create a footnote in the introduction when we reference a 
 {: .challenge}
 
 
+> ## Time to Knit!
+> To see the footnote you just created.
+{: .checklist}
+
 ## Creating Hyperlinks
 
 Hyperlinks are created using the syntax `[text](link)` with no spaces in between the parentheses and the square brackets.
