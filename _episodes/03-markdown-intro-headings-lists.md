@@ -115,6 +115,10 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 
 <br>
 
+> ## Tip: Finding Content on RStudio
+> Use Ctrl+F (Windows) or Command+F (Mac) shortcut keys, or from the Edit -> Find to locate content in your paper. We will be using that quite a lot during this workshop. 
+{: .callout}
+
 > ## CHALLENGE 3.1
 > Insert headings throughout the rest of the paper so it is split into 5 sections: 
 > * Introduction
