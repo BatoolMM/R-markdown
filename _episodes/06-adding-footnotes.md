@@ -21,9 +21,9 @@ source: Rmd
 
 We can add footnotes to our paper using the `^`. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
 
-`^superscript^1` will give output: ^superscript^1
+`^superscript^` will give output: <sup>superscript<sup>
 
-`^1^footnote` will give output: ^1^footnote
+`^1^footnote` will give output: <sup>1<sup>footnote
 
 In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `^1^` right after the word. 
 
