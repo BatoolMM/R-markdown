@@ -25,6 +25,7 @@ source: Rmd
 
 
 
+
 ## What is Knitr?
 (FIXME) Syntax for processing code chunks. Two main ways to process code in Rmd:  
 1. Inline code  
@@ -33,23 +34,50 @@ source: Rmd
 ## Adding Inline code
 
 Inline code is best for calculating simple expressions integrated into your narrative.
-For example, use inline code to calculate a summary statistic, such as # of observations, of your dataframe in your results section. One of the benefits of using this method is if something about your data set changes (like leaving out NAs or null values) the code will automatically update the calcuation specified.
+For example, use inline code to calculate an error margin or summary statistic, such as # of observations, of your dataframe in your results section. One of the benefits of using this method is if something about your data set changes (like leaving out NAs or null values) the code will automatically update the calcuation specified.
+
+We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, let's add this:
+
+
+>r round(1.96*0.5*(1-0.5)/sqrt(243))*100)%  
+{: .source}
+
+instead of `$ \pm 3 \% $`
+
+Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ` r would have attempted to calculate the modulo. 
+
+Where else can we add inline code? We can replace observation counts!
 
 i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
 
-We're going to find one such example in our data frame and convert a static number or equation to inline code
+Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only agregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility. We will use `#r sum(data$count)` instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
 
-(FIXME) Add example 1 here
+We will add:
+
+> "a total of ``#r sum(data$count)`` individuals from 21 countries completed this section."
+> Note: remove the # to actually evaluate  
+{: .source}
+
+Output: "a total of 242 individuals from 21 countries completed this section."
+
+Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
 > ## Tip: Inline code cannot span lines
 > You need to be sure that these in-line bits of code aren’t split across lines in your document. Otherwise you’ll just see the raw code and not the result that you want.
 {: .callout}
 
-> ## CHALLENGE FIXME
-> Find another spot in the narrative where you can replace a static number with a calculation from the dataset. What part of the paper is that? *hint search for "___" Use xxx function to add the inline code yourself.
+
+> ## CHALLENGE 9.1
+> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited) Find both and replace with code. What part of the paper is that? *hint: one of the counts is in the inline code we just added. (so you can just add sum(data$count)). double hint: you can add inline code within LaTex formatting!
 >
 >> ## SOLUTION
->> 
+>> ```
+>> 1. the margin of error is ±3%
+>> ```
+>> ```
+>> 2. sample size $n=242$
+>> ```
+>>
 > {: .solution}
 {: .challenge}
 
@@ -82,40 +110,20 @@ We'll start by typing our our starting hashes & r between curly brackets. (in yo
 ```
 Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste in between your hashes.
 
+*There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
+FIXME add screenshot
+
+
 ```
 
 ~~~
 data <- read_csv("../data/figure-1-data.csv", col_types="fi")
-~~~
-{: .language-r}
 
-
-
-~~~
-Error in read_csv("../data/figure-1-data.csv", col_types = "fi"): could not find function "read_csv"
-~~~
-{: .error}
-
-
-
-~~~
 pie_data <- data %>%
   mutate(proportion=count/sum(count)) %>%
   arrange(desc(proportion)) %>%
   mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
-~~~
-{: .language-r}
 
-
-
-~~~
-Error in data %>% mutate(proportion = count/sum(count)) %>% arrange(desc(proportion)) %>% : could not find function "%>%"
-~~~
-{: .error}
-
-
-
-~~~
 ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
   geom_bar(stat="identity", color="white") +
   coord_polar(theta="y", start=0) +
@@ -124,18 +132,10 @@ ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
   theme_void()
 ~~~
 {: .language-r}
-
-
-
-~~~
-Error in ggplot(pie_data, aes(x = 2, y = proportion, fill = familiarity)): could not find function "ggplot"
-~~~
-{: .error}
 ```
 
-* FIXME Demonstrate Running the code individually in each chunk vs. Knitting
 
-### Name/label your code chunks
+### Name your code chunks
 
 Better practice is to give a name to each code chunk:
 
@@ -154,7 +154,7 @@ FIXME add naming plot1
 >Try to avoid spaces, periods (.), and underscores (_) in chunk labels and paths. If you need separators, you are recommended to use hyphens (-) instead. For example, setup-options is a good label, whereas setup.options and chunk 1 are bad; fig.path = 'figures/mcmc-' is a good path for figure output, and fig.path = 'markov chain/monte carlo' is bad. https://yihui.org/knitr/options/
 {: .callout}
 
-### What else can we add to the code chunk options between the `{}`s? 
+### More code chunk options
 
 https://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
 There are over 50 different code chunk options!!! Obviously we will not go over all of them, but they fall in the main __ categories: code evaluation, text output, code style, cache options, plot output and animation. We’ll talk about a few options for code evaluation, text output and plot output.
@@ -185,15 +185,40 @@ Hide = Specifically for plots, generate plots but don’t display them in the ou
 > {: .solution}
 {: .challenge}
 
-CHALLENGE
+### Run your code
 
-Now, add plot2 from the r script. On this one let’s set echo to TRUE as well as message to TRUE???? 
+Now, to check to make sure our code is rendering correctly, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
+
+1) Knit button - knitting will 
+
+2) Run from Rmd file (chunk run button)
+
+3) Run menu 
+
+> ## CHALLENGE
+>
+> Now, add plot2 from the r script. On this one let’s set echo to TRUE as well as message to TRUE (FIXME)
+>
+>> ## SOLUTION
+>> ```
+>> ```
+>> ```
+> {: .solution}
+{: .challenge}
 
 
 ### Global Code Chunk Options:
-To set global options that apply to every chunk in your file, call knitr::opts_chunk$set in a code chunk. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default that can be overwritten in individual chunk headers
+On each of our two plots we set the options separately (though we used the same options and values). We can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
+
+To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
 
+~~~
+# knitr::opts_chunk$set(ADD options here)
+~~~
+{: .language-r}
+
+What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news!  The global options can be overwritten in each individual code chunk.
 
 See also fig paths best practices
 
