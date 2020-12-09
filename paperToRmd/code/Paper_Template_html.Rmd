@@ -28,7 +28,7 @@ A manifesto for reproducible science made several recommendations and called att
 
 >Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The **Transparency and Openness Promotion** (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.
 
-On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
+On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice^1^ that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
 1. scientific premise forming the basis of the proposed research
 
@@ -137,7 +137,6 @@ About one quarter of respondents noted that a radical cultural change at the hig
 
 Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
 
+^1^ Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
+
 # REFERENCES {-}
-
-
-[^1]: Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
