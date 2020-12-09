@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@freedman_reproducibility2020_2017].
 
-A recent survey conducted by _Springer_ [-@springer_reality_2016] reported that 90% of participants identified &quot;more robust experimental design&quot; as one of several key improvements needed for the conduct of better science, in addition to &quot;better statistics&quot; and &quot;better mentorship.&quot; More recently, _Nature_ [-@nature_nature_2018] published the survey data which can be found on Figshare.
+A recent survey conducted by Springer [-@springer_reality_2016] reported that 90% of participants identified "more robust experimental design" as one of several key improvements needed for the conduct of better science, in addition to "better statistics" and "better mentorship". More recently, Nature [-@nature_nature_2018] published the survey data which can be found on Figshare.
 
 A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the [Center for Open Science](https://www.cos.io/) to improve research planning and reporting [@munafo_manifesto_2017], which was supported by over 5000 journals and research organizations. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
@@ -126,7 +126,7 @@ Participants were asked to suggest solutions to mitigate or eliminate challenges
 
 About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality.
 
-About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and &quot;provide incentives to support and monitor research rigor throughout the research life cycle.&quot; These &quot;cultural&quot; observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@baker_1500_2016; @freedman_reproducibility2020_2017].
+About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and "provide incentives to support and monitor research rigor throughout the research life cycle" These "cultural" observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [@baker_1500_2016; @freedman_reproducibility2020_2017].
 
 # CONCLUSIONS
 
@@ -135,4 +135,4 @@ Scientific shared resources support research laboratories to generate critical d
 # REFERENCES {-}
 
 
-[^1]: Through these four elements, the NIH intends to &quot;enhance the reproducibility of research findings through increased scientific rigor and transparency.&quot; ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
+[^1]: Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
