@@ -35,7 +35,7 @@ Make text bold with double asterisks or double underscores.
 ```**bold**``` will give output **bold**  
 ```__bold__``` will give output _bold_  
 
-Let's try that italics applying that to two organization names that appear in the text. First let's put the `Association of Biomolecular Resource Facilities` in italic. `_Association of Biomolecular Resource Facilities (ABRF)_` or `*Association of Biomolecular Resource Facilities (ABRF)*` will render _Association of Biomolecular Resource Facilities (ABRF)_. Now try the same with the `Committee on Core Rigor and Reproducibility`. 
+Let's try that italics applying that to two organization names that appear in the text. First let's put the `Association of Biomolecular Resource Facilities` in italic. `_Association of Biomolecular Resource Facilities_` or `*Association of Biomolecular Resource Facilities*` will render _Association of Biomolecular Resource Facilities_. Now try the same with the `Committee on Core Rigor and Reproducibility`. 
 
 For testing out making the text bold, let's search for the two mentions to the Transparency and Openness Promotion in the paper and make them bold. Either `__Transparency and Openness Promotion__` or `**Transparency and Openness Promotion**` will render **Transparency and Openness Promotion**.
 
