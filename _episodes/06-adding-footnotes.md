@@ -21,20 +21,21 @@ source: Rmd
 
 We can add footnotes to our paper using the `^` symbol between brackets `[]` such as `[^]`. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
 
-`superscript[^1]` will give output: superscript [^1]
+`superscript^1` will give output: superscript ^1
 
-`[^1]footnote` will give output: [^1]footnote
+`^1footnote` will give output: ^1footnote
 
-In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `[^1]` right after the word. 
+In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `^1` right after the word. 
 
-`notice[^1]`
+`notice^1`
 
 > ## Challenge 6.1: Creating footnote 
 >
-> Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote. The text to the footnote will be `Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf`
+> Let's add a footnote to our paper. In the References section, add a superscript to distinguish the footnote and match it with the inline footnote. The text to the footnote will be:
+>Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf`
 >
 >> ## Solution
-> ``[^1] Through these four elements, the NIH intends to``
+> ``^1Through these four elements, the NIH intends to...``
 >> {: .output}
 > {: .solution}
 {: .challenge}
