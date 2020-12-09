@@ -268,6 +268,8 @@ The output you will get will be:
 > Check how the citations you have just created renders in your paper. 
 {: .checklist}
 
+
+
 #### Adding Long Citations Using Block Quotes
 
 In case you want to place a direct long quotation you can use block quote. Locate the the text which says: "The same authors emphasize that...". The following paragraph should be blocked. To do so, a greater than `>` symbol and an optional space should preceed the sentence you want to block.
@@ -314,6 +316,7 @@ nocite: |
 
 Note that this will force all items to be displayed in the bibliography.
 
+
 ### Changing Citation Styles
 
 There are a number of existing [citation styles](https://editor.citationstyles.org/about/) (CSL), but we won't cover their differences and applications during this workshop. To use another style, we will need to specify a CSL (Citation Style Language) file in the metadata field in the YAML header.
@@ -342,6 +345,7 @@ csl: apa-5th-edition.csl
 > ## Time to Knit!
 > Knit the document and note that citations and references now conform to the APA style.
 {: .checklist}
+
 
 > ## Tip: Change the CSL default
 > You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles). More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
