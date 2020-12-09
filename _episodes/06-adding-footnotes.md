@@ -62,6 +62,9 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 
 `[Center for Open Science](https://www.cos.io/)` 
 
+> ## Time to Knit!
+> Check if you hyperlinks are working properly. 
+{: .checklist}
 
 > ## Challenge 6.2: Adding links 
 >
