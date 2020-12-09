@@ -13,7 +13,7 @@ objectives:
 - Adding symbols in Rmarkdown
 
 keypoints:
-- Adding _*italicized*_, &quotquoted&quot, and _*bolded*_ texts
+- Adding _*italicized*_ and _*bolded*_ texts
 - Following LaTeX formatting guidelines
 source: Rmd
 ---
@@ -38,6 +38,12 @@ Make text bold with double asterisks or double underscores.
 ```**bold**``` will give output **bold**  
 ```__bold__``` will give output _bold_  
 
+Let's try that italics applying that to two organization names that appear in the text. First let's put the `Association of Biomolecular Resource Facilities` in italic. `_Association of Biomolecular Resource Facilities_` or `*Association of Biomolecular Resource Facilities*` will render _Association of Biomolecular Resource Facilities_. Now try the same with the `Committee on Core Rigor and Reproducibility`. 
+
+For testing out making the text bold, let's search for the two mentions to the Transparency and Openness Promotion in the paper and make them bold. Either `__Transparency and Openness Promotion__` or `**Transparency and Openness Promotion**` will render **Transparency and Openness Promotion**.
+
+Which symbol do you prefer to use? Do you stick with the same for both emphases? 
+
 
 >## Tip: ***When you realllllly want to emphasize something***
 > 
@@ -56,12 +62,12 @@ RStudio has a most wonderful feature that allows you to use just the mathematics
 
 An inline formula is delimited with single dollar signs, as in `$ 2+2 = 4 $`.  A display equation uses double dollar signs, `$$ 2+2 = 4 $$`.  What goes between the single or double dollar signs is LaTeX math formatting.  This is its own language, and you just have to learn it.  A decent online reference (Overleaf is an online LaTeX editor):
 
-- https://www.overleaf.com/learn/latex/Mathematical_expressions
+- [https://www.overleaf.com/learn/latex/Mathematical_expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions)
 
 The canonical LaTeX reference, written by the author (hardback, but viewable online):
 
-- https://archive.org/details/latex00lesl
-- https://ucsb-primo.hosted.exlibrisgroup.com/permalink/f/1egv95m/01UCSB_ALMA21230090630003776
+- [https://archive.org/details/latex00lesl](https://archive.org/details/latex00lesl)
+- [https://ucsb-primo.hosted.exlibrisgroup.com/permalink/f/1egv95m/01UCSB_ALMA21230090630003776](https://ucsb-primo.hosted.exlibrisgroup.com/permalink/f/1egv95m/01UCSB_ALMA21230090630003776)
 
 But, know that the LaTeX math language is very intuitive once you get a feel for its style.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like `a = b*c`, but in LaTeX you would say `$ a = bc $`.  Spaces generally don’t matter in LaTeX; it "understands" your formula and uses rules to determine how to display things.
 
@@ -81,6 +87,6 @@ Notice how RStudio gives you a preview of the equation.  Nice!  The formula here
 
 For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly.  Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
 
-To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems.  Here's an example: https://www.educba.com/confidence-interval-formula/
+To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems.  Here's an example: [https://www.educba.com/confidence-interval-formula/](https://www.educba.com/confidence-interval-formula/)
 
 RStudio's facility to bring in LaTeX for math formatting makes it a wonderful authoring environment for math-rich papers that are not computational and have nothing to do with R at all.
