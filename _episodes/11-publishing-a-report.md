@@ -43,13 +43,15 @@ and you'll be presented with the following panels:
 At the end of the publish process your paper will be live on the internet 
 with a URL similar to: `https://rpubs.com/yourname/678624`
 
+R-Studio also saves an HTML version of your *knit* document to your local file system.  Look for it in the *results* 
+directory in the same directory as the R-markdown file in your R-Studio project directory.  
+This html document is self-contained and highly portable so you can easily move it to your own web hosting 
+if you have something like that setup.
 
-
-
-Html
 Other document types?
-11.2 Publishing as website on GitHub*
+
+### 11.2 Publishing as website on GitHub*
 
 Another, better, but slightly more involved option for publishing an RMarkdown document on the web is to use GitHub and GitHub Pages.  It is out of the scope of this lesson to use GitHub, but briefly, GitHub is a widely-used version control and collaboration system.  RStudio has built-in support for GitHub: in the upper right panel of your RStudio window, look for the Git tab, which allows you to sync your RMarkdown project with a remote repository stored on [github.com](https://github.com).  To enable publishing to GitHub Pages, go to the Settings page of your repository on GitHub and select a branch ("branch" is a repository term) to publish.  Name your main RMarkdown file `index.Rmd`, and render it to HTML as `index.html`.  With GitHub Pages enabled on your repository, the HTML file in your repository at https://github.com/myusername/myrepo/index.html will appear on the web as https://myusername.github.io/.
 
-11.4 ??Converting RMarkdown to LaTeX??
+### 11.4 ??Converting RMarkdown to LaTeX??
