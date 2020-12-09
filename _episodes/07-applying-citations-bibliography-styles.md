@@ -41,43 +41,27 @@ A `*.bibtex` file consists of bibliography in plain-text format. Go to your `R-m
 
 ```
 
-@misc{nature\_nature\_2018,
-
-type = {Repository},
-
-title = {Nature {Reproducibility} survey 2017},
-
-url = {10.6084/m9.figshare.6139937.v4},
-
-journal = {Figshare},
-
-author = {Nature},
-
-year = {2018},
-
+@misc{nature_nature_2018,
+	type = {Repository},
+	title = {Nature {Reproducibility} survey 2017},
+	url = {10.6084/m9.figshare.6139937.v4},
+	journal = {Figshare},
+	author = {Nature},
+	year = {2018},
 }
 
-@article{springer\_reality\_2016,
-
-title = {Reality check on reproducibility.},
-
-volume = {533},
-
-doi = {10.1038/533437a},
-
-number = {7604},
-
-journal = {Nature},
-
-author = {Springer, Nature},
-
-month = may,
-
-year = {2016},
-
-pages = {437},
-
+@article{springer_reality_2016,
+	title = {Reality check on reproducibility.},
+	volume = {533},
+	doi = {10.1038/533437a},
+	number = {7604},
+	journal = {Nature},
+	author = {Springer, Nature},
+	month = may,
+	year = {2016},
+	pages = {437},
 }
+
 ```
 
 Note that the first line specifies the type of citation, MISC for _miscellaneous_, and Article for _papers_, along with the main entry which will be used to link in-text citations further in the episode. The other lines include the metadata that describes different parts of the bibliography, such as the date, the author, etc.
@@ -104,24 +88,20 @@ To do so, follow the steps below:
 * 4) Choose the BibTeX option. It will prompt a file in your browser, like this:
 
 ```
-@article{baker20161,
-
-title={1,500 scientists lift the lid on reproducibility.},
-
-author={Baker, Monya},
-
-journal={Nature: International weekly journal of science},
-
-volume={533},
-
-number={7604},
-
-pages={452--455},
-
-year={2016},
-
-publisher={Macmillan}
-
+@article{baker_1500_2016,
+	title = {1,500 scientists lift the lid on reproducibility},
+	volume = {533},
+	url = {http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970},
+	doi = {10.1038/533452a},
+	abstract = {Survey sheds light on the ‘crisis’ rocking research.},
+	language = {en},
+	number = {7604},
+	urldate = {2020-11-13},
+	journal = {Nature News},
+	author = {Baker, M.},
+	month = may,
+	year = {2016},
+	pages = {452},
 }
 ```
 
@@ -229,7 +209,7 @@ The output you will get in Chicago style will be:
 >
 > Locate `[citation exercise 1]` in the document, and replace it by a citation to Mufano's (2017) study.
 >> ## Solution
-> `[@munafo\_manifesto\_2017]` 
+> `[@munafo_manifesto_2017]` 
 > The output you will get in Chicago style will be: `(Mufano, 2017)`
 >> {: .output}
 > {: .solution}
@@ -240,7 +220,7 @@ The output you will get in Chicago style will be:
 
 If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let's complement the citation we created earlier in the first paragraph by adding Bustin's to it. Let's practice that in the place marked as `[citation example 2]`
 
-`[@bustin\_reproducibility\_2014; @freedman\_reproducibility2020\_2017]`
+`[@bustin_reproducibility_2014; @freedman_reproducibility2020_2017]`
 
 The output you will get in Chicago style will be:
 
@@ -253,7 +233,7 @@ The output you will get in Chicago style will be:
 >
 > Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker (2016) and Freedman, Venugopalan and Wisman's (2017) studies.
 >> ## Solution
-> `[@baker\_1500\_2016; @freedman\_reproducibility2020\_2017]`
+> `[@baker_1500_2016; @freedman_reproducibility2020_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
 >> {: .output}
 > {: .solution}
@@ -264,7 +244,7 @@ The output you will get in Chicago style will be:
 
 There are cases authors are announced in the text, and therefore their names shouldn't go between parenthesis. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper, as it follows:
 
-"A recent survey conducted by_Springer_ `[-@springer\_reality\_2016]` reported that 90%..."
+"A recent survey conducted by_Springer_ `[-@springer_reality_2016]` reported that 90%..."
 
 The output you will get will be:
 
@@ -275,7 +255,7 @@ The output you will get will be:
 > 
 > Let's practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature's survey in order to indicate the dataset you are referring to.
 >> ## Solution
-> `[-@nature\_nature\_2018]`
+> `[-@nature_nature_2018]`
 > The output you will get will be: `Nature (2018)`
 >> {: .output}
 > {: .solution}
