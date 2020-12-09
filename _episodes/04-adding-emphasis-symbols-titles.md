@@ -23,7 +23,7 @@ source: Rmd
 
 ## Adding Emphasis
 
-Another way we can customize our R Markdown file output is by emphasizing words or phrases. In our paper, there are several instances of words and phrases that are italicized, bolded, or in “quotation marks”. We use markdown syntax to add these emphasis to words or phrases by surrounding them with matching symbols. Different symbols give different emphases effects. 
+Another way we can customize our R Markdown file output is by emphasizing words or phrases. In our paper, there are several instances of words and phrases that are italicized or bolded. We use markdown syntax to add these emphasis to words or phrases by surrounding them with matching symbols. Different symbols give different emphases effects. 
 
 Put text in italics with single asterisks or single underscores.  
 
@@ -34,33 +34,6 @@ Make text bold with double asterisks or double underscores.
 
 ```**bold**``` will give output **bold**  
 ```__bold__``` will give output _bold_  
-
-Put text in “quotation marks” using &quot;
-
-```&quot;Here is a quote.&quot;``` will give output “Here is a quote.”
-
-In the second paragraph of our paper, we reference a survey conducted by Springer. We want to italicize Springer’s name. Find where we reference the survey and change Springer to Springer by putting either asterisks or underscores around the name ```(*Springer* or _Springer_)```. 
-
-In that same paragraph, the phrase “more robust experimental design” is in quotations. Add the quotation marks to that phrase by typing &quot; at the beginning and end of the phrase. 
-&quot;more robust experimental design&quot;
-
-> ## Add emphasis to other words and phrases. 
->
->1. In the second paragraph
->Put the phrase “better statistics” in quotation marks
->Put the phrase “better mentorship” in quotation marks 
->When we reference the survey being published, italicize the word Nature so we can emphasize the 
- publisher. 
->
->2. In the Survey Overview section
->Put the phrase “enhance the reproducibility of research findings through increased scientific rigor  and transparency.” in quotation marks
->
->3. In the Strategies for Improving R&R in Core Operation section
->Put the phrase “provide incentives to support and monitor research rigor throughout the research  
- life cycle” in quotation marks
->
->4. Put the word “cultural” in quotation marks 
-{: .challenge}
 
 
 >## Tip: ***When you realllllly want to emphasize something***
