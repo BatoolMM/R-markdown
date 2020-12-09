@@ -261,6 +261,9 @@ The output you will get will be:
 > {: .solution}
 {: .challenge}
 
+> ## Time to Knit!
+> Check how the citations you have just created renders in your paper. 
+{: .checklist}
 
 #### Adding Long Citations Using Block Quotes
 
@@ -272,12 +275,18 @@ The output you will get will be:
 
 > Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.
 
+
+> ## Time to Knit!
+> Check how the block quote you have just created looks like in your paper. 
+{: .checklist}
+
+
 ### Setting the Reference List
 
 All cited items will be listed under the section **References** which you created before while practicing headings and subheadings. Items will be placed automatically in alphabetical order.
 
 
-#### Add an item to a bibliography without citing it
+#### Adding an item to a bibliography without citing it
 
 By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocitemetadata field and put the citations there.
 
@@ -289,7 +298,7 @@ nocite **:** |
 
 ```
 
-#### Add all no-cited items to the bibliography
+#### Adding all no-cited items to the bibliography
 
 If we do not wish to explicitly state all of the items within the bibliography but would still like to show them in our references, we can use the following syntax:
 
@@ -327,7 +336,9 @@ csl: apa-5th-edition.csl
 
 ```
 
-Knit the document and note that citations and references now conform to the APA style.
+> ## Time to Knit!
+> Knit the document and note that citations and references now conform to the APA style.
+{: .checklist}
 
 > ## Tip: Change the CSL default
 > You can override this default by copying a CSL style of your choice to default.csl in your user data directory.The CSL project provides further information on [finding and editing styles](https://github.com/citation-style-language/styles). More information about CSL can be found here [https://docs.citationstyles.org/en/1.0.1/primer.html](https://docs.citationstyles.org/en/1.0.1/primer.html).
