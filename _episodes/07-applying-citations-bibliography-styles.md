@@ -194,10 +194,10 @@ It is important to use this exact key to render correct mentions in the text. Le
 
 #### Single citation
 
-At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let's practice adding our first citation. Let's use the item with the key `freedman\_2020\_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after an ";"; in between brackets, as follows:
+At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let's practice adding our first citation. Let's use the item with the key `freedman_2020_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after an ";"; in between brackets, as follows:
 
 ```
-[@freedman\_2020\_2017]
+[@freedman_2020_2017]
 
 The output you will get in Chicago style will be:
 
