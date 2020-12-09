@@ -26,7 +26,7 @@ A recent survey conducted by Springer [-@springer_reality_2016] reported that 90
 
 A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion guidelines created by the [Center for Open Science](https://www.cos.io/) to improve research planning and reporting [@munafo_manifesto_2017], which was supported by over 5000 journals and research organizations. The same authors emphasize that: 
 
->Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating >the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to >address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or >require greater transparency in planning and reporting of research54. TOP provides principles for how transparency and usability.
+>Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research. 
 
 On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice [^1] that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
