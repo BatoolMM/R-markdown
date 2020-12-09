@@ -244,7 +244,7 @@ The output you will get in Chicago style will be:
 
 There are cases authors are announced in the text, and therefore their names shouldn't go between parenthesis. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper, as it follows:
 
-"A recent survey conducted by_Springer_ `[-@springer_reality_2016]` reported that 90%..."
+"A recent survey conducted by Springer `[-@springer_reality_2016]` reported that 90%..."
 
 The output you will get will be:
 
@@ -261,6 +261,16 @@ The output you will get will be:
 > {: .solution}
 {: .challenge}
 
+
+#### Adding Long Citations Using Block Quotes
+
+In case you want to place a direct long quotation you can use block quote. Locate the the text which says: "The same authors emphasize that...". The following paragraph should be blocked. To do so, a greater than `>` symbol and an optional space should preceed the sentence you want to block.
+
+`> Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.`
+
+The output you will get will be:
+
+> Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.
 
 ### Setting the Reference List
 
