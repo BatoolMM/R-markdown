@@ -163,6 +163,12 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 > {: .solution}
 {: .challenge}
 
+
+> ## Time to Knit!
+> Check how the headings look like in your paper. 
+{: .checklist}
+
+
 <br>
 ## Horizontal Lines
 If you wish to create divisions between sections, you can insert a horizontal line in using 3 (or more) dashes, asterix, or underlines (`---`, `***`, or `___`):
@@ -226,6 +232,12 @@ Outputs as:
 > {: .solution}
 {: .challenge}
 
+
+> ## Time to Knit!
+> Check how the bullet lists looks like in your paper. 
+{: .checklist}
+
+
 <br>
 
 You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
@@ -271,4 +283,9 @@ The above will appear as:
 > {: .solution}
 {: .challenge}
 
-If needed, you can also combine sub-levels numbers or even combine bullets and numbered items in the same list, by indenting different levels. 
+> ## Time to Knit!
+> Check how the numbered lists looks like in your paper. 
+{: .checklist}
+
+
+If needed, you can also combine sub-levels numbers or even combine bullets and numbered items in the same list, by indenting different levels.
