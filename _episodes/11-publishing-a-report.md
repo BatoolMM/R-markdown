@@ -36,7 +36,7 @@ Click the publish button
 and you'll be presented with the following panels:
 
 ![](../fig/11-r-studio-knit-publish-to-scrnshot.png)
-(RStudio Connect is a standalone publishing platform for teams to share content.  It requires purchase to host and use.)
+(The other option in the dialog box, RStudio Connect, is a standalone publishing platform for teams to share content.  It requires purchase to host and use.)
 
 ![](../fig/11-r-studio-knit-publish-confirm-scrnshot.png)
 
