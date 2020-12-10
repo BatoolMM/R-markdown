@@ -31,8 +31,6 @@ source: Rmd
 1. Inline code  
 2. Code Chunks  
 
-Add an edit here to demonstrate
-
 ## Adding Inline code
 
 Inline code is best for calculating simple expressions integrated into your narrative.
@@ -124,34 +122,21 @@ Other than our hashes ``` for code chunks that surround the code top and bottom,
 Ok, let's add some code! Earlier, we added three images to our document. Now, images of our plots are great and all, but since R Markdown allows us to evaluate live code it would be more reproducible to use code chunks to display those plots. Like with our inline code, this assures that if there are any changes to the data, the plots update automatically. This also makes our life easier because when there's a change we don't have to re-generate plots, save them as images and then add them back in to our paper. This will potentially help prevent version errors as well!  So we're actually going to go ahead and convert a few of our plots to code chunks.
 
 We'll start by typing our our starting hashes & r between curly brackets. (in your own workflow you may want to add the ending three hashes as well so you don't forget after adding your code):
-FIXME add screenshot?
 
-
+![blank Rmd code chunk](../fig/09-blank-code-chunk.PNG)
 
 Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste it in between the two lines with hashes.
 
-*There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
-FIXME add screenshot
+![code chunk with plot1 code](../fig/09-code-chunk-plot1.PNG)
+
+
+> ## Tip:
+> There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
+> ![auto create code chunk](../fig/09-auto-code-chunk.PNG)
+{: .callout}
 
 
 
-
-~~~
-data <- read_csv("../data/figure-1-data.csv", col_types="fi")
-
-pie_data <- data %>%
-  mutate(proportion=count/sum(count)) %>%
-  arrange(desc(proportion)) %>%
-  mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
-
-ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
-  geom_bar(stat="identity", color="white") +
-  coord_polar(theta="y", start=0) +
-  geom_text(aes(y=lab.ypos, label=paste(round(proportion*100), "%", sep="")), color="white") +
-  scale_fill_brewer(palette="Set1", name="Familiarity", guide=guide_legend(reverse=TRUE)) +
-  theme_void()
-~~~
-{: .language-r}
 
 ### Run your code
 
@@ -193,11 +178,11 @@ Again, The chunk name is the only value other than r in the code chunk options t
 `{r chunk-label, OptionName = XXX}`
 
 
-**Eval** = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.  
-**Echo** =  whether to display source code or not (logical or numeric)  
-**Warning** = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only  
-**Include** = whether to include the chunk output in the output document  
-**Hide** = Specifically for plots, generate plots but don’t display them in the output  
+**eval** = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.    
+**echo** =  whether to display source code or not (logical or numeric)    
+**warning** = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only    
+**include** = whether to include the chunk output in the output document    
+**hide** = Specifically for plots, generate plots but don’t display them in the output    
  
  
 > ## CHALLENGE 9.2
