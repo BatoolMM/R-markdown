@@ -86,6 +86,7 @@ This will output as:
 > Check how your images look now. 
 {: .checklist}
 
+
 ### Aligning Images 
 
 Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we can add to the syntax `fig.align="center"`.
