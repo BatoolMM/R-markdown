@@ -39,13 +39,12 @@ For example, use inline code to calculate an error margin or summary statistic, 
 We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, instead of `$ \pm 3 \% $`, let's add this:
 
 
-> ```
+
 > 
 > ~~~
 > `r round(1.96*0.5*(1-0.5)/sqrt(243))*100)`%  
 > ~~~
 > {: .language-r}
-> ```
 {: .source}
 
 Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ` r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
@@ -56,16 +55,16 @@ i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
 
 Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only aggregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility and is used to create Fig 1. We will use *r sum(data$count)* in between the tick marks instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
 
-We will add the inline code to the sentence:
+We will add the inline code to the sentence in question:
 
 > 
 > ~~~
-> "a total of `r sum(data$count)` individuals from 21 countries completed this section."
+> a total of `r sum(data$count)` individuals from 21 countries completed this section.
 > ~~~
 > {: .language-r}
 
 
-Output: "a total of 242 individuals from 21 countries completed this section."
+**Output:** "a total of 242 individuals from 21 countries completed this section."
 
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
@@ -105,17 +104,16 @@ You can quickly insert chunks like these into your file with:
 * or by typing the chunk delimiters ```{r} and ```.
 
 The most basic code chunk looks like so:
-```
+FIXME might need a screenshot
 
 ~~~
 #Some code here
 ~~~
 {: .language-r}
-```
 
 Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
-> ##Fun fact: 
+> ## Fun fact: 
 > Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
 {: .callout}
 
@@ -124,17 +122,17 @@ Other than our hashes ``` for code chunks that surround the code top and bottom,
 Ok, let's add some code! Earlier, we added three images to our document. Now, images of our plots are great and all, but since R Markdown allows us to evaluate live code it would be more reproducible to use code chunks to display those plots. Like with our inline code, this assures that if there are any changes to the data, the plots update automatically. This also makes our life easier because when there's a change we don't have to re-generate plots, save them as images and then add them back in to our paper. This will potentially help prevent version errors as well!  So we're actually going to go ahead and convert a few of our plots to code chunks.
 
 We'll start by typing our our starting hashes & r between curly brackets. (in your own workflow you may want to add the ending three hashes as well so you don't forget after adding your code):
+FIXME add screenshot?
 
-```
 
-```
+
 Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste it in between the two lines with hashes.
 
 *There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
 FIXME add screenshot
 
 
-```
+
 
 ~~~
 data <- read_csv("../data/figure-1-data.csv", col_types="fi")
@@ -152,7 +150,7 @@ ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
   theme_void()
 ~~~
 {: .language-r}
-```
+
 ### Run your code
 
 Now, to check to make sure our code is rendering correctly, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
