@@ -268,22 +268,6 @@ The output you will get will be:
 {: .checklist}
 
 
-#### Adding Long Citations Using Block Quotes
-
-In case you want to place a direct long quotation you can use block quote. Locate the the text which says: "The same authors emphasize that...". The following paragraph should be blocked. To do so, a greater than `>` symbol and an optional space should preceed the sentence you want to block.
-
-`> Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.`
-
-The output you will get will be:
-
-> Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The Transparency and Openness Promotion (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.
-
-
-> ## Time to Knit!
-> Check how the block quote you have just created looks like in your paper. 
-{: .checklist}
-
-
 ### Setting the Reference List
 
 All cited items will be listed under the section **References** which you created before while practicing headings and subheadings. Items will be placed automatically in alphabetical order.
