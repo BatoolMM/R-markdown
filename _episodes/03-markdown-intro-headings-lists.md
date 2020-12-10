@@ -212,6 +212,40 @@ Now you know markdown
 > Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
 {: .callout}
 
+
+> ## Optional Challenge 
+> Add horizontal lines after each section header.
+>
+>
+>> ## SOLUTION
+>> ```
+>>
+>> # INTRODUCTION
+>> 
+>> ***
+>>
+>> # MATERIALS AND METHODS
+>>
+>> ***
+>>
+>> # RESULTS AND DISCUSSION
+>>
+>> ***
+>>
+>> # CONCLUSION
+>>
+>> ***
+>>
+>> # REFERENCES
+>>
+>> ***
+>> ```
+> {: .solution}
+{: .challenge}
+
+
+
+
 ## Bulleted & Numbered Lists
 
 Academic articles often include lists to make important findings stand out more or to summarize key points for readers. We will learn how to create both unordered lists with bullet points, and ordered numbered lists. 
