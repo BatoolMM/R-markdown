@@ -81,6 +81,8 @@ We would like to have numbered section headings in our paper. In order to do tha
 Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter anoter line & indent again and then add `numbered_sections: true`.
 <br>
 It should look like the following:
+
+~~~
 ```
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
@@ -90,6 +92,8 @@ output:
   html_document:
     number_sections: true
 ```
+~~~
+{: .source}
 
 <br>
 We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a heading 2 by adding a `##` before the line.  
