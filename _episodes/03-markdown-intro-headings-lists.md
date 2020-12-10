@@ -27,7 +27,23 @@ R Markdown is a format for writing reproducible, dynamic reports with R which al
 
 The text in an R Markdown document is written with the markdown syntax, which is a basic markup language that conveys how text should be displayed. The basic markdown syntax has dozens of flavors, of which R Markdown is one. Most markdown syntax is preserved and works identically no matter what flavor you use. However, the different flavors will have different options or slightly different implementations of certain things. 
 
-R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report. In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents. 
+R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report. In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
+
+<br>
+> ## Tip: Blank Lines
+> In your document, blank lines will be required before/after all headings, horizontal lines, and lists.  
+You will need to make sure to add line breaks into your document or text will wrap when it renders (even if you hit enter/return and start typing on a new line in R studio)  
+>
+> You can add line breaks by using :  
+> 
+> * 2 enters/returns (leaving a blank line)
+> * two spaces at the end of the line
+> * an html break `<br>`  
+>
+> These line breaks will also be important to get your formatting to render correctly. In some cases you MUST have a blank line (just > two spaces or a break won't do the trick)** 
+{: .callout}
+
+<br>
 
 ## Creating Headings and Subheadings
 
