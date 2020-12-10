@@ -63,12 +63,17 @@ Which symbol do you prefer to use? Do you prefer to stick with the same for both
 
 ## Adding Block Quotes
 
-RMarkdown also allows you to emphasize a pull quote. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol).
+R Markdown also allows you to emphasize a pull quote using block quotes. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol) and the asterisc or underscore for the italics, as demonstrated below:.
 
 `>_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)`
 
+The output you will get shoul look like that:
+
+>_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)
+
+
 > ## Time to Knit!
-> Check how the block quote looks like in your paper. 
+> Check for the block quote in your paper. 
 {: .checklist}
 
 
