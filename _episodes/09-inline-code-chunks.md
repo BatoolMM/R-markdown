@@ -164,7 +164,7 @@ FIXME add naming plot1
 >Try to avoid spaces, periods (.), and underscores (_) in chunk labels and paths. If you need separators, you are recommended to use hyphens (-) instead. For example, setup-options is a good label, whereas setup.options and chunk 1 are bad; fig.path = 'figures/mcmc-' is a good path for figure output, and fig.path = 'markov chain/monte carlo' is bad. See more at: https://yihui.org/knitr/options/
 {: .callout}
 
-### More code chunk options
+### Code Chunk Options
 
 There are over 50 different code chunk options!!! Obviously we will not go over all of them, but they fall into several larger categories including: code evaluation, text output, code style, cache options, plot output and animation. We’ll talk about a few options for code evaluation, text output and plot output specifically.
 
@@ -174,7 +174,8 @@ Again, The chunk name is the only value other than r in the code chunk options t
 
 the option always follows the code chunk label (don't forget to add a `,` after the label either). 
 
-Here are some common options: 
+
+#### Some common options: 
 
 **eval** = (logical or numeric) TRUE/FALSE to evaluate (or not) or a numeric value like c(1,3) (only evaluate expressions 1 and 3).    
 **echo** =  whether to display source code or not (logical or numeric - following the same rules as above)    
@@ -185,11 +186,12 @@ Here are some common options:
  
 > ## CHALLENGE 9.2
 > How will some hypothetical code render given the following options?
->
+> ```
 > 
+> ```
 >> ## SOLUTION
->> The expressions in the code chunk will be evaluated, but the output will not be included in the knit document. 
->> When might you want to use this? 
+>> The expressions in the code chunk will be evaluated, but the output will not be included in the knit document.   
+>> When might you want to use this?   
 >> If you need to calculate some value or do something on your dataset for a further calucation or plot, but the output is not important to be included in your paper narrative. 
 > {: .solution}
 {: .challenge}
