@@ -153,14 +153,6 @@ You can use text emphasis in the table using the same syntax as you use when emp
  Cell 3            |  Cell 4         .
  ```
 <br>
-Output:  
-<br>
- **Column Header** | **Column Header**  
- ---               | ---             .  
- Cell 1            |  Cell 2         .  
- Cell 3            |  Cell 4         .  
-
-<br>
 
 Let’s create Table 1 in our paper in section 3.2 Current Landscape for Rigor and Transparency in Represented Shared Resources. 
 

@@ -27,7 +27,7 @@ R Markdown is a format for writing reproducible, dynamic reports with R which al
 
 The text in an R Markdown document is written with the markdown syntax, which is a basic markup language that conveys how text should be displayed. The basic markdown syntax has dozens of flavors, of which R Markdown is one. Most markdown syntax is preserved and works identically no matter what flavor you use. However, the different flavors will have different options or slightly different implementations of certain things. 
 
-R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report (here is a link explaining Pandoc's markdown specs: https://pandoc.org/MANUAL.html#pandocs-markdown). In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
+R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report ([here is a link explaining Pandoc's markdown specs](https://pandoc.org/MANUAL.html#pandocs-markdown)). In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
 
 <br>
 > ## Tip: Blank Lines
@@ -78,9 +78,11 @@ Displays as:
 
 ### Numbered Sections
 We would like to have numbered section headings in our paper. In order to do that we actually add a bit of code to the yaml section at the top. 
-Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter anoter line & indent again and then add `numbered_sections: true`.
+Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter another line & indent again and then add `numbered_sections: true`.
 <br>
 It should look like the following:
+
+~~~
 ```
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
@@ -89,7 +91,10 @@ date: "December 15, 2020"
 output:
   html_document:
     number_sections: true
+---
 ```
+~~~
+{: .source}
 
 <br>
 We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a heading 2 by adding a `##` before the line.  
@@ -211,6 +216,40 @@ Now you know markdown
 > ## Tip: leave blank line before & after horizontal lines
 > Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
 {: .callout}
+
+
+> ## Optional Challenge 
+> Add horizontal lines after each section header.
+>
+>
+>> ## SOLUTION
+>> ```
+>>
+>> # INTRODUCTION
+>> 
+>> ***
+>>
+>> # MATERIALS AND METHODS
+>>
+>> ***
+>>
+>> # RESULTS AND DISCUSSION
+>>
+>> ***
+>>
+>> # CONCLUSION
+>>
+>> ***
+>>
+>> # REFERENCES
+>>
+>> ***
+>> ```
+> {: .solution}
+{: .challenge}
+
+
+
 
 ## Bulleted & Numbered Lists
 

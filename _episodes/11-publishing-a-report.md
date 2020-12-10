@@ -45,13 +45,21 @@ with a URL similar to: `https://rpubs.com/yourname/678624`
 
 R-Studio also saves an HTML version of your *knit* document to your local file system.  Look for it in the *results* 
 directory in the same directory as the R-markdown file in your R-Studio project directory.  
-This html document is self-contained and highly portable so you can easily move it to your own web hosting 
-if you have something like that setup.
+This html document is self-contained and highly portable.  Images are encoded directly into the HTML so you can easily move it to any web hosting you have available.
 
-Other document types?
 
 ### 11.2 Publishing as website on GitHub*
 
 Another, better, but slightly more involved option for publishing an RMarkdown document on the web is to use GitHub and GitHub Pages.  It is out of the scope of this lesson to use GitHub, but briefly, GitHub is a widely-used version control and collaboration system.  RStudio has built-in support for GitHub: in the upper right panel of your RStudio window, look for the Git tab, which allows you to sync your RMarkdown project with a remote repository stored on [github.com](https://github.com).  To enable publishing to GitHub Pages, go to the Settings page of your repository on GitHub and select a branch ("branch" is a repository term) to publish.  Name your main RMarkdown file `index.Rmd`, and render it to HTML as `index.html`.  With GitHub Pages enabled on your repository, the HTML file in your repository at https://github.com/myusername/myrepo/index.html will appear on the web as https://myusername.github.io/.
+
+### 11.3 Other document types
+
+When you create a new R-markdown file in R Studio you are presented with a choice of Output Formats:
+
+![](../fig/11-rstudio-output-formats-scrnshot.png)
+
+For the purposes of this workshop we're using HTML as the output format but other types are available.  You can render your R Markdown as a document, a presentation or a *Shiny* app.  With the default installation of R-Studio HTML output is most likely to work.  Other formats may require additional R packages and/or code libraries be installed on your computer.  R Studio also has a templating system to help with creating R Markdown files with common elements, YAML metadata and rendering instructions.  This can be very helpful for example if you want to create a weekly or monthly report documenting an ongoing experiment, study or other changing data.
+
+
 
 ### 11.4 ??Converting RMarkdown to LaTeX??
