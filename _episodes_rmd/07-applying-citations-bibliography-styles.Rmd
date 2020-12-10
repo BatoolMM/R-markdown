@@ -87,7 +87,6 @@ To do so, follow the steps below:
 
 ![Fig. 7.3 - Bibtext from Google Scholar (3)](../fig/07-gs-bibtex3.png)
 
-
 * 4) Choose the BibTeX option. It will prompt a file in your browser, like this:
 
 ```
@@ -267,7 +266,6 @@ The output you will get will be:
 > ## Time to Knit!
 > Check how the citations you have just created renders in your paper. 
 {: .checklist}
-
 
 
 #### Adding Long Citations Using Block Quotes
