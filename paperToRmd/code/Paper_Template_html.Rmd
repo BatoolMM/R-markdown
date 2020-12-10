@@ -20,13 +20,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # INTRODUCTION
 
+>_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)
+
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@freedman_reproducibility2020_2017].
 
 A recent survey conducted by Springer [-@springer_reality_2016] reported that 90% of participants identified "more robust experimental design" as one of several key improvements needed for the conduct of better science, in addition to "better statistics" and "better mentorship". More recently, Nature [-@nature_nature_2018] published the survey data which can be found on Figshare.
 
-A manifesto for reproducible science made several recommendations and called attention to initiatives such as the **Transparency and Openness Promotion** (TOP) guidelines created by the [Center for Open Science](https://www.cos.io/) to improve research planning and reporting [@munafo_manifesto_2017], which was supported by over 5000 journals and research organizations. The same authors emphasize that: 
-
->Poor usability reflects difficulty in evaluating what was done, in reusing the methodology to assess reproducibility, and in incorporating the evidence into systematic reviews and meta-analyses. Improving the quality and transparency in the reporting of research is necessary to address this. The **Transparency and Openness Promotion** (TOP) guidelines offer standards as a basis for journals and funders to incentivize or require greater transparency in planning and reporting of research.
+A manifesto for reproducible science made several recommendations and called attention to initiatives such as the **Transparency and Openness Promotion** (TOP) guidelines created by the [Center for Open Science](https://www.cos.io/) to improve research planning and reporting [@munafo_manifesto_2017], which was supported by over 5000 journals and research organizations. 
 
 On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice^1^ that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows:
 
@@ -137,6 +137,6 @@ About one quarter of respondents noted that a radical cultural change at the hig
 
 Scientific shared resources support research laboratories to generate critical data across many disciplines. Core personnel maintain considerable expertise that is important for the quality of their work and for sharing with research scientists in their important role as research mentors. They ensure continuous improvement through professional and educational development and through their systematic approach to research methods.
 
-^1^ Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
+^1^Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" ([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))
 
 # REFERENCES {-}
