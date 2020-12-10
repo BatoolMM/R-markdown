@@ -8,7 +8,7 @@ questions:
 - How is an R Markdown document configured & what is our workflow?
 
 objectives:
-- Key Functions on Rstudio 
+- Key Functions in Rstudio 
 - Learn how to start an R markdown document 
 - Understand the workflow of an Rmarkdown file
 
@@ -83,7 +83,7 @@ A good project layout will ultimately make your life easier:
 Fortunately, there are tools and packages which can help you manage your work effectively.
 
 One of the most powerful and useful aspects of RStudio is its project management
-functionality. We'll be using an R project today to compliment our Rmarkdown document and bundle all the files needed for our paper into a self-contained, reproducible
+functionality. We'll be using an R project today to complement our Rmarkdown document and bundle all the files needed for our paper into a self-contained, reproducible
 project. After opening the project we'll review good ways to organize your work. 
 
 The simplest way to open an RStudio project once it has been created is to click
