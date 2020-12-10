@@ -40,7 +40,7 @@ You will need to make sure to add line breaks into your document or text will wr
 > * two spaces at the end of the line
 > * an html break `<br>`  
 >
-> These line breaks will also be important to get your formatting to render correctly. In some cases you MUST have a blank line (just > two spaces or a break won't do the trick)** 
+> These line breaks will also be important to get your formatting to render correctly. In some cases you MUST have a blank line (just two spaces or a break won't do the trick)
 {: .callout}
 
 <br>
@@ -136,14 +136,24 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .callout}
 
 > ## CHALLENGE 3.1
-> Insert headings throughout the rest of the paper so it is split into 5 sections: 
+> Insert headings and subheadings throughout the rest of the paper.  
+> Make these lines into headings so our paper is split into 5 main sections: 
 > * Introduction
 > * Materials and Methods
 > * Results and Discussion
 > * Conclusion
 > * References 
 >
-> Think carefully about which heading level you should use for consistency throughout your paper.
+>
+> Since we already put the subheadings into the Materials and Methods section, we just need to add subheadings to the Results and Discussion Section. 
+> Make these lines in subheadings:
+> * Survey Demographics  
+> * Current Landscape for Rigor and Transparency in Represented Shared Resources  
+> * Core Implementation of Research Best Practices  
+> * Strategies for Improving R&R in Core Operation
+>
+>
+> Think carefully about which heading levels you should use for consistency throughout your paper.
 > *Use the search function in R Markdown `ctrl-f` or `cmd-f` to find these lines in the document quickly.
 >
 >> ## SOLUTION
@@ -153,24 +163,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 >> # RESULTS AND DISCUSSION
 >> # CONCLUSION
 >> # REFERENCES
->> ```
-> {: .solution}
-{: .challenge}
-
-<br> 
-> ## CHALLENGE 3.2
-> Insert subheadings to divide our main sections into subsections. Since we already put the subheadings into the Materials and Methods section, we just need to do the Results and Discussion Section. 
-> Find the lines with:
-> 
-> * Survey Demographics  
-> * Current Landscape for Rigor and Transparency in Represented Shared Resources  
-> * Core Implementation of Research Best Practices  
-> * Strategies for Improving R&R in Core Operation
-> 
-> and add the appropriate subheading syntax.
->
->> ## SOLUTION
->> ```
+>> 
 >> ## Survey Demographics
 >> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
 >> ## Core Implementation of Research Best Practices
@@ -236,7 +229,7 @@ Outputs as:
 - Also a bullet point
 + Still a bullet point
 
-> ## CHALLENGE 3.3
+> ## CHALLENGE 3.2
 >Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
 >
 >> ## SOLUTION
@@ -287,7 +280,7 @@ The above will appear as:
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
-> ## CHALLENGE 3.4
+> ## CHALLENGE 3.3
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
 >> ## SOLUTION
