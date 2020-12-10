@@ -122,34 +122,21 @@ Other than our hashes ``` for code chunks that surround the code top and bottom,
 Ok, let's add some code! Earlier, we added three images to our document. Now, images of our plots are great and all, but since R Markdown allows us to evaluate live code it would be more reproducible to use code chunks to display those plots. Like with our inline code, this assures that if there are any changes to the data, the plots update automatically. This also makes our life easier because when there's a change we don't have to re-generate plots, save them as images and then add them back in to our paper. This will potentially help prevent version errors as well!  So we're actually going to go ahead and convert a few of our plots to code chunks.
 
 We'll start by typing our our starting hashes & r between curly brackets. (in your own workflow you may want to add the ending three hashes as well so you don't forget after adding your code):
-FIXME add screenshot?
 
-
+![blank Rmd code chunk](../fig/09-blank-code-chunk.PNG)
 
 Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste it in between the two lines with hashes.
 
-*There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
-FIXME add screenshot
+![code chunk with plot1 code](../fig/09-code-chunk-plot1.PNG)
+
+
+> ## Tip:
+> There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
+> ![auto create code chunk](../fig/09-auto-code-chunk.PNG)
+{: .callout}
 
 
 
-
-~~~
-data <- read_csv("../data/figure-1-data.csv", col_types="fi")
-
-pie_data <- data %>%
-  mutate(proportion=count/sum(count)) %>%
-  arrange(desc(proportion)) %>%
-  mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
-
-ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
-  geom_bar(stat="identity", color="white") +
-  coord_polar(theta="y", start=0) +
-  geom_text(aes(y=lab.ypos, label=paste(round(proportion*100), "%", sep="")), color="white") +
-  scale_fill_brewer(palette="Set1", name="Familiarity", guide=guide_legend(reverse=TRUE)) +
-  theme_void()
-~~~
-{: .language-r}
 
 ### Run your code
 
@@ -167,6 +154,7 @@ While not necessary to run your code, better practice is to give a name to each 
 
 
 *The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE)
+**The chunk label should be unique (i.e. don't use the same one for multiple chunks)
 
 Note: 
 We’ll see in a bit where this code chunk label comes in handy. 
@@ -187,25 +175,20 @@ There are over 50 different code chunk options!!! Obviously we will not go over 
 
 Again, The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE). So these chunk options will always require a tag whose syntax looks like:
 
-`{r code-label, OPTIONNAME = XXX}`
+`{r chunk-label, OptionName = XXX}`
 
 
-Eval = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.
-Echo =  whether to display source code or not (logical or numeric
-Warning = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only
-Include = whether to include the chunk output in the output document
-Hide = Specifically for plots, generate plots but don’t display them in the output
+**eval** = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.    
+**echo** =  whether to display source code or not (logical or numeric)    
+**warning** = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only    
+**include** = whether to include the chunk output in the output document    
+**hide** = Specifically for plots, generate plots but don’t display them in the output    
  
  
 > ## CHALLENGE 9.2
 > How will some hypothetical code render given the following options?
 >
 > 
-> ~~~
-> # FIXME change options
-> #Some r code
-> ~~~
-> {: .language-r}
 >> ## SOLUTION
 >> FIXME add answer
 > {: .solution}
@@ -230,7 +213,7 @@ Hide = Specifically for plots, generate plots but don’t display them in the ou
 ### Global Code Chunk Options:
 On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
 
-To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
+To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header (and either before or after loading our data/libraries-best to do before though so there's consistency). Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
 
 ~~~
@@ -238,16 +221,26 @@ To set global options that apply to every chunk in your file, call we will call 
 ~~~
 {: .language-r}
 
-What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news!  The global options can be overwritten in each individual code chunk.
+What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news!The global options can be overwritten in each individual code chunk.
 
-See also fig paths best practices
+FIXME - elaborate on this (let's show how we can make the library loading chunk different - so that will come after the global-options)
+
+See also fig paths best practices??? FIXME
+
+We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this too much, but a neat one is called "code-folding". 
 
 TIP:
 An option for the yaml header*
 
+```
+---
+...
+...
 Code folding: output:
   html_document:
     code_folding: "hide"
+---
+```
 
 Your code chunks will be hidden in the output, but a small ‘code’ button will be available to display it if necessary.
 

@@ -27,7 +27,23 @@ R Markdown is a format for writing reproducible, dynamic reports with R which al
 
 The text in an R Markdown document is written with the markdown syntax, which is a basic markup language that conveys how text should be displayed. The basic markdown syntax has dozens of flavors, of which R Markdown is one. Most markdown syntax is preserved and works identically no matter what flavor you use. However, the different flavors will have different options or slightly different implementations of certain things. 
 
-R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report. In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents. 
+R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report (here is a link explaining Pandoc's markdown specs: https://pandoc.org/MANUAL.html#pandocs-markdown). In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
+
+<br>
+> ## Tip: Blank Lines
+> In your document, blank lines will be required before/after all headings, horizontal lines, and lists.  
+You will need to make sure to add line breaks into your document or text will wrap when it renders (even if you hit enter/return and start typing on a new line in R studio)  
+>
+> You can add line breaks by using :  
+> 
+> * 2 enters/returns (leaving a blank line)
+> * two spaces at the end of the line
+> * an html break `<br>`  
+>
+> These line breaks will also be important to get your formatting to render correctly. In some cases you MUST have a blank line (just two spaces or a break won't do the trick)
+{: .callout}
+
+<br>
 
 ## Creating Headings and Subheadings
 
@@ -120,14 +136,24 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .callout}
 
 > ## CHALLENGE 3.1
-> Insert headings throughout the rest of the paper so it is split into 5 sections: 
+> Insert headings and subheadings throughout the rest of the paper.  
+> Make these lines into headings so our paper is split into 5 main sections: 
 > * Introduction
 > * Materials and Methods
 > * Results and Discussion
 > * Conclusion
 > * References 
 >
-> Think carefully about which heading level you should use for consistency throughout your paper.
+>
+> Since we already put the subheadings into the Materials and Methods section, we just need to add subheadings to the Results and Discussion Section. 
+> Make these lines into subheadings:
+> * Survey Demographics  
+> * Current Landscape for Rigor and Transparency in Represented Shared Resources  
+> * Core Implementation of Research Best Practices  
+> * Strategies for Improving R&R in Core Operation
+>
+>
+> Think carefully about which heading levels you should use for consistency throughout your paper.
 > *Use the search function in R Markdown `ctrl-f` or `cmd-f` to find these lines in the document quickly.
 >
 >> ## SOLUTION
@@ -137,24 +163,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 >> # RESULTS AND DISCUSSION
 >> # CONCLUSION
 >> # REFERENCES
->> ```
-> {: .solution}
-{: .challenge}
-
-<br> 
-> ## CHALLENGE 3.2
-> Insert subheadings to divide our main sections into subsections. Since we already put the subheadings into the Materials and Methods section, we just need to do the Results and Discussion Section. 
-> Find the lines with:
-> 
-> * Survey Demographics  
-> * Current Landscape for Rigor and Transparency in Represented Shared Resources  
-> * Core Implementation of Research Best Practices  
-> * Strategies for Improving R&R in Core Operation
-> 
-> and add the appropriate subheading syntax.
->
->> ## SOLUTION
->> ```
+>> 
 >> ## Survey Demographics
 >> ## Current Landscape for Rigor and Transparency in Represented Shared Resources
 >> ## Core Implementation of Research Best Practices
@@ -220,7 +229,7 @@ Outputs as:
 - Also a bullet point
 + Still a bullet point
 
-> ## CHALLENGE 3.3
+> ## CHALLENGE 3.2
 >Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
 >
 >> ## SOLUTION
@@ -271,7 +280,7 @@ The above will appear as:
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
-> ## CHALLENGE 3.4
+> ## CHALLENGE 3.3
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
 >> ## SOLUTION
