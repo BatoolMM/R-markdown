@@ -61,7 +61,7 @@ Which symbol do you prefer to use? Do you prefer to stick with the same for both
 > ```___super emphasized___``` will give output ___super emphasized___
 {: .callout}
 
-## Adding Block Quotes
+### Adding Block Quotes
 
 R Markdown also allows you to emphasize a pull quote using block quotes. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol) and the asterisc or underscore for the italics, as demonstrated below:.
 
@@ -110,7 +110,7 @@ But, know that the LaTeX math language is very intuitive once you get a feel for
 > Check how the formula just rendered in your paper. 
 {: .checklist}
 
-Notice how RStudio gives you a preview of the equation.  Nice!  The formula here uses curly braces for grouping (kind of like invisible parentheses).  `\over` gives a fraction with a big horizontal line.  Try replacing that with just `/` for an alternative rendering.
+Double click on the equation. Notice how RStudio gives you a preview of it.  Nice! The formula here uses curly braces for grouping (kind of like invisible parentheses).  `\over` gives a fraction with a big horizontal line.  Try replacing that with just `/` for an alternative rendering.
 
 For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly.  Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
 
