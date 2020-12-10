@@ -61,6 +61,16 @@ Which symbol do you prefer to use? Do you prefer to stick with the same for both
 > ```___super emphasized___``` will give output ___super emphasized___
 {: .callout}
 
+## Adding Block Quotes
+
+RMarkdown also allows you to emphasize a pull quote. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol).
+
+`>_"I have seen further it is because I have stood on the shoulders of giants."_ (Isaac Newton)`
+
+> ## Time to Knit!
+> Check how the block quote looks like in your paper. 
+{: .checklist}
+
 
 ## Adding Symbols and Formulas
 
