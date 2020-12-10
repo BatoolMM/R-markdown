@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Syntax: Emphasis, Symbols & Titles"
-teaching: 30 min
-exercises: 10 min
+teaching: 30
+exercises: 10
 questions:
 - How do I emphasize text in an Rmarkdown document?
 - How to start an R Markdown document in Rstudio?
@@ -38,7 +38,7 @@ Make text bold with double asterisks or double underscores.
 Let's try that italics applying that to two organization names that appear in the text. First let's put the `Association of Biomolecular Resource Facilities` in italic. `_Association of Biomolecular Resource Facilities_` or `*Association of Biomolecular Resource Facilities*` will render _Association of Biomolecular Resource Facilities_. Now try the same with the `Committee on Core Rigor and Reproducibility`. 
 
 > ## CHALLENGE 4.1 - Applying Bold Emphasis
-> For testing out making the text bold, let's search for the two mentions to the Transparency and Openness Promotion in the paper and make them bold.
+> For testing out making the text bold, let's search for the mention to the Transparency and Openness Promotion in the paper and make them bold.
 >> ## SOLUTION
 >> Either `__Transparency and Openness Promotion__` or `**Transparency and Openness Promotion**` will render **Transparency and Openness Promotion**
 > {: .solution}
