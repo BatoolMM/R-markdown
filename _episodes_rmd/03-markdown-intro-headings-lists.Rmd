@@ -81,7 +81,7 @@ Displays as:
 
 ### Numbered Sections
 We would like to have numbered section headings in our paper. In order to do that we actually add a bit of code to the yaml section at the top. 
-Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter anoter line & indent again and then add `numbered_sections: true`.
+Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter another line & indent again and then add `numbered_sections: true`.
 <br>
 It should look like the following:
 
@@ -94,6 +94,7 @@ date: "December 15, 2020"
 output:
   html_document:
     number_sections: true
+---
 ```
 ~~~
 {: .source}
