@@ -1,5 +1,5 @@
 ---
-title: "Finding and Applying Existing Journal Templates"
+title: "Finding & Applying Existing Journal Templates"
 teaching: 5
 exercises: 0
 questions:
