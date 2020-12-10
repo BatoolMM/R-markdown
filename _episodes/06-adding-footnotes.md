@@ -53,8 +53,6 @@ For example:
 
 `[RStudio](https://www.rstudio.com)`
 
-Knit it and see what it will render:
-
 
 [RStudio](https://www.rstudio.com)
 
