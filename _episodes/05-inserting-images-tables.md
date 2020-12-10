@@ -34,6 +34,8 @@ The markdown should look like:
 ![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg)
 ```
 
+**Note:** A preview of your image should pop up automatically in RStudio if you have the correct relative path. 
+
 This will output as:
 <figure>
 <img src="../fig/fig1_paper.jpg">
