@@ -46,6 +46,9 @@ Let's try that italics applying that to two organization names that appear in th
 
 Which symbol do you prefer to use? Do you prefer to stick with the same for both emphases? 
 
+> ## Time to Knit!
+> Check how the emphases you have just applied looks like in your paper. 
+{: .checklist}
 
 >## Tip: ***When you realllllly want to emphasize something***
 > 
@@ -84,6 +87,10 @@ But, know that the LaTeX math language is very intuitive once you get a feel for
 > we compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample 
 > size n=243, the margin of error is +/-3%.
 {: .challenge}
+
+> ## Time to Knit!
+> Check how the formula just rendered in your paper. 
+{: .checklist}
 
 Notice how RStudio gives you a preview of the equation.  Nice!  The formula here uses curly braces for grouping (kind of like invisible parentheses).  `\over` gives a fraction with a big horizontal line.  Try replacing that with just `/` for an alternative rendering.
 
