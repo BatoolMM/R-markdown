@@ -120,7 +120,7 @@ You can include both text and code to execute. It is a convenient tool for repro
 9. Refer to the corresponding code lines in the methodology section making it unnecessary to use pseudocode, high-level textual descriptions, or just too many words to describe the computational analysis.
 10. Use packages such as rticles to use templates from publishers and create submission-ready documents.
 
-## Real-world Application Examples
+## Some Real-world Applications
 
 Finally, three real-world examples that motivated the authors of this lesson to value and use RMarkdown:
 
