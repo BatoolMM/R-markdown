@@ -123,6 +123,8 @@ You can include both text and code to execute. It is a convenient tool for repro
 9. Refer to the corresponding code lines in the methodology section making it unnecessary to use pseudocode, high-level textual descriptions, or just too many words to describe the computational analysis.
 10. Use packages such as rticles to use templates from publishers and create submission-ready documents.
 
+## Real-world Application Examples
+
 Finally, three real-world examples that motivated the authors of this lesson to value and use RMarkdown:
 
 1. In the early days of the COVID-19 pandemic ecologist Chris Lortie quickly put together a simple but compelling [COVID trends page](https://cjlortie.github.io/SBC_Covid_Trends/).  The ease with which he created his plots is a testament to the power of R as a data analysis environment, but the ease with which he was able to publish a page on the web is a testament to RMarkdown and Github as a publishing environment.  Notice that he did *not* have to: create plots in a tool and then export the plots as images; write any HTML; embed plot images in HTML; or create a site under Wordpress or other web hosting service.  Instead, he directly published his R code as he wrote it, and using Github, made it appear on the web with a button click.
