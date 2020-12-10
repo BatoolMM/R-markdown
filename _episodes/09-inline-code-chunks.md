@@ -31,6 +31,8 @@ source: Rmd
 1. Inline code  
 2. Code Chunks  
 
+Add an edit here to demonstrate
+
 ## Adding Inline code
 
 Inline code is best for calculating simple expressions integrated into your narrative.
@@ -167,6 +169,7 @@ While not necessary to run your code, better practice is to give a name to each 
 
 
 *The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE)
+**The chunk label should be unique (i.e. don't use the same one for multiple chunks)
 
 Note: 
 We’ll see in a bit where this code chunk label comes in handy. 
@@ -187,25 +190,20 @@ There are over 50 different code chunk options!!! Obviously we will not go over 
 
 Again, The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE). So these chunk options will always require a tag whose syntax looks like:
 
-`{r code-label, OPTIONNAME = XXX}`
+`{r chunk-label, OptionName = XXX}`
 
 
-Eval = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.
-Echo =  whether to display source code or not (logical or numeric
-Warning = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only
-Include = whether to include the chunk output in the output document
-Hide = Specifically for plots, generate plots but don’t display them in the output
+**Eval** = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.  
+**Echo** =  whether to display source code or not (logical or numeric)  
+**Warning** = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only  
+**Include** = whether to include the chunk output in the output document  
+**Hide** = Specifically for plots, generate plots but don’t display them in the output  
  
  
 > ## CHALLENGE 9.2
 > How will some hypothetical code render given the following options?
 >
 > 
-> ~~~
-> # FIXME change options
-> #Some r code
-> ~~~
-> {: .language-r}
 >> ## SOLUTION
 >> FIXME add answer
 > {: .solution}
@@ -230,7 +228,7 @@ Hide = Specifically for plots, generate plots but don’t display them in the ou
 ### Global Code Chunk Options:
 On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
 
-To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
+To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header (and either before or after loading our data/libraries-best to do before though so there's consistency). Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
 
 ~~~
@@ -238,16 +236,26 @@ To set global options that apply to every chunk in your file, call we will call 
 ~~~
 {: .language-r}
 
-What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news!  The global options can be overwritten in each individual code chunk.
+What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news!The global options can be overwritten in each individual code chunk.
 
-See also fig paths best practices
+FIXME - elaborate on this (let's show how we can make the library loading chunk different - so that will come after the global-options)
+
+See also fig paths best practices??? FIXME
+
+We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this too much, but a neat one is called "code-folding". 
 
 TIP:
 An option for the yaml header*
 
+```
+---
+...
+...
 Code folding: output:
   html_document:
     code_folding: "hide"
+---
+```
 
 Your code chunks will be hidden in the output, but a small ‘code’ button will be available to display it if necessary.
 
