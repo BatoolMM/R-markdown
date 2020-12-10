@@ -44,33 +44,36 @@ data <- read_csv("../paperToRmd/data/figure-1-data.csv", col_types="fi")
 Inline code is best for calculating simple expressions integrated into your narrative.
 For example, use inline code to calculate an error margin or summary statistic, such as # of observations, of your dataframe in your results section. One of the benefits of using this method is if something about your data set changes (like leaving out NAs or null values) the code will automatically update the calcuation specified.
 
-We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, let's add this:
+We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, instead of `$ \pm 3 \% $`, let's add this:
 
 
->r round(1.96*0.5*(1-0.5)/sqrt(243))*100)%  
+> ```
+> ```{r eval = FALSE}
+> `r round(1.96*0.5*(1-0.5)/sqrt(243))*100)`%  
+> ```
+> ```
 {: .source}
 
-instead of `$ \pm 3 \% $`
-
-Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ` r would have attempted to calculate the modulo. 
+Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ` r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
 
 Where else can we add inline code? We can replace observation counts!
 
 i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
 
-Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only agregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility. We will use `#r sum(data$count)` instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
+Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only aggregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility and is used to create Fig 1. We will use *r sum(data$count)* in between the tick marks instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
 
-We will add:
+We will add the inline code to the sentence:
 
-> "a total of ``#r sum(data$count)`` individuals from 21 countries completed this section."
-> Note: remove the # to actually evaluate  
-{: .source}
+> ```{r eval = FALSE, echo = TRUE}
+> "a total of `r sum(data$count)` individuals from 21 countries completed this section."
+> ```  
+
 
 Output: "a total of `r sum(data$count)` individuals from 21 countries completed this section."
 
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
-> ## Tip: Inline code cannot span lines
+> ## Tip: Inline code cannot span lines  
 > You need to be sure that these in-line bits of code aren’t split across lines in your document. Otherwise you’ll just see the raw code and not the result that you want.  
 {: .callout}
 
@@ -110,8 +113,11 @@ The most basic code chunk looks like so:
 
 Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
-> ##Fun fact: Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
+> ##Fun fact: 
+> Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
 {: .callout}
+
+### Add a code chunk
 
 Ok, let's add some code! Earlier, we added three images to our document. Now, images of our plots are great and all, but since R Markdown allows us to evaluate live code it would be more reproducible to use code chunks to display those plots. Like with our inline code, this assures that if there are any changes to the data, the plots update automatically. This also makes our life easier because when there's a change we don't have to re-generate plots, save them as images and then add them back in to our paper. This will potentially help prevent version errors as well!  So we're actually going to go ahead and convert a few of our plots to code chunks.
 
@@ -144,11 +150,19 @@ ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +
   theme_void()
 ```
 ```
+### Run your code
 
+Now, to check to make sure our code is rendering correctly, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
+
+1) Knit button - knitting will 
+
+2) Run from Rmd file (chunk run button)
+
+3) Run menu 
 
 ### Name your code chunks
 
-Better practice is to give a name to each code chunk:
+While not necessary to run your code, better practice is to give a name to each code chunk:
 
 ``` {r chunk-name}
 ```
@@ -183,7 +197,7 @@ Include = whether to include the chunk output in the output document
 Hide = Specifically for plots, generate plots but don’t display them in the output
  
  
-> ## CHALLENGE (FIXME)
+> ## CHALLENGE 9.2
 > How will some hypothetical code render given the following options?
 >
 > ```{r global-chunk-challenge, echo = TRUE, includes = FALSE}
@@ -195,22 +209,16 @@ Hide = Specifically for plots, generate plots but don’t display them in the ou
 > {: .solution}
 {: .challenge}
 
-### Run your code
 
-Now, to check to make sure our code is rendering correctly, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
-
-1) Knit button - knitting will 
-
-2) Run from Rmd file (chunk run button)
-
-3) Run menu 
-
-> ## CHALLENGE
+> ## CHALLENGE 9.3
 >
-> Now, add plot2 from the r script. On this one let’s set echo to TRUE as well as message to TRUE (FIXME)
+> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to echo = TRUE and message = TRUE with the code that renders the plot.
 >
 >> ## SOLUTION
+>> 1. add to `code-chunk-name` here: to load the data
 >> ```
+>> ```
+>> 2. create a new code chunk at the spot in the paper we want figure 3 and add the following code:
 >> ```
 >> ```
 > {: .solution}
@@ -218,7 +226,7 @@ Now, to check to make sure our code is rendering correctly, we could click the "
 
 
 ### Global Code Chunk Options:
-On each of our two plots we set the options separately (though we used the same options and values). We can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
+On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
 
 To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
