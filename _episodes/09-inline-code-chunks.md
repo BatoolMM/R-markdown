@@ -36,9 +36,7 @@ source: Rmd
 Inline code is best for calculating simple expressions integrated into your narrative.
 For example, use inline code to calculate an error margin or summary statistic, such as # of observations, of your dataframe in your results section. One of the benefits of using this method is if something about your data set changes (like leaving out NAs or null values) the code will automatically update the calcuation specified.
 
-We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, instead of `$ \pm 3 \% $`, let's add this:
-
-
+We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, instead of `$ \pm 3 \% $` to display our error margin as +/-3%, let's add this:
 
 > 
 > ~~~
@@ -101,10 +99,10 @@ You can quickly insert chunks like these into your file with:
 
 * the keyboard shortcut Ctrl + Alt + I (OS X: Cmd + Option + I)
 * the Add Chunk  command in the editor toolbar
-* or by typing the chunk delimiters ```{r} and ```.
+* or by typing the chunk delimiters ````{r} and ````.
 
 The most basic code chunk looks like so:
-FIXME might need a screenshot
+
 
 ~~~
 #Some code here
@@ -113,7 +111,7 @@ FIXME might need a screenshot
 
 Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
-> ## Fun fact: 
+> ## Fun fact: Other Programming Languages
 > Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
 {: .callout}
 
@@ -135,9 +133,6 @@ Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code a
 > ![auto create code chunk](../fig/09-auto-code-chunk.PNG)
 {: .callout}
 
-
-
-
 ### Run your code
 
 Now, to check to make sure our code is rendering correctly, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
@@ -153,6 +148,7 @@ Now, to check to make sure our code is rendering correctly, we could click the "
 While not necessary to run your code, better practice is to give a name to each code chunk:
 
 
+
 *The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE)
 **The chunk label should be unique (i.e. don't use the same one for multiple chunks)
 
@@ -165,39 +161,45 @@ FIXME add naming plot1
 
 
 > ## Tip: Don't use spaces, periods or underscores in code chunk labels
->Try to avoid spaces, periods (.), and underscores (_) in chunk labels and paths. If you need separators, you are recommended to use hyphens (-) instead. For example, setup-options is a good label, whereas setup.options and chunk 1 are bad; fig.path = 'figures/mcmc-' is a good path for figure output, and fig.path = 'markov chain/monte carlo' is bad. https://yihui.org/knitr/options/
+>Try to avoid spaces, periods (.), and underscores (_) in chunk labels and paths. If you need separators, you are recommended to use hyphens (-) instead. For example, setup-options is a good label, whereas setup.options and chunk 1 are bad; fig.path = 'figures/mcmc-' is a good path for figure output, and fig.path = 'markov chain/monte carlo' is bad. See more at: https://yihui.org/knitr/options/
 {: .callout}
 
-### More code chunk options
+### Code Chunk Options
 
-https://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
-There are over 50 different code chunk options!!! Obviously we will not go over all of them, but they fall in the main __ categories: code evaluation, text output, code style, cache options, plot output and animation. We’ll talk about a few options for code evaluation, text output and plot output.
+There are over 50 different code chunk options!!! Obviously we will not go over all of them, but they fall into several larger categories including: code evaluation, text output, code style, cache options, plot output and animation. We’ll talk about a few options for code evaluation, text output and plot output specifically.
 
-Again, The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE). So these chunk options will always require a tag whose syntax looks like:
+Again, The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. the "= VALUE" part of `option = VALUE`). So these chunk options will always require a tag whose syntax looks like:
 
-`{r chunk-label, OptionName = XXX}`
+`{r chunk-label, option = VALUE}`
+
+the option always follows the code chunk label (don't forget to add a `,` after the label either). 
 
 
-**eval** = (logical or numeric) TRUE/FALSE to evaluate or a numeric value like c(1,3) (only evaluate expressions 1 and 3.    
-**echo** =  whether to display source code or not (logical or numeric)    
+#### Some common options: 
+
+**eval** = (logical or numeric) TRUE/FALSE to evaluate (or not) or a numeric value like c(1,3) (only evaluate expressions 1 and 3).    
+**echo** =  whether to display source code or not (logical or numeric - following the same rules as above)    
 **warning** = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only    
 **include** = whether to include the chunk output in the output document    
-**hide** = Specifically for plots, generate plots but don’t display them in the output    
+**hide** = Specifically for plots, tells the code chunk to generate plots but not to display them in the output    
  
  
 > ## CHALLENGE 9.2
 > How will some hypothetical code render given the following options?
->
+> ```
 > 
+> ```
 >> ## SOLUTION
->> FIXME add answer
+>> The expressions in the code chunk will be evaluated, but the output will not be included in the knit document.   
+>> When might you want to use this?   
+>> If you need to calculate some value or do something on your dataset for a further calucation or plot, but the output is not important to be included in your paper narrative. 
 > {: .solution}
 {: .challenge}
 
 
 > ## CHALLENGE 9.3
 >
-> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to echo = TRUE and message = TRUE with the code that renders the plot.
+> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to eval = TRUE and echo = TRUE with the code that renders the plot.
 >
 >> ## SOLUTION
 >> 1. add to `code-chunk-name` here: to load the data
