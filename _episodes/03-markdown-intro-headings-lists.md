@@ -27,7 +27,7 @@ R Markdown is a format for writing reproducible, dynamic reports with R which al
 
 The text in an R Markdown document is written with the markdown syntax, which is a basic markup language that conveys how text should be displayed. The basic markdown syntax has dozens of flavors, of which R Markdown is one. Most markdown syntax is preserved and works identically no matter what flavor you use. However, the different flavors will have different options or slightly different implementations of certain things. 
 
-R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report. In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
+R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report (here is a link explaining Pandoc's markdown specs: https://pandoc.org/MANUAL.html#pandocs-markdown). In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
 
 <br>
 > ## Tip: Blank Lines
@@ -146,7 +146,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 >
 >
 > Since we already put the subheadings into the Materials and Methods section, we just need to add subheadings to the Results and Discussion Section. 
-> Make these lines in subheadings:
+> Make these lines into subheadings:
 > * Survey Demographics  
 > * Current Landscape for Rigor and Transparency in Represented Shared Resources  
 > * Core Implementation of Research Best Practices  
