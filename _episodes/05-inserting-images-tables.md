@@ -43,7 +43,7 @@ The markdown should look like:
 **Note:** A preview of your image should pop up automatically in RStudio if you have the correct relative path. 
 
 This will output as:
-<figure align="left">
+<figure>
 <img src="../fig/fig1_paper.jpg">
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
@@ -59,7 +59,7 @@ The image you just added looks a little too big, right? We can resize it by adju
 ![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50%}
 ```
 This will output as:
-<figure align="left">
+<figure>
 <img src="../fig/fig1_paper.jpg" width = "397" height = "277">
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
