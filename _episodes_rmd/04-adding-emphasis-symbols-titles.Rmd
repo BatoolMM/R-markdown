@@ -1,19 +1,20 @@
 ---
-title: "R Markdown Syntax: Emphasis & Formulas"
+title: "R Markdown Syntax: Emphasis, Equations & Formulas"
 teaching: 30
 exercises: 10
 questions:
 - How do I emphasize text in an Rmarkdown document?
 - How to start an R Markdown document in Rstudio?
-- How is an R markdown document configured?
+- How is an R Markdown document configured?
 
 objectives:
-- Emphasising words or phrases in markdown
-- Formatting with LaTeX (Lay-techhh) 
+- Learn how to apply emphases to words or phrases in R markdown
+- Understand the power of LaTeX (Lay-techhh) for mathematics formatting
+- Learn how to add equations and formulas in R Markdown 
 
 keypoints:
-- Adding _*italicized*_ and _*bolded*_ texts
-- Following LaTeX formatting guidelines
+- You can add _*italicized*_ and _*bolded*_ textsin R Markdown
+- There is an extensive LaTeX guideline for mathematics formatting
 source: Rmd
 ---
 
@@ -60,9 +61,9 @@ Which symbol do you prefer to use? Do you prefer to stick with the same for both
 > ```___super emphasized___``` will give output ___super emphasized___
 {: .callout}
 
-### Adding Block Quotes
+### Adding Blockquotes
 
-R Markdown also allows you to emphasize a pull quote using block quotes. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol) and the asterisc or underscore for the italics, as demonstrated below:.
+R Markdown also allows you to emphasize a pull quote using blockquotes. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol) and the asterisc or underscore for the italics, as demonstrated below:.
 
 `>_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)`
 
@@ -76,7 +77,7 @@ The output you will get shoul look like that:
 {: .checklist}
 
 
-## Adding Formulas
+## Adding Equations & Formulas
 
 LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (its formatting of equations and formulas) is better than anything else out there.
 
