@@ -252,8 +252,6 @@ Now you know markdown
 {: .challenge}
 
 
-
-
 ## Bulleted & Numbered Lists
 
 Academic articles often include lists to make important findings stand out more or to summarize key points for readers. We will learn how to create both unordered lists with bullet points, and ordered numbered lists. 
