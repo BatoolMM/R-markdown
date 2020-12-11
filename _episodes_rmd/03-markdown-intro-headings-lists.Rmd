@@ -143,7 +143,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 > Use Ctrl+F (Windows) or Command+F (Mac) shortcut keys, or from the Edit -> Find to locate content in your paper. We will be using that quite a lot during this workshop. 
 {: .callout}
 
-> ## CHALLENGE 3.1
+> ## CHALLENGE 3.1 - Applying Headings and Subheadings 
 > Insert headings and subheadings throughout the rest of the paper.  
 > Make these lines into headings so our paper is split into 5 main sections: 
 > * Introduction
@@ -322,7 +322,7 @@ The above will appear as:
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
-> ## CHALLENGE 3.3
+> ## CHALLENGE 3.3 - Applying Numbered Lists
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
 >> ## SOLUTION
