@@ -76,6 +76,6 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 
 
 > ## Tip: 
->You can use html directly in your .rmd document to add a link that will open in a new tab, such as `<a href="http://www.ucsb.edu/" >target="_blank"> UCSB</a>`. This syntax requires pandoc and link_attributes extension, that is by default included in Rmarkdown.
+>You can use html directly in your .rmd document to add a link that will open in a new tab, such as `<a href="http://www.ucsb.edu/" >target="_blank"> UCSB</a>`. This syntax requires pandoc and link_attributes extension, that is by default included in R Markdown.
 >
 {: .callout}

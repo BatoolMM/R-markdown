@@ -101,7 +101,7 @@ A published article is like the top of a pyramid, meaning that a reproducible pa
 
 ## What is R Markdown and how it connects to reproducible research?
 
-RMarkdown is a variant of Markdown, a system for writing simple, readable text that is easily converted to html which allows you to write using an easy-to-read, easy-to-write plain text format. 
+R Markdown is a variant of Markdown, a system for writing simple, readable text that is easily converted to html which allows you to write using an easy-to-read, easy-to-write plain text format. 
 
 R Markdown belongs to the field of literate programming which is about weaving text and source code into a single document to make it easy to create reproducible web-based reports. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents and much, much more. R Markdown provides the flexibility of Markdown with the implementation of R input and output. For more details on using R Markdown check [http://rmarkdown.rstudio.com](http://rmarkdown.rstudio.com).
 
@@ -122,12 +122,12 @@ You can include both text and code to execute. It is a convenient tool for repro
 
 ## Some Real-world Applications
 
-Finally, three real-world examples that motivated the authors of this lesson to value and use RMarkdown:
+Finally, three real-world examples that motivated the authors of this lesson to value and use R Markdown:
 
-1. In the early days of the COVID-19 pandemic ecologist Chris Lortie quickly put together a simple but compelling [COVID trends page](https://cjlortie.github.io/SBC_Covid_Trends/).  The ease with which he created his plots is a testament to the power of R as a data analysis environment, but the ease with which he was able to publish a page on the web is a testament to RMarkdown and Github as a publishing environment.  Notice that he did *not* have to: create plots in a tool and then export the plots as images; write any HTML; embed plot images in HTML; or create a site under Wordpress or other web hosting service.  Instead, he directly published his R code as he wrote it, and using Github, made it appear on the web with a button click.
+1. In the early days of the COVID-19 pandemic ecologist Chris Lortie quickly put together a simple but compelling [COVID trends page](https://cjlortie.github.io/SBC_Covid_Trends/).  The ease with which he created his plots is a testament to the power of R as a data analysis environment, but the ease with which he was able to publish a page on the web is a testament to R Markdown and Github as a publishing environment.  Notice that he did *not* have to: create plots in a tool and then export the plots as images; write any HTML; embed plot images in HTML; or create a site under Wordpress or other web hosting service.  Instead, he directly published his R code as he wrote it, and using Github, made it appear on the web with a button click.
 
-2. One of us wanted to create a short document that included some math formulas.  The LaTeX document preparation can be used for this, but it is difficult to use and is overkill for just a few formulas in otherwise plain text.  RMarkdown lets you use just the best part of LaTeX---math formatting---while letting you write your text in a user-friendly way.
+2. One of us wanted to create a short document that included some math formulas.  The LaTeX document preparation can be used for this, but it is difficult to use and is overkill for just a few formulas in otherwise plain text.  R Markdown lets you use just the best part of LaTeX---math formatting---while letting you write your text in a user-friendly way.
 
-3. In this lesson we will be constructing a scientific paper that is based on an actual *Nature* publication and attendant survey and data.  In trying to recreate the plots the original authors created, we found it difficult and time-consuming to figure out exactly how the authors created their plots.  Out of the many columns in their data, many with similar-sounding names, which did they use?  How did they handle missing data?  Exactly what operations did they perform to compute aggregate values?  How much easier it would have been if they had published the code they used along with their paper.  RMarkdown allows you to do this.
+3. In this lesson we will be constructing a scientific paper that is based on an actual *Nature* publication and attendant survey and data.  In trying to recreate the plots the original authors created, we found it difficult and time-consuming to figure out exactly how the authors created their plots.  Out of the many columns in their data, many with similar-sounding names, which did they use?  How did they handle missing data?  Exactly what operations did they perform to compute aggregate values?  How much easier it would have been if they had published the code they used along with their paper. R Markdown allows you to do this.
 
 **FIXME: Our goal is that by the end of this workshop you will be able to create a reproducible report applying R markdown and Knitr to publish a paper such as this (link to the html version of the paper in R Pubs).**

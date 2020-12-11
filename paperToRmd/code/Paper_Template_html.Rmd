@@ -53,7 +53,7 @@ The survey contained both multiple-choice and open-ended text questions. The ope
 
 $$ e = { Zp(1-p) \over \sqrt{n} } $$
 
-we compute that at a 95% confidence level (i.e., $Z=1.96$), with base probability $p=1/2$ and sample size $n=243$, the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%.
+We compute that at a 95% confidence level (i.e., $Z=1.96$), with base probability $p=1/2$ and sample size $n=243$, the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%.
 
 # RESULTS AND DISCUSSION
 
