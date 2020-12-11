@@ -287,7 +287,7 @@ knit: (function(inputFile, encoding) {
 
 
 ### 2. Formatted text: 
-This one is simple, it's literally just text narrative formatted by using markdown (more on markdown syntax later). Markdown-formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Any text section will have the default white background in the rmd document. Notice you don’t need to use `#` to comment out narrative. You also don't need to encase the text in any symbols as you do code chunks.  Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
+This one is simple, it's literally just text narrative formatted by using markdown (more on markdown syntax later). Markdown-formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Any text section will have the default white background in the rmd document. As you might know, in a regular R file, # starts a comment. In R markdown, plain text is just plain narrative text that appears in the document. In R scripts, plain text wants to be code. In R Markdown, you will need to enclose your code in special characters. Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
 
 ![Rmd text chunks](../fig/02-rmd-template-text.png)
 
