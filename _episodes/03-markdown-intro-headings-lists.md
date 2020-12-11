@@ -76,6 +76,10 @@ Displays as:
 > It's good practice to put a space between the last `#` and the start of your heading. While R flavored markdown will still render `#Title`, other flavors of markdown (i.e. github) require a space between the `#`s and the heading text: `# Title`.
 {: .callout}
 
+> ## Tip: More Heading Convention
+> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
+{: .callout}
+
 ### Numbered Sections
 We would like to have numbered section headings in our paper. In order to do that we actually add a bit of code to the yaml section at the top. 
 Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter another line & indent again and then add `numbered_sections: true`.
@@ -120,9 +124,6 @@ So, let's try this again, this time with heading 1 `#`:
 
 <br>
 
-> ## Tip: More Heading Convention
-> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
-{: .callout}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into heading 1 and the lines that say “Survey Overview” and “Data Analysis” into heading 2 for subheadings. 
@@ -313,7 +314,7 @@ The above will appear as:
 2. Third item in our numbered list  
 
 > ## Tip: No ) for Numbered Lists
-> **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
+> Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
