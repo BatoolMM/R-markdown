@@ -49,7 +49,7 @@ The CCoRRe committee developed an 18-question online survey and shared it using 
 
 ## Data Analysis
 
-The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders.  Using the sampling error formula
+The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders.  Using the sampling error formula:
 
 $$ e = { Zp(1-p) \over \sqrt{n} } $$
 
