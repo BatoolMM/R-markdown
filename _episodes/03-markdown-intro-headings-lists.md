@@ -72,8 +72,12 @@ Displays as:
 **Note** this is Github's markdown "flavor" for headers, they look different in R Markdown. However, relative sizing and hierarchy with 1 being the largest and 6 the smallest remains the same.
 <br>
 
-> ## Tip: Headings
+> ## Tip: Add a Space! 
 > It's good practice to put a space between the last `#` and the start of your heading. While R flavored markdown will still render `#Title`, other flavors of markdown (i.e. github) require a space between the `#`s and the heading text: `# Title`.
+{: .callout}
+
+> ## Tip: More Heading Convention
+> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
 {: .callout}
 
 ### Numbered Sections
@@ -120,9 +124,6 @@ So, let's try this again, this time with heading 1 `#`:
 
 <br>
 
-> ## Tip: More Heading Convention
-> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
-{: .callout}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into heading 1 and the lines that say “Survey Overview” and “Data Analysis” into heading 2 for subheadings. 
@@ -213,7 +214,7 @@ Now you know markdown
 ***Note** again that displayed here is the github styling for horizontal lines, they look different rendered in R Markdown
 <br>
 
-> ## Tip: leave blank line before & after horizontal lines
+> ## Tip: Leave Blank Line Before & After Horizontal Lines
 > Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
 {: .callout}
 
@@ -312,8 +313,8 @@ The above will appear as:
 7. Second item in our numbered list  
 2. Third item in our numbered list  
 
-> ## Tip: No ) for numbered lists
-> **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
+> ## Tip: No ) for Numbered Lists
+> Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
