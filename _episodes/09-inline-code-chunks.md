@@ -184,7 +184,8 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 **hide** = Specifically for plots, tells the code chunk to generate plots but not to display them in the output    
  
  
-> ## CHALLENGE 9.2
+> ## CHALLENGE 9.2 - Rendering Codes
+>
 > How will some hypothetical code render given the following options?
 > ```
 > 
@@ -197,7 +198,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 {: .challenge}
 
 
-> ## CHALLENGE 9.3
+> ## CHALLENGE 9.3 - **Fixme: Add a Title**
 >
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to eval = TRUE and echo = TRUE with the code that renders the plot.
 >
