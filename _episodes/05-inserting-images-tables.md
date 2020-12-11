@@ -60,7 +60,7 @@ The image you just added looks a little too big, right? We can resize it by adju
 ```
 This will output as:
 <figure>
-<img src="../fig/fig1_paper.jpg" style="left;" width = "397" height = "277">
+<img src="../fig/fig1_paper.jpg" style="text-align: left;float: left;" width = "397" height = "277">
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
 
