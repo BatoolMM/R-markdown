@@ -91,7 +91,7 @@ The canonical LaTeX reference, written by the author (hardback, but viewable onl
 
 But, know that the LaTeX math language is very intuitive once you get a feel for its style.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like `a = b*c`, but in LaTeX you would say `$ a = bc $`.  Spaces generally don’t matter in LaTeX; it "understands" your formula and uses rules to determine how to display things.
 
-> ## Add the following text and formula to our data analysis section 
+> ## Challenge 4.2 - Adding Formulas  
 >
 > Let’s add the following text and formula to our data analysis section:
 >
