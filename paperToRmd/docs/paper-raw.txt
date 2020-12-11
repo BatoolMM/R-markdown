@@ -1,6 +1,7 @@
 INTRODUCTION
 
 "I have seen further it is because I have stood on the shoulders of giants" (Isaac Newton)
+
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [citation example 1].
 
 A recent survey conducted by [citation example 3] reported that 90% of participants identified “more robust experimental design” as one of several key improvements needed for the conduct of better science, in addition to “better statistics” and “better mentorship”. More recently, [citation exercise 3] published a related paper, the survey data for which can be found on Figshare.
@@ -81,7 +82,7 @@ Strategies for Improving R&R in Core Operation
 
 Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&R guidelines.
 
-About  40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality. 
+About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality. 
 
 About one quarter of respondents noted that a radical cultural change at the highest institutional levels is necessary to support and foster research rigor and transparency. Research institutions, journals, and funding agencies must be willing to establish clear requirements as well as mandate and “provide incentives to support and monitor research rigor throughout the research life cycle.” These “cultural” observations related to research culture and incentives were frequently noted in previously published reviews of the research reproducibility issue [citation exercise 2].
 
