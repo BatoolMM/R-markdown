@@ -65,7 +65,8 @@ This will output as:
 </figure>
 
 
->## CHALLENGE 5.1 
+>## CHALLENGE 5.1 - Inserting Images
+>
 > Locate the places for Figures 2 and 3 and add them to the document using the captions below:
 >
 > FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources
@@ -170,7 +171,8 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 {: .source}
 
 
-> ## CHALLENGE 5.2
+> ## CHALLENGE 5.2 - Complete the Table
+>
 > Finish Table 1 by adding the rest of the rows.
 >
 >> ## SOLUTION
