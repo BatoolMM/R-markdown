@@ -3,12 +3,12 @@ title: "R Markdown Syntax: Emphasis, Equations & Formulas"
 teaching: 30
 exercises: 10
 questions:
-- How do I emphasize text in an Rmarkdown document?
+- How do I emphasize text in an R Markdown document?
 - How to start an R Markdown document in Rstudio?
 - How is an R Markdown document configured?
 
 objectives:
-- Learn how to apply emphases to words or phrases in R markdown
+- Learn how to apply emphases to words or phrases in R Markdown
 - Understand the power of LaTeX (Lay-techhh) for mathematics formatting
 - Learn how to add equations and formulas in R Markdown 
 
