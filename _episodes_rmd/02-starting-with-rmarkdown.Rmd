@@ -99,7 +99,7 @@ project directory. This allows you to keep multiple projects open without them
 interfering with each other.
 <br>
 
-> ## CHALLENGE 2.1  
+> ## CHALLENGE 2.1 - Opening a Project in RStudio
 > Open an RStudio project through the file system  
 >
 > 1. Exit RStudio.
@@ -197,7 +197,7 @@ Packages can also be viewed, loaded, and detached in the Packages tab of the low
 Packages can be installed and updated from the Package tab with the Install and Update buttons at the top of the tab. 
 <br>
 
-> ## CHALLENGE 2.2  
+> ## CHALLENGE 2.2 - Installing Packages
 > Install the following packages: `bookdown`, `tidyverse`, `knitr`, `kableExtra`    
 >> ## SOLUTION    
 >>  
@@ -294,7 +294,7 @@ This one is simple, it's literally just text narrative formatted by using markdo
 
 ![Rmd text chunks](../fig/02-rmd-template-text.png)
 
-> ## CHALLENGE 2.3 (optional)
+> ## CHALLENGE 2.3 - Formatting with Symbols (optional)
 > Can you deduce what each of the three types of symbols (`##`, `**`, `<>`) do for formatting?  
 > ```
 > ## R Markdown
@@ -332,7 +332,7 @@ Before you can render your document, you'll need to give it a file name and choo
 This is how our hmtl document will render after clicking the knit button and choosing a file name:
 ![Knit html output](../fig/02-knit-echoTRUE.PNG)
 
-> ## CHALLENGE 2.4 (optional)
+> ## CHALLENGE 2.4 - echo=TRUE Function (optional)
 > Can you deduce what the echo=TRUE option stands for?  
 >> ## Solution
 >> The echo=TRUE piece is knitr syntax that sets a global default for the whole paper. This piece of code specifically, `echo=TRUE`, tells the rmd document to display the R code that generates the plots & analysis when the rmd document is rendered by hitting the "knit" button. 
