@@ -27,6 +27,8 @@ Data Analysis
 The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders. Using the sampling error formula:
 [add LaTeX formula here]
 
+We compute that at a 95% confidence level (i.e., add Z value), with base probability (add probability)  and sample size (add sample size), the margin of error is (add margin error)
+
 RESULTS AND DISCUSSION
 
 Survey Demographics
