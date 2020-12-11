@@ -1,5 +1,5 @@
 ---
-title: "R Markdown Syntax: Emphasis, Symbols & Titles"
+title: "R Markdown Syntax: Emphasis & Formulas"
 teaching: 30
 exercises: 10
 questions:
@@ -10,7 +10,6 @@ questions:
 objectives:
 - Emphasising words or phrases in markdown
 - Formatting with LaTeX (Lay-techhh) 
-- Adding symbols in Rmarkdown
 
 keypoints:
 - Adding _*italicized*_ and _*bolded*_ texts
@@ -74,7 +73,7 @@ The output you will get shoul look like that:
 {: .checklist}
 
 
-## Adding Symbols and Formulas
+## Adding Formulas
 
 LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (its formatting of equations and formulas) is better than anything else out there.
 
