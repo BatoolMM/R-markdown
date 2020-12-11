@@ -268,8 +268,8 @@ Outputs as:
 - Also a bullet point
 + Still a bullet point
 
-> ## CHALLENGE 3.2
->Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
+> ## CHALLENGE 3.2 - Inserting Bullet Points
+>Now let’s practice creating bullet lists. Search in the paper "it is important to highlight:" and apply bullet points for each of the next 3 sentences.
 >
 >> ## SOLUTION
 >> ```
