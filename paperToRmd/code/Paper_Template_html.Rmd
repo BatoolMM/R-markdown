@@ -14,11 +14,11 @@ knit: (function(inputFile, encoding) {
                         output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
 ---
 
-```{r setup, include=FALSE}
+```{r setup, echo=FALSE}
 knitr::opts_chunk$set(fig.align = "center", out.width="60%", out.height="60%", echo = FALSE)
 ```
 
-```{r load-data-libraries, include = FALSE}
+```{r load-data-libraries, echo= FALSE}
 #load libraries
 #tidyverse for plots
 library(tidyverse)
