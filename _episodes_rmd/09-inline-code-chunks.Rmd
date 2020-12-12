@@ -214,7 +214,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 {: .challenge}
 
 
-### Global Code Chunk Options:
+## Global Code Chunk Options:
 On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
 
 To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
@@ -236,10 +236,9 @@ We can actually make our lives easier in one other way too. So far we've loaded 
 
 FIXME 
 
-#### Overiding global options
-What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news! The global options can be overwritten in each individual code chunk.
-
-For example, we may want to include the code elaborate on this (let's show how we can make the library loading chunk different - so that will come after the global-options)
+> ## Tip: Overiding global options  
+> What if you want most of your code chunks to render with the same options (i.e. echo = FALSE), but you just have one or two chunks that you want to tweak the options on (i.e. display code with echo = TRUE)? Good news! The global options can be overwritten on a case by case basis in each individual code chunk.
+{: .callout}
 
 
 
