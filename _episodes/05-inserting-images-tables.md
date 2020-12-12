@@ -3,15 +3,15 @@ title: "R Markdown Syntax: Inserting Images & Tables"
 teaching: 30
 exercises: 10
 questions:
-- How do I insert an image or table into R Markdown?
-- How do I align images or tables?
+- How do I insert images or tables into R Markdown?
+- How do I resize images?
 
 objectives:
 - Find out how to insert images into an R Markdown document 
 - Assimilate how to add tables into an  R Markdown document
 
 keypoints:
-- You can resize and align images with R Markdown
+- You can resize images with R Markdown
 - You can easily create basic tables with R Markdown  
 source: Rmd
 ---
