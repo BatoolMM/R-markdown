@@ -37,7 +37,7 @@ To start let’s identify where (Figure 1) is mentioned in the paper. We will in
 The markdown should look like:
 
 ```
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg)
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg)
 ```
 
 
@@ -65,9 +65,9 @@ This will output as:
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
 
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50%}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){width=50% height=50%}
 
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50% fig.align="center"}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){width=50% height=50% fig.align="center"}
 
 >## CHALLENGE 5.1 - Inserting Images
 >
@@ -83,11 +83,11 @@ This will output as:
 > >
 > > ```
 > > ![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared 
-> > resources](figs/fig2_paper.jpg){width=50% height=50%}
+> > resources](../figs/fig2_paper.jpg){width=50% height=50%}
 > > ```
 > > ```
 > > ![FIGURE 3 - Types of tools that cores would like to implement in their 
-> >  operations.](figs/fig3_paper.jpg){width=60% height=80%}
+> >  operations.](../figs/fig3_paper.jpg){width=60% height=80%}
 > > ```
 > {: .solution}
 {: .challenge}
@@ -102,7 +102,7 @@ This will output as:
 Similar to text all images are aligned to the left by default in R Markdown. If we want images to be center aligned we can add to the syntax `fig.align="center"`.
 
 ```
-![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../fig/fig3_paper.jpg){width=60% height=80% fig.align="center"}
+![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../figs/fig3_paper.jpg){width=60% height=80% fig.align="center"}
 ```
 <br>
 Outputs as:
