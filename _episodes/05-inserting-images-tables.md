@@ -44,7 +44,11 @@ The markdown should look like:
 
 This will output as:
 
-<img align="left" width="100" height="100" src="../fig/fig1_paper.jpg">
+<figure>
+<img align="left" src="../fig/fig1_paper.jpg">
+<figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
+</figure>
+<br> 
 
 
 ### Resizing Images 
