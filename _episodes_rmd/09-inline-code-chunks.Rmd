@@ -32,7 +32,7 @@ knitr_fig_path("09-")
 #load library
 library(tidyverse)
 #load data
-data <- read_csv("../paperToRmd/data/figure-1-data.csv", col_types="fi")
+data1 <- read_csv("../paperToRmd/data/figure-1-data.csv", col_types="fi")
 ```
 ## What is Knitr?
 (FIXME) Syntax for processing code chunks. Two main ways to process code in Rmd:  
@@ -57,16 +57,16 @@ Where else can we add inline code? We can replace observation counts!
 
 i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
 
-Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only aggregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility and is used to create Fig 1. We will use *r sum(data$count)* in between the tick marks instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
+Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only aggregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data1` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility and is used to create Fig 1. We will use *r sum(data1$count)* in between the tick marks instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
 
 We will add the inline code to the sentence in question:
 
 > ```{r eval = FALSE, echo = TRUE}
-> a total of `r sum(data$count)` individuals from 21 countries completed this section.
+> a total of `r sum(data1$count)` individuals from 21 countries completed this section.
 > ```  
 
 
-**Output:** "a total of `r sum(data$count)` individuals from 21 countries completed this section."
+**Output:** "a total of `r sum(data1$count)` individuals from 21 countries completed this section."
 
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
@@ -75,16 +75,16 @@ Oh! Wow we were off on out total count by one anyway, good thing we added this i
 {: .callout}
 
 
-> ## CHALLENGE 9.1
+> ## CHALLENGE 9.1 - Converting a static number to inline code
 > There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited) Find both and replace with code. What part of the paper is that? 
 >
 >> ## SOLUTION
 >> ```{r eval = FALSE, echo = TRUE}
->> 1. the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data$count))*100)`%
+>> 1. the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data1$count))*100)`%
 >> ```
->> Note: since this we just added inline code to calculate the error margin, we can just add this snippet to count the total respondents, this means we only need to substitute `sum(data$count)` for 243 (and don't need to add the hashes and `r` a second time.
+>> Note: since this we just added inline code to calculate the error margin, we can just add this snippet to count the total respondents, this means we only need to substitute `sum(data1$count)` for 243 (and don't need to add the hashes and `r` a second time.
 >> ```{r eval = FALSE, echo = TRUE}
->> 2. sample size $n=`r sum(data$count)`$
+>> 2. sample size $n=`r sum(data1$count)`$
 >> ```
 >> Note: Look at that! you can add r inline code in LaTex formatting, it evaluates the r code and then displays in LaTex format!
 >>
@@ -184,7 +184,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 **hide** = Specifically for plots, tells the code chunk to generate plots but not to display them in the output    
  
  
-> ## CHALLENGE 9.2
+> ## CHALLENGE 9.2 - Rendering Codes
 > How will some hypothetical code render given the following options?
 > ```
 > ```{r global-chunk-challenge, eval = TRUE, include = FALSE}
@@ -199,7 +199,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 {: .challenge}
 
 
-> ## CHALLENGE 9.3
+> ## CHALLENGE 9.3 - Add a code chunk on your own
 >
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to eval = TRUE and echo = TRUE with the code that renders the plot.
 >
@@ -223,10 +223,16 @@ To set global options that apply to every chunk in your file, call we will call 
 # knitr::opts_chunk$set(ADD options here)
 ```
 
+*Code chunk options must all appear on the same line, no returns
 
+ok, now let's go back and remove the options we set in the individual code chunks & since we've set the global options in the document instead. 
+
+“If I’m writing a report for a collaborator, I’ll often use include=FALSE to suppress all of the code and largely just include figures.” - Karl Broman
+
+*Note: We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this in the workshop, but many of the same options you set in your global code chunk settings are also configurable in the yaml. 
 
 #### load our libraries and data "globally"
-We can actually make our lives easier in one other way too. So far we've loaded the library we need in each code chunk, along with loading the data in each code chunk individually. Instead we can do this all at the beginning. This also makes it easier for us to see all the libraries we need to use in any given document and if we need to tweak our data files at all we don't need to search through every code chunk. 
+We can actually make our lives easier in one other way too. So far we've loaded the library and dataframe we need in each code chunk individually which so far has meant we've loaded the `tidyverse` library twice. Instead we can do this all at the beginning which lets us avoid the repitition. Once libraries and data are loaded they are available for the rest of the rmd document. So, if we load libraries and data at the start, when there is code that calls on them it's already available. This also makes it easier for us to keep track of all the libraries and data we need to use in any given document. If anything needs to be tweaked, we don't need to search through every code chunk in our rmd document to make a change. 
 
 FIXME 
 
@@ -235,22 +241,15 @@ What if you want most of your code chunks to render the same, but you just have 
 
 For example, we may want to include the code elaborate on this (let's show how we can make the library loading chunk different - so that will come after the global-options)
 
-See also fig paths best practices??? FIXME
-
-We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this in the workshop, but many of the same options you set in your global code chunk settings are also configurable in the yaml. 
 
 
-Challenge after global options:
 
-What would be displayed when the above chunk was evaluated when:
-The global chunk setting’s were was as listed: xxxxxxxxxxxxxxxxx, 
-but we manually set an individual chunk to the following xxxxxxxxxxxxx ?
- 
-*Code chunk options must all appear on the same line, no returns
+> ## CHALLENGE after global options:
 
-“If I’m writing a report for a collaborator, I’ll often use include=FALSE to suppress all of the code and largely just include figures.” - Karl Broman
+How would the following code chunk be displayed when we knit:
 
-ok, let's go back and remove the options we set in the individual code chunks & set the global options in the document instead. 
+xxxxxxx
 
+...considering the global chunk setting’s were was as listed: 
 
-# FIXME I had a tip to add, but I'm totally forgetting it now. 
+xxxxxxxxxxxxxxxxx,
