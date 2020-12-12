@@ -13,10 +13,7 @@ keypoints:
 source: Rmd
 ---
 
-```{r, include=FALSE}
-source("../bin/chunk-options.R")
-knitr_fig_path("10-")
-```
+
 ## Restyle the table with kable 
 
 Our markdown table is formatted kind of weird. Unfortunately, it isn't possible to style tables created with basic markdown syntax. In order to create a table that is stylable, we need to save it as a dataframe and use a package function to style it. There are MANY packages that allow you to create tables in Rmd, but the most popular is the knitr package (which we use anyway for rendering the file). Within the knitr package, there is a function called kable() which creates a basic stylable table. 
@@ -57,8 +54,10 @@ name the code chunk fig-2 and copy and paste the caption between quotes with the
 use `include_graphics` from `knitr` package (alternatively can use syntax `knitr::include_graphics()). Add the file path in quotes. 
 
 ```
-```{r fig-2, eval = FALSE, echo = TRUE, fig.cap="FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources."}
+
+~~~
 include_graphics("../figs/fig2_paper.jpg")
-```
+~~~
+{: .language-r}
 ```
 ## Cross-referencing (optional)
