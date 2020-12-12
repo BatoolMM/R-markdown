@@ -75,14 +75,14 @@ Oh! Wow we were off on out total count by one anyway, good thing we added this i
 {: .callout}
 
 
-> ## CHALLENGE 9.1 - Converting a static number to inline code
-> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited). Find both and replace with code. What part of the paper is that? 
+> ## CHALLENGE 9.1
+> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited) Find both and replace with code. What part of the paper is that? 
 >
 >> ## SOLUTION
 >> ```{r eval = FALSE, echo = TRUE}
 >> 1. the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data$count))*100)`%
 >> ```
->> Note: since this count was in the inline code we just added you only need to substitute `sum(data$count)` for 243.
+>> Note: since this we just added inline code to calculate the error margin, we can just add this snippet to count the total respondents, this means we only need to substitute `sum(data$count)` for 243 (and don't need to add the hashes and `r` a second time.
 >> ```{r eval = FALSE, echo = TRUE}
 >> 2. sample size $n=`r sum(data$count)`$
 >> ```
@@ -184,7 +184,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 **hide** = Specifically for plots, tells the code chunk to generate plots but not to display them in the output    
  
  
-> ## CHALLENGE 9.2 - Rendering Codes
+> ## CHALLENGE 9.2
 > How will some hypothetical code render given the following options?
 > ```
 > ```{r global-chunk-challenge, eval = TRUE, include = FALSE}
@@ -199,7 +199,8 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 {: .challenge}
 
 
-> ## CHALLENGE 9.3 - **Fixme: Add a Title**
+> ## CHALLENGE 9.3
+>
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to eval = TRUE and echo = TRUE with the code that renders the plot.
 >
 >> ## SOLUTION
@@ -216,35 +217,27 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 ### Global Code Chunk Options:
 On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
 
-To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header (and either before or after loading our data/libraries-best to do before though so there's consistency). Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
+To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
 ```{r global-options, eval=FALSE, echo=TRUE}
 # knitr::opts_chunk$set(ADD options here)
 ```
 
-What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news!The global options can be overwritten in each individual code chunk.
 
-FIXME - elaborate on this (let's show how we can make the library loading chunk different - so that will come after the global-options)
+
+#### load our libraries and data "globally"
+We can actually make our lives easier in one other way too. So far we've loaded the library we need in each code chunk, along with loading the data in each code chunk individually. Instead we can do this all at the beginning. This also makes it easier for us to see all the libraries we need to use in any given document and if we need to tweak our data files at all we don't need to search through every code chunk. 
+
+FIXME 
+
+#### Overiding global options
+What if you want most of your code chunks to render the same, but you just have one or two that you want to tweak the options on? Good news! The global options can be overwritten in each individual code chunk.
+
+For example, we may want to include the code elaborate on this (let's show how we can make the library loading chunk different - so that will come after the global-options)
 
 See also fig paths best practices??? FIXME
 
-We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this too much, but a neat one is called "code-folding". 
-
-TIP:
-An option for the yaml header*
-
-```
----
-...
-...
-Code folding: output:
-  html_document:
-    code_folding: "hide"
----
-```
-
-Your code chunks will be hidden in the output, but a small ‘code’ button will be available to display it if necessary.
-
+We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this in the workshop, but many of the same options you set in your global code chunk settings are also configurable in the yaml. 
 
 
 Challenge after global options:
