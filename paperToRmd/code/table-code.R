@@ -1,7 +1,11 @@
-```{r, message=FALSE, echo=FALSE}
+#load library (add to: )
+library(knitr)
+#load table data (add to:)
 table1 <- read_csv("../data/table.csv")
-knitr::kable(table1, caption="Table 1. Major challenges to rigor observed in shared resources")
-```
+
+#generate table (create new table-1 chunk)
+kable(table1)
+
 
 # optional css code (if time)
 

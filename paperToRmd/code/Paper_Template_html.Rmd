@@ -20,11 +20,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```{r load-data-libraries, include = FALSE}
 #load libraries
+#tidyverse for plots
 library(tidyverse)
-
+#knitr to use kable() for table 1
+library(knitr)
 #load data
 data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
 data3 <- read_csv("../data/figure-3-data.csv", col_types="fi") 
+table1 <- read_csv("../data/table.csv")
+
 ```
 # INTRODUCTION
 
@@ -94,21 +98,12 @@ Time pressures associated with publishing and grant preparation were frequently 
 
 Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
 
+```{r table-1}
 
-TABLE 1 - Major challenges to rigor observed in shared resources
+# use kable to create better table
+kable(table1, caption="TABLE 1 - Major challenges to rigor observed in shared resources")
 
-| **Category** | **N** |
-| --- | --- |
-| Poor sample quality from users/sample variability/limited biological material | 51 |
-| Lack of well-trained principle investigators and lab members/Poor oversight | 45 |
-| Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43 |
-| Inadequate standardization of protocols or guidelines, and data analysis | 43 |
-| Cost and time | 39 |
-| Failure to leverage the core's expertise/following the core's advice/no consulting beforehand | 23 |
-| Inadequate documentation of experiments/data management | 19 |
-| Instruments: maintenance, upgrades, changes | 15 |
-| Responses that could not be assigned to a category | 11 |
-
+```
 
 
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
