@@ -1,20 +1,20 @@
 ---
-title: "R Markdown Syntax: Emphasis, Symbols & Titles"
+title: "R Markdown Syntax: Emphasis, Equations & Formulas"
 teaching: 30
 exercises: 10
 questions:
-- How do I emphasize text in an Rmarkdown document?
+- How do I emphasize text in an R Markdown document?
 - How to start an R Markdown document in Rstudio?
-- How is an R markdown document configured?
+- How is an R Markdown document configured?
 
 objectives:
-- Emphasising words or phrases in markdown
-- Formatting with LaTeX (Lay-techhh) 
-- Adding symbols in Rmarkdown
+- Learn how to apply emphases to words or phrases in R Markdown
+- Understand the power of LaTeX (Lay-techhh) for mathematics formatting
+- Learn how to add equations and formulas in R Markdown 
 
 keypoints:
-- Adding _*italicized*_ and _*bolded*_ texts
-- Following LaTeX formatting guidelines
+- You can add _*italicized*_ and _*bolded*_ textsin R Markdown
+- There is an extensive LaTeX guideline for mathematics formatting
 source: Rmd
 ---
 
@@ -58,9 +58,9 @@ Which symbol do you prefer to use? Do you prefer to stick with the same for both
 > ```___super emphasized___``` will give output ___super emphasized___
 {: .callout}
 
-## Adding Block Quotes
+### Adding Blockquotes
 
-R Markdown also allows you to emphasize a pull quote using block quotes. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol) and the asterisc or underscore for the italics, as demonstrated below:.
+R Markdown also allows you to emphasize a pull quote using blockquotes. Let's say you want to transform the first sentence in the paper into one and also apply italic emphasis. For this you will have to add a carrot ">" (greater-than symbol) and the asterisc or underscore for the italics, as demonstrated below:.
 
 `>_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)`
 
@@ -74,7 +74,7 @@ The output you will get shoul look like that:
 {: .checklist}
 
 
-## Adding Symbols and Formulas
+## Adding Equations & Formulas
 
 LaTeX (pronounced Lay-techhh) is a comprehensive document formatting and preparation system.  It is very powerful, but also famously difficult to use.  A few journals require that papers be written in LaTeX, and some fields, such as high energy physics, use it exclusively.  Why?  Because, despite its difficulty, its mathematics formatting (its formatting of equations and formulas) is better than anything else out there.
 
@@ -89,9 +89,9 @@ The canonical LaTeX reference, written by the author (hardback, but viewable onl
 - [https://archive.org/details/latex00lesl](https://archive.org/details/latex00lesl)
 - [https://ucsb-primo.hosted.exlibrisgroup.com/permalink/f/1egv95m/01UCSB_ALMA21230090630003776](https://ucsb-primo.hosted.exlibrisgroup.com/permalink/f/1egv95m/01UCSB_ALMA21230090630003776)
 
-But, know that the LaTeX math language is very intuitive once you get a feel for its style.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like `a = b*c`, but in LaTeX you would say `$ a = bc $`.  Spaces generally don’t matter in LaTeX; it "understands" your formula and uses rules to determine how to display things.
+But, know that the LaTeX math language is very intuitive once you get a feel for its style.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like `a = b*c`, but in LaTeX you would say `$ a = bc $`. Spaces generally don’t matter in LaTeX; it "understands" your formula and uses rules to determine how to display things.
 
-> ## Add the following text and formula to our data analysis section 
+> ## Challenge 4.2 - Adding Formulas  
 >
 > Let’s add the following text and formula to our data analysis section:
 >
@@ -107,10 +107,10 @@ But, know that the LaTeX math language is very intuitive once you get a feel for
 > Check how the formula just rendered in your paper. 
 {: .checklist}
 
-Notice how RStudio gives you a preview of the equation.  Nice!  The formula here uses curly braces for grouping (kind of like invisible parentheses).  `\over` gives a fraction with a big horizontal line.  Try replacing that with just `/` for an alternative rendering.
+Double click on the equation. Notice how RStudio gives you a preview of it. Nice! The formula here uses curly braces for grouping (kind of like invisible parentheses). `\over` gives a fraction with a big horizontal line. Try replacing that with just `/` for an alternative rendering.
 
-For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly.  Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
+For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly. Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
 
-To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems.  Here's an example: [https://www.educba.com/confidence-interval-formula/](https://www.educba.com/confidence-interval-formula/)
+To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems. Here's an example: [https://www.educba.com/confidence-interval-formula/](https://www.educba.com/confidence-interval-formula/)
 
 RStudio's facility to bring in LaTeX for math formatting makes it a wonderful authoring environment for math-rich papers that are not computational and have nothing to do with R at all.

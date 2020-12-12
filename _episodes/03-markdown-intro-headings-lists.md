@@ -4,13 +4,13 @@ teaching: 30
 exercises: 10
 questions:
 - How does markdown in R compare to markdown in other programs?
-- How to create headings and sub-headings in R markdown?
-- How to create bulleted and numbered lists in R markdown?
+- How to create headings and sub-headings in R Markdown?
+- How to create bulleted and numbered lists in R Markdown?
 
 objectives:
 - Understand how R markdown relates to the markdown universe 
-- Learn how to create headings and sub-headings in R markdown
-- Learn how to create bulleted and numbered lists in R markdown
+- Learn how to create headings and sub-headings in R Markdown
+- Learn how to create bulleted and numbered lists in R Markdown
 
 keypoints:
 - Heading syntax (#, ##, ###, etc.) 
@@ -69,11 +69,15 @@ Displays as:
 ###### Heading 6
 
 <br>
-***Note** this is github's markdown "flavor" for headers, they look different in R Markdown.However, relative sizing and hierarchy with 1 being the largest and 6 the smallest remains the same.
+**Note** this is Github's markdown "flavor" for headers, they look different in R Markdown. However, relative sizing and hierarchy with 1 being the largest and 6 the smallest remains the same.
 <br>
 
-> ## Tip: Headings
+> ## Tip: Add a Space! 
 > It's good practice to put a space between the last `#` and the start of your heading. While R flavored markdown will still render `#Title`, other flavors of markdown (i.e. github) require a space between the `#`s and the heading text: `# Title`.
+{: .callout}
+
+> ## Tip: More Heading Convention
+> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
 {: .callout}
 
 ### Numbered Sections
@@ -120,9 +124,6 @@ So, let's try this again, this time with heading 1 `#`:
 
 <br>
 
-> ## Tip: More heading convention
-> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
-{: .callout}
 
 <br>
 Now we can go to the next section and add a main heading and a subheading. Find the “Materials and Methods” section (right after the introduction) and make the line that says “Materials and Methods” into heading 1 and the lines that say “Survey Overview” and “Data Analysis” into heading 2 for subheadings. 
@@ -140,7 +141,7 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 > Use Ctrl+F (Windows) or Command+F (Mac) shortcut keys, or from the Edit -> Find to locate content in your paper. We will be using that quite a lot during this workshop. 
 {: .callout}
 
-> ## CHALLENGE 3.1
+> ## CHALLENGE 3.1 - Applying Headings and Subheadings 
 > Insert headings and subheadings throughout the rest of the paper.  
 > Make these lines into headings so our paper is split into 5 main sections: 
 > * Introduction
@@ -210,15 +211,15 @@ Now you know markdown
 
 ---  
 
-***Note** again that displayed here is the github styling for horizontal lines, they look different rendered in r markdown
+***Note** again that displayed here is the github styling for horizontal lines, they look different rendered in R Markdown
 <br>
 
-> ## Tip: leave blank line before & after horizontal lines
+> ## Tip: Leave Blank Line Before & After Horizontal Lines
 > Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
 {: .callout}
 
 
-> ## Optional Challenge 
+> ## CHALLENGE 3.1 - Adding Horizontal Lines (optional)  
 > Add horizontal lines after each section header.
 >
 >
@@ -249,8 +250,6 @@ Now you know markdown
 {: .challenge}
 
 
-
-
 ## Bulleted & Numbered Lists
 
 Academic articles often include lists to make important findings stand out more or to summarize key points for readers. We will learn how to create both unordered lists with bullet points, and ordered numbered lists. 
@@ -268,8 +267,8 @@ Outputs as:
 - Also a bullet point
 + Still a bullet point
 
-> ## CHALLENGE 3.2
->Now let’s practice creating bullet lists. Use the search function in RStudio to locate the phrase “At least 170”, in the example academic paper. This sentence and the following two should be turned into bullet points. 
+> ## CHALLENGE 3.3 - Inserting Bullet Points
+>Now let’s practice creating bullet lists. Search in the paper "it is important to highlight:" and apply bullet points for each of the next 3 sentences.
 >
 >> ## SOLUTION
 >> ```
@@ -314,12 +313,12 @@ The above will appear as:
 7. Second item in our numbered list  
 2. Third item in our numbered list  
 
-> ## Tip: No ) for numbered lists
-> **Note:** Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
+> ## Tip: No ) for Numbered Lists
+> Markdown parser does not accept parenthesis as a list delimiter, so if you use parenthesis, the output will be the same as above.
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
-> ## CHALLENGE 3.3
+> ## CHALLENGE 3.4 - Applying Numbered Lists
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
 >> ## SOLUTION

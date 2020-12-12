@@ -8,9 +8,9 @@ questions:
 - How is an R Markdown document configured & what is our workflow?
 
 objectives:
-- Key Functions on Rstudio 
+- Key Functions in Rstudio 
 - Learn how to start an R markdown document 
-- Understand the workflow of an Rmarkdown file
+- Understand the workflow of an R Markdown file
 
 keypoints:
 - Starting a new Rmd File
@@ -83,7 +83,7 @@ A good project layout will ultimately make your life easier:
 Fortunately, there are tools and packages which can help you manage your work effectively.
 
 One of the most powerful and useful aspects of RStudio is its project management
-functionality. We'll be using an R project today to compliment our Rmarkdown document and bundle all the files needed for our paper into a self-contained, reproducible
+functionality. We'll be using an R project today to complement our R Markdown document and bundle all the files needed for our paper into a self-contained, reproducible
 project. After opening the project we'll review good ways to organize your work. 
 
 The simplest way to open an RStudio project once it has been created is to click
@@ -96,7 +96,7 @@ project directory. This allows you to keep multiple projects open without them
 interfering with each other.
 <br>
 
-> ## CHALLENGE 2.1  
+> ## CHALLENGE 2.1 - Opening a Project in RStudio
 > Open an RStudio project through the file system  
 >
 > 1. Exit RStudio.
@@ -194,7 +194,7 @@ Packages can also be viewed, loaded, and detached in the Packages tab of the low
 Packages can be installed and updated from the Package tab with the Install and Update buttons at the top of the tab. 
 <br>
 
-> ## CHALLENGE 2.2  
+> ## CHALLENGE 2.2 - Installing Packages
 > Install the following packages: `bookdown`, `tidyverse`, `knitr`, `kableExtra`    
 >> ## SOLUTION    
 >>  
@@ -217,11 +217,11 @@ Packages can be installed and updated from the Package tab with the Install and 
 
 Start a new R markdown document in RStudio by clicking File > New File > R Markdown…
 
-![Opening a new Rmarkdown document](../fig/02-file-navigation-rmd.PNG)
+![Opening a new R Markdown document](../fig/02-file-navigation-rmd.PNG)
 
 If this is the first time you have ever opened an R markdown file a dialog box will open up to tell you what packages need to be installed. 
 
-![First time R markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.PNG)
+![First time R Markdown install packages dialog box](../fig/02-rmd-installpackages-dialogbox.PNG)
 
 Click "Yes". The packages will take a few seconds to install. You should see that each package was installed successfully in the dialog box.
 
@@ -234,7 +234,7 @@ New R Markdown will always pop up with a generic template…
 If you see this template you're good to go.
 ![.Rmd new file generic template](../fig/02-rmd-new-template.PNG)
 
-Now we’ll get into how our Rmarkdown file & workflow is organized and then on to editing and styling!
+Now we’ll get into how our R Markdown file & workflow is organized and then on to editing and styling!
 
 ## R Markdown Workflow
  
@@ -287,12 +287,12 @@ knit: (function(inputFile, encoding) {
 
 
 ### 2. Formatted text: 
-This one is simple, it's literally just text narrative formatted by using markdown (more on markdown syntax later). Markdown-formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Any text section will have the default white background in the rmd document. Notice you don’t need to use `#` to comment out narrative. You also don't need to encase the text in any symbols as you do code chunks.  Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
+This one is simple, it's literally just text narrative formatted by using markdown (more on markdown syntax later). Markdown-formatted text is one of the benefits added above and beyond the capabilities of a regular r script. Any text section will have the default white background in the rmd document. As you might know, in a regular R file, # starts a comment. In R markdown, plain text is just plain narrative text that appears in the document. In R scripts, plain text wants to be code. In R Markdown, you will need to enclose your code in special characters. Any symbols you do see that aren’t regular grammar components are for formatting, such as ##, ** **, and < >.
 
 ![Rmd text chunks](../fig/02-rmd-template-text.png)
 
-> ## CHALLENGE 2.3 (optional)
-> Can you deduce what each of the three types of symbols (`##`, `**`, `<>`) do for formatting?  
+> ## CHALLENGE 2.3 - Formatting with Symbols (optional)
+> In Rmd certain symbols are used to denote formatting that should happen to the text (after we "knit" or render). Before we knit, these symbols will show up seemingly "randomly" throughout the text and don't contribute to the narrative in a logical way. In the generic Rmd document, there are three types of such symbols (##, **, <>) . Each symbol represents a different kind of formatting (think of your text formatting buttons you use in Word). Can you deduce from the surrounding text how these symbols format the surrounding text?  
 > ```
 > ## R Markdown
 >
@@ -302,7 +302,7 @@ This one is simple, it's literally just text narrative formatted by using markdo
 > ```
 >> ## SOLUTION
 >> `##` is a heading, `**` is to bold enclosed text, and `<>` is for hyperlinks. 
->> Don't worry about this too much right now! This is an example of R markdown syntax for styling, we'll dive into this next.
+>> Don't worry about this too much right now! This is an example of R Markdown syntax for styling, we'll dive into this next.
 > {: .solution}
 {: .challenge}
 
@@ -316,7 +316,7 @@ This is called "knitting"" and the button looks like a spool of yarn with a knit
 <br>
 
 #### Try it yourself
-We’re going to pause here and see what the Rmarkdown does when it’s rendered. We'll just use the generic template, but when we're working on our own project, knitting periodically while we're editing allows us to catch errors early. We'll continue rendering our rmd throughout the lesson to see what happens when we add our markdown and knitr syntax and to make sure we aren't making any errors.
+We’re going to pause here and see what the R Markdown does when it’s rendered. We'll just use the generic template, but when we're working on our own project, knitting periodically while we're editing allows us to catch errors early. We'll continue rendering our rmd throughout the lesson to see what happens when we add our markdown and knitr syntax and to make sure we aren't making any errors.
 
 This is a little preview of what's to come in the Knitr syntax episodes later on.
 Click the "knit" button
@@ -329,7 +329,7 @@ Before you can render your document, you'll need to give it a file name and choo
 This is how our hmtl document will render after clicking the knit button and choosing a file name:
 ![Knit html output](../fig/02-knit-echoTRUE.PNG)
 
-> ## CHALLENGE 2.4 (optional)
+> ## CHALLENGE 2.4 - echo=TRUE Function (optional)
 > Can you deduce what the echo=TRUE option stands for?  
 >> ## Solution
 >> The echo=TRUE piece is knitr syntax that sets a global default for the whole paper. This piece of code specifically, `echo=TRUE`, tells the rmd document to display the R code that generates the plots & analysis when the rmd document is rendered by hitting the "knit" button. 

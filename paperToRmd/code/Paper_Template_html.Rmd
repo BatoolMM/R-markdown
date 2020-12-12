@@ -57,11 +57,12 @@ The CCoRRe committee developed an 18-question online survey and shared it using 
 
 ## Data Analysis
 
-The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders.  Using the sampling error formula
+The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders.  Using the sampling error formula:
 
 $$ e = { Zp(1-p) \over \sqrt{n} } $$
 
 we compute that at a 95% confidence level (i.e., $Z=1.96$), with base probability $p=1/2$ and sample size $n=`r sum(data1$count)`$, the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data1$count))*100)`%.
+
 
 # RESULTS AND DISCUSSION
 

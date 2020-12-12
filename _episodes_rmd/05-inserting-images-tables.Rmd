@@ -3,12 +3,12 @@ title: "R Markdown Syntax: Inserting Images & Tables"
 teaching: 30
 exercises: 10
 questions:
-- How do I insert an image or table into rmarkdown?
+- How do I insert an image or table into R Markdown?
 - How do I align images or tables?
 
 objectives:
-- To insert images into an rmarkdown document 
-- To add tables into an rmarkdown document
+- Find out how to insert images into an R Markdown document 
+- Assimilate how to add tables into an  R Markdown document
 
 keypoints:
 - You can resize and align images with R Markdown
@@ -25,11 +25,17 @@ knitr_fig_path("05-inserting-images-tables")
 You can add images to an R Markdown report using markdown syntax as follows:
 ```![Image Name](path-to-image-here)```
 
-However, when you knit the report, R will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the figs folder. In that case, make sure your path starts with figs/ along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
+However, when you knit the report, RStudio will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the `figs` folder. In that case, make sure your path starts with `figs/` along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
+
+> ## Tip: Paths to Files
+>The specification of the list of folders to travel and the file name is called a path. A path that starts at the root folder of the computer is called an **absolute path**. A **relative path** starts at a given folder and provides the folders and file starting from that folder. Using relative paths will make a number of things easier. A path is made up of folder names. If the path is to a file, then the path will ends with a file name. The folders and files of a path are separated by a directory separator. There are a few special directory names. A single period `.` indicates the current working directory. Two periods `..` indicates moving up a directory. 
+>
+{: .callout}
+
 
 In our paper template there are three images (two pie charts) and one bar chart we want to include. Those are named fig1_paper.jpg, fig2_paper.jpg and fig3_paper.jpg.
 
-To start let’s identify where (Figure 1) is mentioned in the paper. We will insert the image right after that. This image will have the caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." (that we will be pasting in the chat). We need to use the caption to render the image. 
+To start let’s identify where (Figure 1) is mentioned in the paper. We will insert the image right after that. This image will have the caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." (that we will be pasting in the chat). We need that caption to render the image. 
   
 The markdown should look like:
 
@@ -40,13 +46,12 @@ The markdown should look like:
 **Note:** A preview of your image should pop up automatically in RStudio if you have the correct relative path. 
 
 This will output as:
+
 <figure>
 <img src="../fig/fig1_paper.jpg">
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
-
 <br> 
-
 
 
 ### Resizing Images 
@@ -58,12 +63,13 @@ The image you just added looks a little too big, right? We can resize it by adju
 ```
 This will output as:
 <figure>
-<img src="../fig/fig1_paper.jpg" width = "397" height = "277">
+<img src="../fig/fig1_paper.jpg" style="text-align: left;" width = "397" height = "277">
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
 
 
->## CHALLENGE 5.1 
+>## CHALLENGE 5.1 - Inserting Images
+>
 > Locate the places for Figures 2 and 3 and add them to the document using the captions below:
 >
 > FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources
@@ -89,9 +95,10 @@ This will output as:
 > Check how your images look now. 
 {: .checklist}
 
+
 ### Aligning Images 
 
-Similar to text all images are aligned to the left by default in Rmarkdown. If we want images to be center aligned we can add to the syntax `fig.align="center"`.
+Similar to text all images are aligned to the left by default in R Markdown. If we want images to be center aligned we can add to the syntax `fig.align="center"`.
 
 ```
 ![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../fig/fig3_paper.jpg){width=60% height=80% fig.align="center"}
@@ -132,7 +139,7 @@ Start with the column names/headers. Separate columns with the pipe ( | ) symbol
 
 
 > ## Note: Table Spacing
->the spacing between cells in each row can help with readability in the rmarkdown file, but is not necessary to get the correct output. As long as the pipe symbol is there, RMarkdown will automatically format the table in your output. The following syntax will print the same table as the spaced out table above.
+>the spacing between cells in each row can help with readability in the R Markdown file, but is not necessary to get the correct output. As long as the pipe symbol is there, R Markdown will automatically format the table in your output. The following syntax will print the same table as the spaced out table above.
 > 
 > ```
 > Column Header|Column Header
@@ -167,7 +174,8 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 {: .source}
 
 
-> ## CHALLENGE 5.2
+> ## CHALLENGE 5.2 - Complete the Table
+>
 > Finish Table 1 by adding the rest of the rows.
 >
 >> ## SOLUTION

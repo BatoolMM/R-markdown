@@ -75,8 +75,8 @@ Oh! Wow we were off on out total count by one anyway, good thing we added this i
 {: .callout}
 
 
-> ## CHALLENGE 9.1
-> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited) Find both and replace with code. What part of the paper is that? 
+> ## CHALLENGE 9.1 - Converting a static number to inline code
+> There are two more spots in the paper where the count 243 was stated (search '243' or look just around the paragraph we just edited). Find both and replace with code. What part of the paper is that? 
 >
 >> ## SOLUTION
 >> ```{r eval = FALSE, echo = TRUE}
@@ -184,7 +184,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 **hide** = Specifically for plots, tells the code chunk to generate plots but not to display them in the output    
  
  
-> ## CHALLENGE 9.2
+> ## CHALLENGE 9.2 - Rendering Codes
 > How will some hypothetical code render given the following options?
 > ```
 > ```{r global-chunk-challenge, eval = TRUE, include = FALSE}
@@ -199,8 +199,7 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 {: .challenge}
 
 
-> ## CHALLENGE 9.3
->
+> ## CHALLENGE 9.3 - **Fixme: Add a Title**
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to eval = TRUE and echo = TRUE with the code that renders the plot.
 >
 >> ## SOLUTION
