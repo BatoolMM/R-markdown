@@ -15,7 +15,7 @@ knit: (function(inputFile, encoding) {
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.align = "center", out.width="60%", out.height="60%", echo = FALSE)
 ```
 
 ```{r load-data-libraries, include = FALSE}
@@ -30,9 +30,12 @@ data3 <- read_csv("../data/figure-3-data.csv", col_types="fi")
 table1 <- read_csv("../data/table.csv")
 
 ```
+
+---
+
 # INTRODUCTION
 
->_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)
+>_"If I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)
 
 Reproducible research practices include rigorously controlled and documented experiments using validated reagents. These practices are integral to the scientific method, and they enable acquisition of reliable and actionable research results. However, the art and practice of science is affected by challenges that go beyond the inherent complexity of the biology being explored. The pressures to publish, the focus on novel, positive, and impactful results, the use of suboptimal research practices, and the scarcity of research funding likely contribute to unacceptable levels of irreproducible scientific results [@freedman_reproducibility2020_2017].
 
@@ -98,18 +101,20 @@ Time pressures associated with publishing and grant preparation were frequently 
 
 Table 1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
 
-```{r table-1}
+```{r table-1, fig.align="center"}
 
 # use kable to create better table
 kable(table1, caption="TABLE 1 - Major challenges to rigor observed in shared resources")
 
 ```
 
-
+<br>
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 2).
 
-![FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources.](../figs/fig2_paper.jpg){width=50% height=50%}
+```{r fig-2, fig.cap="FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources."}
+include_graphics("../figs/fig2_paper.jpg")
 
+```
 
 The apparent lack of core engagement at the institutional level does not necessarily reflect a general lack of rigor in the daily operations of the cores. Indeed, 213 out of 216 who participated in this section of the survey selected at least one tool that they currently use to support R&R in their daily core operations and almost 75% indicated at least four more tools. With that regard, it is important to highlight:
 
@@ -129,6 +134,7 @@ data3 %>%
     scale_x_discrete(labels = function(x) str_wrap(x, width=30)) +
     xlab("Procedures/Activities Cores Would Like To Implement") +
     ylab("Number of Responses")
+
 ```
 
 ## Core Implementation of Research Best Practices
