@@ -46,6 +46,9 @@ The markdown should look like:
 **Note:** A preview of your image should pop up automatically in RStudio if you have the correct relative path. 
 
 This will output as:
+
+<img align="left" width="100" height="100" src="../fig/fig1_paper.jpg">
+
 <figure>
 <img src="../fig/fig1_paper.jpg">
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
