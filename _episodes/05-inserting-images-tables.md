@@ -52,6 +52,7 @@ This will output as:
 <br> 
 
 
+
 ### Resizing Images 
 
 The image you just added looks a little too big, right? We can resize it by adjusting the width and height ratio. Let’s say we want this image to be half of the original size. In order to do that, we will have to add to the syntax: 
