@@ -65,6 +65,9 @@ This will output as:
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
 
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50%}
+
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50% fig.align="center"}
 
 >## CHALLENGE 5.1 - Inserting Images
 >
