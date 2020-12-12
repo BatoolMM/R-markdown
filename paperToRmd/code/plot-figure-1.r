@@ -1,6 +1,6 @@
 library(tidyverse)
 
-data <- read_csv("../data/figure-1-data.csv", col_types="fi")
+data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
 
 pie_data <- data %>%
   mutate(proportion=count/sum(count)) %>%

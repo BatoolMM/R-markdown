@@ -15,9 +15,17 @@ knit: (function(inputFile, encoding) {
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
+```{r load-data-libraries, include = FALSE}
+#load libraries
+library(tidyverse)
+
+#load data
+data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
+data3 <- read_csv("../data/figure-3-data.csv", col_types="fi") 
+```
 # INTRODUCTION
 
 >_"I have seen further it is because I have stood on the shoulders of giants"_ (Isaac Newton)
@@ -53,26 +61,23 @@ The survey contained both multiple-choice and open-ended text questions. The ope
 
 $$ e = { Zp(1-p) \over \sqrt{n} } $$
 
-We compute that at a 95% confidence level (i.e., $Z=1.96$), with base probability $p=1/2$ and sample size $n=243$, the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%.
+we compute that at a 95% confidence level (i.e., $Z=1.96$), with base probability $p=1/2$ and sample size $n=`r sum(data1$count)`$, the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data1$count))*100)`%.
+
 
 # RESULTS AND DISCUSSION
 
 ## Survey Demographics
 
-A total of 243 individuals from 21 countries completed this section. The majority of the survey participants are core facility directors or managers (69%) and work in an academic setting (72%) in the United States (79%).
+A total of `r sum(data1$count)` individuals from 21 countries completed this section. The majority of the survey participants are core facility directors or managers (69%) and work in an academic setting (72%) in the United States (79%).
 
 ## Current Landscape for Rigor and Transparency in Represented Shared Resources
 
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 1).
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-library(tidyverse)
-```
+```{r fig-1, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}
 
-```{r echo=FALSE, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}
-data <- read_csv("../data/figure-1-data.csv", col_types="fi")
 
-pie_data <- data %>%
+pie_data <- data1 %>%
   mutate(proportion=count/sum(count)) %>%
   arrange(desc(proportion)) %>%
   mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
@@ -119,7 +124,17 @@ The apparent lack of core engagement at the institutional level does not necessa
 
 A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&R best practices within their core operation (Fig. 3).
 
-![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../figs/fig3_paper.jpg){width=60% height=80%}
+```{r fig-3, fig.cap="FIGURE 3 - Types of tools that cores would like to implement in their operations." }
+
+data3 %>%
+  mutate(procedure=fct_reorder(procedure, responses)) %>%
+  ggplot(data, mapping = aes(x=procedure, y=responses)) +
+    geom_bar(stat="identity", fill="#377eb8") +
+    coord_flip() +
+    scale_x_discrete(labels = function(x) str_wrap(x, width=30)) +
+    xlab("Procedures/Activities Cores Would Like To Implement") +
+    ylab("Number of Responses")
+```
 
 ## Core Implementation of Research Best Practices
 
