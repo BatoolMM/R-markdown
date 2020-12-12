@@ -64,8 +64,9 @@ We will add the inline code to the sentence in question:
 > ~~~
 > {: .language-r}
 
+**Output:** 
 ```
-**Output:** "a total of 242 individuals from 21 countries completed this section."
+"a total of 242 individuals from 21 countries completed this section."
 ```
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
@@ -102,7 +103,7 @@ You can quickly insert chunks like these into your file with:
 
 * the keyboard shortcut Ctrl + Alt + I (OS X: Cmd + Option + I)
 * the Add Chunk  command in the editor toolbar
-* or by typing the chunk delimiters ``` {r} and ```.
+* or by typing the chunk delimiters  {r} and ```.
 
 The most basic code chunk looks like so:
 
@@ -164,7 +165,7 @@ Go to previous chunk/title	| Ctrl+PgUp |	Command+PgUp
 
 While not necessary for running your code, better practice is to give a name to each code chunk:
 
-```` {r chunk-name} ````
+`{r chunk-name}`
 
 
 Some things to keep in mind
@@ -173,7 +174,7 @@ Some things to keep in mind
 
 We’ll see in a bit where this code chunk label comes in handy. But, for now let's go back and give our first code chunk a name:
 
-
+`{r fig-1}`
 
 
 > ## Tip: Don't use spaces, periods or underscores in code chunk labels
@@ -202,11 +203,10 @@ the option always follows the code chunk label (don't forget to add a `,` after 
  
 > ## CHALLENGE 9.2 - Rendering Codes
 > How will some hypothetical code render given the following options?
-> ```
+> `{r global-chunk-challenge, eval = TRUE, include = FALSE}`
 > 
-> ```
 >> ## SOLUTION
->> The expressions in the code chunk will be evaluated, but the output will not be included in the knit document.   
+>> The expressions in the code chunk will be evaluated, but the outputed figures/plots will not be included in the knit document.   
 >> When might you want to use this?   
 >> If you need to calculate some value or do something on your dataset for a further calucation or plot, but the output is not important to be included in your paper narrative. 
 > {: .solution}
@@ -217,23 +217,30 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 ## Global Code Chunk Options:
 On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
 
-To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
+To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a new code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
+`{r setup, echo = FALSE}`
+`knitr::opts_chunk$set(echo = FALSE)`
 
 
 *Code chunk options must all appear on the same line, no returns
 
-ok, now let's go back and remove the options we set in the individual code chunks & since we've set the global options in the document instead. 
+Alright! now let's go back and remove the options we set in the individual code chunks & since we've set the global options in the document instead. 
 
-“If I’m writing a report for a collaborator, I’ll often use include=FALSE to suppress all of the code and largely just include figures.” - Karl Broman
 
-*Note: We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this in the workshop, but many of the same options you set in your global code chunk settings are also configurable in the yaml. 
+> ## Tip: Yaml chunk options
+> We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this in the workshop, but many of the same options you set in your global code chunk settings are also configurable in the yaml. 
+{: .callout}
+
 
 #### load our libraries and data "globally"
-We can actually make our lives easier in one other way too. So far we've loaded the library and dataframe we need in each code chunk individually which so far has meant we've loaded the `tidyverse` library twice. Instead we can do this all at the beginning which lets us avoid the repitition. Once libraries and data are loaded they are available for the rest of the rmd document. So, if we load libraries and data at the start, when there is code that calls on them it's already available. This also makes it easier for us to keep track of all the libraries and data we need to use in any given document. If anything needs to be tweaked, we don't need to search through every code chunk in our rmd document to make a change. 
+We can actually make our lives easier in one other way too. So far we've loaded the library `tidyverse` and dataframe `data1` we need in the first code chunk. Now if we want to replace, say Figure 3 (which we will do next) we may end up loading the library twice and the data for figure 3. 
+
+Instead, we can do this all at the beginning of our document which lets us avoid the repitition. Once libraries and data are loaded they are available for the rest of the rmd document. So, if we load libraries and data at the start, when there is code that calls on them further down in the document it's already available. This also makes it easier for us to keep track of all the libraries and data we need to use in any given document. If anything needs to be tweaked, we don't need to search through every code chunk in our rmd document to make a change. 
 
 {r load-data-libraries}
-FIXME 
+ADD: load `data1`, 
+ADD: load(tidyverse)
 
 > ## CHALLENGE 9.3 - Add a code chunk on your own
 >
