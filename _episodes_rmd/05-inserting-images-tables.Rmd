@@ -68,9 +68,6 @@ This will output as:
 <figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
 </figure>
 
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){width=50% height=50%}
-
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg){width=50% height=50% fig.align="center"}
 
 >## CHALLENGE 5.1 - Inserting Images
 >
@@ -100,32 +97,9 @@ This will output as:
 {: .checklist}
 
 
-### Aligning Images 
-
-Similar to text all images are aligned to the left by default in R Markdown. If we want images to be center aligned we can add to the syntax `fig.align="center"`.
-
-```
-![FIGURE 3 - Types of tools that cores would like to implement in their operations.](../figs/fig3_paper.jpg){width=60% height=80% fig.align="center"}
-```
-<br>
-Outputs as:
-<center>
-<figure>
-<img src="../fig/fig1_paper.jpg" width = "397" height = "277">
-<figcaption>FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.</figcaption>
-</figure>
-</center>
-
-
 > ## Time to Knit!
 > Check how the images are aligned now. 
 {: .checklist}
-
-
->## Tip
-> But if we want to be more effective and get all images aligned in a certain way, it is best to 
-  apply a more general code chunk that will be covered later on, in the Knitr syntax.
-{: .callout}
 
 
 ## Inserting Tables
