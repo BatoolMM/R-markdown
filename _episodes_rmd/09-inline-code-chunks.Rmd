@@ -127,7 +127,7 @@ Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code a
 
 
 > ## Tip:
-> There's actually a button you can use in the menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well.
+> There's actually a button you can use in the RStudio menu to generate the code chunks automatically. Automatic code chunk generation is available for several other languages as well. Also, you can use the keyboard shortcut `ctrl`+`alt`+`I` for Windows and `command`+`option`+`I` for Mac. 
 > ![auto create code chunk](../fig/09-auto-code-chunk.PNG)
 {: .callout}
 
