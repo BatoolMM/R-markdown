@@ -27,7 +27,8 @@ source: Rmd
 
 
 ## What is Knitr?
-(FIXME) Syntax for processing code chunks. Two main ways to process code in Rmd:  
+Knitr is the engine in RStudio which creates the "dynamic" part of R markdown reports. It's specifically a package that allows the integration of R code into the html, word, pdf, or LaTex document you have specified as your output for r markdown. It utilizes [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming) to make research more reproducible. There are two main ways to process code with Knitr in R Markdown documents:  
+
 1. Inline code  
 2. Code Chunks  
 
@@ -45,13 +46,15 @@ We're going to go ahead and change the LaTex code we used to input the error mar
 > {: .language-r}
 {: .source}
 
-Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ` r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
+Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ending hash mark (`) r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
 
 Where else can we add inline code? We can replace observation counts!
 
 i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
 
-Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. However, because we don't have access to the original dataset (and thus only aggregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data1` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility and is used to create Fig 1. We will use *r sum(data1$count)* in between the tick marks instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
+Now, we're going to find one such example in our data frame and convert a static number or equation to inline code. In our paper text we read "a total of 243 individuals from 21 countries completed this section." Here we can use inline r code to calculate the total responses instead of typing it in. 
+
+However, because we don't have access to the original dataset (and thus only aggregate counts) we can't use `nrow()` to count our number of observations. we will count the column `count` in our `data1` dataframe which sums the responses relating to how familiar respondents are with current NIH guidelines on reproducibility and is used to create Fig 1. We will use *r sum(data1$count)* in between the tick marks instead to total the count for each level of familiarity ("Very Aware", "Somewhat Aware", "Completely Unaware").
 
 We will add the inline code to the sentence in question:
 
@@ -61,9 +64,9 @@ We will add the inline code to the sentence in question:
 > ~~~
 > {: .language-r}
 
-
+```
 **Output:** "a total of 242 individuals from 21 countries completed this section."
-
+```
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
 > ## Tip: Inline code cannot span lines  
@@ -135,27 +138,37 @@ Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code a
 
 ### Run your code
 
-Now, to check to make sure our code is rendering correctly, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
+Now, to check to make sure our code renders, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
 
-1) Knit button - knitting will 
+1) Knit button - knitting will automatically run the code in all code chunks
 
 2) Run from Rmd file (chunk run button)
 
 3) Run menu 
 
+4) Keyboard shortcuts: 
+Task	Windows & Linux	macOS
+Run all chunks above	Ctrl+Alt+P	Command+Option+P
+Run current chunk	Ctrl+Alt+C	Command+Option+C
+Run current chunk	Ctrl+Shift+Enter	Command+Shift+Enter
+Run next chunk	Ctrl+Alt+N	Command+Option+N
+Run all chunks	Ctrl+Alt+R	Command+Option+R
+Go to next chunk/title	Ctrl+PgDown	Command+PgDown
+Go to previous chunk/title	Ctrl+PgUp	Command+PgUp
+
+
 ### Name your code chunks
 
-While not necessary to run your code, better practice is to give a name to each code chunk:
+While not necessary for running your code, better practice is to give a name to each code chunk:
+
+```` {r chunk-name} ````
 
 
+Some things to keep in mind
+- The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE)
+- The chunk label has to be unique (i.e.you can't use the the same name for multiple chunks)
 
-*The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE)
-**The chunk label should be unique (i.e. don't use the same one for multiple chunks)
-
-Note: 
-We’ll see in a bit where this code chunk label comes in handy. 
-
-Let's go back and give our first code chunk a name.
+We’ll see in a bit where this code chunk label comes in handy. But, for now let's go back and give our first code chunk a name:
 
 FIXME add naming plot1
 
