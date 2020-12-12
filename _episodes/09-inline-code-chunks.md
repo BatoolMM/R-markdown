@@ -102,15 +102,11 @@ You can quickly insert chunks like these into your file with:
 
 * the keyboard shortcut Ctrl + Alt + I (OS X: Cmd + Option + I)
 * the Add Chunk  command in the editor toolbar
-* or by typing the chunk delimiters ````{r} and ````.
+* or by typing the chunk delimiters ``` {r} and ```.
 
 The most basic code chunk looks like so:
 
-
-~~~
-#Some code here
-~~~
-{: .language-r}
+![blank Rmd code chunk](../fig/09-blank-code-chunk.PNG)
 
 Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
@@ -141,20 +137,27 @@ Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code a
 Now, to check to make sure our code renders, we could click the "knit" button as we have been doing. However, with the code chunks we have other opportunities for rendering. 
 
 1) Knit button - knitting will automatically run the code in all code chunks
+![code chunk with plot1 code](../fig/02-rmd-knit-button.png)
 
-2) Run from Rmd file (chunk run button)
+2) Run from Rmd file (green play button on the right top corner)
+
+![code chunk with plot1 code](../fig/09-code-chunk-plot1.PNG)
 
 3) Run menu 
 
+![run code menu](../fig/09-rmd-run-options.PNG)
+
 4) Keyboard shortcuts: 
-Task	Windows & Linux	macOS
-Run all chunks above	Ctrl+Alt+P	Command+Option+P
-Run current chunk	Ctrl+Alt+C	Command+Option+C
-Run current chunk	Ctrl+Shift+Enter	Command+Shift+Enter
-Run next chunk	Ctrl+Alt+N	Command+Option+N
-Run all chunks	Ctrl+Alt+R	Command+Option+R
-Go to next chunk/title	Ctrl+PgDown	Command+PgDown
-Go to previous chunk/title	Ctrl+PgUp	Command+PgUp
+
+**Task**	| **Windows & Linux**	| **macOS**
+---       |---                  |---
+Run all chunks above |	Ctrl+Alt+P	| Command+Option+P
+Run current chunk	| Ctrl+Alt+C	| Command+Option+C
+Run current chunk	| Ctrl+Shift+Enter	| Command+Shift+Enter
+Run next chunk	| Ctrl+Alt+N	| Command+Option+N
+Run all chunks	| Ctrl+Alt+R	| Command+Option+R
+Go to next chunk/title	| Ctrl+PgDown	| Command+PgDown
+Go to previous chunk/title	| Ctrl+PgUp |	Command+PgUp
 
 
 ### Name your code chunks
@@ -170,7 +173,7 @@ Some things to keep in mind
 
 We’ll see in a bit where this code chunk label comes in handy. But, for now let's go back and give our first code chunk a name:
 
-FIXME add naming plot1
+
 
 
 > ## Tip: Don't use spaces, periods or underscores in code chunk labels
@@ -210,20 +213,6 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 {: .challenge}
 
 
-> ## CHALLENGE 9.3 - Add a code chunk on your own
->
-> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder. Go ahead and load the data in the chunk at the top of your paper with our other data and make a new code chunk (with a name) with the options set to eval = TRUE and echo = TRUE with the code that renders the plot.
->
->> ## SOLUTION
->> 1. add to `code-chunk-name` here: to load the data
->> ```
->> ```
->> 2. create a new code chunk at the spot in the paper we want figure 3 and add the following code:
->> ```
->> ```
-> {: .solution}
-{: .challenge}
-
 
 ## Global Code Chunk Options:
 On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
@@ -231,10 +220,6 @@ On each of our two plots we set the options separately (though we used the same 
 To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
 
 
-~~~
-# knitr::opts_chunk$set(ADD options here)
-~~~
-{: .language-r}
 
 *Code chunk options must all appear on the same line, no returns
 
@@ -247,7 +232,27 @@ ok, now let's go back and remove the options we set in the individual code chunk
 #### load our libraries and data "globally"
 We can actually make our lives easier in one other way too. So far we've loaded the library and dataframe we need in each code chunk individually which so far has meant we've loaded the `tidyverse` library twice. Instead we can do this all at the beginning which lets us avoid the repitition. Once libraries and data are loaded they are available for the rest of the rmd document. So, if we load libraries and data at the start, when there is code that calls on them it's already available. This also makes it easier for us to keep track of all the libraries and data we need to use in any given document. If anything needs to be tweaked, we don't need to search through every code chunk in our rmd document to make a change. 
 
+{r load-data-libraries}
 FIXME 
+
+> ## CHALLENGE 9.3 - Add a code chunk on your own
+>
+> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder: 
+> 1) load the data for the figure in the designated code chunk at the top of our file. 
+> 2) Make a new code chunk where you want to replace the image for Figure 3
+> 3) Give it the name: fig-3
+> 4) Don't worry about options! we already set those to echo = FALSE in the global options (`setup`)
+>
+>> ## SOLUTION
+>> 1. add to `load-data-libraries` here: to load the data
+>> ```
+>> ```
+>> 2. create a new code chunk at the spot in the paper we want figure 3 and add the following code:
+>> ```
+>> ```
+> {: .solution}
+{: .challenge}
+
 
 > ## Tip: Overiding global options  
 > What if you want most of your code chunks to render with the same options (i.e. echo = FALSE), but you just have one or two chunks that you want to tweak the options on (i.e. display code with echo = TRUE)? Good news! The global options can be overwritten on a case by case basis in each individual code chunk.
