@@ -20,12 +20,16 @@ knitr::opts_chunk$set(fig.align = "center", out.width="60%", out.height="60%", e
 
 ```{r load-data-libraries, include = FALSE}
 #load libraries
+
 #tidyverse for plots
 library(tidyverse)
 #knitr to use kable() for table 1
 library(knitr)
+#load bookdown for cross-referencing
+library(bookdown)
 
 #load data
+
 #data for figure 1
 data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
 #data for figure 2
@@ -87,8 +91,6 @@ A total of `r sum(data1$count)` individuals from 21 countries completed this sec
 When asked how knowledgeable participants were with respect to the NIH research rigor initiatives, 47% stated they were very familiar, whereas the rest were equally either somewhat familiar or completely unaware of such guidelines (Fig. 3.1).
 
 ```{r fig-1, fig.cap="Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}
-
-
 pie_data <- data1 %>%
   mutate(proportion=count/sum(count)) %>%
   arrange(desc(proportion)) %>%
@@ -107,7 +109,6 @@ Time pressures associated with publishing and grant preparation were frequently 
 Table 3.1 represents the perceived challenges faced in promoting best practices for rigorous research in core settings. Issues associated with sample quality or quantity top the list. 
 
 ```{r table-1, fig.align="center"}
-
 # use kable to create better table
 kable(table1, caption="Major challenges to rigor observed in shared resources")
 
@@ -117,6 +118,7 @@ kable(table1, caption="Major challenges to rigor observed in shared resources")
 Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 3.22).
 
 ```{r fig-2, fig.cap="Lack of requests for rigor and reproducibility documentation by users of shared resources."}
+#add Figure 2 to a code chunk to control alignment and size
 include_graphics("../figs/fig2_paper.jpg")
 
 ```
@@ -130,7 +132,6 @@ The apparent lack of core engagement at the institutional level does not necessa
 A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&R best practices within their core operation (Fig. 3.3).
 
 ```{r fig-3, fig.cap="Types of tools that cores would like to implement in their operations." }
-
 data3 %>%
   mutate(procedure=fct_reorder(procedure, responses)) %>%
   ggplot(data, mapping = aes(x=procedure, y=responses)) +
