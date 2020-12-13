@@ -32,7 +32,7 @@ library(bookdown)
 
 #data for figure 1
 data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
-#data for figure 2
+#data for figure 3
 data3 <- read_csv("../data/figure-3-data.csv", col_types="fi") 
 #data for table 1
 table1 <- read_csv("../data/table.csv")
