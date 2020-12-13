@@ -195,10 +195,10 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 #### Some common options: 
 
 **eval** = (logical or numeric) TRUE/FALSE to evaluate (or not) or a numeric value like c(1,3) (only evaluate expressions 1 and 3).    
-**echo** =  whether to display source code or not (logical or numeric - following the same rules as above)    
-**warning** = whether to display the warnings in the output (TRUE). FALSE will output warnings to the console only    
-**include** = whether to include the chunk output in the output document    
-**hide** = Specifically for plots, tells the code chunk to generate plots but not to display them in the output    
+**echo** =  (logical or numeric - following the same rules as above) whether to display source code or not.     
+**warning** = (logical) whether to display the warnings in the output (default:TRUE). FALSE will output warnings to the console only    
+**include** = (logical) whether to include the chunk output in the output document (default TRUE)   
+**message** = (logical) whether or not to display messages that appear when running the code (default TRUE)
  
  
 > ## CHALLENGE 9.2 - Rendering Codes
@@ -212,18 +212,42 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 > {: .solution}
 {: .challenge}
 
-
+> ## CHALLENGE 9.3 - add options to your code
+> Add the following options to your code:
+> echo = FALSE, message = FALSE, warning = FALSE
+> 
+> What will this do?  
+>> ## SOLUTION  
+>> ``` {r eval = FALSE}  
+>> ```{r fig-1, eval = FALSE, echo = TRUE}  
+>> data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")  
+>> 
+>> pie_data <- data1 %>%  
+  mutate(proportion=count/sum(count)) %>%  
+  arrange(desc(proportion)) %>%  
+  mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)  
+>>
+>> ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +  
+  geom_bar(stat="identity", color="white") +  
+  coord_polar(theta="y", start=0) +  
+  geom_text(aes(y=lab.ypos, label=paste(round(proportion*100), "%", sep="")), color="white") +  
+  scale_fill_brewer(palette="Set1", name="Familiarity", guide=guide_legend(reverse=TRUE)) +  
+  theme_void()  
+>> ```  
+>> ```  
+> {: .solution}
+{: .challenge}
 
 ## Global Code Chunk Options:
-On each of our two plots we set the options separately (though we used the same options and values). However, we may have quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paperWe can automate this process by setting the options once at the beginning of the document (FIXME same with libraries?). Then, each code chunk that runs will refer to the default options we set one time at the beginning of the file. 
+With our first plot we set the options separately. However, we may end up with quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paper. We can automate setting options by adding a special code chunk at the beginning of the document. Then, each code chunk we add will refer to the options in this special when it runs. 
 
-To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set` in a new code chunk right after our yaml header. Knitr will treat each option that you pass to knitr::opts_chunk$set as a global default. 
+To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set()` in a new code chunk right after our yaml header (name the new code chunk `setup`. Knitr will treat each option that add to this call as a global default. However, we will need to set the options for this code chunk in the first place! so we'll use echo = FALSE. Then in the `()` after the `knitr::opts_chunk$set()` add the three options we used for our first code chunk. 
 
-`{r setup, echo = FALSE}`
-`knitr::opts_chunk$set(echo = FALSE)`
+Add to your file (with hashes):
 
+`{r setup, echo = FALSE}`     
+`knitr::opts_chunk$set(echo = FALSE, mesage = FALSE, warning = FALSE)`
 
-*Code chunk options must all appear on the same line, no returns
 
 Alright! now let's go back and remove the options we set in the individual code chunks & since we've set the global options in the document instead. 
 
@@ -242,7 +266,7 @@ Instead, we can do this all at the beginning of our document which lets us avoid
 ADD: load `data1`, 
 ADD: load(tidyverse)
 
-> ## CHALLENGE 9.3 - Add a code chunk on your own
+> ## CHALLENGE 9.4 - Add a second code chunk on your own
 >
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder: 
 > 1) load the data for the figure in the designated code chunk at the top of our file. 
@@ -268,7 +292,7 @@ ADD: load(tidyverse)
 
 
 
-> ## CHALLENGE after global options:
+> ## CHALLENGE 9.5 (optional) global & individual code chunk options:
 
 How would the following code chunk be displayed when we knit:
 
