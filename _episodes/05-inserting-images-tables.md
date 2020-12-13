@@ -22,11 +22,16 @@ source: Rmd
 You can add images to an R Markdown report using markdown syntax as follows:
 ```![Image Name](path-to-image-here)```
 
-However, when you knit the report, RStudio will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the `figs` folder in the `R-markdown` project folder. In that case, make sure your path starts with `figs/` along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
+However, when you knit the report, RStudio will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the `figs` folder in the `R-markdown` project folder. In that case, make sure your path starts with `../figs/` along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
 
 > ## Tip: Paths to Files
 >The specification of the list of folders to travel and the file name is called a path. A path that starts at the root folder of the computer is called an **absolute path**. A **relative path** starts at a given folder and provides the folders and file starting from that folder. Using relative paths will make a number of things easier. A path is made up of folder names. If the path is to a file, then the path will ends with a file name. The folders and files of a path are separated by a directory separator. There are a few special directory names. A single period `.` indicates the current working directory. Two periods `..` indicates moving up a directory. 
 >
+{: .callout}
+
+> ## Tip: Path issues?
+> if you're still having path issues, you should check your working directory.
+> `getwd()` in the console. If you're working directory isn't 'paperToRmd' (your root project folder where your .Rproj file lives), use `setwd()` to change it to that one.  
 {: .callout}
 
 
@@ -37,7 +42,7 @@ To start let’s identify where (Figure 1) is mentioned in the paper. We will in
 The markdown should look like:
 
 ```
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../fig/fig1_paper.jpg)
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../figs/fig1_paper.jpg)
 ```
 
 
@@ -57,7 +62,7 @@ This will output as:
 The image you just added looks a little too big, right? We can resize it by adjusting the width and height ratio. Let’s say we want this image to be half of the original size. In order to do that, we will have to add to the syntax: 
 
 ```
-![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](figs/fig1_paper.jpg){width=50% height=50%}
+![FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.](../figs/fig1_paper.jpg){width=50% height=50%}
 ```
 This will output as:
 <figure>
@@ -105,10 +110,17 @@ We can also use markdown syntax to insert a formatted table into our document. T
 
 ```
 Column Header | Column Header
----           | ---         .     
-Cell 1        |  Cell 2     .    
-Cell 3        |  Cell 4     .      
+---           | ---              
+Cell 1        |  Cell 2       
+Cell 3        |  Cell 4          
 ```
+
+Output: 
+
+ Column Header | Column Header 
+ ---               | ---               
+ Cell 1            |  Cell 2           
+ Cell 3            |  Cell 4
 <br>
 Start with the column names/headers. Separate columns with the pipe ( | ) symbol. Right below the column headers use at least three dashes to separate the headers from the cells of the table. Then fill in the contents of the table row by row, separating columns using the pipe ( | ) symbol. 
 
@@ -125,15 +137,21 @@ Start with the column names/headers. Separate columns with the pipe ( | ) symbol
 {: .callout}
 
 
-You can use text emphasis in the table using the same syntax as you use when emphasizing other 
-  plain text. The following change will bold the column headers in the output. 
- ```
+You can use text emphasis in the table using the same syntax as you use when emphasizing other plain text. The following change will bold the column headers in the output. 
+
+```  
  **Column Header** | **Column Header**
- ---               | ---             .
- Cell 1            |  Cell 2         .
- Cell 3            |  Cell 4         .
- ```
-<br>
+ ---               | ---        
+ Cell 1            |  Cell 2 
+ Cell 3            |  Cell 4     
+```
+
+Output: 
+
+ **Column Header** | **Column Header** 
+ ---               | ---               
+ Cell 1            |  Cell 2           
+ Cell 3            |  Cell 4           
 
 Let’s create Table 1 in our paper in section 3.2 Current Landscape for Rigor and Transparency in Represented Shared Resources. 
 
