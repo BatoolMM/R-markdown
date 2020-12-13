@@ -11,7 +11,7 @@ knit: (function(inputFile, encoding) {
       out_dir <- '../results';
       rmarkdown::render(inputFile,
                         encoding=encoding, 
-                        output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_html.html')) })
+                        output_file=file.path(dirname(inputFile), out_dir, 'Paper_Template_cross_ref.html')) })
 ---
 
 ```{r setup, echo=FALSE}
