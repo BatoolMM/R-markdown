@@ -159,15 +159,15 @@ Rmd combines the power of R code and analysis with narratives describing methods
 {: .callout}
 
 For this project, we used the following setup for folders and files:  
-**bin:** contains a a .csl file for changing the bibliography to APA format
+**bin:** contains a a .csl file for changing the bibliography to APA format  
 **code:** a different name for the `src` folder. This will contain our R scripts for plots and R Markdown scripts for writing our paper.  
-**data:** this folder contains our raw data files. We have 3 `.csv`s
+**data:** this folder contains our raw data files. We have 3 `.csv`s  
 **docs:** This contains our raw text file `paper_raw.txt` for the paper and our `bibliography.bibtex` for reference. We could add any other notes we may have about the project here too.   
 **figs:** This is for the .png figures we found and want to add into our paper. It can also be used to save .png or .jpeg copies of the figures we output from our code.  
 **results:** This is where the rendered version of our .Rmd file (and .R scripts if we ran them) will save to in `html` form.  
 **RMarkdown_Workshop.Rproj** lives in the root directory.
 
-Optional Files to add to root directory:
+#### Optional Files to add to root directory:  
 **README.md** A detailed project description with all collaborators listed.   
 **CITATION.txt** Directions to cite the project.  
 **LICENSE.txt** Instructions on how the project or any components can be reused.   
@@ -311,7 +311,7 @@ This one is simple, it's literally just text narrative formatted by using markdo
 {: .challenge}
 
 ### 3. Code Chunks: 
-R code chunks appear highlighted in gray throughout the rmd document. They are surrounded by three tick marks on either side (\``` \```) with the starting three tick marks followed by curly brackets `{}`with some other code inside. The tick marks indicate the start of a code section and the bits found between the curly brackets `{}`indicate how R should read and display the code (more on this in the Knitr syntax episodes). These are the sections you add R code such as summary statistics, analysis, tables and plots. If you’ve already written an R script you can copy and paste your code between the few lines of required formatting to embed & run whichever piece you want at that particular spot in the document.
+R code chunks appear highlighted in gray throughout the rmd document. They are surrounded by three tick marks on either side (\`\`\`) with the starting three tick marks followed by curly brackets `{}`with some other code inside. The tick marks indicate the start of a code section and the bits found between the curly brackets `{}`indicate how R should read and display the code (more on this in the Knitr syntax episodes). These are the sections you add R code such as summary statistics, analysis, tables and plots. If you’ve already written an R script you can copy and paste your code between the few lines of required formatting to embed & run whichever piece you want at that particular spot in the document.
 
 ![rmd template code chunks](../fig/02-rmd-template-code.png)
 
