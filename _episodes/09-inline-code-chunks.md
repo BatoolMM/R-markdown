@@ -212,31 +212,15 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 > {: .solution}
 {: .challenge}
 
-> ## CHALLENGE 9.3 - add options to your code
-> Add the following options to your code:
-> echo = FALSE, message = FALSE, warning = FALSE
+> ## CHALLENGE 9.3 - add options to your code  
+> Add the following options to your code:  
+> echo = FALSE, message = FALSE, warning = FALSE  
 > 
 > What will this do?  
->> ## SOLUTION  
->> 
->> 
->> ~~~
->> data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")  
->> 
->> pie_data <- data1 %>%  
->>   mutate(proportion=count/sum(count)) %>%  
->>   arrange(desc(proportion)) %>%  
->>   mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)  
->> 
->> ggplot(pie_data, aes(x=2, y=proportion, fill=familiarity)) +  
->>   geom_bar(stat="identity", color="white") +  
->>   coord_polar(theta="y", start=0) +  
->>   geom_text(aes(y=lab.ypos, label=paste(round(proportion*100), "%", sep="")), color="white") +  
->>   scale_fill_brewer(palette="Set1", name="Familiarity", guide=guide_legend(reverse=TRUE)) +  
->>   theme_void()  
->> ~~~
->> {: .language-r}
->> ```  
+>> ## SOLUTION
+>> ![solution to 9.3](../fig/09-solution-9.3.PNG)    
+>>
+>> These options mean the source code will not be printed in the knit html document, messages from the code will not be printed in the knit html document, and warnings will not be printed in the knit html document (but will still output to the console). Plots, figures or whatever is printed by the code WILL show up in the final html document.  
 > {: .solution}
 {: .challenge}
 
@@ -260,29 +244,41 @@ Alright! now let's go back and remove the options we set in the individual code 
 
 
 #### load our libraries and data "globally"
-We can actually make our lives easier in one other way too. So far we've loaded the library `tidyverse` and dataframe `data1` we need in the first code chunk. Now if we want to replace, say Figure 3 (which we will do next) we may end up loading the library twice and the data for figure 3. 
+We can actually make our lives easier in one other way too. So far we've loaded the library `tidyverse` and dataframe `data1` we need in the first code chunk. Now if we want to replace, say Figure 3 (which we will do next), we would load `tidyverse` and the data for Figure 3, meaning we would be loading tidyverse for a second time unecessarily. This is because once libraries and data are loaded they are available for the rest of the rmd document.
 
-Instead, we can do this all at the beginning of our document which lets us avoid the repitition. Once libraries and data are loaded they are available for the rest of the rmd document. So, if we load libraries and data at the start, when there is code that calls on them further down in the document it's already available. This also makes it easier for us to keep track of all the libraries and data we need to use in any given document. If anything needs to be tweaked, we don't need to search through every code chunk in our rmd document to make a change. 
+Instead, we can load libraries and data at the beginning of our document which makes it available for all other figures or calculations and lets us avoid the repitition. This also makes it easier for us to keep track of all the libraries and data we need to use in any given document. If anything needs to be tweaked, we don't need to search through every code chunk in our rmd document to make a change. 
 
-{r load-data-libraries}
-ADD: load `data1`, 
-ADD: load(tidyverse)
+Let's add our libraries and data to a code chunk at the top of the document (and we can take this code out of Fig-1):
+```
+#load libraries
+#tidyverse for plots
+library(tidyverse)
 
-> ## CHALLENGE 9.4 - Add a second code chunk on your own
+#load data
+#data for figure 1
+data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
+#data for table 1
+table1 <- read_csv("../data/table.csv")
+```
+It'll look like the following:
+![load libraries & data](../fig/09-load-libraries-data.PNG)
+
+> ## CHALLENGE 9.4 - Change the Fig 3 image to code
 >
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder: 
+>
 > 1) load the data for the figure in the designated code chunk at the top of our file. 
 > 2) Make a new code chunk where you want to replace the image for Figure 3
 > 3) Give it the name: fig-3
-> 4) Don't worry about options! we already set those to echo = FALSE in the global options (`setup`)
+> 4) Don't worry about options! we already set those in the global options (`setup`)
 >
 >> ## SOLUTION
->> 1. add to `load-data-libraries` here: to load the data
->> ```
->> ```
+>> 1. add to code chunk `load-data-libraries`:
+>> ![load data3 dataframe](../fig/09-load-data3.PNG)
+>> 
 >> 2. create a new code chunk at the spot in the paper we want figure 3 and add the following code:
->> ```
->> ```
+>> ![add code for fig 3](../fig/09-code-fig3.PNG)
+>> Make sure the code chunk is named `fig-3`
 > {: .solution}
 {: .challenge}
 
@@ -290,8 +286,6 @@ ADD: load(tidyverse)
 > ## Tip: Overiding global options  
 > What if you want most of your code chunks to render with the same options (i.e. echo = FALSE), but you just have one or two chunks that you want to tweak the options on (i.e. display code with echo = TRUE)? Good news! The global options can be overwritten on a case by case basis in each individual code chunk.
 {: .callout}
-
-
 
 
 > ## CHALLENGE 9.5 (optional) global & individual code chunk options:
