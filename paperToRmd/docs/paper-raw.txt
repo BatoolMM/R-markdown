@@ -76,11 +76,13 @@ Oversight of data analyses and double-checking results were some of the least wi
 
 A second set of multiple-choice questions asked participants to select the new tools they think would enhance or facilitate the implementation of R&R best practices within their core operation (Fig. 3).
 
-Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&R initiatives. This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control. 
+Core Implementation of Research Best Practices
+
+Optimal research core services require a full commitment to rigorous methods as an obligation and not as a choice. However, more than half of the participants identified lack of funding and technical staff training as primary deterrents to the implementation and maintenance of R&R initiatives (See Table 1). This illustrates the difficulties that fee-for-service core facilities face when considering the costs associated with establishing new standardized procedures, methods, or technologies, or improving documentation, transparency, and quality control. 
 
 Strategies for Improving R&R in Core Operation
 
-Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&R guidelines.
+Participants were asked to suggest solutions to mitigate or eliminate challenges and provide a clear path to improved R&R in cores. Some of the responders did emphasize the need for the development of universal guidelines and SOPs that would facilitate the consistent adoption across a technology or application and would incentivize investigators to comply with such published R&R guidelines (See Figure 2).
 
 About 40% proposed that funding mechanisms should be available to cores from either discretionary institutional funds or federal agencies to promote and support R&R initiatives. It is clear that survey respondents believe that it is important to identify funding mechanisms to help core service providers become more visible as scientific experts, partners, and educators with the ability to directly influence research quality. 
 
