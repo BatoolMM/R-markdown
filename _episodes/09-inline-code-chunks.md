@@ -288,12 +288,14 @@ It'll look like the following:
 {: .callout}
 
 
-> ## CHALLENGE 9.5 (optional) global & individual code chunk options:
-
-How would the following code chunk be displayed when we knit:
-
-xxxxxxx
-
-...considering the global chunk setting’s were was as listed: 
-
-xxxxxxxxxxxxxxxxx,
+> ## CHALLENGE 9.5 (optional) global & individual code chunk options  
+>
+> How would appear in our html document if we knit a code chunk with the following options?  
+> `{r challenge-5, warning = TRUE, echo = TRUE}`
+>
+> ...considering the global chunk setting’s were as listed: 
+> `knitr::opts_chunk$set(echo = FALSE, include = FALSE)`  
+>> ## SOLUTION  
+>> In this case, the global settings are set so neither the code nor the output will display. However, the individual chunk reverses the echo setting so the code will display, and it also indicates that any warnings the code renders should output too. The outputs of the code would still not be displayed (include = FALSE) The hypothetical situation for this configuration may be for debugging while writing the rmd document.   
+> {: .solution}  
+{: .challenge}
