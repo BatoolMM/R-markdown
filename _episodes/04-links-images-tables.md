@@ -1,5 +1,5 @@
 ---
-title: "R Markdown Syntax: Inserting Hyperlinks, Images & Tables"
+title: "R Markdown Syntax: Hyperlinks, Images & Tables"
 teaching: 30
 exercises: 10
 questions:
