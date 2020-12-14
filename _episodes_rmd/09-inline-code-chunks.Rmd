@@ -263,24 +263,24 @@ table1 <- read_csv("../data/table.csv")
 It'll look like the following:
 ![load libraries & data](../fig/09-load-libraries-data.PNG)
 
-> ## CHALLENGE 9.4 - Change the Fig 3 image to code
+> ## CHALLENGE 9.4 - Change the Fig 3 image to code  
 >
-> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder: 
+> Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder:   
 >
-> 1) load the data for the figure in the designated code chunk at the top of our file. 
-> 2) Make a new code chunk where you want to replace the image for Figure 3
-> 3) Give it the name: fig-3
-> 4) Don't worry about options! we already set those in the global options (`setup`)
+> 1) load the data for the figure in the designated code chunk at the top of our file.   <br>
+> 2) Make a new code chunk where you want to replace the image for Figure 3.  <br>
+> 3) Give it the name: fig-3  <br>
+> 4) Don't worry about options! we already set those in the global options.  <br>
 >
->> ## SOLUTION
->> 1. add to code chunk `load-data-libraries`:
->> ![load data3 dataframe](../fig/09-load-data3.PNG)
+>> ## SOLUTION  
+>> 1. from the `plot-figure-3.r` r script, copy and paste the code to read `figure-3-data.csv` to `load-data-libraries`:    
+>> ![load data3 dataframe](../fig/09-load-data3.PNG)  
 >> 
->> 2. create a new code chunk at the spot in the paper we want figure 3 and add the following code:
->> ![add code for fig 3](../fig/09-code-fig3.PNG)
->> Make sure the code chunk is named `fig-3`
-> {: .solution}
-{: .challenge}
+>> 2. then, create a new code chunk at the spot in the paper we want figure 3 and paste in the rest of the code from `plot-figure-3.r`:    
+>> ![add code for fig 3](../fig/09-code-fig3.PNG)  
+>> Make sure the code chunk is named `fig-3`  
+> {: .solution}  
+{: .challenge}  
 
 
 > ## Tip: Overiding global options  
