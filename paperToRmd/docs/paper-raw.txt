@@ -6,7 +6,7 @@ Reproducible research practices include rigorously controlled and documented exp
 
 A recent survey conducted by [citation example 3] reported that 90% of participants identified “more robust experimental design” as one of several key improvements needed for the conduct of better science, in addition to “better statistics” and “better mentorship”. More recently, [citation exercise 3] published a related paper, the survey data for which can be found on Figshare.
 
-A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion (TOP) guidelines created by the Center for Open Science to improve research planning and reporting [citation exercise 1], which was supported by over 5000 journals and research organizations. 
+A manifesto for reproducible science made several recommendations and called attention to initiatives such as the Transparency and Openness Promotion (TOP) guidelines created by the Center for Open Science to improve research planning and reporting [citation exercise 1], which was supported by over 5000 journals and research organization.
 
 TOP provides principles for how transparency and usability. On June 9, 2015, the U.S. National Institutes of Health (NIH) published a notice that identified four areas for improvement that are now required to be addressed by scientists in grant applications, as follows: 
 
@@ -26,7 +26,6 @@ The CCoRRe committee developed an 18-question online survey and shared it using 
 Data Analysis
 
 The survey contained both multiple-choice and open-ended text questions. The open-ended text questions were categorized and coded following an inductive coding approach with at least two independent coders. Using the sampling error formula:
-[add LaTeX formula here]
 
 We compute that at a 95% confidence level (i.e., Z=1.96), with base probability p=1/2 and sample size n=243, the margin of error is ± 3
 
