@@ -141,11 +141,6 @@ This will output as:
 {: .checklist}
 
 
-> ## Time to Knit!
-> Check how the images are aligned now. 
-{: .checklist}
-
-
 ## Inserting Tables
 
 We can also use markdown syntax to insert a formatted table into our document. The basic syntax to insert a table looks like this:
