@@ -1,6 +1,6 @@
 ---
 title: "R Markdown Syntax: Hyperlinks, Images & Tables"
-teaching: 30
+teaching: 10
 exercises: 10
 questions:
 - How do I create hyperlinks in R Markdown?
