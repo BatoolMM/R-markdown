@@ -1,6 +1,6 @@
 ---
 title: "R Markdown Syntax: Hyperlinks, Images & Tables"
-teaching: 30
+teaching: 10
 exercises: 10
 questions:
 - How do I create hyperlinks in R Markdown?
@@ -138,11 +138,6 @@ This will output as:
 
 > ## Time to Knit!
 > Check how your images look now. 
-{: .checklist}
-
-
-> ## Time to Knit!
-> Check how the images are aligned now. 
 {: .checklist}
 
 

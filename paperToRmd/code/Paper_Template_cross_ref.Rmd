@@ -1,7 +1,7 @@
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
 author: "Add Your Name Here"
-date: "December 15, 2020"
+date: "December 16, 2020"
 output:
   bookdown::html_document2:
     number_sections: true
@@ -115,7 +115,7 @@ kable(table1, caption="Major challenges to rigor observed in shared resources")
 ```
 
 <br>
-Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 3.22).
+Just over 70% of respondents noted that their clients do not routinely request specific information (documentation or practice statements) related to the procedures used by the cores to foster rigorous and reproducible research (Fig. 3.2).
 
 ```{r fig-2, fig.cap="Lack of requests for rigor and reproducibility documentation by users of shared resources."}
 #add Figure 2 to a code chunk to control alignment and size
