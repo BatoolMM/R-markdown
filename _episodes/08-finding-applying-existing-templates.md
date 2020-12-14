@@ -1,6 +1,6 @@
 ---
 title: "Finding & Applying Existing Journal Templates"
-teaching: 5
+teaching: 10
 exercises: 0
 questions:
 - What is the advantage of using the rtciles package?
