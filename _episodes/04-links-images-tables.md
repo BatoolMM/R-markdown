@@ -88,7 +88,7 @@ The markdown should look like:
 ```
 
 
-**Note:** A preview of your image should pop up automatically in RStudio if you have the correct relative path. 
+**Note:** A preview of your image should pop up automatically in RStudio if you have the correct relative path. But this will be only true if you type out the code, not if you copy and paste it.
 
 This will output as:
 
