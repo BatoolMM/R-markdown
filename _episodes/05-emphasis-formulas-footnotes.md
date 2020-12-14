@@ -1,28 +1,28 @@
 ---
-title: "R Markdown Syntax: Emphasis, Equations & Formulas"
+title: "R Markdown Syntax: Emphasis, Formulas & Footnotes"
 teaching: 30
 exercises: 10
 questions:
 - How do I emphasize text in an R Markdown document?
-- How to start an R Markdown document in Rstudio?
-- How is an R Markdown document configured?
+- How do I add LaTex formulas?
+- How can I make superscript text?
+- How can we add footnotes?
 
 objectives:
 - Learn how to apply emphases to words or phrases in R Markdown
 - Understand the power of LaTeX (Lay-techhh) for mathematics formatting
 - Learn how to add equations and formulas in R Markdown 
+- Learn how to add footnotes in R Markdown
 
 keypoints:
-- You can add _*italicized*_ and _*bolded*_ textsin R Markdown
+- You can add _*italicized*_ and _*bolded*_ texts in R Markdown
 - There is an extensive LaTeX guideline for mathematics formatting
+- You can add create superscript text & linked footnotes 
 source: Rmd
 ---
 
 
-```{r, include=FALSE}
-source("../bin/chunk-options.R")
-knitr_fig_path("04-adding-emphasis-symbols-titles")
-```
+
 
 ## Adding Emphasis
 
@@ -117,3 +117,31 @@ For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly. Notice the 
 To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems. Here's an example: [https://www.educba.com/confidence-interval-formula/](https://www.educba.com/confidence-interval-formula/)
 
 RStudio's facility to bring in LaTeX for math formatting makes it a wonderful authoring environment for math-rich papers that are not computational and have nothing to do with R at all.
+
+## Adding Footnotes
+
+We can add footnotes to our paper using the `^`. Similar to adding emphasis, putting carrot symbols around your text will print the output as a superscript. 
+
+`^superscript^` will give output: <sup>superscript<sup>
+
+`footnote^1^` will give output: footnote<sup>1<sup>
+
+In our paper, we will create a footnote in the introduction when we reference a notice from the U.S. National Institutes of Health (NIH). We will add a footnote after the word “notice” by adding `^1^` right after the word. 
+
+`notice^1^`
+
+> ## Challenge 6.1: Creating footnote 
+>
+> Let's add a footnote to our paper. Right before the References section, add a superscript to distinguish the footnote and match it with the inline footnote. The text to the footnote will be:
+>Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf`
+>
+>> ## Solution
+> ``^1^Through these four elements, the NIH intends to...``
+>> {: .output}
+> {: .solution}
+{: .challenge}
+
+
+> ## Time to Knit!
+> Take a look at the footnote you have just created.
+{: .checklist}

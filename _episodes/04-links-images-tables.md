@@ -1,29 +1,68 @@
 ---
-title: "R Markdown Syntax: Inserting Images & Tables"
+title: "R Markdown Syntax: Inserting Hyperlinks, Images & Tables"
 teaching: 30
 exercises: 10
 questions:
+- How do I create hyperlinks in R Markdown?
 - How do I insert images or tables into R Markdown?
 - How do I resize images?
 
 objectives:
+- Learn how to add hyperlinks to an R Markdown document
 - Find out how to insert images into an R Markdown document 
-- Assimilate how to add tables into an  R Markdown document
+- Learn how to add tables into an  R Markdown document
 
 keypoints:
+- R Markdown syntax for hyperlinks
+- R Markdown syntax for images
 - You can resize images with R Markdown
 - You can easily create basic tables with R Markdown  
 source: Rmd
 ---
-```{r, include=FALSE}
-source("../bin/chunk-options.R")
-knitr_fig_path("05-inserting-images-tables")
-```
+
+
+## Creating Hyperlinks
+
+Hyperlinks are created using the syntax `[text](link)` with no spaces in between the parentheses and the square brackets.
+
+For example:
+
+`[RStudio](https://www.rstudio.com)`
+
+
+[RStudio](https://www.rstudio.com)
+
+Now, let’s apply it to the template paper. Find where the “Center of Open Science” is mentioned and link the institution to their official website:
+
+`[Center for Open Science](https://www.cos.io/)` 
+
+> ## Time to Knit!
+> Check if you hyperlinks are working properly. 
+{: .checklist}
+
+> ## Challenge 6.2: Adding links 
+>
+> Let's add links to our paper. Now it is your turn! We want to create two hyperlinks. One will be to the survey instrument platform Survey Monkey (https://www.surveymonkey.com/). The second will be to link the existing address that we added earlier in the footnote to the online pdf file using the same website. 
+>> ## Solution
+> ``[SurveyMonkey](https://surveymonkey.com)``
+> ``([https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf_](https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf))``
+>> {: .output}
+> {: .solution}
+{: .challenge}
+
+
+> ## Tip: 
+>You can use html directly in your .rmd document to add a link that will open in a new tab, such as `<a href="http://www.ucsb.edu/" >target="_blank"> UCSB</a>`. This syntax requires pandoc and link_attributes extension, that is by default included in R Markdown.
+>
+{: .callout}
+
 
 ## Inserting Images
 
 You can add images to an R Markdown report using markdown syntax as follows:
 ```![Image Name](path-to-image-here)```
+
+You'll notice this format is exactly the same as hyperlinks, but with the addition of an `!` before the brackets and parentheses.
 
 However, when you knit the report, RStudio will only be able to find your image if you have placed it in the right place - RELATIVE to your .Rmd file. This is where good file management becomes extremely important. We have placed all our images in the `figs` folder in the `R-markdown` project folder. In that case, make sure your path starts with `../figs/` along with the correct image name and file extension. Also the closing bracket and the opening parentheses should be close to each other, without any spaces in between.
 
