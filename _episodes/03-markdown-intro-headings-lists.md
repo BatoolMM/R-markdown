@@ -219,7 +219,7 @@ Now you know markdown
 {: .callout}
 
 
-> ## CHALLENGE 3.1 - Adding Horizontal Lines (optional)  
+> ## CHALLENGE 3.2 - Adding Horizontal Lines (optional)  
 > Add horizontal lines after each section header.
 >
 >
