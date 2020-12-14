@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with R Markdown"
-teaching: 30
+teaching: 15
 exercises: 10
 questions:
 - How to find your way around RStudio?
