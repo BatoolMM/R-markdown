@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Syntax: Citations & Bibliography"
-teaching: 30
-exercises: 15
+teaching: 20
+exercises: 10
 questions:
 - How to include citations?
 - How to create a list of references? 
