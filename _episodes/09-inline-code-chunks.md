@@ -48,6 +48,10 @@ We're going to go ahead and change the LaTex code we used to input the error mar
 
 Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ending hash mark (`) r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
 
+> ## Time to Knit!
+> See that inline code evaluates to calculate the error margin of +/- 3%. 
+{: .checklist}
+
 Where else can we add inline code? We can replace observation counts!
 
 i.e. "There are `#r nrow(my_data)` individuals who completed the survey"
@@ -68,6 +72,11 @@ We will add the inline code to the sentence in question:
 ```
 "a total of 242 individuals from 21 countries completed this section."
 ```
+
+> ## Time to Knit!
+> See that the r inline code evaluates in the sentence.
+{: .checklist}
+
 Oh! Wow we were off on out total count by one anyway, good thing we added this inline code!
 
 > ## Tip: Inline code cannot span lines  
@@ -94,6 +103,10 @@ Oh! Wow we were off on out total count by one anyway, good thing we added this i
 >>
 > {: .solution}  
 {: .challenge}
+
+> ## Time to Knit!
+> Let's make sure everything looks right for our inline code
+{: .checklist}
 
 ## Inserting Code Chunks
 Code chunks are better when you need to do something more sophisticated with your code, such as building plots or tables. There is also syntax which allows you to change how that code gets rendered. We’ll learn more about that as we walk through the “anatomy” of a code chunk.  
@@ -160,13 +173,15 @@ Run all chunks	| Ctrl+Alt+R	| Command+Option+R
 Go to next chunk/title	| Ctrl+PgDown	| Command+PgDown
 Go to previous chunk/title	| Ctrl+PgUp |	Command+PgUp
 
+> ## Time to Knit!
+> Use one of the above options to run your code. 
+{: .checklist}
 
 ### Name your code chunks
 
 While not necessary for running your code, better practice is to give a name to each code chunk:
 
 `{r chunk-name}`
-
 
 Some things to keep in mind
 - The chunk name is the only value other than r in the code chunk options that doesn’t require a tag (i.e. echo=FALSE)
@@ -175,7 +190,6 @@ Some things to keep in mind
 We’ll see in a bit where this code chunk label comes in handy. But, for now let's go back and give our first code chunk a name:
 
 `{r fig-1}`
-
 
 > ## Tip: Don't use spaces, periods or underscores in code chunk labels
 >Try to avoid spaces, periods (.), and underscores (_) in chunk labels and paths. If you need separators, you are recommended to use hyphens (-) instead. For example, setup-options is a good label, whereas setup.options and chunk 1 are bad; fig.path = 'figures/mcmc-' is a good path for figure output, and fig.path = 'markov chain/monte carlo' is bad. See more at: https://yihui.org/knitr/options/
@@ -224,6 +238,10 @@ the option always follows the code chunk label (don't forget to add a `,` after 
 > {: .solution}
 {: .challenge}
 
+> ## Time to Knit!
+> Make sure the options you added to your code chunk seem right.
+{: .checklist}
+
 ## Global Code Chunk Options:
 With our first plot we set the options separately. However, we may end up with quite a few code chunks in our paper and it might be a lot of work to keep track of what options we're using throughout the paper. We can automate setting options by adding a special code chunk at the beginning of the document. Then, each code chunk we add will refer to the options in this special when it runs. 
 
@@ -237,6 +255,9 @@ Add to your file (with hashes):
 
 Alright! now let's go back and remove the options we set in the individual code chunks & since we've set the global options in the document instead. 
 
+> ## Time to Knit!
+> Again, let's make sure our global options look right after knitting.
+{: .checklist}
 
 > ## Tip: Yaml chunk options
 > We can also tweak some settings in our yaml which changes how code chunks are displayed. We're not going to get into this in the workshop, but many of the same options you set in your global code chunk settings are also configurable in the yaml. 
@@ -263,6 +284,10 @@ table1 <- read_csv("../data/table.csv")
 It'll look like the following:
 ![load libraries & data](../fig/09-load-libraries-data.PNG)
 
+> ## Time to Knit!
+> Make sure our code runs for Figure 1 now that we moved it around.
+{: .checklist}
+
 > ## CHALLENGE 9.4 - Change the Fig 3 image to code  
 >
 > Now, let's add the code to regenerate Figure 3 from the r script `plot-figure-3.r` in the `code` folder:   
@@ -282,6 +307,9 @@ It'll look like the following:
 > {: .solution}  
 {: .challenge}  
 
+> ## Time to Knit!
+> Make sure the code runs for Figure 3 
+{: .checklist}
 
 > ## Tip: Overiding global options  
 > What if you want most of your code chunks to render with the same options (i.e. echo = FALSE), but you just have one or two chunks that you want to tweak the options on (i.e. display code with echo = TRUE)? Good news! The global options can be overwritten on a case by case basis in each individual code chunk.
