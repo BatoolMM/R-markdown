@@ -1,6 +1,6 @@
 ---
 title: "R Markdown Syntax: Emphasis, Formulas & Footnotes"
-teaching: 30
+teaching: 10
 exercises: 10
 questions:
 - How do I emphasize text in an R Markdown document?
