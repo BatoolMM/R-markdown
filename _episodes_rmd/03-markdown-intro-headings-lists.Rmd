@@ -1,8 +1,8 @@
 ---
 title: "R Markdown Syntax: Headings & Lists"
-teaching: 
+teaching: 15 min
 exercises: 15 min
-questions: 10 min
+questions:
 - How does markdown in R compare to markdown in other programs?
 - How to create headings and sub-headings in R Markdown?
 - How to create bulleted and numbered lists in R Markdown?
