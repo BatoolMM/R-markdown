@@ -34,6 +34,10 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
   a) load "knitr" & table1 data in first code chunk
   b) delete markdown table 
   c) paste in code to new code chunk (minus the caption)
+  
+> ## Time to Knit!
+> Check to see if our table generated properly  
+{: .checklist}
 
 > ## Note: Other table packages
 > Include:
@@ -56,6 +60,9 @@ To add captions for Figure 1 and 3 we're going to go back to our favorite code c
 ```
 FIXME add code
 ```
+> ## Time to Knit!
+> Check to see if the caption for Figure 1 appeared    
+{: .checklist}
 
 > ## CHALLENGE 10.1 - add a caption for Figure 3  
 > Add the caption:  
@@ -67,24 +74,31 @@ FIXME add code
 >{: .solution}  
 {: .challenge}  
 
+> ## Time to Knit!
+> Check to see if caption for Figure 3 appeared
+{: .checklist}
 
 ### Add captions to code-generated tables
 
-Ok, now let's do the table. For the table, you can't add the same `fig.cap = ` to the chunk options (of course you can't), but the `kable()` function has an argument called `caption`. So, we can go back to our kable function and add this:
-
-First, cut the orignial table caption from it's spot in the paper
-Second, add to the kable function `caption = ` and paste the caption in between `"`s
+Ok, now let's do the table. For the table, you use the same `fig.cap = ` to the chunk options (of course you can't), but the `kable()` function has an argument called `caption`. So, we can go back to our kable function and add this:
 
 ```
  `caption="Table 1. Major challenges to rigor observed in shared resources"`
 ```
+
+First, cut the orignial table caption from it's spot in the paper
+Second, add to the kable function `caption = ` and paste the caption in between `"`s
+
+
 
 Should output as so:
 
     TABLE 1 - Major challenges to rigor observed in shared resources
     
 
-  
+> ## Time to Knit!
+> Check to see if the caption for the table appeared.
+{: .checklist} 
 
 ## Globally align & size plots/figures
 
@@ -94,21 +108,30 @@ We added sizes to our images individually in a previous episode. However, instea
 
 ### Automatically size figures & images
 
+We can size with a number of inches,percentage of the original image size, or pixels (in some cases). The default for inches is 7 both in height and width for the knitr package (it's 5in height and 7in width for rmarkdown). 
 
-fig.width vs out.width
-fig.heigh vs. out.height
+There is no default for perentages because the default is in inches. When using percentages it's important to note that % refers to the percent of the HTML container. For example, if the block of text that the image is in is 1000px wide then the image will be 200px using 20%.
 
-fig.width & height ONLY apply to R-generated figures. out.width & height can be used with any type of graphic.
+#### fig.width / fig.height VS. out.width / out.height
 
-We want to be inclusive of the images in our Rmd file so we will use out.width & out.height.
+**fig.width & height** ONLY apply to R-generated figures defined within a code chunk. Sizes can be defined in inches & percentage
 
-add (before or after) the options, to the global code chunk:
-We previously sized the images to 50% was a bit small anyway, so let's try 60% instead
+**out.width & height** can be applied to any type of graphic defined within a code chunk. Sizes can be defined in inches, percentage & number of pixels.
+
+We want to be inclusive of the images in our Rmd file so we will use out.width & out.height which offers more flexibility. Also, we previously sized the images to 50%, but that was a bit small, so let's try 60% instead.
+
+Add to (before or after) the other options, in the global code chunk:
+
+
 ```
-knitr::opts_chunk$set(fig.align = "center", out.width="60%", out.height="60%", echo = FALSE)
+knitr::opts_chunk$set(out.width="60%", out.height="60%", echo = FALSE)
 ```
 
-oh no, Fig 2 isn't aligning. The settings ONLY apply to code chunks, however our Figure 2 is still just a markdown-styled image. 
+> ## Time to Knit!
+> See how our images re-sized. 
+{: .checklist}
+
+Oh no, Fig 2 isn't aligning! Unfortunately, the settings ONLY apply to code chunks, but our Figure 2 is still just a markdown-styled image. 
 
 We will add it to a code chunk instead:
 
@@ -123,7 +146,23 @@ include_graphics("../figs/fig2_paper.jpg")
 {: .language-r}
 ```
 
+> ## Time to Knit!
+> Check to see if all images re-sized   
+{: .checklist}
+
 ### Automatically align code chunk outputs
+
+Add to the setup code chunk:
+
+`fig.align = "center"`
+
+so the whole chunk will look like so:
+```
+knitr::opts_chunk$set(fig.align = "center", out.width="60%", out.height="60%", echo = FALSE, message = FALSE, warning = FALSE)
+```
+> ## Time to Knit!
+> Check to see if all images and figures were aligned to the center    
+{: .checklist}
 
 ## Cross-referencing (optional)
 
@@ -164,5 +203,7 @@ See figure 2 shortly after
 
 *Note adding crossing referencing re-names the figures, so should take the figure numbering out.
 
-
+> ## Time to Knit!
+> Check to see if the cross reference links appeared
+{: .checklist}
 
