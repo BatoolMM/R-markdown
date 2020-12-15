@@ -145,22 +145,22 @@ Now we can go to the next section and add a main heading and a subheading. Find 
 {: .callout}
 
 > ## CHALLENGE 3.1 - Applying Headings and Subheadings 
-> Insert headings and subheadings throughout the rest of the paper.  
-> Make these lines into headings so our paper is split into 5 main sections: 
-> * Introduction
-> * Materials and Methods
-> * Results and Discussion
-> * Conclusion
-> * References 
+> Insert headings and subheadings throughout the rest of the paper. 
+> 
+> Make these lines into headings so our paper is split into 5 main sections:  
+> * Introduction (already done)  
+> * Materials and Methods (already done)  
+> * Results and Discussion  
+> * Conclusion  
+> * References   
 >
->
-> Since we already put the subheadings into the Materials and Methods section, we just need to add subheadings to the Results and Discussion Section. 
-> Make these lines into subheadings:
+> Make these lines into subheadings:  
+> * Survey Overview (already done)  
+> * Data Analysis (already done)  
 > * Survey Demographics  
 > * Current Landscape for Rigor and Transparency in Represented Shared Resources  
 > * Core Implementation of Research Best Practices  
-> * Strategies for Improving R&R in Core Operation
->
+> * Strategies for Improving R&R in Core Operation  
 >
 > Think carefully about which heading levels you should use for consistency throughout your paper.
 > *Use the search function in R Markdown `ctrl-f` or `cmd-f` to find these lines in the document quickly.
