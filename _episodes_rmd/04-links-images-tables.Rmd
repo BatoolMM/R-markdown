@@ -43,7 +43,7 @@ Now, let’s apply it to the template paper. Find where the “Center of Open Sc
 > Check if you hyperlinks are working properly. 
 {: .checklist}
 
-> ## Challenge 6.2: Adding links 
+> ## Challenge 4.1: Adding links 
 >
 > Let's add links to our paper. Now it is your turn! We want to create two hyperlinks. One will be to the survey instrument platform Survey Monkey (https://www.surveymonkey.com/). The second will be to link the existing address that we added earlier in the footnote to the online pdf file using the same website. 
 >> ## Solution
@@ -116,7 +116,7 @@ This will output as:
 </figure>
 
 
->## CHALLENGE 5.1 - Inserting Images
+>## CHALLENGE 4.2 - Inserting Images
 >
 > Locate the places for Figures 2 and 3 and add them to the document using the captions below:
 >
@@ -207,7 +207,7 @@ Start with the column headers “Category” and “N” in bold. Then add the s
 {: .source}
 
 
-> ## CHALLENGE 5.2 - Complete the Table
+> ## CHALLENGE 4.3 - Complete the Table
 >
 > Finish Table 1 by adding the rest of the rows.
 >
