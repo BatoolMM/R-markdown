@@ -40,7 +40,7 @@ Make text bold with double asterisks or double underscores.
 
 Let's try that italics applying that to two organization names that appear in the text. First let's put the `Association of Biomolecular Resource Facilities` in italic. `_Association of Biomolecular Resource Facilities_` or `*Association of Biomolecular Resource Facilities*` will render _Association of Biomolecular Resource Facilities_. Now try the same with the `Committee on Core Rigor and Reproducibility`. 
 
-> ## CHALLENGE 4.1 - Applying Bold Emphasis
+> ## CHALLENGE 5.1 - Applying Bold Emphasis
 > For testing out making the text bold, let's search for the mention to the Transparency and Openness Promotion in the paper and make them bold.
 >> ## SOLUTION
 >> Either `__Transparency and Openness Promotion__` or `**Transparency and Openness Promotion**` will render **Transparency and Openness Promotion**
@@ -96,7 +96,7 @@ But, know that the LaTeX math language is very intuitive once you get a feel for
 
 For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly. Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
 
-> ## Challenge 4.2 - Adding Formulas  
+> ## Challenge 5.2 - Adding Formulas  
 >
 > Let’s add the following text and formula to our data analysis section where the paper talks about confidence level:
 >
@@ -130,7 +130,7 @@ In our paper, we will create a footnote in the introduction when we reference a 
 
 `notice^1^`
 
-> ## Challenge 6.1: Creating footnote 
+> ## Challenge 5.3: Creating Footnotes 
 >
 > Let's add a footnote to our paper. Right before the References section, add a superscript to distinguish the footnote and match it with the inline footnote. The text to the footnote will be:
 >Through these four elements, the NIH intends to "enhance the reproducibility of research findings through increased scientific rigor and transparency" https://ori.hhs.gov/images/ddblock/ORI%20Data%20Graphs%202006-2015.pdf`
