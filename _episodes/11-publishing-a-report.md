@@ -19,9 +19,9 @@ source: Rmd
 
 ## Changing the behavior of the Knit Button
 
-Way back in episode 2 we said we would show you later on how to change the behavior of the knit button so you could conform to best practices for organizing your R project. We would prefer to save the output to the `results` folder instead of the `code` folder because it's best practice to save your outputs (whether knit rmd documents, the outputs of r scripts, or cleaned data) in a folder separate from you 'raw' code and data. That way for instance, you can avoid deleting or saving over your raw data and you can save different iterations of your outputs without worry. 
+In episode 2 we said we would show you later on how to change the behavior of the knit button so you could conform to best practices for organizing your R project. We would prefer to save the output to the `results` folder instead of the `code` folder because it's best practice to save your outputs (whether knit rmd documents, the outputs of r scripts, or cleaned data) in a folder separate from your 'raw' code and data. That way for instance, you can avoid deleting or saving over your raw data and you can save different iterations of your outputs without worry. 
 
-Unfortunately we can't do much to change the knit button with just the options in R Studio (we have the choice to change the output type and a few other things). We CAN however add code to the yaml which changes the behavior of the knit button. So everytime you hit 'knit', R Studio uses your customized directives to render the code. 
+R Studio provides options to set the output type and a few other things but does not let the user select a destination folder for knitr output.  But users CAN however add code to the yaml which allows finer control of the behavior of the knit button. Once you've set directives in the header YAML section of your R-markdown file everytime you hit 'knit', R Studio follows your customized directives as it processes the code to render your output. 
 
 So, let's copy and paste the the following to our yaml header (at the end is fine after the bibliography and/or csl section):
 
