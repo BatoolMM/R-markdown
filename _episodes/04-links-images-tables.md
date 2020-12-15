@@ -78,7 +78,7 @@ However, when you knit the report, RStudio will only be able to find your image 
 
 In our paper template there are three images (two pie charts) and one bar chart we want to include. Those are named fig1_paper.jpg, fig2_paper.jpg and fig3_paper.jpg.
 
-To start let’s identify where (Figure 1) is mentioned in the paper. We will insert the image right after that. This image will have the caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." (that we will be pasting in the chat). We need that caption to render the image. 
+To start let’s identify where `Fig. 1` is mentioned in the paper. We will insert the image right after that. This image will have the caption labeled "FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility." (that we will be pasting in the chat). We need that caption to render the image. 
   
 The markdown should look like:
 
@@ -114,7 +114,7 @@ This will output as:
 
 >## CHALLENGE 4.2 - Inserting Images
 >
-> Locate the places for Figures 2 and 3 and add them to the document using the captions below:
+> Locate the places for Fig. 2 and Fig. 3 and add them to the document using the captions below:
 >
 > FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources
 >
