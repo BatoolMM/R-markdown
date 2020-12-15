@@ -94,9 +94,11 @@ The canonical LaTeX reference, written by the author (hardback, but viewable onl
 
 But, know that the LaTeX math language is very intuitive once you get a feel for its style.  Put your math head on, not your programming head.  If you want to say that a equals b times c, in a programming language you might write something like `a = b*c`, but in LaTeX you would say `$ a = bc $`. Spaces generally don’t matter in LaTeX; it "understands" your formula and uses rules to determine how to display things.
 
+For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly. Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
+
 > ## Challenge 4.2 - Adding Formulas  
 >
-> Let’s add the following text and formula to our data analysis section:
+> Let’s add the following text and formula to our data analysis section where the paper talks about confidence level:
 >
 > Using the sampling error formula
 >
@@ -111,8 +113,6 @@ But, know that the LaTeX math language is very intuitive once you get a feel for
 {: .checklist}
 
 Double click on the equation. Notice how RStudio gives you a preview of it. Nice! The formula here uses curly braces for grouping (kind of like invisible parentheses). `\over` gives a fraction with a big horizontal line. Try replacing that with just `/` for an alternative rendering.
-
-For inline formulas, replace `Z=1.96` with `$Z=1.96$` and similarly. Notice the different formatting, and notice again RStudio’s preview.  In LaTeX, you would say `$ \pm 3 \% $` for the +/-3%.  Later we’ll see how to have R compute this value inline.
 
 To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems. Here's an example: [https://www.educba.com/confidence-interval-formula/](https://www.educba.com/confidence-interval-formula/)
 
