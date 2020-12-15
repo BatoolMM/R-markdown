@@ -118,7 +118,7 @@ Double click on the equation. Notice how RStudio gives you a preview of it. Nice
 {: .challenge}
 
 > ## Time to Knit!
-> Check how the formula just rendered in your paper. 
+> Check how the new formulas just rendered in your paper. 
 {: .checklist}
 
 To appreciate the beauty of LaTeX's typesetting, just look at how formulas are typeset by other systems. Here's an example: [https://www.educba.com/confidence-interval-formula/](https://www.educba.com/confidence-interval-formula/)
