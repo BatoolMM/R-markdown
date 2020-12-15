@@ -1,7 +1,7 @@
 ---
 title: 'Knitr Syntax: Inline Code & Code Chunks'
-teaching: 45
-exercises: 10
+teaching: 40
+exercises: 15
 questions:
 - What is "Knitr"?
 - When would I want to add inline code?
