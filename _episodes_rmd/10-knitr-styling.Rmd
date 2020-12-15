@@ -25,7 +25,8 @@ source: Rmd
 source("../bin/chunk-options.R")
 knitr_fig_path("10-")
 ```
-## Create better tables
+
+## Create better tables in R Markdown
 
 Our markdown table is formatted weirdly. Unfortunately, it isn't possible to style tables created with basic markdown syntax. In order to create a table that is stylable, we need to save it as a dataframe and use a package function to style it. There are MANY packages that allow you to create tables in Rmd. See list (FIXME add list)
 
@@ -45,13 +46,48 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 
 ## Add captions to code-generated tables & plots
 
-A little different between the two. For the table, you can't add fig.cap to the chunk options, BUT the kable function lets you define a caption.
-2) add fig.cap = 
+Also, we learned how to add captions to images earlier on, but now, how do we add captions to the code-generated plots and the new table we just added? It is a little different between tables and code-generated plots/images.
 
-  d) cut orignial table caption and add to caption option
-    i.TABLE 1 - Major challenges to rigor observed in shared resources
+### Add captions to code-generated plots, figures & images
+
+To add captions for Figure 1 and 3 we're going to go back to our favorite code chunk options. Anytime after defining the code chunk name we can add the option: `fig.cap = `. Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `""`. 
+
+1) cut the caption from where it was. Or do we need to supply this again?? FIXME
+2) type in fig.cap = ""
+3) paste or type in the caption
+
+```
+FIXME add code
+```
+
+> ## CHALLENGE 10.1 - add a caption for Figure 3  
+> Add the caption:  
+> `FIGURE 3 - `
+>
+>> ## SOLUTION  
+>> FIXME add code here  
+>>
+>{: .solution}  
+{: .challenge}  
+
+
+### Add captions to code-generated tables
+
+Ok, now let's do the table. For the table, you can't add the same `fig.cap = ` to the chunk options (of course you can't), but the `kable()` function has an argument called `caption`. So, we can go back to our kable function and add this:
+
+First, cut the orignial table caption from it's spot in the paper
+Second, add to the kable function `caption = ` and paste the caption in between `"`s
+
+```
+ `caption="Table 1. Major challenges to rigor observed in shared resources"`
+```
+
+Should output as so:
+
+    TABLE 1 - Major challenges to rigor observed in shared resources
     
-    `caption="Table 1. Major challenges to rigor observed in shared resources"`
+
+  
 
 ## Globally align & size plots/figures
 
@@ -107,11 +143,14 @@ A labeled code chunk: This provides the identifier for referencing the figure ge
 After these conditions are met, we can make cross-references within the text using the syntax \@ref(type:label), where label is the chunk label and type is the environment being referenced (e.g. tab, fig, or eqn). An example is provided below:
 
 add to yaml
-
+```
+...
 ouput:
   bookdown::html_document2:
+...
+```
   
-the rest the same.
+the rest stays the same.
 
 ```{r}
 library(bookdown)
@@ -123,3 +162,6 @@ See table 1 in strategies section
 See figure 2 shortly after
 
 *Note adding crossing referencing re-names the figures, so should take the figure numbering out.
+
+
+
