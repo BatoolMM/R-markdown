@@ -68,13 +68,7 @@ However, when you knit the report, RStudio will only be able to find your image 
 > ## Tip: Paths to Files
 >The specification of the list of folders to travel and the file name is called a path. A path that starts at the root folder of the computer is called an **absolute path**. A **relative path** starts at a given folder and provides the folders and file starting from that folder. Using relative paths will make a number of things easier. A path is made up of folder names. If the path is to a file, then the path will ends with a file name. The folders and files of a path are separated by a directory separator. There are a few special directory names. A single period `.` indicates the current working directory. Two periods `..` indicates moving up a directory. 
 >
-{: .callout}
-
-> ## Tip: Path issues?
-> if you're still having path issues, you should check your working directory.
-> `getwd()` in the console. If you're working directory isn't 'paperToRmd' (your root project folder where your .Rproj file lives), use `setwd()` to change it to that one.  
-{: .callout}
-
+{: .callout}  
 
 In our paper template there are three images (two pie charts) and one bar chart we want to include. Those are named fig1_paper.jpg, fig2_paper.jpg and fig3_paper.jpg.
 
