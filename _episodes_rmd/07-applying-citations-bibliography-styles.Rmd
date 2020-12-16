@@ -79,7 +79,7 @@ To do so, follow the steps below:
 
 ![Fig. 7.1 - Bibtext from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
-* 2) Click on the link to check for other existing versions. The first result does include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
+* 2) Click on the link to check for other existing versions. The first result does not include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
 
 ![Fig. 7.2 - Bibtext from Google Scholar (2)](../fig/07-gs-bibtex2.png)
 
