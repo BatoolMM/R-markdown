@@ -185,13 +185,15 @@ bibliography: "../docs/bibliography.bibtex"
 
 ```
 
-The connection between the two files is all set to get us started. For now, we won't need to specify which format we would like to use. By default, Pandoc will use a Chicago author-date format for citations and references and we will stick with that for now, but later we will learn how to change citation styles.
+Note again the importance of the relative calling the right folder. The connection between the two files is all set to get us started. For now, we won't need to specify which format we would like to use. 
+
+By default, Pandoc will use a Chicago author-date format for citations and references and we will stick with that for now, but later we will learn how to change citation styles.
 
 ### Adding Citations
 
 Each item in the bibliography.bibtex file starts with a @ entry which specifies the type of document followed by a curly opening bracket which specifies the key that should be included to create in-text citations.
 
-It is important to use this exact key to render correct mentions in the text. Let's see how that should be included in the R Markdown syntax.
+We will call the citation key using the @. It is important to use this exact key in the .bibtex to render correct mentions in the text. Let's see how that should be included in the R Markdown syntax for different types of citations.
 
 #### Single citation
 
