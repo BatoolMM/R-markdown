@@ -35,6 +35,8 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 >
 > ```
 > ```{r load-data-libraries}   
+> ## ADD to existing libraries & data  
+>  
 > #load knitr for kable table
 > library(knitr)
 >
@@ -60,6 +62,10 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 >
 {: .source}
 
+> ## Time to Knit!
+> Check to see if our table generated properly  
+{: .checklist}
+
 your code chunk should output as so:
 
 
@@ -74,11 +80,6 @@ your code chunk should output as so:
 |Inadequate documentation of experiments/data management                                                  | 19|
 |Instruments: maintenance, upgrades, changes                                                              | 15|
 |Responses that could not be assigned to a category                                                       | 11|
-
-
-> ## Time to Knit!
-> Check to see if our table generated properly  
-{: .checklist}
 
 > ## Note: Other table packages
 > Include:
@@ -98,7 +99,7 @@ Ok, let's start with the table. The `kable()` function has an argument called `c
 2) add to the kable function `caption = ` and paste the caption in between `"`s
 
 ```
-`caption="Table 1. Major challenges to rigor observed in shared resources"`
+caption="Table 1. Major challenges to rigor observed in shared resources"
 ```
 code will look like so:
 >
@@ -110,7 +111,8 @@ code will look like so:
 {: .source}
 
 > ## Time to Knit!
-> Did the caption output for Table 1? Hint: it will appear above the table.    
+> Did the caption output for Table 1?   
+> Hint: it will appear above the table.      
 {: .checklist}
 
 ### Add captions to code-generated plots, figures & images
@@ -118,12 +120,14 @@ code will look like so:
 To add captions for Figure 1 and 3 we're going to go back to our favorite: code chunk options. Anytime after defining the code chunk name we can add the chunk option: `fig.cap = ` (so either before or after the other options, order doesn't matter).  Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `fig.cap = ""`. NOTE: we are adding this to the code chunk options, NOT as an argument to the code like for the table.
 
 
-1) type in fig.cap = "" after the chunk label
-2) paste or type in the caption (put caption in the chat) 
+1) type in `fig.cap = ""` after the chunk label (and a comma)
+2) paste or type in the caption  
+`FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.`
 
-Your code options should now look like this:
+Your code option should now look like this:
 
 > ```{r fig-1, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}  
+> #code for figure 1 here  
 > ```
 
 
@@ -148,13 +152,11 @@ Your code options should now look like this:
 
 ## Globally align & size plots/figures
 
-globally size & align pictures.
-
-We added sizes to our images individually in a previous episode. However, instead of changing the sizes one-by one, we can do it within our `knitr::opts_chunk$set` settings in our setup code chunk. 
+We changed the sizing of our images in a previous episode. However, instead of changing the sizes one-by one, we can do it within our `knitr::opts_chunk$set` settings in our setup code chunk. 
 
 ### Automatically size figures & images
 
-We can size with a number of inches,percentage of the original image size, or pixels (in some cases). The default for inches is 7 both in height and width for the knitr package (it's 5in height and 7in width for rmarkdown). 
+We can size with a number of inches, percentage of the original image size, or pixels (in some cases). The default for inches is 7 both in height and width for the knitr package (it's 5in height and 7in width for rmarkdown). 
 
 There is no default for perentages because the default is in inches. When using percentages it's important to note that % refers to the percent of the HTML container. For example, if the block of text that the image is in is 1000px wide then the image will be 200px using 20%.
 
