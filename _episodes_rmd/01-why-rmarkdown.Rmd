@@ -1,7 +1,7 @@
 ---
 title: "Why R Markdown?"
-teaching: 15 min
-exercises: 05 min
+teaching: 15
+exercises: 05
 questions:
 - What is reproducible research?
 - How can R Markdown help research to be more reproducible?
