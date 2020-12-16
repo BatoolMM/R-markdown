@@ -37,7 +37,7 @@ Let's now move our attention to include citations and list out the references (b
 Note that bibliography formats are not the same as citation styles. These are specified by a CSL (_Citation Style Language_) that we will cover later on. For now, we will stick to the bibtex format supported by Google Scholar, which will be used to retrieve example references for our practice paper. If you use a reference manager such as Zotero, Endnote, Mendeley etc. to manage your library, you can also export the .bibtex file directly, with all citable items you consider to include in the paper.
 
 
-A `*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `paperToRmd` then `docs` and open the `bibliography.bibtext`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
+A `*.bibtex` file consists of bibliography in plain-text format. Go to your `R-markdown` project folder, then `paperToRmd` then `docs` and open the `bibliography.bibtex`. We already have a couple of citable items listed in this file. But for the sake of practice, let's delete all items from line 23 onwards, and keep only 2 items, as below:
 
 ```
 
@@ -72,17 +72,17 @@ We want to add other more items to our bibliography list to be then cited in the
 
 To do so, follow the steps below:
 
-* 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link "All 6 versions", listing out different repositories and websites the paper can be found.
+* 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more complete files that will render to more accurate citations you have to check for all existing versions of the same result (if any). Google Scholar amasses them altogether into one in the link "All 6 versions", listing out different repositories and websites the paper can be found.
 
-![Fig. 7.1 - Bibtext from Google Scholar (1)](../fig/07-gs-bibtex1.png)
+![Fig. 7.1 - Bibtex from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
 * 2) Click on the link to check for other existing versions. The first result does not include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
 
-![Fig. 7.2 - Bibtext from Google Scholar (2)](../fig/07-gs-bibtex2.png)
+![Fig. 7.2 - Bibtex from Google Scholar (2)](../fig/07-gs-bibtex2.png)
 
 * 3) When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
 
-![Fig. 7.3 - Bibtext from Google Scholar (3)](../fig/07-gs-bibtex3.png)
+![Fig. 7.3 - Bibtex from Google Scholar (3)](../fig/07-gs-bibtex3.png)
 
 * 4) Choose the BibTeX option. It will prompt a file in your browser, like this:
 
@@ -106,7 +106,7 @@ To do so, follow the steps below:
 
 * 5) Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
 
-> ## Challenge 7.1: Complete the .bibtex file 
+> ## Challenge 7.1: Complete the .bibtex file (optional)
 >
 > Follow the same process to add three references to the bibtex file:
 > `The reproducibility of biomedical research: sleepers awake!` By Bustin (2014).
@@ -170,9 +170,9 @@ To do so, follow the steps below:
 {: .challenge}
 
 
-> ## Tip: How can you get many bibtext at once?
+> ## Tip: How can you get many bibtex at once?
 > 
->Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as.bibtex files in a bulk.
+>Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as .bibtex files in a bulk.
 >
 {: .callout}
 
@@ -208,10 +208,10 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.2: Adding single citation
 >
-> Locate `[citation exercise 1]` in the document, and replace it by a citation to Mufano's (2017) study.
+> Locate `[citation exercise 1]` in the document, and replace it by a citation to Munafo's (2017) study.
 >> ## Solution
 > `[@munafo_manifesto_2017]` 
-> The output you will get in Chicago style will be: `(Mufano, 2017)`
+> The output you will get in Chicago style will be: `(Munafo, 2017)`
 >> {: .output}
 > {: .solution}
 {: .challenge}
