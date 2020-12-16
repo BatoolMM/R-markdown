@@ -248,7 +248,7 @@ The output you will get in Chicago style will be:
 
 #### Keeping Authors in the narrative
 
-There are cases authors are announced in the text, and therefore their names shouldn't go between parenthesis. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a hifen `-` before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper.
+There are cases authors are announced in the text, and therefore their names shouldn't go between parentheses. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a hifen `-` before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper.
 
 In that case you'll have to first type in the last name(s) of the author(s) as only the year will be rendered. For this example the author is an organization, so let's type Springer, then enter the key for the item, as follows:
 
@@ -261,10 +261,10 @@ The output you will get will be:
 
 > ## Challenge 7.4: Keep author(s) in the narrative 
 > 
-> Let's practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature's survey in order to indicate the dataset you are referring to.
+> Let's practice now how to insert citations outside the parantheses! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature's survey in order to indicate the dataset you are referring to.
 >> ## Solution
 > `[-@nature_nature_2018]`
-> Did you remember to type in the organization who authored the publication? If so, the output you will get will be: `Nature (2018)`
+> Did you remember to type in the organization who authored the publication? If so, the output you will get should be: `Nature (2018)`
 >> {: .output}
 > {: .solution}
 {: .challenge}
@@ -285,24 +285,12 @@ By default, the bibliography will only display items that are directly reference
 
 ```
 
-nocite **:** |
-
-@item1, @item2
-
-```
-
-#### Adding all no-cited items to the bibliography
-
-If we do not wish to explicitly state all of the items within the bibliography but would still like to show them in our references, we can use the following syntax:
-
-```
-
 nocite: |
   @item1, @item2
   
 ```
 
-Note that this will force all items to be displayed in the bibliography.
+Note that this will force all items added in the YAML to be displayed in the bibliography.
 
 
 ### Changing Citation Styles
