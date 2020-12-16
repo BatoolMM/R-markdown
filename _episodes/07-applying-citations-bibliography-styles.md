@@ -208,10 +208,10 @@ The output you will get in Chicago style will be:
 
 > ## Challenge 7.2: Adding single citation
 >
-> Locate `[citation exercise 1]` in the document, and replace it by a citation to Mufano's (2017) study.
+> Locate `[citation exercise 1]` in the document, and replace it by a citation to Munafo's (2017) study.
 >> ## Solution
 > `[@munafo_manifesto_2017]` 
-> The output you will get in Chicago style will be: `(Mufano, 2017)`
+> The output you will get in Chicago style will be: `(Munafo, 2017)`
 >> {: .output}
 > {: .solution}
 {: .challenge}
