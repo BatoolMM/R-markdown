@@ -196,7 +196,7 @@ By default, Pandoc will use a Chicago author-date format for citations and refer
 
 Each item in the bibliography.bibtex file starts with a @ entry which specifies the type of document followed by a curly opening bracket which specifies the key that should be included to create in-text citations.
 
-We will call the citation key using the @. It is important to use this exact key in the .bibtex to render correct mentions in the text. Let's see how that should be included in the R Markdown syntax for different types of citations.
+We will call a citation using the `@` followed by the key. It is important to use this exact key in the .bibtex to render correct mentions in the text. Let's see how that should be included in the R Markdown syntax for different types of citations.
 
 #### Single citation
 
@@ -224,9 +224,9 @@ The output you will get in Chicago style will be:
 
 #### Multiple Citations
 
-If you want to add multiple citations in a row (same parenthesis) you will have to separate keys by semicolon. So let's complement the citation we created earlier in the first paragraph by adding Bustin's to it. Let's practice that in the place marked as `[citation example 2]`
+If you want to add multiple citations in a row (same parentheses) you will have to separate keys by semicolon. So let's add Bustin (2014) and Freedman, Venugopalan and Wisman (2017) to `[citation example 2]`
 
-`[@bustin_reproducibility_2014; @freedman_reproducibility2020_2017]`
+`[@bustin_reproducibility_2014; @freedman_2020_2017]`
 
 The output you will get in Chicago style will be:
 
@@ -239,7 +239,7 @@ The output you will get in Chicago style will be:
 >
 > Now it is your turn! Locate in the document the note `[citation exercise 2]`. Remove it and include a citation to Baker (2016) and Freedman, Venugopalan and Wisman's (2017) studies.
 >> ## Solution
-> `[@baker_1500_2016; @freedman_reproducibility2020_2017]`
+> `[@baker_1500_2016; @freedman_2020_2017]`
 > The output you will get in Chicago style will be: `(Barker, 2016; Freedman, Venugopalan and Wisman, 2017)`
 >> {: .output}
 > {: .solution}
@@ -248,7 +248,9 @@ The output you will get in Chicago style will be:
 
 #### Keeping Authors in the narrative
 
-There are cases authors are announced in the text, and therefore their names shouldn't go between parenthesis. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a - sign before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper, as it follows:
+There are cases authors are announced in the text, and therefore their names shouldn't go between parenthesis. Let's say you want to add a citation to support the statement about Springer's survey. In order to keep the institutional author out of the parentheses, we should add a hifen `-` before the @ followed by the citation key. Let's add that to the `[citation example 3]` remark on the paper.
+
+In that case you'll have to first type in the last name(s) of the author(s) as only the year will be rendered. For this example the author is an organization, so let's type Springer, then enter the key for the item, as follows:
 
 "A recent survey conducted by Springer `[-@springer_reality_2016]` reported that 90%..."
 
@@ -262,7 +264,7 @@ The output you will get will be:
 > Let's practice now how to insert citations outside the paranthesis! In the same paragraph, where you find `[citation exercise 3]` add a citation (year only) to your mention to Nature's survey in order to indicate the dataset you are referring to.
 >> ## Solution
 > `[-@nature_nature_2018]`
-> The output you will get will be: `Nature (2018)`
+> Did you remember to type in the organization who authored the publication? If so, the output you will get will be: `Nature (2018)`
 >> {: .output}
 > {: .solution}
 {: .challenge}
@@ -279,7 +281,7 @@ All cited items will be listed under the section **References** which you create
 
 #### Adding an item to a bibliography without citing it
 
-By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocitemetadata field and put the citations there.
+By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocite metadata field and put the citations there.
 
 ```
 
