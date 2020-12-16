@@ -40,7 +40,7 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 >
 > ###
 >
-> #load table 1 dat
+> #load table 1 data
 > table1 <- read_csv("../data/table.csv")` 
 > ```
 >
@@ -115,26 +115,29 @@ code will look like so:
 
 ### Add captions to code-generated plots, figures & images
 
-To add captions for Figure 1 and 3 we're going to go back to our favorite: code chunk options. Anytime after defining the code chunk name we can add the chunk option: `fig.cap = ` (so either before or after the other options, order doesn't matter).  Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `""`. NOTE: we are adding this to the code chunk options, NOT as an argument to the code like for the table.
+To add captions for Figure 1 and 3 we're going to go back to our favorite: code chunk options. Anytime after defining the code chunk name we can add the chunk option: `fig.cap = ` (so either before or after the other options, order doesn't matter).  Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `fig.cap = ""`. NOTE: we are adding this to the code chunk options, NOT as an argument to the code like for the table.
 
-1) cut the caption from where it was. Or do we need to supply this again?? FIXME
-2) type in fig.cap = ""
-3) paste or type in the caption
 
-```
-FIXME add code
-```
+1) type in fig.cap = "" after the chunk label
+2) paste or type in the caption (put caption in the chat) 
+
+Your code options should now look like this:
+
+> ```{r fig-1, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}  
+> ```
+
+
 > ## Time to Knit!
 > Check to see if the caption for Figure 1 appeared    
 {: .checklist}
 
 > ## CHALLENGE 10.1 - add a caption for Figure 3  
-> Add the caption:  
-> `FIGURE 3 - `
+> Add the caption to the code for Figure 3:  
+> `FIGURE 3 - Types of tools that cores would like to implement in their operations.`
 >
 >> ## SOLUTION  
->> FIXME add code here  
->>
+>> ```{r fig-3, fig.cap="FIGURE 3 - Types of tools that cores would like to implement in their operations." }    
+>> ```   
 >{: .solution}  
 {: .challenge}  
 
