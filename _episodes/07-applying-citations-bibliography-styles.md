@@ -278,7 +278,7 @@ All cited items will be listed under the section **References** which you create
 
 #### Adding an item to a bibliography without citing it
 
-By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocite metadata field and put the citations there.
+By default, the bibliography will only display items that are directly referenced in the document. If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocite metadata field in the YAML and put the citations there.
 
 ```
 
@@ -287,31 +287,18 @@ nocite: |
   
 ```
 
-Note that this will force all items added in the YAML to be displayed in the bibliography.
+To demonstrate that I will add a new bibtex from my Google Scholar Library and specify the `@key`in the YAML. Note that this will force all items added in the YAML to be displayed in the bibliography.
 
 
 ### Changing Citation Styles
 
 There are a number of existing [citation styles](https://editor.citationstyles.org/about/) (CSL), but we won't cover their differences and applications during this workshop. To use another style, we will need to specify a CSL (Citation Style Language) file in the metadata field in the YAML header.
 
-Let's assume that we want to use the APA 5th edition [apa-5th-edition.csl](https://github.com/citation-style-language/styles/blob/master/apa-5th-edition.csl) instead. In order to do so, you have to make sure the CSL you want to apply is correctly named in the YAML, matching the .csl file saved in the project folder and opened in RStudio. Your YAML should look similar to this:
+Let's assume that we want to use the APA 5th edition [apa-5th-edition.csl](https://github.com/citation-style-language/styles/blob/master/apa-5th-edition.csl) instead. In order to do so, you have to make sure the CSL you want to apply is correctly named in the YAML, matching the .csl file saved in the project folder and opened in RStudio. We have done that for you. The csl for APA is saved in the bin folder, so using the relative path to the file, we will include that to the YAML:
 
 ```
-title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
 
-author: Your Name
-
-date: "December 15, 2020"
-
-output:
-
-html\_document:
-
-number\_sections: true
-
-bibliography: ../docs/bibliography.bibtex
-
-csl: apa-5th-edition.csl
+csl: ../bin/apa-5th-edition.csl
 
 ```
 
