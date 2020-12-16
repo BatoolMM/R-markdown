@@ -66,25 +66,25 @@ A `*.bibtex` file consists of bibliography in plain-text format. Go to your `R-m
 }
 
 ```
+<br>
 
 Note that the first line specifies the type of citation, MISC for _miscellaneous_, and Article for _papers_, along with the main entry which will be used to link in-text citations further in the episode. The other lines include the metadata that describes different parts of the bibliography, such as the date, the author, etc.
 
-Let's now follow the process to get a bibtex, using the example of the third item in our file `1,500 scientists lift the lid on reproducibility` authored by Baker (2016).
-
-To do so, follow the steps below:
+Let's now understand the process of how to get a bibtex, using as example the item `1,500 scientists lift the lid on reproducibility` authored by Baker (2016), following the steps below:
 
 * 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more complete files that will render to more accurate citations you have to check for all existing versions of the same result (if any). Google Scholar amasses them altogether into one in the link "All 6 versions", listing out different repositories and websites the paper can be found.
 
 ![Fig. 7.1 - Bibtex from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
 * 2) Click on the link to check for other existing versions. The first result does not include the journal name, so let's choose the second one instead, which won't require us to adjust the metadata.
+<br>
 
 ![Fig. 7.2 - Bibtex from Google Scholar (2)](../fig/07-gs-bibtex2.png)
 
 * 3) When you click on the quotation icon right below the version you chose, it will prompt a window that will give you the option to choose BibTeX.
 
 ![Fig. 7.3 - Bibtex from Google Scholar (3)](../fig/07-gs-bibtex3.png)
-
+<br>
 * 4) Choose the BibTeX option. It will prompt a file in your browser, like this:
 
 ```
@@ -115,6 +115,7 @@ To do so, follow the steps below:
 >
 {: .callout}
 
+<br>
 We already have .bibtex file with all items we need to proceed. But how will RStudio be able to link this file with the .rmd file on the other tab? Well, remember we mentioned before that we should include a bibliography file in the YAML header? In this case we will add to the existing YAML the following information:
 
 ```
