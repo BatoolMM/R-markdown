@@ -35,22 +35,19 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 
 1) load data & package in `load-data-libraries` chunk
 
-#load knitr for kable table
-library(knitr)
+`#load knitr for kable table`
+`library(knitr)`
 
-...
-
-#load table 1 data
-table1 <- read_csv("../data/table.csv")
+`#load table 1 data`
+`table1 <- read_csv("../data/table.csv")`
 
 2) Delete the existing table (leave the caption for now)
 
 3) create a new code chunk in place of the table, name it `table-1`:
 
-> ```
+
 > ```{r table-1}`r ''`   
 > #we will add code here   
-> ```
 > ```
 {: .source}
 
@@ -75,9 +72,36 @@ your code chunk should look like this:
 
 Also, we learned how to add captions to images earlier on, but now, how do we add captions to the code-generated plots and the new table we just added? It is a little different between tables and code-generated plots/images.
 
+### Add captions to code-generated tables
+
+Ok, let's start with the table. The `kable()` function has an argument called `caption`. 
+
+```
+ `caption="Table 1. Major challenges to rigor observed in shared resources"`
+```
+
+First, cut the orignial table caption from it's spot in the paper
+Second, add to the kable function `caption = ` and paste the caption in between `"`s
+
+code will look like so:
+
+
+Should output as so when knit:
+
+```{r echo = FALSE}
+#load library (add to: )
+library(knitr)
+#load table data (add to:)
+table1 <- read_csv("../data/table.csv")
+
+#generate table (create new table-1 chunk)
+kable(table1)
+```
+
+
 ### Add captions to code-generated plots, figures & images
 
-To add captions for Figure 1 and 3 we're going to go back to our favorite code chunk options. Anytime after defining the code chunk name we can add the option: `fig.cap = `. Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `""`. 
+To add captions for Figure 1 and 3 we're going to go back to our favorite: code chunk options. Anytime after defining the code chunk name we can add the chunk option: `fig.cap = ` (so either before or after the other options, order doesn't matter).  Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `""`. NOTE: we are adding this to the code chunk options, NOT as an argument to the code like for the table.
 
 1) cut the caption from where it was. Or do we need to supply this again?? FIXME
 2) type in fig.cap = ""
@@ -104,23 +128,6 @@ FIXME add code
 > Check to see if caption for Figure 3 appeared
 {: .checklist}
 
-### Add captions to code-generated tables
-
-Ok, now let's do the table. For the table, you use the same `fig.cap = ` to the chunk options (of course you can't), but the `kable()` function has an argument called `caption`. So, we can go back to our kable function and add this:
-
-```
- `caption="Table 1. Major challenges to rigor observed in shared resources"`
-```
-
-First, cut the orignial table caption from it's spot in the paper
-Second, add to the kable function `caption = ` and paste the caption in between `"`s
-
-
-
-Should output as so:
-
-    TABLE 1 - Major challenges to rigor observed in shared resources
-    
 
 > ## Time to Knit!
 > Check to see if the caption for the table appeared.
