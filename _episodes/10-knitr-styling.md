@@ -25,16 +25,39 @@ source: Rmd
 
 ## Create better tables in R Markdown
 
-Our markdown table is formatted weirdly. Unfortunately, it isn't possible to style tables created with basic markdown syntax. In order to create a table that is stylable, we need to save it as a dataframe and use a package function to style it. There are MANY packages that allow you to create tables in Rmd. See list (FIXME add list)
+Our markdown table is formatted weirdly after knitting. Unfortunately, it isn't possible to style tables created with basic markdown syntax. In order to create a table that is stylable, we need to save it as a dataframe and use a package function to style it. There are MANY packages that allow you to create tables in Rmd. See list (FIXME add list)
 
 ### Restyle the table with kable 
-We will use kable to recreate our table. `kable()` is a function in the `knitr` package (which we use anyway for rendering our html file). `kable()` creates a basic stylable table. 
+We will use kable to recreate our table. `kable()` is a function in the `knitr` package. `kable()` creates a basic stylable table. 
 
-1) change table to kable table
-  a) load "knitr" & table1 data in first code chunk
-  b) delete markdown table 
-  c) paste in code to new code chunk (minus the caption)
-  
+1) load data & package in `load-data-libraries` chunk
+
+#load knitr for kable table
+library(knitr)
+
+...
+
+#load table 1 data
+table1 <- read_csv("../data/table.csv")
+
+2) Delete the existing table (leave the caption for now)
+
+3) create a new code chunk in place of the table, name it `table-1`:
+
+> ```
+> ```{r table-1}   
+> #we will add code here   
+> ```
+> ```
+{: .source}
+
+4) call kable() function on table1 dataframe
+
+`kable(table)`
+
+your code chunk should look like this:
+
+
 > ## Time to Knit!
 > Check to see if our table generated properly  
 {: .checklist}
