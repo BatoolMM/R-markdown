@@ -1,6 +1,6 @@
 ---
 title: "An Adapted Survey on Scientific Shared Resource Rigor and Reproducibility"
-author: Add Your Name Here
+author: Renata Curty
 date: "December 16, 2020"
 output:
   html_document:
@@ -44,7 +44,7 @@ The survey contained both multiple-choice and open-ended text questions. The ope
 
 $$e = { Zp(1-p) \over \sqrt{n} }$$
 
-We compute that at a 95% confidence level (i.e., Z=$1.96$), with base probability p=1/2 and sample size n=243, the margin of error is ± 3
+We compute that at a 95% confidence level (i.e., Z=$1.96$), with base probability $p=1/2$ and sample size n=243, the margin of error is ± 3
 
   
 # RESULTS AND DISCUSSION
