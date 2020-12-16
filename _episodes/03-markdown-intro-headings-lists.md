@@ -30,18 +30,34 @@ The text in an R Markdown document is written with the markdown syntax, which is
 R Markdown syntax is relatively simple and there are a number of tutorials and cheat sheets available online that you can consult while working on your reproducible report ([here is a link explaining Pandoc's markdown specs](https://pandoc.org/MANUAL.html#pandocs-markdown)). In the next episodes we will be covering a subset of it, focusing on the most common formatting you may need to apply while writing reproducible documents.  
 
 <br>
-> ## Tip: Blank Lines
-> In your document, blank lines will be required before/after all headings, horizontal lines, and lists.  
-You will need to make sure to add line breaks into your document or text will wrap when it renders (even if you hit enter/return and start typing on a new line in R studio)  
->
-> You can add line breaks by using :  
-> 
-> * 2 enters/returns (leaving a blank line)
-> * two spaces at the end of the line
-> * an html break `<br>`  
->
-> These line breaks will also be important to get your formatting to render correctly. In some cases you MUST have a blank line (just two spaces or a break won't do the trick)
-{: .callout}
+
+## First Things First - Line Breaks
+
+It seems strange to have to talk about line breaks when writing text, but this is very important to know for proper rendering of your text. You will need to make sure to add line breaks into your document or text will wrap when it renders (even if you hit enter/return and start typing on a new line in R studio)    
+
+You can add line breaks by using :    
+
+* two spaces at the end of the line  
+* an html break `<br>` 
+* 2 enters/returns (leaving a blank line) 
+
+These line breaks will also be important to get your formatting to render correctly. In some cases you MUST have a blank line (just two spaces or a break won't do the trick). Blank lines will be required before/after all headings, horizontal lines, and lists.  
+
+**example:**
+
+If I'm writing some text
+an enter should work for a line break, but doesn't
+
+Here I am writing again,
+I need to make certain I have a line break by:  
+adding two spaces  
+or an html break<br>
+or by adding two returns
+
+and I carry on writing
+
+
+*Notice the spacing difference with 2 returns versus the other two options.
 
 <br>
 
@@ -76,12 +92,11 @@ Displays as:
 > It's good practice to put a space between the last `#` and the start of your heading. While R flavored markdown will still render `#Title`, other flavors of markdown (i.e. github) require a space between the `#`s and the heading text: `# Title`.
 {: .callout}
 
-> ## Tip: More Heading Convention
-> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
-{: .callout}
+
 
 ### Numbered Sections
 We would like to have numbered section headings in our paper. In order to do that we actually add a bit of code to the yaml section at the top. 
+
 Specifically, we will add a return to put `html_document:` on the next line indented (don't forget to add the `:`), enter another line & indent again and then add `number_sections: true`.
 <br>
 It should look like the following:
@@ -100,8 +115,17 @@ output:
 ~~~
 {: .source}
 
+
 <br>
-We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction. In the first line of our paper, make the word “Introduction” into a heading 2 by adding a `##` before the line.  
+We want to insert headings and subheadings to divide our paper into more readable parts. Let’s start by adding one at the beginning to start our introduction.
+
+To conform to markup best practices, header 1 `#` should only be used for the title. From there, for each sub-heading level you use one heading level lower, for example the introduction will be header 2 `##`.
+
+> ## Tip: More Heading Convention
+> For best practices regarding all heading levels, you should never skip a heading level - heading levels inform the hierarchy of your paper compositions, they do not reflect styling choices. For styling you may employ CSS stylesheets, either importing an exisiting "theme", or creating your own.  
+{: .callout}
+
+In the first line of our paper, make the word “Introduction” into a heading 2 by adding a `##` before the line.  
 
 ~~~
 ## INTRODUCTION
@@ -113,16 +137,15 @@ Now let's `knit` to see how the heading is formatted.
 Oops! for our Introduction we have `0.1 Introduction`. The numbering isn't right here...   
 
 What's going on?  
-Normally, to conform to best practices, header 1 `#` should only be used for the title. From there, for each heading level you only use one heading level lower, for example the introduction would then be header 2 `##`. HOWEVER, because an R Markdown document defines the title within the YAML header, you should use header 1 for the next highest header level after the title, (Introduction, Conclusion, etc.). Otherwise, if you use numbered sections, the numbering will be off. 
+
+This is an exception in R Markdown. Because an R Markdown document defines the title within the YAML header, you should actually use header 1 `#` for the next highest header level after the title, (Introduction, Conclusion, etc.). Otherwise, if you use numbered sections, the numbering will be off. 
 
 So, let's try this again, this time with heading 1 `#`:  
 
 ~~~
 # INTRODUCTION
 ~~~
-{: .source}
-
-<br>
+{: .source}  
 
 
 <br>
@@ -218,6 +241,18 @@ Now you know markdown
 > Depending on the platform, the markdown parser may interpret your attempt at a horizontal line as some other styling unless you add a blank line before and after the line. A break `<br>` may not even work, it should be a completely blank line.
 {: .callout}
 
+Ok, let's add a horizontal line in our paper under the title:
+
+```
+--- (yaml end)
+
+---
+
+# INTRODUCTION
+```
+> ## Time to Knit!
+> Check how the horizontal line looks in your paper 
+{: .checklist}
 
 > ## CHALLENGE 3.2 - Adding Horizontal Lines (optional)  
 > Add horizontal lines after each section header.
@@ -267,25 +302,6 @@ Outputs as:
 - Also a bullet point
 + Still a bullet point
 
-> ## CHALLENGE 3.3 - Inserting Bullet Points
->Now let’s practice creating bullet lists. Search in the paper "it is important to highlight:" and apply bullet points for each of the next 3 sentences.
->
->> ## SOLUTION
->> ```
->> * At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
->> * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
->> * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
->> ```
->> Remember: You can use `+` or `-` too.
-> {: .solution}
-{: .challenge}
-
-
-> ## Time to Knit!
-> Check how the bullet lists looks like in your paper. 
-{: .checklist}
-
-
 <br>
 
 You can also add sub-levels, to create sub-lists by indenting the next list item evenly by two or four spaces:
@@ -318,6 +334,19 @@ The above will appear as:
 > i.e. `1)` outputs as `1.`.
 {: .callout}
 
+> ## CHALLENGE 3.3 - Inserting Bullet Points
+>Now let’s practice creating bullet lists. Search in the paper "it is important to highlight:" and apply bullet points for each of the next 3 sentences.
+>
+>> ## SOLUTION
+>> ```
+>> * At least 170 (∼80%) respondents use documentation, in the form of quality control and standard operation procedures (SOPs) to support practices. 
+>> * The incorporation of an instrumentation management plan, was not as highly utilized (56%).
+>> * Oversight of data analyses and double-checking results were some of the least widely used ones (26%).
+>> ```
+>> Remember: You can use `+` or `-` too.
+> {: .solution}
+{: .challenge}
+
 > ## CHALLENGE 3.4 - Applying Numbered Lists
 > Use RStudio to locate the paragraph which ends with “in grant applications, as follows:” the next four sentences should be shown as numbered a list.
 >
@@ -332,7 +361,7 @@ The above will appear as:
 {: .challenge}
 
 > ## Time to Knit!
-> Check how the numbered lists looks like in your paper. 
+> Check how the bulleted & numbered lists looks like in your paper. 
 {: .checklist}
 
 
