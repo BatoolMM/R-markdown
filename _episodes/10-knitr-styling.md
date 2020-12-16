@@ -30,13 +30,22 @@ Our markdown table is formatted weirdly after knitting. Unfortunately, it isn't 
 ### Restyle the table with kable 
 We will use kable to recreate our table. `kable()` is a function in the `knitr` package. `kable()` creates a basic stylable table. 
 
-1) load data & package in `load-data-libraries` chunk
+1) load data & package in `load-data-libraries` chunk:
 
-`#load knitr for kable table`
-`library(knitr)`
+>
+> ```
+> ```{r load-data-libraries}   
+> #load knitr for kable table
+> library(knitr)
+>
+> ###
+>
+> #load table 1 dat
+> table1 <- read_csv("../data/table.csv")` 
+> ```
+>
+{: .source}
 
-`#load table 1 data`
-`table1 <- read_csv("../data/table.csv")`
 
 2) Delete the existing table (leave the caption for now)
 
@@ -47,7 +56,6 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 > ```
 > ```{r table-1}   
 > kable(table1)  
-> ```
 > ```
 >
 {: .source}
@@ -86,31 +94,24 @@ Also, we learned how to add captions to images earlier on, but now, how do we ad
 
 Ok, let's start with the table. The `kable()` function has an argument called `caption`. 
 
-```
- `caption="Table 1. Major challenges to rigor observed in shared resources"`
-```
+1) cut the orignial table caption from it's spot in the paper
+2) add to the kable function `caption = ` and paste the caption in between `"`s
 
-First, cut the orignial table caption from it's spot in the paper
-Second, add to the kable function `caption = ` and paste the caption in between `"`s
-
+```
+`caption="Table 1. Major challenges to rigor observed in shared resources"`
+```
 code will look like so:
+>
+> ```
+> ```{r table-1}   
+> kable(table1, caption="Table 1. Major challenges to rigor observed in shared resources")  
+> ```
+>
+{: .source}
 
-
-Should output as so when knit:
-
-
-|Category                                                                                                 |  N|
-|:--------------------------------------------------------------------------------------------------------|--:|
-|Poor sample quality from users/sample variability/limited biological material                            | 51|
-|Lack of well-trained principle investigators and lab members/Poor oversight                              | 45|
-|Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43|
-|Inadequate standardization of protocols or guidelines, and data analysis                                 | 43|
-|Cost and time                                                                                            | 39|
-|Failure to leverage the core's expertise/following the core's advice/no consulting beforehand            | 23|
-|Inadequate documentation of experiments/data management                                                  | 19|
-|Instruments: maintenance, upgrades, changes                                                              | 15|
-|Responses that could not be assigned to a category                                                       | 11|
-
+> ## Time to Knit!
+> Did the caption output for Table 1? Hint: it will appear above the table.    
+{: .checklist}
 
 ### Add captions to code-generated plots, figures & images
 
@@ -141,10 +142,6 @@ FIXME add code
 > Check to see if caption for Figure 3 appeared
 {: .checklist}
 
-
-> ## Time to Knit!
-> Check to see if the caption for the table appeared.
-{: .checklist} 
 
 ## Globally align & size plots/figures
 

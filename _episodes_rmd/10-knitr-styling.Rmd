@@ -33,13 +33,22 @@ Our markdown table is formatted weirdly after knitting. Unfortunately, it isn't 
 ### Restyle the table with kable 
 We will use kable to recreate our table. `kable()` is a function in the `knitr` package. `kable()` creates a basic stylable table. 
 
-1) load data & package in `load-data-libraries` chunk
+1) load data & package in `load-data-libraries` chunk:
 
-`#load knitr for kable table`
-`library(knitr)`
+>
+> ```
+> ```{r load-data-libraries}`r ''`   
+> #load knitr for kable table
+> library(knitr)
+>
+> ###
+>
+> #load table 1 dat
+> table1 <- read_csv("../data/table.csv")` 
+> ```
+>
+{: .source}
 
-`#load table 1 data`
-`table1 <- read_csv("../data/table.csv")`
 
 2) Delete the existing table (leave the caption for now)
 
@@ -50,7 +59,6 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 > ```
 > ```{r table-1}`r ''`   
 > kable(table1)  
-> ```
 > ```
 >
 {: .source}
@@ -87,29 +95,24 @@ Also, we learned how to add captions to images earlier on, but now, how do we ad
 
 Ok, let's start with the table. The `kable()` function has an argument called `caption`. 
 
-```
- `caption="Table 1. Major challenges to rigor observed in shared resources"`
-```
+1) cut the orignial table caption from it's spot in the paper
+2) add to the kable function `caption = ` and paste the caption in between `"`s
 
-First, cut the orignial table caption from it's spot in the paper
-Second, add to the kable function `caption = ` and paste the caption in between `"`s
-
+```
+`caption="Table 1. Major challenges to rigor observed in shared resources"`
+```
 code will look like so:
+>
+> ```
+> ```{r table-1}`r ''`   
+> kable(table1, caption="Table 1. Major challenges to rigor observed in shared resources")  
+> ```
+>
+{: .source}
 
-
-Should output as so when knit:
-
-```{r echo = FALSE, message = FALSE}
-#load library
-library(knitr)
-library(tidyverse)
-#load table data
-table1 <- read_csv("../paperToRmd/data/table.csv")
-
-#generate table (create new table-1 chunk)
-kable(table1, caption ="Major challenges to rigor observed in shared resources")
-```
-
+> ## Time to Knit!
+> Did the caption output for Table 1? Hint: it will appear above the table.    
+{: .checklist}
 
 ### Add captions to code-generated plots, figures & images
 
@@ -140,10 +143,6 @@ FIXME add code
 > Check to see if caption for Figure 3 appeared
 {: .checklist}
 
-
-> ## Time to Knit!
-> Check to see if the caption for the table appeared.
-{: .checklist} 
 
 ## Globally align & size plots/figures
 
