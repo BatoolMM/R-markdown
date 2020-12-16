@@ -72,7 +72,7 @@ We want to add other more items to our bibliography list to be then cited in the
 
 To do so, follow the steps below:
 
-* 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more completed files that will render to more accurate citations you have to check for existing versions (if any) of the same result. Google Scholar amasses them altogether into one in the link "All 6 versions", listing out different repositories and websites the paper can be found.
+* 1) Search for the first paper listed on Google Scholar by copying and pasting the title of the paper. Make sure to use quotations to better filter results and get the right paper. A tricky part is that if you want more complete files that will render to more accurate citations you have to check for all existing versions of the same result (if any). Google Scholar amasses them altogether into one in the link "All 6 versions", listing out different repositories and websites the paper can be found.
 
 ![Fig. 7.1 - Bibtex from Google Scholar (1)](../fig/07-gs-bibtex1.png)
 
@@ -106,7 +106,7 @@ To do so, follow the steps below:
 
 * 5) Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
 
-> ## Challenge 7.1: Complete the .bibtex file 
+> ## Challenge 7.1: Complete the .bibtex file (optional)
 >
 > Follow the same process to add three references to the bibtex file:
 > `The reproducibility of biomedical research: sleepers awake!` By Bustin (2014).
@@ -172,7 +172,7 @@ To do so, follow the steps below:
 
 > ## Tip: How can you get many bibtex at once?
 > 
->Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as.bibtex files in a bulk.
+>Alternatively, you can also conduct multiple searchers and save results to your personal library on Google Scholar and export multiple items as .bibtex files in a bulk.
 >
 {: .callout}
 
