@@ -23,7 +23,7 @@ In episode 2 we said we would show you later on how to change the behavior of th
 
 R Studio provides options to set the output type and a few other things but does not let the user select a destination folder for knitr output.  But users CAN however add code to the yaml which allows finer control of the behavior of the knit button. Once you've set directives in the header YAML section of your R-markdown file everytime you hit 'knit', R Studio follows your customized directives as it processes the code to render your output. 
 
-So, let's copy and paste the the following to our yaml header (at the end is fine after the bibliography and/or csl section):
+So, let's copy and paste the the following to our yaml header (placing the code after the bibliography and/or csl section should work.):
 
 ```
 ...
@@ -35,13 +35,18 @@ knit: (function(inputFile, encoding) {
                         output_file=file.path(dirname(inputFile), out_dir, 'rmd-workshop-paper.html')) })
 ---
 ```
-**out_dir** is a variable you define which will designate which folder you want to save the knit document to (relative path). In our case we know this is the `results` folder so we use `..` to go back to our root directory (from the code folder). The "default" folder is the folder where your rmd file is save, so any 'directions' you give by indicating a relative path will be from the folder where the rmd file is to the folder where you want to save the html rendered document. 
+
+#### What's going on in this YAML code we're adding:
+
 
 **knit** we are changing the behavior of the knit function by defining our own:
 
-**function(inputFile, encoding)** as stated above we are defining our own function by calling `function()` so we can re-design what happens when we hit 'knit'. We use `inputFile` and `encoding` as parameters we're feeding the `render` function. This just means that the inputFile is 'this' file - the .rmd file we're working in, and encoding means we'll be importing the default encoding R Studio uses. 
+**function(inputFile, encoding)** as stated above we are defining our own function by calling `function()` so we can re-design what happens when we hit 'knit'. We use `inputFile` and `encoding` as parameters we're feeding the `render` function. This just means that the inputFile is 'this' file - the .rmd file we are *knit*ing, and encoding means we'll be importing the default encoding R Studio uses. 
 
-**rmarkdown::render** this is the command that the knit button runs when you click it in the IDE, you can view the specifications by typing `?rmarkdown::render` in the console. We will be using three arguments of `rmarkdown::render`. 
+**out_dir** is a variable you define which will designate which folder you want to save the knit document to (relative path). In our case we know this is the `results` folder so we use `..` to go back to our root directory (from the code folder). The "default" folder is the folder where your rmd file is saved, so any 'directions' you give by indicating a relative path will be from the folder where the rmd file is to the folder where you want to save the html rendered document. 
+
+**rmarkdown::render** When you click the *knit* button R-Studio runs `rmarkdown:render`.  
+Typing `?rmarkdown::render` in the console will bring up further information about the `rmarkdown:render` function. We will be using three arguments of `rmarkdown::render`. 
 
 - *input*: The file we're feeding the function. We already determined this is `inputFile` or 'this' document.
 - *encoding*: again we are indicating we're using the encoding we brought in from R Studio.
@@ -53,14 +58,14 @@ knit: (function(inputFile, encoding) {
 \*we *could* just write out the file path/name here too if this is confusing.  
   
 > ## Time to Knit!
-> Check if your html file saved to the `results` folder.   
+> Check if your html file was saved to the `results` folder.   
 {: .checklist}
 
 ##  Rendering R Markdown script 
 
-Once you have your `.Rmd` document refined and the _Knit_ output looks good it is ready to publish.  When using RStudio the simplest option is to publish to [Rpubs.com](https://rpubs.com).  Rpubs is a bare-bones web hosting service created for the sole purpose of hosting RMarkdown documents.  It provides no other services--- no support for search, collaboration, persistent identifers, or versioning.  But, it is the simplest and most direct way of getting your RMarkdown document on the web from RStudio.  For a more full-featured hosting service consider GitHub and GitHub Pages, described later.
+Once you have your `.Rmd` document refined and the _Knit_ output looks good it is ready to publish.  When using RStudio the simplest option is to publish to [Rpubs.com](https://rpubs.com).  Rpubs is a bare-bones web hosting service created for the sole purpose of hosting RMarkdown documents.  It provides no other services--- no support for search, collaboration, persistent identifers, or versioning.  But, it is the simplest and most direct way of getting your RMarkdown document published on the web directly from RStudio.  For a more full-featured hosting service consider GitHub and GitHub Pages, described later.
 
-Notice the "Publish" button in the upper right corner of your _Knit_ output.  Click this to publish to Rpubs.  This is where you'll need an Rpubs account as mentioned in [setup](#FIXME) 
+Notice the "Publish" button in the upper right corner of your _Knit_ output.  Click this to publish to Rpubs.  This is where you'll need an Rpubs account as mentioned in [setup](/setup.html) 
 for this workshop.  
 
 Click the publish button 
