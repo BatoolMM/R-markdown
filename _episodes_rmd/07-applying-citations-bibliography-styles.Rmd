@@ -105,7 +105,7 @@ To do so, follow the steps below:
 }
 ```
 
-* 5) Copy and paste this to your bibliography.bibtex file. The order is not important. You can either copy before or after items provided. All items will be organized according to the style. It is strongly recommended to have entries separated by blank lines. That makes them look like paragraphs, and easier to locate.
+* 5) If you did not have that item already you would simply copy and paste this to your bibliography.bibtex file. The order would not matter, since references will be listed according to the style. It is strongly recommended to have entries separated by blank lines though. That makes them look like paragraphs, and easier to locate.
 
 
 > ## Tip: How can you get many bibtex at once?
