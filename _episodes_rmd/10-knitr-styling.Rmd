@@ -43,19 +43,30 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 
 2) Delete the existing table (leave the caption for now)
 
-3) create a new code chunk in place of the table, name it `table-1`:
-
-
-> ```{r table-1}`r ''`   
-> #we will add code here   
-> ```
-{: .source}
-
+3) create a new code chunk in place of the table, name it `table-1`
 4) call kable() function on table1 dataframe
 
-`kable(table)`
+>
+> ```
+> ```{r table-1}`r ''`   
+> kable(table1)  
+> ```
+> ```
+>
+{: .source}
 
-your code chunk should look like this:
+your code chunk should output as so:
+
+```{r echo = FALSE, message = FALSE}
+#load library
+library(knitr)
+library(tidyverse)
+#load table data
+table1 <- read_csv("../paperToRmd/data/table.csv")
+
+#generate table (create new table-1 chunk)
+kable(table1)
+```
 
 
 > ## Time to Knit!
@@ -88,14 +99,15 @@ code will look like so:
 
 Should output as so when knit:
 
-```{r echo = FALSE}
-#load library (add to: )
+```{r echo = FALSE, message = FALSE}
+#load library
 library(knitr)
-#load table data (add to:)
-table1 <- read_csv("../data/table.csv")
+library(tidyverse)
+#load table data
+table1 <- read_csv("../paperToRmd/data/table.csv")
 
 #generate table (create new table-1 chunk)
-kable(table1)
+kable(table1, caption ="Major challenges to rigor observed in shared resources")
 ```
 
 

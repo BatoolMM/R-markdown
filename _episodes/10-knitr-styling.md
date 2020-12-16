@@ -40,19 +40,32 @@ We will use kable to recreate our table. `kable()` is a function in the `knitr` 
 
 2) Delete the existing table (leave the caption for now)
 
-3) create a new code chunk in place of the table, name it `table-1`:
-
-
-> ```{r table-1}   
-> #we will add code here   
-> ```
-{: .source}
-
+3) create a new code chunk in place of the table, name it `table-1`
 4) call kable() function on table1 dataframe
 
-`kable(table)`
+>
+> ```
+> ```{r table-1}   
+> kable(table1)  
+> ```
+> ```
+>
+{: .source}
 
-your code chunk should look like this:
+your code chunk should output as so:
+
+
+|Category                                                                                                 |  N|
+|:--------------------------------------------------------------------------------------------------------|--:|
+|Poor sample quality from users/sample variability/limited biological material                            | 51|
+|Lack of well-trained principle investigators and lab members/Poor oversight                              | 45|
+|Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43|
+|Inadequate standardization of protocols or guidelines, and data analysis                                 | 43|
+|Cost and time                                                                                            | 39|
+|Failure to leverage the core's expertise/following the core's advice/no consulting beforehand            | 23|
+|Inadequate documentation of experiments/data management                                                  | 19|
+|Instruments: maintenance, upgrades, changes                                                              | 15|
+|Responses that could not be assigned to a category                                                       | 11|
 
 
 > ## Time to Knit!
@@ -86,17 +99,17 @@ code will look like so:
 Should output as so when knit:
 
 
-~~~
-Error in read_csv("../data/table.csv"): could not find function "read_csv"
-~~~
-{: .error}
-
-
-
-~~~
-Error in kable(table1): object 'table1' not found
-~~~
-{: .error}
+|Category                                                                                                 |  N|
+|:--------------------------------------------------------------------------------------------------------|--:|
+|Poor sample quality from users/sample variability/limited biological material                            | 51|
+|Lack of well-trained principle investigators and lab members/Poor oversight                              | 45|
+|Poor experimental design: Lack of sufficient replicates/inadequate sample size/lack of adequate controls | 43|
+|Inadequate standardization of protocols or guidelines, and data analysis                                 | 43|
+|Cost and time                                                                                            | 39|
+|Failure to leverage the core's expertise/following the core's advice/no consulting beforehand            | 23|
+|Inadequate documentation of experiments/data management                                                  | 19|
+|Instruments: maintenance, upgrades, changes                                                              | 15|
+|Responses that could not be assigned to a category                                                       | 11|
 
 
 ### Add captions to code-generated plots, figures & images
