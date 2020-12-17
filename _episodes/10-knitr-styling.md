@@ -126,7 +126,7 @@ To add captions for Figure 1 and 3 we're going to go back to our favorite: code 
 
 Your code chunk options should now look like this:
 
-> ```{r fig-1, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}  
+> ```{r fig-1, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."}     
 > #code for figure 1 here  
 > ```
 
@@ -161,40 +161,40 @@ There is no default for perentages because the default size is inches. When usin
 
 #### Option options for resizing 
 
-Two options `fig.` and `out.` `out.` is more expansize than `fig.` both in how size can be defined and what kind of figures/plots/images it can be applied to. 
+Two options `fig.` and `out.`. `out.` is more expansize than `fig.` both in how size can be defined and what kind of figures/plots/images it can be applied to. 
 
-**fig.width** along with `fig.height`, ONLY applies to R-generated figures defined within a code chunk. Sizes can be defined in inches & percentage.
-**fig.height** along with `fig.width`, ONLY applies to R-generated figures defined within a code chunk. Sizes can be defined in inches & percentage.
+**fig.width** along with `fig.height`, **ONLY** applies to R-generated figures defined within a code chunk. It changes the *width* of the images based on the specifications which can be defined in *inches & percentage*.  
+**fig.height** along with `fig.width`, **ONLY** applies to R-generated figures defined within a code chunk. It changes the *height* of the images based on the specifications which can be defined in *inches & percentage*.
 
-**out.width** along with `out.height`, can be applied to any type of graphic defined within a code chunk. Sizes can be defined in inches, percentage & number of pixels.
-**out.height**  along with `out.width`, can be applied to any type of graphic defined within a code chunk. Sizes can be defined in inches, percentage & number of pixels.
+**out.width** along with `out.height`, can be applied to any type of graphic defined within a code chunk. It changes the *width* of the images based on the specifications which can be defined in *inches, percentage & number of pixels*.  
+**out.height**  along with `out.width`, can be applied to any type of graphic defined within a code chunk. It changes the *height* of the images based on the specifications which can be defined in *inches, percentage & number of pixels*.  
 
-We want to be inclusive of the images in our Rmd file so we will use out.width & out.height which offers more flexibility. Also, we previously sized the images to 50%, but that was a bit small, so let's try 60% instead.
+We want to be inclusive of the images in our Rmd file so we will use `out.width` & `out.height` which offers more flexibility. Also, we previously sized the images to 50%, but that was a bit small, so let's try 60% instead.
 
 Add to (before or after) the other options, in the global code chunk:
 
 ```
-knitr::opts_chunk$set(out.width="60%", out.height="60%", echo = FALSE)
+knitr::opts_chunk$set(out.width="60%", out.height="60%", echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 > ## Time to Knit!
 > See how our images re-sized. 
 {: .checklist}
 
-Oh no, Fig 2 isn't aligning! Unfortunately, the settings ONLY apply to code chunks, but our Figure 2 is still just a markdown-styled image. 
+Oh no, Fig 2 isn't aligning! Unfortunately, the settings ONLY apply to knitr-rendered code chunks, but our Figure 2 is still just a rmarkdown-styled image. 
 
-We will add it to a code chunk instead:
+We can add the Fig 2 .jpg to a code chunk instead:
 
-name the code chunk fig-2 and copy and paste the caption between quotes with the `fig.cap=""` option. 
-use `include_graphics()` from `knitr` package (alternatively can use syntax `knitr::include_graphics()). Add the file path in quotes. 
+1) create a new code chunk and name the it fig-2 
+2) copy and paste the caption between quotes with the `fig.cap=""` option. 
+3) use `include_graphics()` function from the `knitr` package (alternatively can use syntax `knitr::include_graphics()) if you haven't loaded the package.
+4) Add the file path in quotes between the () of `include_graphics(). 
 
-```
 
-~~~
-include_graphics("../figs/fig2_paper.jpg")
-~~~
-{: .language-r}
-```
+> ```{r fig-2, eval = FALSE, echo = TRUE, fig.cap="FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources."}  
+> include_graphics("../figs/fig2_paper.jpg")
+> ```
+
 
 > ## Time to Knit!
 > Check to see if all images re-sized   
@@ -202,7 +202,7 @@ include_graphics("../figs/fig2_paper.jpg")
 
 ### Automatically align code chunk outputs
 
-Add to the setup code chunk:
+To automatically & globally align code chunk outputs like we did with sizing, add to the setup code chunk:
 
 `fig.align = "center"`
 
@@ -222,15 +222,23 @@ Cross-referencing is a useful way of directing your readers through your documen
 
 To use cross-references, you will need:
 
-A bookdown output format: Cross-referencing is not provided directly within the base rmarkdown package, but is provided as an extension in bookdown (Xie 2020c). We must therefore use an output format from bookdown (e.g., html_document2, pdf_document2, and word_document2, etc.) in the YAML output field.
-
-A caption to your figure (or table): Figures without a caption will be included directly as images and will therefore not be a numbered figure.
-
-A labeled code chunk: This provides the identifier for referencing the figure generated by the chunk.
+- A bookdown output format: Cross-referencing is not provided directly within the base rmarkdown package, but is provided as an extension in bookdown (Xie 2020c). We must therefore use an output format from bookdown (e.g., html_document2, pdf_document2, and word_document2, etc.) in the YAML output field.
+- A caption to your figure (or table): Figures without a caption will be included directly as images and will therefore not be a numbered figure.
+- A labeled code chunk: This provides the identifier for referencing the figure generated by the chunk.
 
 After these conditions are met, we can make cross-references within the text using the syntax \@ref(type:label), where label is the chunk label and type is the environment being referenced (e.g. tab, fig, or eqn). An example is provided below:
 
-add to yaml
+We've already installed bookdown in our setup steps at the beginning of the workshop, but we need to make sure to load the `bookdown` library. 
+
+_Add_ into your `load-data-libraries` code chunk:
+
+> ```{r}  
+> #load bookdown for cross-referencing
+> library(bookdown)
+>```
+
+We also need to change the output in the yaml to a bookdown specification so, change the output yaml in the yaml to the following(the rest stays the same.):
+
 ```
 ...
 ouput:
@@ -238,13 +246,7 @@ ouput:
 ...
 ```
   
-the rest stays the same.
 
-
-~~~
-library(bookdown)
-~~~
-{: .language-r}
 
 2 cross-referencing additions. 
 See table 1 in strategies section
