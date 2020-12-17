@@ -2,7 +2,7 @@ library(tidyverse)
 
 data1 <- read_csv("../data/figure-1-data.csv", col_types="fi")
 
-pie_data <- data %>%
+pie_data <- data1 %>%
   mutate(proportion=count/sum(count)) %>%
   arrange(desc(proportion)) %>%
   mutate(lab.ypos = cumsum(proportion) - 0.5*proportion)
