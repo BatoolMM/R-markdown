@@ -134,7 +134,7 @@ Your code chunk options should now look like this:
 > Check to see if the caption for Figure 1 appeared    
 {: .checklist}
 
-> ## CHALLENGE 10.1 - add a caption for Figure 3  
+> ## CHALLENGE 9.1 - add a caption for Figure 3  
 > Add the caption to the code for Figure 3:  
 > `FIGURE 3 - Types of tools that cores would like to implement in their operations.`
 >
@@ -246,12 +246,44 @@ ouput:
 ...
 ```
   
+Now to add cross referencing: 
 
+This is the syntax for a cross-reference link:
 
-2 cross-referencing additions. 
-See table 1 in strategies section
+\@ref(type:label)
 
-See figure 2 shortly after
+the \@ref will always remain the same. We will edit `type` and `label`
+
+`type` options:
+- tab : for tables
+- fig : for figures
+- eqn : for equations
+
+`label` is replaced with the chunk label of the code chunk figure/table/equation you want to link to. 
+
+Let's try this out on our paper:
+
+1) Find or search for the note: (See Table 1) in the Core Implementation section. 
+
+To add a crossreference link we will replace the "Table 1" text with:
+
+\@ref(tab:table-1)
+
+we will replace type with `tab` and label with `table-1`
+
+> ## Time to Knit!
+> Check to see if the cross reference link for Table 1 appeared.
+> Notice what happens when you click the link.
+{: .checklist}
+
+> CHALLENGE 9.2: Add a Cross Reference to Figure 2
+> Search for or find in the text: "(See Figure 2)" in the "Strategies for Improving R&R sub section:
+> Make this into a cross reference link
+>
+>> ## SOLUTION
+>> FIXME add solution
+> {: .solution}
+{: .challenge}
 
 *Note adding crossing referencing re-names the figures, so should take the figure numbering out.
 
@@ -259,3 +291,6 @@ See figure 2 shortly after
 > Check to see if the cross reference links appeared
 {: .checklist}
 
+## Styling conclusions
+
+There are a plethora of options for styling, from additional bookdown options, to things you can edit in the yaml (including adding themes to style text), and adding your own custom css style sheets. Explore more on your own!
