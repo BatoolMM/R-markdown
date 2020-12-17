@@ -41,7 +41,7 @@ We're going to go ahead and change the LaTex code we used to input the error mar
 
 > 
 > ~~~
-> `r round(1.96*0.5*(1-0.5)/sqrt(243))*100)`%  
+> `r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%
 > ~~~
 > {: .language-r}
 {: .source}

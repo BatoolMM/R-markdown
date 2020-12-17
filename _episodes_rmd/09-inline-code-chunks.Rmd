@@ -48,7 +48,7 @@ For example, use inline code to calculate an error margin or summary statistic, 
 We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, instead of `$ \pm 3 \% $` to display our error margin as +/-3%, let's add this:
 
 > ```{r eval = FALSE}
-> `r round(1.96*0.5*(1-0.5)/sqrt(243))*100)`%  
+> `r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%
 > ```
 {: .source}
 
