@@ -71,6 +71,7 @@ Table 1 represents the perceived challenges faced in promoting best practices fo
 
 TABLE 1 - Major challenges to rigor observed in shared resources
 
+
 **Category** | **N**  
 --- | ---  
 Poor sample quality from users/sample variability/limited biological material | 51  

@@ -125,7 +125,7 @@ bibliography: "../docs/bibliography.bibtex"
 
 ```
 
-Note again the importance of the relative calling the right folder. The connection between the two files is all set to get us started. For now, we won't need to specify which format we would like to use. 
+Note again the importance of the relative path calling the right folder. The connection between the two files is all set to get us started. For now, we won't need to specify which format we would like to use. 
 
 By default, Pandoc will use a Chicago author-date format for citations and references and we will stick with that for now, but later we will learn how to change citation styles.
 
@@ -137,7 +137,7 @@ We will call a citation using the `@` followed by the key. It is important to us
 
 #### Single citation
 
-At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let's practice adding our first citation. Let's use the item with the key `freedman_2020_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after an ";"; in between brackets, as follows:
+At the end of the first paragraph on the Introduction, where you find `[citation example 1]`. Remove this info and let's practice adding our first citation. Let's use the item with the key `freedman_2020_2017` from the bibliography.bibtex file in the second tab. In order to cite this work you should add this key after in between brackets, as follows:
 
 ```
 [@freedman_2020_2017]
@@ -169,7 +169,7 @@ The output you will get in Chicago style will be:
 
 `(Bustin, 2014; Freedman, Venugopalan and Wisman, 2017)`
 
-*Tip:* You can simplify items key if you want. For instance, you can keep only the first author and year, but for the purpose of the exercises we will keep keys exactly how exported from Google Scholar.
+*Tip:* You can simplify items key if you want. For instance, you can keep only the first author and year, but for the purpose of the exercises we will keep keys exactly how we got them from Google Scholar.
 
 
 > ## Challenge 7.2: Adding multiple citations
