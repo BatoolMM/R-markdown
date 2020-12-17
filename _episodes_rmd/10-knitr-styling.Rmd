@@ -28,7 +28,7 @@ knitr_fig_path("10-")
 
 ## Create better tables in R Markdown
 
-Our markdown table is formatted weirdly after knitting. Unfortunately, it isn't possible to style tables created with basic markdown syntax. In order to create a table that is stylable, we need to save it as a dataframe and use a package function to style it. There are MANY packages that allow you to create tables in Rmd. See list (FIXME add list)
+Our markdown table is formatted weirdly after knitting. Unfortunately, it isn't possible to style tables created with basic markdown syntax. In order to create a table that is stylable, we need to save it as a dataframe and use a package function to style it. There are MANY packages that allow you to create tables in Rmd. See list (https://bookdown.org/yihui/rmarkdown-cookbook/table-other.html)
 
 ### Restyle the table with kable 
 We will use kable to recreate our table. `kable()` is a function in the `knitr` package. `kable()` creates a basic stylable table. 
@@ -84,8 +84,9 @@ kable(table1)
 
 > ## Note: Other table packages
 > Include:
-> Even though we can do a bit more styling with `kable()`, it's still pretty basic. To do more complex tables,  `kableExtra` package was developed. This especially allows more control over formatting. There are other multiple other packages as well that help with table formatting `officer`?? for Word and `xtable` are two examples. 
-> FIXME add others & links to CRAN
+> Even though we can do a bit more styling with `kable()`, it's still pretty basic. To do more complex tables,  `kableExtra` package was developed. This especially allows more control over formatting. There are other multiple other packages as well that help with table formatting `officer` for Word and `xtable` are two examples. 
+> officer: https://www.rdocumentation.org/packages/officer/versions/0.3.15
+> https://bookdown.org/yihui/rmarkdown-cookbook/table-other.html
 {: .callout}
 
 ## Add captions to code-generated tables & plots
@@ -277,12 +278,14 @@ we will replace type with `tab` and label with `table-1`
 > Notice what happens when you click the link.
 {: .checklist}
 
-> CHALLENGE 9.2: Add a Cross Reference to Figure 2
+> ## CHALLENGE 9.2: Add a Cross Reference to Figure 2  
 > Search for or find in the text: "(See Figure 2)" in the "Strategies for Improving R&R sub section:
-> Make this into a cross reference link
+> Make this into a cross reference link.  
 >
 >> ## SOLUTION
->> FIXME add solution
+>> ```
+>> \@ref(fig:fig-2)
+>> ```
 > {: .solution}
 {: .challenge}
 

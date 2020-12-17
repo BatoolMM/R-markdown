@@ -48,11 +48,11 @@ For example, use inline code to calculate an error margin or summary statistic, 
 We're going to go ahead and change the LaTex code we used to input the error margin and calculate it dynamically using r code. So, instead of `$ \pm 3 \% $` to display our error margin as +/-3%, let's add this:
 
 > ```{r eval = FALSE}
-> `r round(1.96*0.5*(1-0.5)/sqrt(243))*100)`%  
+> `r round(1.96*0.5*(1-0.5)/sqrt(243)*100)`%
 > ```
 {: .source}
 
-Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ending hash mark (`) r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
+Notice how we put the % sign after the ticks. In this case the percentage sign should be plain text. If we had put it inside the ending backtick (`) r would have attempted to calculate the modulo since that's what that symbol stands for in R. 
 
 > ## Time to Knit!
 > See that inline code evaluates to calculate the error margin of +/- 3%. 
@@ -95,7 +95,7 @@ Oh! Wow we were off on out total count by one anyway, good thing we added this i
 >> ```{r eval = FALSE, echo = TRUE}
 >> 1. the margin of error is ±`r round(1.96*0.5*(1-0.5)/sqrt(sum(data1$count))*100)`%
 >> ```
->> Note: since this we just added inline code to calculate the error margin, we can just add this snippet to count the total respondents, this means we only need to substitute `sum(data1$count)` for 243 (and don't need to add the hashes and `r` a second time.
+>> Note: since this we just added inline code to calculate the error margin, we can just add this snippet to count the total respondents, this means we only need to substitute `sum(data1$count)` for 243 (and don't need to add the backticks and `r` a second time.
 >> ```{r eval = FALSE, echo = TRUE}
 >> 2. sample size $n=`r sum(data1$count)`$
 >> ```
@@ -122,7 +122,7 @@ The most basic code chunk looks like so:
 
 ![blank Rmd code chunk](../fig/09-blank-code-chunk.PNG)
 
-Other than our hashes ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
+Other than our backticks ``` for code chunks that surround the code top and bottom, the only necessary piece is the specified language (r) placed between the curly brackets. This indicates that the language to read the code is R. 
 
 > ## Fun fact: Other Programming Languages
 > Although we will (mostly) be using R in this workshop, it’s possible to use other programming or markup languages. For example, we have seen that we can use LaTeX code for equations. You can also use python too, and we (may) show an example with css. Other languages include: sql, julia, bash, and c, etc. It should be noted however, that some languages (like python) will require installing and loading additional packages. 
@@ -132,11 +132,11 @@ Other than our hashes ``` for code chunks that surround the code top and bottom,
 
 Ok, let's add some code! Earlier, we added three images to our document. Now, images of our plots are great and all, but since R Markdown allows us to evaluate live code it would be more reproducible to use code chunks to display those plots. Like with our inline code, this assures that if there are any changes to the data, the plots update automatically. This also makes our life easier because when there's a change we don't have to re-generate plots, save them as images and then add them back in to our paper. This will potentially help prevent version errors as well!  So we're actually going to go ahead and convert a few of our plots to code chunks.
 
-We'll start by typing our our starting hashes & r between curly brackets. (in your own workflow you may want to add the ending three hashes as well so you don't forget after adding your code):
+We'll start by typing our our starting backticks & r between curly brackets. (in your own workflow you may want to add the ending three backticks as well so you don't forget after adding your code):
 
 ![blank Rmd code chunk](../fig/09-blank-code-chunk.PNG)
 
-Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste it in between the two lines with hashes.
+Now, let's open our `plot-figure-1.r` file in our `code` folder. Copy the code and paste it in between the two lines with backticks.
 
 ![code chunk with plot1 code](../fig/09-code-chunk-plot1.PNG)
 
@@ -247,7 +247,7 @@ With our first plot we set the options separately. However, we may end up with q
 
 To set global options that apply to every chunk in your file, call we will call `knitr::opts_chunk$set()` in a new code chunk right after our yaml header (name the new code chunk `setup`. Knitr will treat each option that add to this call as a global default. However, we will need to set the options for this code chunk in the first place! so we'll use echo = FALSE. Then in the `()` after the `knitr::opts_chunk$set()` add the three options we used for our first code chunk. 
 
-Add to your file (with hashes):
+Add to your file (with backticks):
 
 `{r setup, echo = FALSE}`     
 `knitr::opts_chunk$set(echo = FALSE, mesage = FALSE, warning = FALSE)`

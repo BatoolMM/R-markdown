@@ -28,11 +28,7 @@ So, let's copy and paste the the following to our yaml header (placing the code 
 ```
 ...
 ...
-knit: (function(inputFile, encoding) { 
-      out_dir <- '../results';
-      rmarkdown::render(inputFile,
-                        encoding=encoding, 
-                        output_file=file.path(dirname(inputFile), out_dir, 'rmd-workshop-paper.html')) })
+knit: (function(rmdfile, ...) { rmarkdown::render(rmdfile, output_dir='../results') })
 ---
 ```
 
@@ -41,21 +37,13 @@ knit: (function(inputFile, encoding) {
 
 **knit** we are changing the behavior of the knit function by defining our own:
 
-**function(inputFile, encoding)** as stated above we are defining our own function by calling `function()` so we can re-design what happens when we hit 'knit'. We use `inputFile` and `encoding` as parameters we're feeding the `render` function. This just means that the inputFile is 'this' file - the .rmd file we are *knit*ing, and encoding means we'll be importing the default encoding R Studio uses. 
-
-**out_dir** is a variable you define which will designate which folder you want to save the knit document to (relative path). In our case we know this is the `results` folder so we use `..` to go back to our root directory (from the code folder). The "default" folder is the folder where your rmd file is saved, so any 'directions' you give by indicating a relative path will be from the folder where the rmd file is to the folder where you want to save the html rendered document. 
+**function(rmdfile, ...)** as stated above we are defining our own function by calling `function()` so we can re-design what happens when we hit 'knit'. `rmdfile` is the main parameter required for our `render` function. This just means that the input file is 'this' file - the .rmd file we are *knit*ing.
 
 **rmarkdown::render** When you click the *knit* button R-Studio runs `rmarkdown:render`.  
-Typing `?rmarkdown::render` in the console will bring up further information about the `rmarkdown:render` function. We will be using three arguments of `rmarkdown::render`. 
+Typing `?rmarkdown::render` in the console will bring up further information about the `rmarkdown:render` function. We will be using two arguments of `rmarkdown::render`.
 
-- *input*: The file we're feeding the function. We already determined this is `inputFile` or 'this' document.
-- *encoding*: again we are indicating we're using the encoding we brought in from R Studio.
-- *output_file*: this long string seems complicated* but all we are indicating here is:
-    - what is the file path to get to 'this' document? = `file.path(dirname(inputFile)`. 
-    - what is the folder we want to save it to(relative to the inputFile folder)? = `out_dir` and ...
-    - what's the name of the document we want to be knit? = `'rmd-workshop-paper.html'`
-    
-\*we *could* just write out the file path/name here too if this is confusing.  
+- *input*: The file we're feeding the function. We already determined this is `rmdfile` or 'this' document.
+- *output_dir*: designates which folder we want to save the knit document to (relative path). In our case we know this is the `results` folder so we use `..` to go back to our root directory (from the code folder). The "default" folder is the folder where your rmd file is saved, so any 'directions' you give by indicating a relative path will be from the folder where the rmd file is to the folder where you want to save the html rendered document.
   
 > ## Time to Knit!
 > Check if your html file was saved to the `results` folder.   
@@ -78,10 +66,12 @@ and you'll be presented with the following panels:
 
 ![](../fig/11-r-studio-knit-publish-confirm-scrnshot.png)
 
+The first time you publish, RStudio will likely ask if you want to install some needed packages; say yes.  RStudio will then open up a web browser to allow you sign in to rpubs.com.
+
 At the end of the publish process your paper will be live on the internet 
 with a URL similar to: `https://rpubs.com/yourname/678624`
 
-R-Studio also saves an HTML version of your *knit* document to your local file system.  Look for it in the *results* 
+RStudio also saves an HTML version of your *knit* document to your local file system.  Look for it in the *results*
 directory in the same directory as the R-markdown file in your R-Studio project directory.  
 This html document is self-contained and highly portable.  Images are encoded directly into the HTML so you can easily move it to any web hosting you have available.
 
