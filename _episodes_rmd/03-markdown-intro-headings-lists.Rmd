@@ -48,6 +48,7 @@ These line breaks will also be important to get your formatting to render correc
 
 **example:**
 
+```
 If I'm writing some text
 an enter should work for a line break, but doesn't
 
@@ -58,10 +59,9 @@ or an html break<br>
 or by adding two returns
 
 and I carry on writing
-
-
+```
+<br>
 *Notice the spacing difference with 2 returns versus the other two options.
-
 <br>
 
 ## Creating Headings and Subheadings
