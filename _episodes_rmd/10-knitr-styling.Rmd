@@ -125,12 +125,11 @@ To add captions for Figure 1 and 3 we're going to go back to our favorite: code 
 2) paste or type in the caption  
 `FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.`
 
-Your code option should now look like this:
+Your code chunk options should now look like this:
 
 > ```{r fig-1, fig.cap="FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility."} `r ''` 
 > #code for figure 1 here  
 > ```
-
 
 > ## Time to Knit!
 > Check to see if the caption for Figure 1 appeared    
@@ -151,26 +150,29 @@ Your code option should now look like this:
 {: .checklist}
 
 
-## Globally align & size plots/figures
+## Globally & Automatically align & size plots/figures
 
 We changed the sizing of our images in a previous episode. However, instead of changing the sizes one-by one, we can do it within our `knitr::opts_chunk$set` settings in our setup code chunk. 
 
 ### Automatically size figures & images
 
-We can size with a number of inches, percentage of the original image size, or pixels (in some cases). The default for inches is 7 both in height and width for the knitr package (it's 5in height and 7in width for rmarkdown). 
+We can size with a number of inches, percentage of the original image size, or pixels (in some cases). The default for inches is 7in height and width for code-generated figures, plots & images (knitr) versus it's 5in height by 7in width for markdown generated images (rmarkdown). 
 
-There is no default for perentages because the default is in inches. When using percentages it's important to note that % refers to the percent of the HTML container. For example, if the block of text that the image is in is 1000px wide then the image will be 200px using 20%.
+There is no default for perentages because the default size is inches. When using percentages it's important to note that % refers to the percent of the HTML container. So images are sized in relation to their original size, but in relation to the html document size. For example, if the block of text on a webpage is 1000px wide then resizing at 20% width means the image will be 200px in width.
 
-#### fig.width / fig.height VS. out.width / out.height
+#### Option options for resizing 
 
-**fig.width & height** ONLY apply to R-generated figures defined within a code chunk. Sizes can be defined in inches & percentage
+Two options `fig.` and `out.` `out.` is more expansize than `fig.` both in how size can be defined and what kind of figures/plots/images it can be applied to. 
 
-**out.width & height** can be applied to any type of graphic defined within a code chunk. Sizes can be defined in inches, percentage & number of pixels.
+**fig.width** along with `fig.height`, ONLY applies to R-generated figures defined within a code chunk. Sizes can be defined in inches & percentage.
+**fig.height** along with `fig.width`, ONLY applies to R-generated figures defined within a code chunk. Sizes can be defined in inches & percentage.
+
+**out.width** along with `out.height`, can be applied to any type of graphic defined within a code chunk. Sizes can be defined in inches, percentage & number of pixels.
+**out.height**  along with `out.width`, can be applied to any type of graphic defined within a code chunk. Sizes can be defined in inches, percentage & number of pixels.
 
 We want to be inclusive of the images in our Rmd file so we will use out.width & out.height which offers more flexibility. Also, we previously sized the images to 50%, but that was a bit small, so let's try 60% instead.
 
 Add to (before or after) the other options, in the global code chunk:
-
 
 ```
 knitr::opts_chunk$set(out.width="60%", out.height="60%", echo = FALSE)
