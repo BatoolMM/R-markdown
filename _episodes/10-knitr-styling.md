@@ -81,11 +81,22 @@ your code chunk should output as so:
 |Instruments: maintenance, upgrades, changes                                                              | 15|
 |Responses that could not be assigned to a category                                                       | 11|
 
+> ## Note: Styling kable tables  
+> You can use the argument `format` to specify between `html`, `latex`, `pipe`, or `rst` styles. This can also be set in the global options with `knitr.table.format`.
+> For additional styling, there is a function called `kable_styling()` to change the look of your kable tables. 
+> https://www.rdocumentation.org/packages/kableExtra/versions/1.3.1/topics/kable_styling
+{: .callout}
+
 > ## Note: Other table packages
-> Include:
 > Even though we can do a bit more styling with `kable()`, it's still pretty basic. To do more complex tables,  `kableExtra` package was developed. This especially allows more control over formatting. There are other multiple other packages as well that help with table formatting `officer` for Word and `xtable` are two examples. 
 > officer: https://www.rdocumentation.org/packages/officer/versions/0.3.15
 > https://bookdown.org/yihui/rmarkdown-cookbook/table-other.html
+{: .callout}
+
+> ## Note: Styling Kable tables  
+> You can use the argument `format` to specify between `html`, `latex`, `pipe`, or `rst` styles. This can also be set in the global options with `knitr.table.format`.
+> For additional styling, there is a function called `kable_styling()` to change the look of your kable tables. 
+> https://www.rdocumentation.org/packages/kableExtra/versions/1.3.1/topics/kable_styling
 {: .callout}
 
 ## Add captions to code-generated tables & plots
@@ -266,11 +277,12 @@ Let's try this out on our paper:
 
 1) Find or search for the note: (See Table 1) in the Core Implementation section. 
 
-To add a crossreference link we will replace the "Table 1" text with:
+2) To add a cross reference link we will replace the "Table 1" text with:
 
+```
 \@ref(tab:table-1)
-
-we will replace type with `tab` and label with `table-1`
+```
+we will replace `type` with `tab` and `label` with `table-1`.
 
 > ## Time to Knit!
 > Check to see if the cross reference link for Table 1 appeared.

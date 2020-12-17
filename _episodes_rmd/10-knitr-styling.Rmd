@@ -82,11 +82,22 @@ table1 <- read_csv("../paperToRmd/data/table.csv")
 kable(table1)
 ```
 
+> ## Note: Styling kable tables  
+> You can use the argument `format` to specify between `html`, `latex`, `pipe`, or `rst` styles. This can also be set in the global options with `knitr.table.format`.
+> For additional styling, there is a function called `kable_styling()` to change the look of your kable tables. 
+> https://www.rdocumentation.org/packages/kableExtra/versions/1.3.1/topics/kable_styling
+{: .callout}
+
 > ## Note: Other table packages
-> Include:
 > Even though we can do a bit more styling with `kable()`, it's still pretty basic. To do more complex tables,  `kableExtra` package was developed. This especially allows more control over formatting. There are other multiple other packages as well that help with table formatting `officer` for Word and `xtable` are two examples. 
 > officer: https://www.rdocumentation.org/packages/officer/versions/0.3.15
 > https://bookdown.org/yihui/rmarkdown-cookbook/table-other.html
+{: .callout}
+
+> ## Note: Styling Kable tables  
+> You can use the argument `format` to specify between `html`, `latex`, `pipe`, or `rst` styles. This can also be set in the global options with `knitr.table.format`.
+> For additional styling, there is a function called `kable_styling()` to change the look of your kable tables. 
+> https://www.rdocumentation.org/packages/kableExtra/versions/1.3.1/topics/kable_styling
 {: .callout}
 
 ## Add captions to code-generated tables & plots
@@ -97,8 +108,8 @@ Also, we learned how to add captions to images earlier on, but now, how do we ad
 
 Ok, let's start with the table. The `kable()` function has an argument called `caption`. 
 
-1) cut the orignial table caption from it's spot in the paper
-2) add to the kable function `caption = ` and paste the caption in between `"`s
+1) cut the orignial table caption from it's spot in the paper   
+2) add to the kable function `caption = ` and paste the caption in between `""`s
 
 ```
 caption="Table 1. Major challenges to rigor observed in shared resources"
@@ -122,8 +133,8 @@ code will look like so:
 To add captions for Figure 1 and 3 we're going to go back to our favorite: code chunk options. Anytime after defining the code chunk name we can add the chunk option: `fig.cap = ` (so either before or after the other options, order doesn't matter).  Notice that the syntax is slightly different than our other options but it has the same `=` . Instead of indicating TRUE/FALSE however, we can type our caption right after the = in quotes `fig.cap = ""`. NOTE: we are adding this to the code chunk options, NOT as an argument to the code like for the table.
 
 
-1) type in `fig.cap = ""` after the chunk label (and a comma)
-2) paste or type in the caption  
+1) type in `fig.cap = ""` after the chunk label (and a comma)  
+2) paste or type in the caption:  
 `FIGURE 1 - Knowledge and awareness of the current NIH guidelines on rigor and reproducibility.`
 
 Your code chunk options should now look like this:
@@ -187,10 +198,10 @@ Oh no, Fig 2 isn't aligning! Unfortunately, the settings ONLY apply to knitr-ren
 
 We can add the Fig 2 .jpg to a code chunk instead:
 
-1) create a new code chunk and name the it fig-2 
-2) copy and paste the caption between quotes with the `fig.cap=""` option. 
-3) use `include_graphics()` function from the `knitr` package (alternatively can use syntax `knitr::include_graphics()) if you haven't loaded the package.
-4) Add the file path in quotes between the () of `include_graphics(). 
+1. create a new code chunk and name the it fig-2   
+2. copy and paste the caption between quotes with the `fig.cap=""` option. 
+3. use `include_graphics()` function from the `knitr` package (alternatively can use syntax `knitr::include_graphics()) if you haven't loaded the package.
+4. Add the file path in quotes between the () of `include_graphics(). 
 
 
 > ```{r fig-2, eval = FALSE, echo = TRUE, fig.cap="FIGURE 2 - Lack of requests for rigor and reproducibility documentation by users of shared resources."} `r ''` 
@@ -267,11 +278,12 @@ Let's try this out on our paper:
 
 1) Find or search for the note: (See Table 1) in the Core Implementation section. 
 
-To add a crossreference link we will replace the "Table 1" text with:
+2) To add a cross reference link we will replace the "Table 1" text with:
 
+```
 \@ref(tab:table-1)
-
-we will replace type with `tab` and label with `table-1`
+```
+we will replace `type` with `tab` and `label` with `table-1`.
 
 > ## Time to Knit!
 > Check to see if the cross reference link for Table 1 appeared.
