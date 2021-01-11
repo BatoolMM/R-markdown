@@ -131,3 +131,6 @@ Finally, three real-world examples that motivated the authors of this lesson to 
 3. In this lesson we will be constructing a scientific paper that is based on an actual *Nature* publication and attendant survey and data.  In trying to recreate the plots the original authors created, we found it difficult and time-consuming to figure out exactly how the authors created their plots.  Out of the many columns in their data, many with similar-sounding names, which did they use?  How did they handle missing data?  Exactly what operations did they perform to compute aggregate values?  How much easier it would have been if they had published the code they used along with their paper. R Markdown allows you to do this.
 
 Our goal is that by the end of this workshop you will be able to create a reproducible report applying R Markdown and Knitr to publish a paper such as this [example](https://rpubs.com/rcurty/RMarkdown_PaperOutput).
+This template is used exclusively for instruction purposes and is based on short and adapted version of the following academic paper:
+
+``Knudtson, K. L., Carnahan, R. H., Hegstad-Davies, R. L., Fisher, N. C., Hicks, B., Lopez, P. A., ... & Sol-Church, K. (2019). Survey on scientific shared resource rigor and reproducibility. Journal of biomolecular techniques: JBT, 30(3), 36. doi: doi: 10.7171/jbt.19-3003-001``
