@@ -13,7 +13,7 @@ data processes, and data visualizations.
 
 > ## Prerequisites
 >
-> R-Studio installed and some experience using R-Studio.
+> RStudio installed and some experience using RStudio.
 {: .prereq}
 
 {% include links.md %}
